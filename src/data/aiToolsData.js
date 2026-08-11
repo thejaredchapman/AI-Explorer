@@ -18,6 +18,7 @@ export const toolTopics = [
     analogy: 'A chatbot is a reference librarian — ask a question, get an answer. An agent is an executive assistant — say "plan my trip to Tokyo" and they book flights, reserve hotels, check your calendar, and send you the itinerary.',
     examples: [
       { name: 'Claude Cowork', desc: 'Anthropic\'s "AI intern" capable of autonomous, background task execution across systems' },
+      { name: 'Claude Tag', desc: 'Anthropic\'s persistent AI teammate in Slack — tag @Claude to delegate tasks, then it plans, works asynchronously, and proactively follows up' },
       { name: 'OpenClaw', desc: 'Open-source personal AI assistant framework with a CLI/TUI, self-hosted gateway, and multi-channel messaging (WhatsApp, Slack)' },
       { name: 'ChatGPT Agent Mode', desc: 'OpenAI\'s mode where the AI moves beyond chatting to actively taking autonomous action' },
       { name: 'Claude Code', desc: 'Anthropic\'s CLI agent that reads files, writes code, runs tests, and fixes errors autonomously' },

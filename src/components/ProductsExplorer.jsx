@@ -94,7 +94,7 @@ export default function ProductsExplorer() {
         <span className="section-badge">Step 5 — Explore Products</span>
         <h2>AI Products & Platforms</h2>
         <p>
-          With model knowledge in hand, explore the 50 products and platforms built on top of them.
+          With model knowledge in hand, explore the {aiProducts.length} products and platforms built on top of them.
           Filter by your role to see which tools transform your specific workflow. Click "See Impact" for real-world use cases.
         </p>
       </motion.div>

@@ -141,7 +141,7 @@ export default function AiConcepts({ onOpenDetail }) {
         <span className="section-badge">Step 1 — Fundamentals</span>
         <h2>AI Concepts Explained</h2>
         <p>
-          Start here. Understanding these 25 core concepts gives you the vocabulary and mental models
+          Start here. Understanding these {aiConcepts.length} core concepts gives you the vocabulary and mental models
           to evaluate any AI product, model, or technique. Click any card to expand, then "Learn More" for the full deep dive.
         </p>
       </motion.div>

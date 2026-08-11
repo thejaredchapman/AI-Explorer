@@ -46,7 +46,7 @@ export default function Level7() {
       <div className="level-header">
         <span className="level-tag">LEVEL 7 — BOSS BATTLE</span>
         <h2>🔥 The Final Quiz</h2>
-        <p>10 questions to prove your mastery of API vs MCP. No going back!</p>
+        <p>{totalQ} questions to prove your mastery of API vs MCP. No going back!</p>
       </div>
 
       <div className="progress-pill">

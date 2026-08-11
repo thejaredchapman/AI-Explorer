@@ -1359,6 +1359,20 @@ export const aiProducts = [
     },
   },
   {
+    id: 'claude-tag',
+    company: 'Anthropic',
+    products: 'Claude Tag',
+    logo: '🟤',
+    color: '#d4a27f',
+    type: 'Team Collaboration · Slack AI Agent',
+    brief: 'Claude Tag embeds Claude directly inside Slack as a persistent, shared teammate. Tag @Claude in any thread to delegate work — it plans across stages, uses connected tools, and can proactively follow up without being asked.',
+    userTypes: ['enterprise', 'developer'],
+    transformation: {
+      enterprise: 'Delegate research, monitoring, and follow-up work to @Claude in shared channels — it learns team context over time and flags what needs attention while everyone else focuses elsewhere.',
+      developer: 'Tag @Claude on a bug report thread to draft a fix, or ask it to summarize a long incident discussion without leaving Slack.',
+    },
+  },
+  {
     id: 'google',
     company: 'Google',
     products: 'Gemini, Vertex AI, NotebookLM',

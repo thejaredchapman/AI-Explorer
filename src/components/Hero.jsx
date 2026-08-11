@@ -1,4 +1,11 @@
 import { motion } from 'framer-motion';
+import { aiConcepts, aiProducts } from '../data/aiData';
+import { llmModels } from '../data/llmData';
+import { techniques } from '../data/promptEngineeringData';
+import { toolTopics } from '../data/aiToolsData';
+import { codeAssistants } from '../data/codeAssistantsData';
+import { resources } from '../data/resourcesData';
+import { guidesData } from '../data/guidesData';
 
 const floatingItems = [
   { emoji: '\u{1F9E0}', x: '10%', y: '20%', delay: 0 },
@@ -115,42 +122,42 @@ export default function Hero({ onNavigate }) {
 
         <div className="hero-stats">
           <div className="hero-stat">
-            <span className="hero-stat-num">25</span>
+            <span className="hero-stat-num">{aiConcepts.length}</span>
             <span className="hero-stat-label">AI Concepts</span>
           </div>
           <div className="hero-stat-divider" />
           <div className="hero-stat">
-            <span className="hero-stat-num">24</span>
+            <span className="hero-stat-num">{llmModels.length}</span>
             <span className="hero-stat-label">LLM Models</span>
           </div>
           <div className="hero-stat-divider" />
           <div className="hero-stat">
-            <span className="hero-stat-num">18</span>
+            <span className="hero-stat-num">{techniques.length}</span>
             <span className="hero-stat-label">Prompt Techniques</span>
           </div>
           <div className="hero-stat-divider" />
           <div className="hero-stat">
-            <span className="hero-stat-num">50</span>
+            <span className="hero-stat-num">{aiProducts.length}</span>
             <span className="hero-stat-label">AI Products</span>
           </div>
           <div className="hero-stat-divider" />
           <div className="hero-stat">
-            <span className="hero-stat-num">6</span>
+            <span className="hero-stat-num">{toolTopics.length}</span>
             <span className="hero-stat-label">Tools & Protocols</span>
           </div>
           <div className="hero-stat-divider" />
           <div className="hero-stat">
-            <span className="hero-stat-num">10</span>
+            <span className="hero-stat-num">{codeAssistants.length}</span>
             <span className="hero-stat-label">Code Editors</span>
           </div>
           <div className="hero-stat-divider" />
           <div className="hero-stat">
-            <span className="hero-stat-num">30+</span>
+            <span className="hero-stat-num">{resources.length}</span>
             <span className="hero-stat-label">Resources</span>
           </div>
           <div className="hero-stat-divider" />
           <div className="hero-stat">
-            <span className="hero-stat-num">24</span>
+            <span className="hero-stat-num">{guidesData.guides.length}</span>
             <span className="hero-stat-label">Build Guides</span>
           </div>
         </div>

@@ -299,7 +299,7 @@ export const resources = [
     icon: '📖',
     color: '#10a37f',
     url: 'https://platform.openai.com/docs',
-    description: 'Official OpenAI platform docs. Covers GPT-4, function calling, embeddings, fine-tuning, Assistants API, and the complete API reference.',
+    description: 'Official OpenAI platform docs. Covers GPT-5.6, function calling, embeddings, fine-tuning, Assistants API, and the complete API reference.',
     highlights: ['GPT API reference', 'Cookbook examples', 'Best practices'],
   },
   {

@@ -11,7 +11,7 @@ export const codeAssistants = [
     color: '#0284c7',
     type: 'Code Review & Quality',
     pricing: 'Free / $19/mo Pro',
-    models: ['Custom models', 'GPT-5.2', 'Claude Sonnet 4.6'],
+    models: ['Custom models', 'GPT-5.6', 'Claude Sonnet 5'],
     description: 'Positioned as an AI Code Review Platform, Qodo acts as a "quality layer" in the AI development stack. It focuses on writing tests, analyzing code for bugs, and ensuring enterprise-grade code quality before merging.',
     bestFor: 'Engineering teams focused on code quality, automated test generation, and deep AI-driven code reviews.',
     keyFeatures: [
@@ -33,13 +33,13 @@ export const codeAssistants = [
     color: '#6e40c9',
     type: 'IDE Extension & Chat',
     pricing: '$10-39/mo',
-    models: ['GPT-5.2', 'Claude Sonnet 4.6', 'Gemini 2.5'],
+    models: ['GPT-5.6', 'Claude Sonnet 5', 'Gemini 3.6 Flash'],
     description: 'The original AI pair programmer. Integrates directly into VS Code, JetBrains, Neovim, and more. Provides inline code completions, chat-based assistance, and workspace-aware suggestions.',
     bestFor: 'Developers already embedded in the GitHub ecosystem who want seamless inline completions and PR assistance.',
     keyFeatures: [
       'Inline code completions as you type',
       'Chat panel for explaining and refactoring code',
-      'Multi-model support (GPT-5.2, Claude, Gemini)',
+      'Multi-model support (GPT-5.6, Claude, Gemini)',
       'Workspace indexing for context-aware suggestions',
       'Pull request summaries and review assistance',
       'CLI integration with GitHub Copilot CLI',
@@ -56,7 +56,7 @@ export const codeAssistants = [
     color: '#7c3aed',
     type: 'AI-Native IDE',
     pricing: 'Free / $20/mo Pro',
-    models: ['Claude Sonnet 4.6', 'GPT-5.2', 'Cursor-small'],
+    models: ['Claude Sonnet 5', 'GPT-5.6', 'Cursor-small'],
     description: 'A VS Code fork rebuilt from the ground up for AI-assisted development. Features deep codebase understanding, multi-file edits, and an agent mode ("self-driving codebases") that can autonomously execute tasks across your project.',
     bestFor: 'Developers who want the most integrated AI coding experience with multi-file editing and autonomous agent capabilities.',
     keyFeatures: [
@@ -79,7 +79,7 @@ export const codeAssistants = [
     color: '#d97706',
     type: 'CLI Agent',
     pricing: 'API usage-based',
-    models: ['Claude Opus 4.6', 'Claude Sonnet 4.6'],
+    models: ['Claude Opus 5', 'Claude Sonnet 5'],
     description: 'An agentic CLI tool that lives in your terminal. Claude Code can read your entire codebase, make multi-file edits, run commands, manage git workflows, and handle complex refactoring — all through natural language conversation.',
     bestFor: 'Developers who prefer terminal workflows and want an AI agent that can autonomously navigate, edit, and test code across entire projects.',
     keyFeatures: [
@@ -103,7 +103,7 @@ export const codeAssistants = [
     color: '#06b6d4',
     type: 'AI-Native IDE',
     pricing: 'Free / $15/mo Pro',
-    models: ['Claude Sonnet 4.6', 'GPT-5.2', 'Custom models'],
+    models: ['Claude Sonnet 5', 'GPT-5.6', 'Custom models'],
     description: 'An AI IDE (formerly Codeium) that features Cascade — a deeply integrated AI agent that can reason across your codebase, execute terminal commands, and handle multi-step workflows automatically.',
     bestFor: 'Developers looking for an affordable AI-native IDE with strong autonomous agent capabilities and real-time collaboration.',
     keyFeatures: [
@@ -126,7 +126,7 @@ export const codeAssistants = [
     color: '#ff5543',
     type: 'IDE Extension & Chat',
     pricing: 'Free / $9/mo Pro',
-    models: ['Claude Sonnet 4.6', 'GPT-5.2', 'Gemini 2.5', 'Mixtral'],
+    models: ['Claude Sonnet 5', 'GPT-5.6', 'Gemini 3.6 Flash', 'Mistral Large 3'],
     description: 'An AI coding assistant backed by Sourcegraph\'s code intelligence platform. Cody excels at understanding large codebases because it leverages Sourcegraph\'s code graph for deep, accurate context retrieval.',
     bestFor: 'Teams working with large, complex codebases who need accurate context retrieval and enterprise-grade code understanding.',
     keyFeatures: [
@@ -149,7 +149,7 @@ export const codeAssistants = [
     color: '#22c55e',
     type: 'CLI Agent',
     pricing: 'Free (open source)',
-    models: ['Claude Sonnet 4.6', 'GPT-5.2', 'DeepSeek', 'Any LLM'],
+    models: ['Claude Sonnet 5', 'GPT-5.6', 'DeepSeek', 'Any LLM'],
     description: 'An open-source AI pair programming tool that runs in your terminal. Aider can edit multiple files, understands your git repo, and automatically commits changes. Supports nearly any LLM via API.',
     bestFor: 'Developers who want a free, open-source CLI coding assistant with flexibility to use any LLM provider.',
     keyFeatures: [
@@ -218,7 +218,7 @@ export const codeAssistants = [
     color: '#1389fd',
     type: 'Browser IDE + Agent',
     pricing: 'Free / $20/mo Pro',
-    models: ['Claude Sonnet 4.6', 'GPT-5.2', 'Gemini 2.5'],
+    models: ['Claude Sonnet 5', 'GPT-5.6', 'Gemini 3.6 Flash'],
     description: 'A browser-based AI development environment powered by WebContainers. Bolt can scaffold, edit, and run full-stack applications entirely in your browser with zero local setup.',
     bestFor: 'Quick prototyping and building full-stack web apps directly in the browser without any local development environment.',
     keyFeatures: [
@@ -241,7 +241,7 @@ export const codeAssistants = [
     color: '#238636',
     type: 'Task-Oriented Agent',
     pricing: 'Included with Copilot',
-    models: ['GPT-5.2', 'Claude Sonnet 4.6'],
+    models: ['GPT-5.6', 'Claude Sonnet 5'],
     description: 'A task-centric development environment that takes a GitHub issue and generates a full implementation plan, then produces multi-file code changes — all within the GitHub ecosystem.',
     bestFor: 'Teams that work heavily with GitHub Issues and want AI to handle the full cycle from issue to implementation plan to pull request.',
     keyFeatures: [
@@ -264,7 +264,7 @@ export const codeAssistants = [
     color: '#10a37f',
     type: 'CLI Agent',
     pricing: 'Included with ChatGPT Plus/Pro/Team',
-    models: ['GPT-5.2', 'o3', 'o4-mini'],
+    models: ['GPT-5.6', 'o3', 'o4-mini'],
     description: 'OpenAI\'s agentic coding tool that runs locally in your terminal. Built in Rust for speed, Codex CLI can read your codebase, make multi-file edits, run commands, and manage complex development tasks — all through natural language.',
     bestFor: 'Developers in the OpenAI ecosystem who want a fast, terminal-based coding agent included with their ChatGPT subscription.',
     keyFeatures: [

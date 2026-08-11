@@ -147,7 +147,7 @@ export const trainingTechnologies = [
       'Reduces the cost and subjectivity of human feedback while maintaining safety',
     ],
     frameworks: ['PyTorch', 'Custom Infrastructure'],
-    relatedModels: ['Claude 3.5', 'Claude Opus 4', 'Claude Sonnet'],
+    relatedModels: ['Claude Opus 5', 'Claude Sonnet 5', 'Claude Haiku 4.5'],
   },
   {
     id: 'interpretability',
@@ -211,7 +211,7 @@ export const trainingTechnologies = [
       'Open weights accelerate research by letting anyone reproduce and build on results',
     ],
     frameworks: ['PyTorch', 'Hugging Face', 'llama.cpp', 'vLLM'],
-    relatedModels: ['Llama 3.1', 'Llama 3.3', 'Code Llama'],
+    relatedModels: ['Llama 4', 'Llama 3.3', 'Code Llama'],
   },
   {
     id: 'fsdp',
@@ -227,7 +227,7 @@ export const trainingTechnologies = [
       'Now a core PyTorch feature used across the industry, not just by Meta',
     ],
     frameworks: ['PyTorch FSDP', 'FairScale', 'torchtitan'],
-    relatedModels: ['Llama 3.1 405B', 'Llama 3.3'],
+    relatedModels: ['Llama 4 Maverick', 'Llama 3.3'],
   },
   {
     id: 'colossus',
@@ -243,7 +243,7 @@ export const trainingTechnologies = [
       'Combined with real-time data from the X platform for training data freshness',
     ],
     frameworks: ['JAX', 'Custom Stack', 'Kubernetes'],
-    relatedModels: ['Grok-2', 'Grok-3'],
+    relatedModels: ['Grok 4.5', 'Grok-3'],
   },
   {
     id: 'moe',
@@ -259,7 +259,7 @@ export const trainingTechnologies = [
       'Mixtral 8x7B has 47B total parameters but uses ~13B per forward pass',
     ],
     frameworks: ['PyTorch', 'Megablocks', 'vLLM'],
-    relatedModels: ['Mixtral 8x7B', 'Mixtral 8x22B', 'Mistral Large'],
+    relatedModels: ['Mixtral 8x7B', 'Mixtral 8x22B', 'Mistral Large 3'],
   },
   {
     id: 'blackwell-architecture',

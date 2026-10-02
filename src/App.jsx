@@ -15,9 +15,12 @@ import ResourcesSection from './components/ResourcesSection';
 import GuidesSection from "./components/GuidesSection";
 import SkillsSection from "./components/SkillsSection";
 import LearningGames from "./components/LearningGames";
+import Compass from './components/Compass';
+import { SECTIONS } from './data/sections';
 import './App.css';
+import './theme.css';
 
-const SECTION_IDS = ['hero', 'ai-examples', 'concepts', 'llm-rubric', 'model-training', 'prompt-engineering', 'products', 'ai-tools', 'code-assistants', 'skills', 'learning-games', 'resources', 'guides'];
+const SECTION_IDS = SECTIONS.map((s) => s.id);
 
 function App() {
   const [activeConceptId, setActiveConceptId] = useState(null);
@@ -117,11 +120,12 @@ function App() {
           </main>
         )}
       </AnimatePresence>
+      <Compass currentSection={currentSection} onNavigate={navigateTo} />
       <footer className="site-footer">
         <div className="footer-content">
-          <p className="footer-main">Built as an interactive learning experience for understanding AI from the ground up.</p>
+          <p className="footer-main"><strong>AI-Explorer</strong>: an interactive field guide to understanding AI from the ground up.</p>
           <div className="footer-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/thejaredchapman/AI-Explorer" target="_blank" rel="noopener noreferrer">GitHub</a>
             <span className="footer-divider">|</span>
             <a href="https://docs.anthropic.com" target="_blank" rel="noopener noreferrer">Anthropic Docs</a>
             <span className="footer-divider">|</span>

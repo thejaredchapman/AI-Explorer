@@ -5,7 +5,7 @@
 .lx {
   --lx-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
   --lx-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-  --lx-signal: #fbbf24;
+  --lx-signal: var(--accent-2);
   --lx-alert: #f87171;
   --lx-high: #34d399;
   --lx-mid: #60a5fa;
@@ -15,7 +15,7 @@
   max-width: 1180px;
 }
 [data-theme="light"] .lx {
-  --lx-signal: #b45309;
+  --lx-signal: var(--accent-2);
   --lx-alert: #b91c1c;
   --lx-high: #15803d;
   --lx-mid: #1d4ed8;
@@ -137,7 +137,7 @@
 }
 .lx-chip { padding: 9px 12px; font: 500 12px var(--lx-mono); background: transparent; border: 1px solid var(--lx-rule); border-radius: 999px; color: var(--text-secondary); transition: all .15s; }
 .lx-chip:hover { border-color: var(--border-hover); color: var(--text); }
-.lx-chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.lx-chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .lx-toolbar { display: flex; justify-content: space-between; align-items: center; margin: 14px 0 18px; }
 .lx-toolbar p { font: 400 12px var(--lx-mono); color: var(--text-secondary); margin: 0; }
 .lx-toolbar strong { color: var(--text); }

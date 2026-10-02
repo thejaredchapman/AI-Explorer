@@ -1,24 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { SECTIONS } from '../data/sections';
 
 export default function Navigation({ currentSection, onNavigate, theme, onToggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const sections = [
-    { id: 'hero', label: 'Home' },
-    { id: 'ai-examples', label: 'Examples' },
-    { id: 'concepts', label: 'AI Concepts' },
-    { id: 'llm-rubric', label: 'Compare Models' },
-    { id: 'model-training', label: 'Training' },
-    { id: 'prompt-engineering', label: 'Prompting' },
-    { id: 'products', label: 'Products' },
-    { id: 'ai-tools', label: 'Tools & Protocols' },
-    { id: 'code-assistants', label: 'Code Editors' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'learning-games', label: 'Games' },
-    { id: 'resources', label: 'Resources' },
-    { id: 'guides', label: 'Guides' },
-  ];
+  const sections = SECTIONS;
 
   const handleNav = (id) => {
     onNavigate(id);
@@ -31,11 +18,11 @@ export default function Navigation({ currentSection, onNavigate, theme, onToggle
       initial={{ y: -60 }}
       animate={{ y: 0 }}
     >
-      <span className="nav-logo" onClick={() => handleNav('hero')}>AI Explorer</span>
+      <span className="nav-logo" onClick={() => handleNav('hero')}>AI-<em>Explorer</em></span>
 
       {/* Desktop Nav */}
       <div className="nav-links nav-desktop">
-        {sections.map(s => (
+        {sections.slice(1).map(s => (
           <button
             key={s.id}
             className={`nav-link ${currentSection === s.id ? 'active' : ''}`}

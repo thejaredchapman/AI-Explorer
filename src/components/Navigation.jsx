@@ -8,7 +8,7 @@ export default function Navigation({ currentSection, onNavigate, theme, onToggle
     { id: 'hero', label: 'Home' },
     { id: 'ai-examples', label: 'Examples' },
     { id: 'concepts', label: 'AI Concepts' },
-    { id: 'llm-rubric', label: 'LLM Rubric' },
+    { id: 'llm-rubric', label: 'Compare Models' },
     { id: 'model-training', label: 'Training' },
     { id: 'prompt-engineering', label: 'Prompting' },
     { id: 'products', label: 'Products' },

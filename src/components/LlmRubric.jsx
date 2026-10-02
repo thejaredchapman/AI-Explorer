@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   llmModels,
@@ -7,177 +7,182 @@ import {
   pricingOptions,
   capabilityLabels,
   sortOptions,
+  dataAsOf,
+  hfIncident,
 } from '../data/llmData';
+import { downloadMarkdown, formatAsOf } from '../utils/llmMarkdown';
+import './LlmRubric.css';
 
-function CapabilityBar({ label, value, max = 10 }) {
-  const pct = (value / max) * 100;
-  const color =
-    value >= 9 ? '#22c55e' :
-    value >= 7 ? '#3b82f6' :
-    value >= 5 ? '#f59e0b' :
-    value >= 1 ? '#ef4444' : '#e2e8f0';
+const CATEGORY_COLORS = {
+  Frontier: '#818cf8',
+  Balanced: '#38bdf8',
+  Efficient: '#34d399',
+  Reasoning: '#fbbf24',
+  'Open Source': '#2dd4bf',
+  Specialized: '#c084fc',
+};
 
+const scoreTone = (v) => (v >= 9 ? 'high' : v >= 7 ? 'mid' : v >= 5 ? 'low' : 'weak');
+const fmtTokens = (n) => (n >= 1000000 ? `${+(n / 1000000).toFixed(2)}M` : `${Math.round(n / 1000)}K`);
+const fmtPrice = (n) => (n === 0 ? 'Free' : `$${n < 1 ? n.toFixed(2) : n}`);
+const NEW_MODELS = llmModels
+  .filter((m) => m.isNew)
+  .sort((a, b) => b.releaseDate.localeCompare(a.releaseDate) || b.inputCost - a.inputCost);
+const PROVIDER_COUNT = new Set(llmModels.map((m) => m.provider)).size;
+
+function CapabilityBar({ label, value }) {
   return (
-    <div className="cap-bar-row">
-      <span className="cap-bar-label">{label}</span>
-      <div className="cap-bar-track">
+    <div className="lx-cap">
+      <span className="lx-cap-label">{label}</span>
+      <div className="lx-cap-track">
         <motion.div
-          className="cap-bar-fill"
+          className={`lx-cap-fill tone-${scoreTone(value)}`}
           initial={{ width: 0 }}
-          animate={{ width: `${pct}%` }}
+          animate={{ width: `${value * 10}%` }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
-          style={{ background: color }}
         />
       </div>
-      <span className="cap-bar-value" style={{ color }}>{value === 0 ? '—' : value}</span>
+      <span className={`lx-cap-value tone-${scoreTone(value)}`}>{value === 0 ? '—' : value}</span>
+    </div>
+  );
+}
+
+function Heat({ capabilities }) {
+  return (
+    <div className="lx-heat" aria-hidden="true">
+      {Object.keys(capabilityLabels).map((k) => (
+        <span key={k} className={`lx-heat-cell tone-${scoreTone(capabilities[k])}`} title={`${capabilityLabels[k]} ${capabilities[k]}/10`} />
+      ))}
     </div>
   );
 }
 
 function ModelCard({ model, expanded, onToggle, index }) {
-  const categoryColors = {
-    Frontier: '#6366f1',
-    Balanced: '#3b82f6',
-    Efficient: '#22c55e',
-    Reasoning: '#f59e0b',
-    'Open Source': '#10b981',
-    Specialized: '#8b5cf6',
-  };
-
+  const cat = CATEGORY_COLORS[model.category];
   return (
-    <motion.div
-      className="llm-card"
+    <motion.article
+      id={`lx-${model.id}`}
+      className={`lx-card ${expanded ? 'is-open' : ''}`}
+      style={{ '--rail': model.providerColor }}
       layout
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      transition={{ delay: index * 0.03, duration: 0.3 }}
+      exit={{ opacity: 0 }}
+      transition={{ delay: Math.min(index, 12) * 0.025, duration: 0.3 }}
     >
-      {/* Card Header */}
-      <div className="llm-card-header" onClick={onToggle}>
-        <div className="llm-card-identity">
-          <div className="llm-card-icon" style={{ background: `${model.providerColor}15`, color: model.providerColor }}>
-            {model.icon}
-          </div>
-          <div>
-            <h3 className="llm-card-name">{model.name}</h3>
-            <div className="llm-card-meta">
-              <span className="llm-provider-badge" style={{ color: model.providerColor, borderColor: model.providerColor }}>
-                {model.provider}
-              </span>
-              <span
-                className="llm-category-badge"
-                style={{ color: categoryColors[model.category], borderColor: categoryColors[model.category] }}
-              >
-                {model.category}
-              </span>
-              {model.openSource && <span className="llm-oss-badge">Open Source</span>}
-              {model.multimodal && <span className="llm-multi-badge">Multimodal</span>}
-            </div>
-          </div>
-        </div>
-        <span className="llm-card-chevron">{expanded ? '▲' : '▼'}</span>
-      </div>
-
-      {/* Quick Stats Row */}
-      <div className="llm-quick-stats">
-        <div className="llm-stat">
-          <span className="llm-stat-label">Context</span>
-          <span className="llm-stat-value">{(model.contextWindow / 1000).toFixed(0)}K</span>
-        </div>
-        <div className="llm-stat">
-          <span className="llm-stat-label">Params</span>
-          <span className="llm-stat-value">{model.parameters}</span>
-        </div>
-        <div className="llm-stat">
-          <span className="llm-stat-label">Input</span>
-          <span className="llm-stat-value">
-            {model.inputCost === 0 ? 'Free' : `$${model.inputCost}/M`}
+      <button className="lx-card-head" onClick={onToggle} aria-expanded={expanded}>
+        <span className="lx-card-title">
+          <span className="lx-card-name">{model.name}</span>
+          <span className="lx-card-meta">
+            <span style={{ color: model.providerColor }}>{model.provider}</span>
+            <span style={{ color: cat }}>{model.category}</span>
+            <span>{model.releaseDate}</span>
+            {model.isNew && <span className="lx-tag-new">New</span>}
+            {model.openSource && <span className="lx-tag">Open</span>}
+            {model.multimodal && <span className="lx-tag">Multimodal</span>}
           </span>
-        </div>
-        <div className="llm-stat">
-          <span className="llm-stat-label">Output</span>
-          <span className="llm-stat-value">
-            {model.outputCost === 0 ? 'Free' : `$${model.outputCost}/M`}
-          </span>
-        </div>
-        <div className="llm-stat">
-          <span className="llm-stat-label">Pricing</span>
-          <span className="llm-stat-value">{model.pricingTier}</span>
-        </div>
-      </div>
+        </span>
+        <span className="lx-chev" aria-hidden="true">{expanded ? '−' : '+'}</span>
+      </button>
 
-      {/* Top Capabilities Preview */}
-      <div className="llm-caps-preview">
-        {Object.entries(model.capabilities)
-          .sort(([, a], [, b]) => b - a)
-          .slice(0, 4)
-          .map(([key, val]) => (
-            <span
-              key={key}
-              className="llm-cap-chip"
-              style={{
-                background: val >= 9 ? '#dcfce7' : val >= 7 ? '#dbeafe' : '#fef3c7',
-                color: val >= 9 ? '#166534' : val >= 7 ? '#1e40af' : '#92400e',
-              }}
-            >
-              {capabilityLabels[key]} {val}/10
-            </span>
-          ))}
-      </div>
+      <dl className="lx-facts">
+        <div><dt>Context</dt><dd>{fmtTokens(model.contextWindow)}</dd></div>
+        <div><dt>In / 1M</dt><dd>{fmtPrice(model.inputCost)}</dd></div>
+        <div><dt>Out / 1M</dt><dd>{fmtPrice(model.outputCost)}</dd></div>
+        <div><dt>Params</dt><dd>{model.parameters}</dd></div>
+        <div><dt>Tier</dt><dd>{model.pricingTier}</dd></div>
+      </dl>
+      <Heat capabilities={model.capabilities} />
 
-      {/* Expanded Detail */}
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {expanded && (
           <motion.div
-            className="llm-card-expanded"
+            className="lx-detail"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25 }}
+          >
+            <p className="lx-desc">{model.description}</p>
+            <p className="lx-best"><strong>Best for</strong> {model.bestUseCase}</p>
+            <div className="lx-caps">
+              {Object.entries(model.capabilities).map(([k, v]) => (
+                <CapabilityBar key={k} label={capabilityLabels[k]} value={v} />
+              ))}
+            </div>
+            <div className="lx-pros-cons">
+              <div>
+                <h4>Strengths</h4>
+                <ul className="lx-list pro">{model.strengths.map((s) => <li key={s}>{s}</li>)}</ul>
+              </div>
+              <div>
+                <h4>Limitations</h4>
+                <ul className="lx-list con">{model.limitations.map((l) => <li key={l}>{l}</li>)}</ul>
+              </div>
+            </div>
+            <p className="lx-foot">
+              Max output {model.maxOutput.toLocaleString()} tokens ·{' '}
+              <a href={model.docsUrl} target="_blank" rel="noopener noreferrer">Official docs ↗</a>
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.article>
+  );
+}
+
+function Incident() {
+  const [open, setOpen] = useState(true);
+  return (
+    <section className="lx-incident" aria-labelledby="lx-incident-title">
+      <div className="lx-incident-top">
+        <span className="lx-flag">Incident report</span>
+        <button className="lx-link-btn" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
+          {open ? 'Collapse' : 'Expand'}
+        </button>
+      </div>
+      <h3 id="lx-incident-title">{hfIncident.title}</h3>
+      <p className="lx-incident-summary">{hfIncident.summary}</p>
+      <ul className="lx-incident-stats">
+        {hfIncident.stats.map((s) => (
+          <li key={s.label}><strong>{s.value}</strong><span>{s.label}</span></li>
+        ))}
+      </ul>
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            className="lx-incident-body"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="llm-detail-section">
-              <h4>Description</h4>
-              <p>{model.description}</p>
-            </div>
-
-            <div className="llm-detail-section llm-usecase-box">
-              <h4>Best Use Case</h4>
-              <p>{model.bestUseCase}</p>
-            </div>
-
-            <div className="llm-detail-section">
-              <h4>Capability Scores</h4>
-              <div className="llm-caps-full">
-                {Object.entries(model.capabilities).map(([key, val]) => (
-                  <CapabilityBar key={key} label={capabilityLabels[key]} value={val} />
+            <div className="lx-incident-grid">
+              <ol className="lx-timeline">
+                {hfIncident.timeline.map((t) => (
+                  <li key={t.date}><time>{t.date}</time><p>{t.text}</p></li>
                 ))}
+              </ol>
+              <div>
+                <h4>Impact</h4>
+                <ul className="lx-list con">{hfIncident.impact.map((i) => <li key={i}>{i}</li>)}</ul>
+                <h4>Related: malicious model repo</h4>
+                <p className="lx-related">{hfIncident.related}</p>
               </div>
             </div>
-
-            <div className="llm-detail-columns">
-              <div className="llm-detail-section">
-                <h4>Strengths</h4>
-                <ul className="llm-tag-list green">
-                  {model.strengths.map((s, i) => <li key={i}>{s}</li>)}
-                </ul>
-              </div>
-              <div className="llm-detail-section">
-                <h4>Limitations</h4>
-                <ul className="llm-tag-list red">
-                  {model.limitations.map((l, i) => <li key={i}>{l}</li>)}
-                </ul>
-              </div>
-            </div>
-
-            <div className="llm-detail-footer">
-              <span>Released: {model.releaseDate}</span>
-              <span>Max Output: {(model.maxOutput).toLocaleString()} tokens</span>
-            </div>
+            <p className="lx-sources">
+              Sources:{' '}
+              {hfIncident.sources.map((s, i) => (
+                <span key={s.url}>
+                  <a href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a>
+                  {i < hfIncident.sources.length - 1 ? ' · ' : ''}
+                </span>
+              ))}
+            </p>
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.div>
+    </section>
   );
 }
 
@@ -188,305 +193,228 @@ export default function LlmRubric() {
   const [pricingFilter, setPricingFilter] = useState('All');
   const [openSourceOnly, setOpenSourceOnly] = useState(false);
   const [multimodalOnly, setMultimodalOnly] = useState(false);
-  const [sortBy, setSortBy] = useState('name');
-  const [sortDir, setSortDir] = useState('asc');
+  const [sortBy, setSortBy] = useState('releaseDate');
+  const [sortDir, setSortDir] = useState('desc');
   const [expandedId, setExpandedId] = useState(null);
-  const [viewMode, setViewMode] = useState('cards'); // 'cards' or 'table'
+  const [viewMode, setViewMode] = useState('cards');
+  const catalogRef = useRef(null);
 
   const filtered = useMemo(() => {
     let result = [...llmModels];
-
-    // Search
     if (search) {
       const q = search.toLowerCase();
-      result = result.filter(m =>
+      result = result.filter((m) =>
         m.name.toLowerCase().includes(q) ||
         m.provider.toLowerCase().includes(q) ||
         m.description.toLowerCase().includes(q) ||
         m.bestUseCase.toLowerCase().includes(q) ||
-        m.category.toLowerCase().includes(q)
-      );
+        m.category.toLowerCase().includes(q));
     }
+    if (providerFilter !== 'All') result = result.filter((m) => m.provider === providerFilter);
+    if (categoryFilter !== 'All') result = result.filter((m) => m.category === categoryFilter);
+    if (pricingFilter !== 'All') result = result.filter((m) => m.pricingTier === pricingFilter);
+    if (openSourceOnly) result = result.filter((m) => m.openSource);
+    if (multimodalOnly) result = result.filter((m) => m.multimodal);
 
-    // Filters
-    if (providerFilter !== 'All') result = result.filter(m => m.provider === providerFilter);
-    if (categoryFilter !== 'All') result = result.filter(m => m.category === categoryFilter);
-    if (pricingFilter !== 'All') result = result.filter(m => m.pricingTier === pricingFilter);
-    if (openSourceOnly) result = result.filter(m => m.openSource);
-    if (multimodalOnly) result = result.filter(m => m.multimodal);
-
-    // Sort
+    const value = (m) =>
+      ['reasoning', 'coding', 'math', 'speed'].includes(sortBy) ? m.capabilities[sortBy] : m[sortBy] ?? m.name;
     result.sort((a, b) => {
-      let valA, valB;
-      if (['reasoning', 'coding', 'math', 'speed'].includes(sortBy)) {
-        valA = a.capabilities[sortBy];
-        valB = b.capabilities[sortBy];
-      } else if (sortBy === 'contextWindow' || sortBy === 'inputCost' || sortBy === 'outputCost') {
-        valA = a[sortBy];
-        valB = b[sortBy];
-      } else if (sortBy === 'releaseDate') {
-        valA = a.releaseDate;
-        valB = b.releaseDate;
-      } else if (sortBy === 'provider') {
-        valA = a.provider;
-        valB = b.provider;
-      } else {
-        valA = a.name;
-        valB = b.name;
-      }
-
-      if (typeof valA === 'string') {
-        return sortDir === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
-      }
-      return sortDir === 'asc' ? valA - valB : valB - valA;
+      const A = value(a);
+      const B = value(b);
+      const cmp = typeof A === 'string' ? A.localeCompare(B) : A - B;
+      return sortDir === 'asc' ? cmp : -cmp;
     });
-
     return result;
   }, [search, providerFilter, categoryFilter, pricingFilter, openSourceOnly, multimodalOnly, sortBy, sortDir]);
 
   const toggleSort = (field) => {
-    if (sortBy === field) {
-      setSortDir(d => d === 'asc' ? 'desc' : 'asc');
-    } else {
-      setSortBy(field);
-      setSortDir('desc');
-    }
+    if (sortBy === field) setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
+    else { setSortBy(field); setSortDir('desc'); }
   };
 
   const clearFilters = () => {
-    setSearch('');
-    setProviderFilter('All');
-    setCategoryFilter('All');
-    setPricingFilter('All');
-    setOpenSourceOnly(false);
-    setMultimodalOnly(false);
-    setSortBy('name');
-    setSortDir('asc');
+    setSearch(''); setProviderFilter('All'); setCategoryFilter('All'); setPricingFilter('All');
+    setOpenSourceOnly(false); setMultimodalOnly(false); setSortBy('releaseDate'); setSortDir('desc');
   };
 
   const hasActiveFilters = search || providerFilter !== 'All' || categoryFilter !== 'All' ||
     pricingFilter !== 'All' || openSourceOnly || multimodalOnly;
 
+  const jumpTo = (model) => {
+    clearFilters();
+    setViewMode('cards');
+    setExpandedId(model.id);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      document.getElementById(`lx-${model.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }));
+  };
+
+  const arrow = (id) => (sortBy === id ? (sortDir === 'asc' ? ' ↑' : ' ↓') : '');
+  const sortableHead = (id, label) => (
+    <th aria-sort={sortBy === id ? (sortDir === 'asc' ? 'ascending' : 'descending') : 'none'}>
+      <button className="lx-th-btn" onClick={() => toggleSort(id)}>{label}{arrow(id)}</button>
+    </th>
+  );
+
   return (
-    <section className="section" id="llm-rubric">
-      <motion.div
-        className="section-header"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        <span className="section-badge">Step 2 — Compare Models</span>
-        <h2>LLM Model Rubric</h2>
-        <p>
-          Now that you understand the concepts, compare the actual models. Use the filters and sorting to find the right LLM
-          for your use case — whether you need top reasoning, fast speed, or open-source flexibility. Click any model for full details.
-        </p>
-      </motion.div>
+    <section className="section lx" id="llm-rubric">
+      <header className="lx-masthead">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <span className="lx-eyebrow">Step 2 — Compare Models</span>
+          <h2 className="lx-title">Compare the <em>AI models</em></h2>
+          <p className="lx-lede">
+            Now that you understand the concepts, compare the actual models. Filter and sort to find the right LLM for
+            your use case, whether you need top reasoning, speed, or open-source flexibility. Open any model for full details.
+          </p>
+          <p className="lx-disclaimer">
+            Data pulled <time dateTime={dataAsOf}>{formatAsOf()}</time> · {llmModels.length} models · {PROVIDER_COUNT} providers.
+            Pricing and availability change quickly; verify with each provider.{' '}
+            <button className="lx-link-btn" onClick={downloadMarkdown}>Download all as .md ↓</button>
+          </p>
+        </motion.div>
+      </header>
 
-      {/* Search Bar */}
-      <div className="llm-search-bar">
+      <div className="lx-fresh">
+        <div className="lx-band-head">
+          <h3>New this cycle</h3>
+          <span>Latest releases as of {formatAsOf()}</span>
+        </div>
+        <ul className="lx-fresh-list">
+          {NEW_MODELS.map((m, i) => (
+            <motion.li
+              key={m.id}
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05 }}
+            >
+              <button className="lx-fresh-tile" style={{ '--rail': m.providerColor }} onClick={() => jumpTo(m)}>
+                <span className="lx-fresh-provider">{m.provider} · {m.releaseDate}</span>
+                <span className="lx-fresh-name">{m.name}</span>
+                <span className="lx-fresh-price">
+                  {fmtPrice(m.inputCost)}<small> in</small> / {fmtPrice(m.outputCost)}<small> out</small>
+                </span>
+                <span className="lx-fresh-ctx">{fmtTokens(m.contextWindow)} context</span>
+                {m.id === 'gemini-4-argon' && <span className="lx-fresh-note">Fairwind-only access</span>}
+              </button>
+            </motion.li>
+          ))}
+        </ul>
+      </div>
+
+      <Incident />
+
+      <div className="lx-controls" ref={catalogRef}>
         <input
-          type="text"
-          className="llm-search-input"
-          placeholder="Search models, providers, or capabilities..."
+          type="search"
+          className="lx-search"
+          aria-label="Search models"
+          placeholder="Search models, providers, capabilities…"
           value={search}
-          onChange={e => setSearch(e.target.value)}
+          onChange={(e) => setSearch(e.target.value)}
         />
-        {hasActiveFilters && (
-          <button className="llm-clear-btn" onClick={clearFilters}>
-            Clear All Filters
-          </button>
-        )}
-      </div>
-
-      {/* Filter Controls */}
-      <div className="llm-filters">
-        <div className="llm-filter-group">
-          <label className="llm-filter-label">Provider</label>
-          <div className="llm-filter-chips">
-            {providerOptions.map(p => (
-              <button
-                key={p}
-                className={`llm-filter-chip ${providerFilter === p ? 'active' : ''}`}
-                onClick={() => setProviderFilter(p)}
-              >
-                {p}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="llm-filter-group">
-          <label className="llm-filter-label">Category</label>
-          <div className="llm-filter-chips">
-            {categoryOptions.map(c => (
-              <button
-                key={c}
-                className={`llm-filter-chip ${categoryFilter === c ? 'active' : ''}`}
-                onClick={() => setCategoryFilter(c)}
-              >
-                {c}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="llm-filter-group">
-          <label className="llm-filter-label">Pricing</label>
-          <div className="llm-filter-chips">
-            {pricingOptions.map(p => (
-              <button
-                key={p}
-                className={`llm-filter-chip ${pricingFilter === p ? 'active' : ''}`}
-                onClick={() => setPricingFilter(p)}
-              >
-                {p}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="llm-filter-group">
-          <label className="llm-filter-label">Features</label>
-          <div className="llm-filter-chips">
-            <button
-              className={`llm-filter-chip ${openSourceOnly ? 'active' : ''}`}
-              onClick={() => setOpenSourceOnly(!openSourceOnly)}
-            >
-              Open Source Only
-            </button>
-            <button
-              className={`llm-filter-chip ${multimodalOnly ? 'active' : ''}`}
-              onClick={() => setMultimodalOnly(!multimodalOnly)}
-            >
-              Multimodal Only
-            </button>
-          </div>
-        </div>
-
-        <div className="llm-filter-group">
-          <label className="llm-filter-label">Sort By</label>
-          <div className="llm-filter-chips">
-            {sortOptions.map(s => (
-              <button
-                key={s.id}
-                className={`llm-filter-chip ${sortBy === s.id ? 'active' : ''}`}
-                onClick={() => toggleSort(s.id)}
-              >
-                {s.label} {sortBy === s.id ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* View Toggle & Count */}
-      <div className="llm-toolbar">
-        <p className="filter-count">
-          Showing {filtered.length} of {llmModels.length} models
-        </p>
-        <div className="llm-view-toggle">
-          <button
-            className={`llm-view-btn ${viewMode === 'cards' ? 'active' : ''}`}
-            onClick={() => setViewMode('cards')}
+        <label className="lx-select">
+          <span>Provider</span>
+          <select value={providerFilter} onChange={(e) => setProviderFilter(e.target.value)}>
+            {providerOptions.map((p) => <option key={p}>{p}</option>)}
+          </select>
+        </label>
+        <label className="lx-select">
+          <span>Category</span>
+          <select value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)}>
+            {categoryOptions.map((c) => <option key={c}>{c}</option>)}
+          </select>
+        </label>
+        <label className="lx-select">
+          <span>Pricing</span>
+          <select value={pricingFilter} onChange={(e) => setPricingFilter(e.target.value)}>
+            {pricingOptions.map((p) => <option key={p}>{p}</option>)}
+          </select>
+        </label>
+        <label className="lx-select">
+          <span>Sort</span>
+          <select
+            value={sortBy}
+            onChange={(e) => { setSortBy(e.target.value); setSortDir(e.target.value === 'name' || e.target.value === 'provider' ? 'asc' : 'desc'); }}
           >
-            Cards
-          </button>
-          <button
-            className={`llm-view-btn ${viewMode === 'table' ? 'active' : ''}`}
-            onClick={() => setViewMode('table')}
-          >
-            Table
-          </button>
+            {sortOptions.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
+          </select>
+        </label>
+        <button className="lx-chip" aria-pressed={sortDir === 'asc'} onClick={() => setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'))}>
+          {sortDir === 'asc' ? 'Ascending ↑' : 'Descending ↓'}
+        </button>
+        <button className="lx-chip" aria-pressed={openSourceOnly} onClick={() => setOpenSourceOnly(!openSourceOnly)}>Open source</button>
+        <button className="lx-chip" aria-pressed={multimodalOnly} onClick={() => setMultimodalOnly(!multimodalOnly)}>Multimodal</button>
+        {hasActiveFilters && <button className="lx-link-btn" onClick={clearFilters}>Reset</button>}
+      </div>
+
+      <div className="lx-toolbar">
+        <p>Showing <strong>{filtered.length}</strong> of {llmModels.length} models</p>
+        <div className="lx-seg" role="group" aria-label="View mode">
+          <button aria-pressed={viewMode === 'cards'} onClick={() => setViewMode('cards')}>Cards</button>
+          <button aria-pressed={viewMode === 'table'} onClick={() => setViewMode('table')}>Table</button>
         </div>
       </div>
 
-      {/* Cards View */}
       {viewMode === 'cards' && (
-        <motion.div className="llm-cards-grid" layout>
+        <motion.div className="lx-grid" layout>
           <AnimatePresence>
-            {filtered.map((model, i) => (
+            {filtered.map((m, i) => (
               <ModelCard
-                key={model.id}
-                model={model}
-                expanded={expandedId === model.id}
-                onToggle={() => setExpandedId(expandedId === model.id ? null : model.id)}
+                key={m.id}
+                model={m}
                 index={i}
+                expanded={expandedId === m.id}
+                onToggle={() => setExpandedId(expandedId === m.id ? null : m.id)}
               />
             ))}
           </AnimatePresence>
-          {filtered.length === 0 && (
-            <div className="llm-empty">
-              <p>No models match your filters. Try adjusting your search or clearing filters.</p>
-            </div>
-          )}
         </motion.div>
       )}
 
-      {/* Table View */}
       {viewMode === 'table' && (
-        <div className="llm-table-wrapper">
-          <table className="llm-table">
+        <div className="lx-table-wrap">
+          <table className="lx-table">
             <thead>
               <tr>
-                <th onClick={() => toggleSort('name')} className="sortable">
-                  Model {sortBy === 'name' ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-                </th>
-                <th onClick={() => toggleSort('provider')} className="sortable">
-                  Provider {sortBy === 'provider' ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-                </th>
-                <th onClick={() => toggleSort('contextWindow')} className="sortable">
-                  Context {sortBy === 'contextWindow' ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-                </th>
-                <th onClick={() => toggleSort('inputCost')} className="sortable">
-                  Input $/M {sortBy === 'inputCost' ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-                </th>
-                <th onClick={() => toggleSort('reasoning')} className="sortable">
-                  Reason {sortBy === 'reasoning' ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-                </th>
-                <th onClick={() => toggleSort('coding')} className="sortable">
-                  Code {sortBy === 'coding' ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-                </th>
-                <th onClick={() => toggleSort('math')} className="sortable">
-                  Math {sortBy === 'math' ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-                </th>
-                <th onClick={() => toggleSort('speed')} className="sortable">
-                  Speed {sortBy === 'speed' ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-                </th>
+                {sortableHead('name', 'Model')}
+                {sortableHead('provider', 'Provider')}
+                {sortableHead('contextWindow', 'Context')}
+                {sortableHead('inputCost', 'In $/M')}
+                {sortableHead('outputCost', 'Out $/M')}
+                {sortableHead('reasoning', 'Reason')}
+                {sortableHead('coding', 'Code')}
+                {sortableHead('math', 'Math')}
+                {sortableHead('speed', 'Speed')}
                 <th>Open</th>
                 <th>Multi</th>
               </tr>
             </thead>
             <tbody>
-              {filtered.map(m => (
-                <tr
-                  key={m.id}
-                  className={`llm-table-row ${expandedId === m.id ? 'expanded' : ''}`}
-                  onClick={() => setExpandedId(expandedId === m.id ? null : m.id)}
-                >
-                  <td className="llm-table-name">
-                    <span className="llm-table-icon" style={{ color: m.providerColor }}>{m.icon}</span>
-                    {m.name}
+              {filtered.map((m) => (
+                <tr key={m.id}>
+                  <td className="lx-td-name">
+                    <span className="lx-dot" style={{ background: m.providerColor }} />
+                    {m.name}{m.isNew && <span className="lx-tag-new">New</span>}
                   </td>
-                  <td><span style={{ color: m.providerColor, fontWeight: 600 }}>{m.provider}</span></td>
-                  <td>{(m.contextWindow / 1000).toFixed(0)}K</td>
-                  <td>{m.inputCost === 0 ? 'Free' : `$${m.inputCost}`}</td>
-                  <td><span className={`score-cell score-${m.capabilities.reasoning >= 9 ? 'high' : m.capabilities.reasoning >= 7 ? 'mid' : 'low'}`}>{m.capabilities.reasoning}</span></td>
-                  <td><span className={`score-cell score-${m.capabilities.coding >= 9 ? 'high' : m.capabilities.coding >= 7 ? 'mid' : 'low'}`}>{m.capabilities.coding}</span></td>
-                  <td><span className={`score-cell score-${m.capabilities.math >= 9 ? 'high' : m.capabilities.math >= 7 ? 'mid' : 'low'}`}>{m.capabilities.math}</span></td>
-                  <td><span className={`score-cell score-${m.capabilities.speed >= 9 ? 'high' : m.capabilities.speed >= 7 ? 'mid' : 'low'}`}>{m.capabilities.speed}</span></td>
+                  <td style={{ color: m.providerColor }}>{m.provider}</td>
+                  <td>{fmtTokens(m.contextWindow)}</td>
+                  <td>{fmtPrice(m.inputCost)}</td>
+                  <td>{fmtPrice(m.outputCost)}</td>
+                  {['reasoning', 'coding', 'math', 'speed'].map((k) => (
+                    <td key={k}><span className={`lx-score tone-${scoreTone(m.capabilities[k])}`}>{m.capabilities[k]}</span></td>
+                  ))}
                   <td>{m.openSource ? '✓' : '—'}</td>
                   <td>{m.multimodal ? '✓' : '—'}</td>
                 </tr>
               ))}
             </tbody>
           </table>
-          {filtered.length === 0 && (
-            <div className="llm-empty">
-              <p>No models match your filters.</p>
-            </div>
-          )}
         </div>
+      )}
+
+      {filtered.length === 0 && (
+        <p className="lx-empty">No models match your filters. Try adjusting your search or resetting.</p>
       )}
     </section>
   );

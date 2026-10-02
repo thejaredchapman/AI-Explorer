@@ -12,6 +12,7 @@ export const SECTIONS = [
   { id: 'code-assistants', label: 'Code Editors', blurb: 'AI in your IDE' },
   { id: 'skills', label: 'Skills', blurb: 'Reusable know-how' },
   { id: 'learning-games', label: 'Games', blurb: 'Learn by playing' },
+  { id: 'free-learning', label: 'Free Learning', blurb: 'Courses that cost nothing' },
   { id: 'resources', label: 'Resources', blurb: 'Courses and communities' },
   { id: 'guides', label: 'Guides', blurb: 'Build something' },
 ];

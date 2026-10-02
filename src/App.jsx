@@ -11,6 +11,7 @@ import PromptEngineering from './components/PromptEngineering';
 import ProductsExplorer from './components/ProductsExplorer';
 import CodeAssistants from './components/CodeAssistants';
 import AiToolsSection from './components/AiToolsSection';
+import FreeLearningSection from './components/FreeLearningSection';
 import ResourcesSection from './components/ResourcesSection';
 import GuidesSection from "./components/GuidesSection";
 import SkillsSection from "./components/SkillsSection";
@@ -115,6 +116,7 @@ function App() {
             <CodeAssistants />
             <SkillsSection />
             <LearningGames />
+            <FreeLearningSection />
             <ResourcesSection />
             <GuidesSection />
           </main>

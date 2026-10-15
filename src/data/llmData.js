@@ -4,22 +4,22 @@ export const llmModels = [
   // ── OpenAI ──
   {
     id: 'gpt-5-4',
-    name: 'GPT-5.6',
+    name: 'GPT-5.6 Sol',
     provider: 'OpenAI',
     providerColor: '#10a37f',
     icon: '🟢',
     releaseDate: '2026-03',
-    description: 'Previous OpenAI flagship, succeeded by the GPT-6 family. A reasoning model with extended thinking, massive 1.1M token context window, and top-ranked intelligence scores. Builds on the GPT-5 lineage with state-of-the-art performance across all benchmarks.',
+    description: 'GPT-5.6 flagship for complex professional work, succeeded by the GPT-6 family. A reasoning model with extended thinking, a 1.05M token context window, and top-ranked intelligence scores. Builds on the GPT-5 lineage with state-of-the-art performance across all benchmarks.',
     bestUseCase: 'The most demanding reasoning tasks, complex multi-step analysis, advanced research synthesis, and production applications requiring the absolute best intelligence.',
     docsUrl: 'https://platform.openai.com/docs/models',
-    contextWindow: 1100000,
-    maxOutput: 32768,
+    contextWindow: 1050000,
+    maxOutput: 128000,
     parameters: 'Undisclosed',
     openSource: false,
     multimodal: true,
     pricingTier: 'Premium',
-    inputCost: 2.50,
-    outputCost: 15.00,
+    inputCost: 4.00,
+    outputCost: 20.00,
     capabilities: {
       reasoning: 10,
       coding: 10,
@@ -30,7 +30,7 @@ export const llmModels = [
       speed: 6,
       instruction: 10,
     },
-    strengths: ['Top-ranked intelligence', '1.1M token context', 'Extended thinking', 'Multimodal', 'State-of-the-art reasoning'],
+    strengths: ['Top-ranked intelligence', '1.05M token context', 'Extended thinking', 'Multimodal', 'State-of-the-art reasoning'],
     limitations: ['Premium pricing', 'High latency with thinking', 'Verbose outputs', 'Closed source'],
     category: 'Frontier',
   },
@@ -802,6 +802,32 @@ export const llmModels = [
     category: 'Balanced',
   },
   {
+    id: 'claude-haiku-5-5',
+    name: 'Claude Haiku 5.5',
+    provider: 'Anthropic',
+    providerColor: '#d4a27f',
+    icon: '🟤',
+    releaseDate: '2026-10',
+    isNew: true,
+    description: 'Fastest Claude 5.5 model: built for high-volume, latency-sensitive work such as classification, extraction and routing, with the same 1M context and 128K output as the 5.5 line.',
+    bestUseCase: 'High-volume pipelines, classification, extraction, routing and sub-agent work where speed and cost matter more than peak reasoning.',
+    docsUrl: 'https://platform.claude.com/docs/en/about-claude/models/overview',
+    contextWindow: 1000000,
+    maxOutput: 128000,
+    parameters: 'Undisclosed',
+    openSource: false,
+    multimodal: true,
+    pricingTier: 'Budget',
+    inputCost: 0.10,
+    outputCost: 0.50,
+    capabilities: {
+      reasoning: 7, coding: 8, creativeWriting: 7, math: 7, multilingual: 8, vision: 8, speed: 10, instruction: 9,
+    },
+    strengths: ['Fastest Claude 5.5 model', 'Very low cost', '1M context', '128K max output', 'Batch API at half price'],
+    limitations: ['Below Sonnet 5.5 and Opus 5.5 on hard reasoning', 'Text and image input only'],
+    category: 'Efficient',
+  },
+  {
     id: 'claude-fable-5-1',
     name: 'Claude Fable 5.1',
     provider: 'Anthropic',
@@ -1271,6 +1297,32 @@ export const llmModels = [
     strengths: ['Frontier intelligence', '1M token context', 'Agentic capabilities', 'Multimodal native', 'Strong coding'],
     limitations: ['Closed source', 'Premium pricing', 'Preview availability', 'Higher latency than Flash'],
     category: 'Frontier',
+  },
+  {
+    id: 'gemini-3-8-flash',
+    name: 'Gemini 3.8 Flash',
+    provider: 'Google',
+    providerColor: '#4285f4',
+    icon: '🔵',
+    releaseDate: '2026-09',
+    isNew: true,
+    description: 'Google\'s most capable Flash-tier model, built for long-running software engineering, autonomous agents and enterprise workflows while keeping Flash speed and cost. Accepts text, image, video, audio and PDF input. Introductory price shown; from January 1, 2027 list price is $1.50 / $7.50 per 1M tokens.',
+    bestUseCase: 'Agentic coding, multimodal production pipelines and high-volume workloads that need near-frontier quality at Flash cost.',
+    docsUrl: 'https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash',
+    contextWindow: 1048576,
+    maxOutput: 65536,
+    parameters: 'Undisclosed',
+    openSource: false,
+    multimodal: true,
+    pricingTier: 'Budget',
+    inputCost: 0.75,
+    outputCost: 3.75,
+    capabilities: {
+      reasoning: 9, coding: 9, creativeWriting: 8, math: 9, multilingual: 9, vision: 9, speed: 9, instruction: 9,
+    },
+    strengths: ['Frontier-class Flash model', 'Multimodal input incl. audio and video', '1M context', 'Function calling and structured output', 'Batch and caching'],
+    limitations: ['Price rises January 2027', 'Closed source'],
+    category: 'Efficient',
   },
   {
     id: 'gemini-3-flash',
@@ -2419,7 +2471,7 @@ export const llmModels = [
 ];
 
 // ── Data freshness ──
-export const dataAsOf = '2026-10-02';
+export const dataAsOf = '2026-10-14';
 
 // ── Incident: AI agents breach Hugging Face ──
 export const hfIncident = {

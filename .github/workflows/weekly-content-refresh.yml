@@ -20,12 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: main
           fetch-depth: 0
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
@@ -43,6 +43,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Use the workflow token instead of the Claude GitHub App OIDC exchange.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           prompt: |
             Run the weekly content refresh by following the `refresh-content` skill in
             .claude/skills/refresh-content/SKILL.md exactly. You are running unattended in

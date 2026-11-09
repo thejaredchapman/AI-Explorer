@@ -16,6 +16,8 @@ import ResourcesSection from './components/ResourcesSection';
 import GuidesSection from "./components/GuidesSection";
 import SkillsSection from "./components/SkillsSection";
 import LearningGames from "./components/LearningGames";
+import UseCaseAtlas from './components/UseCaseAtlas';
+import ModelLab from './components/ModelLab';
 import Compass from './components/Compass';
 import { SECTIONS } from './data/sections';
 import './App.css';
@@ -107,8 +109,10 @@ function App() {
           <main className="main-content" key="overview">
             <Hero onNavigate={navigateTo} />
             <AiExamples />
+            <UseCaseAtlas />
             <AiConcepts onOpenDetail={openConceptDetail} />
             <LlmRubric />
+            <ModelLab />
             <ModelTraining />
             <PromptEngineering />
             <ProductsExplorer />

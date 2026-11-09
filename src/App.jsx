@@ -19,6 +19,7 @@ import LearningGames from "./components/LearningGames";
 import UseCaseAtlas from './components/UseCaseAtlas';
 import ModelLab from './components/ModelLab';
 import Compass from './components/Compass';
+import DemoTour from './components/DemoTour';
 import { SECTIONS } from './data/sections';
 import './App.css';
 import './theme.css';
@@ -29,6 +30,12 @@ function App() {
   const [activeConceptId, setActiveConceptId] = useState(null);
   const [currentSection, setCurrentSection] = useState('hero');
   const isScrollingTo = useRef(false);
+  const [demoActive, setDemoActive] = useState(() => {
+    try { return new URLSearchParams(window.location.search).get('demo') === '1'; }
+    catch { return false; }
+  });
+  const startDemo = useCallback(() => setDemoActive(true), []);
+  const exitDemo = useCallback(() => setDemoActive(false), []);
 
   // Theme state — defaults to dark, persists in localStorage
   const [theme, setTheme] = useState(() => {
@@ -107,7 +114,7 @@ function App() {
           </main>
         ) : (
           <main className="main-content" key="overview">
-            <Hero onNavigate={navigateTo} />
+            <Hero onNavigate={navigateTo} onStartDemo={startDemo} />
             <AiExamples />
             <UseCaseAtlas />
             <AiConcepts onOpenDetail={openConceptDetail} />
@@ -126,6 +133,7 @@ function App() {
           </main>
         )}
       </AnimatePresence>
+      <DemoTour active={demoActive && !activeConceptId} onExit={exitDemo} onNavigate={navigateTo} />
       <Compass currentSection={currentSection} onNavigate={navigateTo} />
       <footer className="site-footer">
         <div className="footer-content">

@@ -10,7 +10,7 @@ import { SECTIONS, formatBearing } from '../data/sections';
 import { dataAsOf } from '../data/llmData';
 import { formatAsOf } from '../utils/llmMarkdown';
 
-export default function Hero({ onNavigate }) {
+export default function Hero({ onNavigate, onStartDemo }) {
   const stats = [
     [aiConcepts.length, 'AI concepts'],
     [llmModels.length, 'LLM models'],
@@ -42,7 +42,8 @@ export default function Hero({ onNavigate }) {
             community resources and hands-on build guides. Learn it, evaluate it, then start building.
           </p>
           <div className="ex-actions">
-            <button className="btn btn-dark btn-lg" onClick={() => onNavigate('concepts')}>Begin with concepts</button>
+            <button className="btn btn-dark btn-lg" onClick={onStartDemo}>Take the guided tour</button>
+            <button className="btn btn-ghost btn-lg" onClick={() => onNavigate('concepts')}>Begin with concepts</button>
             <button className="btn btn-ghost btn-lg" onClick={() => onNavigate('llm-rubric')}>Compare models</button>
             <button className="btn btn-ghost btn-lg" onClick={() => onNavigate('guides')}>Start building &rarr;</button>
           </div>

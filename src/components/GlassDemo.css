@@ -1,0 +1,193 @@
+/* Glass Demo: frosted panels over a layered gradient stage.
+   Panels carry a dark (or light) tint under the blur so text contrast holds even without backdrop-filter. */
+.gd-stage {
+  --gd-text: #f6f2e8;
+  --gd-muted: #d6d0c0;
+  --gd-panel: rgba(14, 22, 19, 0.52);
+  --gd-panel-sub: rgba(14, 22, 19, 0.38);
+  --gd-panel-solid: rgba(20, 30, 26, 0.94);
+  --gd-edge: rgba(255, 255, 255, 0.2);
+  --gd-hi: rgba(255, 255, 255, 0.32);
+  --gd-a: #f0c46e;
+  --gd-b: #7fd3ca;
+  --gd-track: rgba(255, 255, 255, 0.14);
+  --gd-focus: #ffd98a;
+  position: relative; isolation: isolate; overflow: hidden;
+  display: flex; flex-direction: column; gap: 16px;
+  padding: clamp(12px, 3vw, 30px); border-radius: 22px; color: var(--gd-text);
+  border: 1px solid var(--gd-edge);
+  background:
+    radial-gradient(60% 50% at 12% 10%, color-mix(in srgb, var(--accent) 55%, transparent), transparent 70%),
+    radial-gradient(50% 45% at 90% 18%, color-mix(in srgb, var(--accent-3) 55%, transparent), transparent 70%),
+    radial-gradient(55% 50% at 70% 95%, color-mix(in srgb, var(--accent-2) 45%, transparent), transparent 70%),
+    linear-gradient(140deg, #0f1a17 0%, #18202c 55%, #1d1520 100%);
+}
+:root[data-theme="light"] .gd-stage {
+  --gd-text: #17221c;
+  --gd-muted: #3b4840;
+  --gd-panel: rgba(255, 252, 244, 0.55);
+  --gd-panel-sub: rgba(255, 252, 244, 0.42);
+  --gd-panel-solid: rgba(250, 245, 233, 0.96);
+  --gd-edge: rgba(255, 255, 255, 0.7);
+  --gd-hi: rgba(255, 255, 255, 0.9);
+  --gd-a: #8a5a0c;
+  --gd-b: #19625f;
+  --gd-track: rgba(23, 34, 28, 0.12);
+  --gd-focus: #8a2f18;
+  background:
+    radial-gradient(60% 50% at 12% 10%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 70%),
+    radial-gradient(50% 45% at 90% 18%, color-mix(in srgb, var(--accent-3) 35%, transparent), transparent 70%),
+    radial-gradient(55% 50% at 70% 95%, color-mix(in srgb, var(--accent-2) 28%, transparent), transparent 70%),
+    linear-gradient(140deg, #f4ead3 0%, #e7eee8 55%, #f1e3dc 100%);
+}
+
+/* Drifting color orbs give the blur something to refract. */
+.gd-orb { position: absolute; z-index: -1; border-radius: 50%; filter: blur(30px); opacity: .55; pointer-events: none; animation: gd-drift 22s ease-in-out infinite alternate; }
+.gd-orb-1 { width: 260px; height: 260px; left: -40px; top: 30%; background: var(--accent); }
+.gd-orb-2 { width: 200px; height: 200px; right: 8%; top: -40px; background: var(--accent-3); animation-duration: 28s; }
+.gd-orb-3 { width: 240px; height: 240px; right: 25%; bottom: -80px; background: var(--accent-2); animation-duration: 32s; }
+:root[data-theme="light"] .gd-orb { opacity: .35; }
+@keyframes gd-drift { from { transform: translate(0, 0) scale(1); } to { transform: translate(60px, -40px) scale(1.15); } }
+
+/* The glass itself */
+.gd-glass {
+  background: var(--gd-panel);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid var(--gd-edge);
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 var(--gd-hi), inset 0 0 0 1px rgba(255, 255, 255, 0.04), 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+.gd-glass-sub { background: var(--gd-panel-sub); border-radius: 12px; box-shadow: inset 0 1px 0 var(--gd-hi); }
+/* Fallback: no backdrop-filter, or the user asked for less transparency */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .gd-glass, .gd-glass-sub { background: var(--gd-panel-solid); }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .gd-glass, .gd-glass-sub { background: var(--gd-panel-solid); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .gd-orb { display: none; }
+}
+@media (forced-colors: active) {
+  .gd-glass, .gd-glass-sub { border: 1px solid CanvasText; }
+  .gd-meter i { background: Highlight; }
+}
+
+.gd-pad { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.gd-stage h3 { margin: 0; font: 700 22px/1.15 var(--font-display); color: var(--gd-text); }
+.gd-stage h4 { margin: 0; font: 600 17px var(--font-display); color: var(--gd-text); }
+.gd-stage p { margin: 0; }
+.gd-muted { color: var(--gd-muted); font-size: 13.5px; line-height: 1.5; }
+.gd-mono { font: 500 12.5px var(--font-mono); color: var(--gd-muted); }
+.gd-eyebrow { display: block; font: 500 11px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--gd-muted); }
+.gd-between { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.gd-grow { flex: 1; min-width: 0; }
+.gd-num { font: 600 13px var(--font-mono); min-width: 2ch; text-align: center; }
+
+/* Toolbar: tabs + demo player */
+.gd-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; padding: 6px; border-radius: 999px; }
+.gd-tabs { display: flex; gap: 4px; overflow-x: auto; }
+.gd-tabs button {
+  border: 1px solid transparent; background: transparent; color: var(--gd-muted); border-radius: 999px;
+  padding: 8px 16px; white-space: nowrap; font: 500 12px var(--font-mono); letter-spacing: .05em; text-transform: uppercase; cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.gd-tabs button:hover { color: var(--gd-text); }
+.gd-tabs button[aria-selected="true"] { color: var(--gd-text); background: rgba(255, 255, 255, 0.16); border-color: var(--gd-edge); box-shadow: inset 0 1px 0 var(--gd-hi); }
+:root[data-theme="light"] .gd-tabs button[aria-selected="true"] { background: rgba(255, 255, 255, 0.75); }
+.gd-player { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+
+.gd-btn {
+  border: 1px solid var(--gd-edge); background: rgba(255, 255, 255, 0.08); color: var(--gd-text); border-radius: 999px;
+  padding: 7px 14px; font: 600 12.5px var(--font-mono); cursor: pointer; transition: background .2s, transform .2s;
+  box-shadow: inset 0 1px 0 var(--gd-hi);
+}
+.gd-btn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.18); }
+.gd-btn:disabled { opacity: .45; cursor: default; }
+.gd-btn-pri { background: var(--accent); color: var(--on-accent); border-color: transparent; }
+.gd-btn-pri:hover:not(:disabled) { background: var(--accent); filter: brightness(1.08); }
+.gd-stage :is(button, select, input, a):focus-visible { outline: 2px solid var(--gd-focus); outline-offset: 2px; }
+
+/* Scene caption */
+.gd-caption { position: relative; overflow: hidden; display: grid; gap: 3px; padding: 12px 18px 14px; }
+.gd-caption strong { font: 700 18px var(--font-display); }
+.gd-caption span:last-of-type { color: var(--gd-muted); font-size: 14px; line-height: 1.45; }
+.gd-timer { position: absolute; left: 0; bottom: 0; height: 3px; width: 100%; background: var(--gd-a); transform-origin: left; animation: gd-timer linear forwards; }
+@keyframes gd-timer { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* Layout */
+.gd-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); align-items: start; }
+.gd-grid > * { min-width: 0; }
+.gd-wide { grid-column: 1 / -1; }
+.gd-row2 { flex-direction: row; flex-wrap: wrap; align-items: flex-end; grid-column: 1 / -1; }
+.gd-row2 .gd-field { flex: 1 1 220px; }
+
+.gd-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.gd-input {
+  font: 500 14px var(--font-mono); color: var(--gd-text); background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--gd-edge); border-radius: 10px; padding: 9px 12px; min-width: 0; width: 100%;
+}
+:root[data-theme="light"] .gd-input { background: rgba(255, 255, 255, 0.6); }
+.gd-input option, .gd-input optgroup { background: var(--bg-card-solid); color: var(--text); }
+.gd-range { width: 100%; accent-color: var(--gd-a); }
+.gd-swap { align-self: flex-end; }
+
+/* Model cards */
+.gd-card { border-top: 3px solid var(--gd-a); }
+.gd-edge-b { border-top-color: var(--gd-b); }
+.gd-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; margin: 0; }
+.gd-facts dt { font: 500 10.5px var(--font-mono); letter-spacing: .07em; text-transform: uppercase; color: var(--gd-muted); }
+.gd-facts dd { margin: 2px 0 0; font: 600 14px var(--font-mono); }
+
+/* Meters */
+.gd-meter { display: block; height: 8px; border-radius: 999px; background: var(--gd-track); overflow: hidden; }
+.gd-meter i { display: block; height: 100%; border-radius: inherit; background: var(--gd-a); transition: width .5s cubic-bezier(.2, .7, .2, 1); }
+.gd-tone-b i { background: var(--gd-b); }
+
+/* Duel rows: A meter grows right-to-left so the two bars meet at the label */
+.gd-duel { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+.gd-duel li { display: grid; grid-template-columns: 2.5ch 1fr minmax(120px, 170px) 1fr 2.5ch; align-items: center; gap: 10px; }
+.gd-duel li > .gd-meter:nth-of-type(1) i { margin-left: auto; }
+.gd-cap { display: flex; flex-direction: column; align-items: center; text-align: center; font-size: 13.5px; }
+.gd-lead { font: 500 10.5px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--gd-muted); }
+.gd-lead-A { color: var(--gd-a); } .gd-lead-B { color: var(--gd-b); }
+.gd-costs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 10px; }
+.gd-costs strong { font: 700 20px var(--font-display); }
+
+/* Fit */
+.gd-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.gd-chip { border: 1px solid var(--gd-edge); background: transparent; color: var(--gd-text); border-radius: 999px; padding: 6px 12px; font: 500 12.5px var(--font-mono); cursor: pointer; }
+.gd-chip[aria-pressed="true"] { background: var(--gd-text); color: var(--bg); border-color: var(--gd-text); }
+:root[data-theme="light"] .gd-chip[aria-pressed="true"] { color: #fffaf0; }
+.gd-sliders { display: flex; flex-direction: column; gap: 6px; }
+.gd-slider { display: grid; grid-template-columns: minmax(110px, 150px) 1fr 2ch; align-items: center; gap: 10px; font-size: 13.5px; }
+.gd-check { display: flex; gap: 8px; align-items: center; font-size: 14px; cursor: pointer; }
+.gd-check input { accent-color: var(--gd-a); width: 16px; height: 16px; }
+.gd-callout { display: grid; gap: 2px; padding: 12px 14px; border-radius: 12px; border: 1px dashed var(--gd-edge); }
+.gd-callout strong { font: 700 20px var(--font-display); }
+.gd-rank { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.gd-rank li { display: flex; align-items: center; gap: 12px; padding: 10px 14px; }
+.gd-rank .gd-meter { margin-top: 6px; }
+.gd-pos { font: 700 20px var(--font-display); width: 1.6ch; text-align: center; color: var(--gd-muted); }
+.gd-score { font: 700 22px var(--font-display); white-space: nowrap; }
+.gd-score small { font: 500 11px var(--font-mono); color: var(--gd-muted); }
+
+/* Use case fit */
+.gd-headline { display: flex; gap: 12px; align-items: flex-start; }
+.gd-grade { display: inline-grid; place-items: center; flex: none; width: 52px; height: 52px; border-radius: 12px; font: 700 28px var(--font-display); color: #fff; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35); }
+.gd-grade-A { background: #1f7a52; } .gd-grade-B { background: #2b6f9e; } .gd-grade-C { background: #a35f00; } .gd-grade-D { background: #b0302c; }
+.gd-list { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; line-height: 1.45; }
+.gd-bars { display: flex; flex-direction: column; gap: 6px; }
+.gd-bar { display: grid; grid-template-columns: minmax(110px, 150px) 1fr 2ch; align-items: center; gap: 10px; font-size: 13px; }
+
+@media (max-width: 600px) {
+  .gd-toolbar { border-radius: 16px; }
+  .gd-duel li { grid-template-columns: 2.5ch 1fr minmax(84px, 110px) 1fr 2.5ch; gap: 6px; }
+  .gd-cap { font-size: 12px; }
+  .gd-slider, .gd-bar { grid-template-columns: 96px 1fr 2ch; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gd-orb { animation: none; }
+  .gd-timer { display: none; }
+  .gd-meter i, .gd-tabs button, .gd-btn { transition: none; }
+}

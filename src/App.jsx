@@ -18,6 +18,7 @@ import SkillsSection from "./components/SkillsSection";
 import LearningGames from "./components/LearningGames";
 import UseCaseAtlas from './components/UseCaseAtlas';
 import ModelLab from './components/ModelLab';
+import GlassDemo from './components/GlassDemo';
 import Compass from './components/Compass';
 import DemoTour from './components/DemoTour';
 import { SECTIONS } from './data/sections';
@@ -45,7 +46,7 @@ function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    try { localStorage.setItem('ai-explorer-theme', theme); } catch {}
+    try { localStorage.setItem('ai-explorer-theme', theme); } catch { /* storage unavailable */ }
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
@@ -120,6 +121,7 @@ function App() {
             <AiConcepts onOpenDetail={openConceptDetail} />
             <LlmRubric />
             <ModelLab />
+            <GlassDemo />
             <ModelTraining />
             <PromptEngineering />
             <ProductsExplorer />

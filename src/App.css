@@ -1254,7 +1254,7 @@ body {
 .footer-links a:hover { color: var(--accent-3); }
 .footer-divider { color: var(--text-muted); font-size: 12px; }
 .footer-disclaimer { font-size: 11px; color: var(--text-muted); }
-.footer-credit { font-size: 13px; color: var(--text-secondary); margin: -6px 0 14px; }
+.footer-credit { font-size: 13px; color: var(--text-secondary); margin: 0; }
 .footer-credit a { color: var(--accent); font-weight: 700; text-decoration: none; }
 .footer-credit a:hover { text-decoration: underline; text-underline-offset: 3px; }
 

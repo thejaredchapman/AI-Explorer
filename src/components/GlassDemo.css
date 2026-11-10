@@ -114,6 +114,12 @@
 .gd-timer { position: absolute; left: 0; bottom: 0; height: 3px; width: 100%; background: var(--gd-a); transform-origin: left; animation: gd-timer linear forwards; }
 @keyframes gd-timer { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 
+.gd-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 20px; }
+.gd-cta div { display: grid; gap: 3px; }
+.gd-cta strong { font: 700 18px var(--font-display); }
+.gd-cta span { color: var(--gd-muted); font-size: 14px; }
+.gd-play-big { font-size: 16px; padding: 12px 26px; }
+
 /* Layout */
 .gd-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); align-items: start; }
 .gd-grid > * { min-width: 0; }

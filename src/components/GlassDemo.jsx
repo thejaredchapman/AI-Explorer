@@ -377,12 +377,24 @@ export default function GlassDemo() {
           <div className="gd-player" role="group" aria-label="Demo mode">
             <button type="button" className="gd-btn" onClick={() => step(-1)} disabled={scene <= 0} aria-label="Previous scene">←</button>
             <button type="button" className="gd-btn gd-btn-pri" onClick={() => (playing ? setPlaying(false) : start())} aria-pressed={playing}>
-              {playing ? 'Pause demo' : scene >= 0 ? 'Resume demo' : 'Play demo'}
+              {playing ? '❚❚ Pause demo' : scene >= SCENES.length - 1 ? '↻ Replay demo' : scene >= 0 ? '▶ Resume demo' : '▶ Play demo'}
             </button>
             <button type="button" className="gd-btn" onClick={() => step(1)} disabled={scene >= SCENES.length - 1} aria-label="Next scene">→</button>
             {scene >= 0 && <button type="button" className="gd-btn" onClick={exitDemo}>Free play</button>}
           </div>
         </div>
+
+        {!current && (
+          <div className="gd-glass gd-cta">
+            <div>
+              <strong>Watch the guided demo</strong>
+              <span>Six short scenes show every view. Pause or take over any time.</span>
+            </div>
+            <button type="button" className="gd-btn gd-btn-pri gd-play-big" onClick={start}>
+              <span aria-hidden="true">▶</span> Play demo
+            </button>
+          </div>
+        )}
 
         {current && (
           <div className="gd-glass gd-caption" aria-live="polite">

@@ -16,10 +16,18 @@ const OUTLETS = [
   { domain: 'gizmodo.com', name: 'Gizmodo' },
 ];
 
-const QUERY = '"artificial intelligence" OR AI OR OpenAI OR Anthropic OR ChatGPT OR Gemini OR Claude OR chatbot OR "large language model"';
-// NewsAPI can match on article text it doesn't return, so keep only stories whose
-// headline or summary actually mentions AI.
-const RELEVANT = /\b(AI|A\.I\.|artificial intelligence|OpenAI|Anthropic|ChatGPT|Gemini|Claude|Copilot|chatbots?|LLMs?|large language models?|machine learning|deepfakes?|generative)\b|AI-/i;
+const QUERY = 'AI OR "artificial intelligence" OR OpenAI OR ChatGPT OR Anthropic OR Claude OR Gemini OR Copilot OR chatbot OR chatbots OR deepfake OR DeepSeek OR Grok OR xAI OR "Sam Altman" OR "Character.ai" OR Suno OR agentic OR "machine learning" OR "language model"';
+// Strict AI-only filter. A story is kept only if its HEADLINE is about AI;
+// a passing mention in the summary or body is not enough.
+// Case-sensitive acronyms, so "Ai Weiwei" or "agi" in other words don't match.
+const AI_ACRONYM = /\b(AI|A\.I\.|AGI|LLMs?|xAI|GPT-?\d[\w.]*)\b/;
+// Unambiguous AI terms, companies, products and people, any case.
+const AI_TERMS = /\b(artificial intelligence|machine learning|deep learning|neural networks?|large language models?|language models?|superintelligence|agentic|chatbots?|deepfakes?|OpenAI|ChatGPT|Anthropic|DeepSeek|Midjourney|Hugging Face|Perplexity AI|Mistral AI|Character\.ai|Suno|Grok|Sora|Sam Altman|Dario Amodei|Demis Hassabis)\b/i;
+// Names that are ambiguous on their own (zodiac Gemini, car copilots, people named Claude)
+// only count with a clear AI or company signal in the same headline.
+const AI_QUALIFIED = /\b(Google'?s? Gemini|Gemini (AI|chatbot|app|model|for|in|Live|Pro|Flash|Ultra)|(Microsoft|GitHub)'?s? Copilot|Claude (AI|chatbot|model|Code|Opus|Sonnet|Haiku)|Anthropic'?s? Claude)\b/i;
+const isAiHeadline = (title) => AI_ACRONYM.test(title) || AI_TERMS.test(title) || AI_QUALIFIED.test(title);
+
 const DAYS = 30;
 const PER_OUTLET = 100; // NewsAPI's maximum pageSize; 6 requests per run
 const OUT_FILE = new URL('../src/data/aiNews.json', import.meta.url);
@@ -42,7 +50,7 @@ const isHttps = (u) => {
 async function fetchOutlet({ domain, name }) {
   const params = new URLSearchParams({
     q: QUERY,
-    searchIn: 'title,description',
+    searchIn: 'title', // fill the 100 slots with headline matches only
     domains: domain,
     from,
     to,
@@ -59,7 +67,7 @@ async function fetchOutlet({ domain, name }) {
   }
   return body.articles
     .filter((a) => a.title && a.title !== '[Removed]' && isHttps(a.url))
-    .filter((a) => RELEVANT.test(`${a.title} ${a.description || ''}`))
+    .filter((a) => isAiHeadline(a.title))
     .map((a) => ({
       title: clean(a.title),
       description: clean(a.description).slice(0, 300),

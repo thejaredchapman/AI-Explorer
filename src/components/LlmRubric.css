@@ -70,6 +70,31 @@
 .lx-list li::before { content: ''; position: absolute; left: 0; top: .6em; width: 7px; height: 2px; background: var(--lx-high); }
 .lx-list.con li::before { background: var(--lx-weak); }
 
+/* ── Model lifecycle (legacy / deprecated / retired) ── */
+.lx-life { margin-left: 8px; }
+.lx-life.is-legacy { color: var(--text-secondary); border-style: dashed; }
+.lx-life.is-deprecated { color: var(--lx-low); border-color: currentColor; }
+.lx-life.is-retired { color: var(--lx-alert); border-color: currentColor; }
+.lx-life-note {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;
+  margin: 0 16px 12px; padding: 6px 10px; border-left: 2px solid var(--lx-rule);
+  font: 400 12px var(--lx-mono); color: var(--text-secondary);
+}
+.lx-life-note.is-deprecated { border-left-color: var(--lx-low); }
+.lx-life-note.is-retired { border-left-color: var(--lx-alert); }
+.lx-life-note a { color: var(--text-muted); font-size: 11px; }
+.lx-card.is-retired .lx-facts, .lx-card.is-retired .lx-heat { opacity: .55; }
+.lx-td-next { margin-left: 8px; font-size: 11px; }
+
+.lx-retiring { margin-bottom: 40px; }
+.lx-retiring-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.lx-retiring-list li {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px;
+  padding: 10px 14px; border: 1px solid var(--lx-rule); border-left: 3px solid var(--rail);
+}
+.lx-retiring-name { font: 700 15px var(--lx-serif); color: var(--text); text-decoration: none; }
+.lx-retiring-date { font: 400 12px var(--lx-mono); color: var(--lx-low); }
+
 /* ── New this cycle ── */
 .lx-fresh { margin-bottom: 40px; }
 .lx-fresh-list {

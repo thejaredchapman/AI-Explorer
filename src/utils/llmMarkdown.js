@@ -1,4 +1,5 @@
 import { llmModels, capabilityLabels, dataAsOf, hfIncident } from '../data/llmData';
+import { lifecycleSummary, replacementFor } from './modelLifecycle';
 
 const money = (n) => (n === 0 ? 'Free' : `$${n < 1 ? n.toFixed(2) : n}`);
 const tokens = (n) => (n >= 1000000 ? `${+(n / 1000000).toFixed(2)}M` : `${Math.round(n / 1000)}K`);
@@ -14,10 +15,13 @@ function modelSection(m) {
   const caps = Object.entries(m.capabilities)
     .map(([k, v]) => `${capabilityLabels[k]} ${v}/10`)
     .join(' · ');
+  const status = lifecycleSummary(m);
+  const next = replacementFor(m);
+  const lifecycle = status ? `\n> **${status}**${next ? `. Recommended replacement: ${next.name}` : ''}\n` : '';
   return `### ${m.name}
 
 **${m.provider}** · ${m.category} · Released ${m.releaseDate}${m.isNew ? ' · NEW' : ''}
-
+${lifecycle}
 ${m.description}
 
 - **Best for:** ${m.bestUseCase}

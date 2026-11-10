@@ -11,6 +11,14 @@ import {
   hfIncident,
 } from '../data/llmData';
 import { downloadMarkdown, formatAsOf } from '../utils/llmMarkdown';
+import {
+  LIFECYCLE_LABELS,
+  isRetired,
+  replacementFor,
+  fmtDate,
+  lifecycleSummary,
+  upcomingRetirements,
+} from '../utils/modelLifecycle';
 import './LlmRubric.css';
 
 const CATEGORY_COLORS = {
@@ -29,6 +37,33 @@ const NEW_MODELS = llmModels
   .filter((m) => m.isNew)
   .sort((a, b) => b.releaseDate.localeCompare(a.releaseDate) || b.inputCost - a.inputCost);
 const PROVIDER_COUNT = new Set(llmModels.map((m) => m.provider)).size;
+const RETIRED_COUNT = llmModels.filter(isRetired).length;
+const RETIRING_SOON = upcomingRetirements();
+
+function LifecycleBadge({ model }) {
+  const status = model.lifecycle?.status;
+  if (!LIFECYCLE_LABELS[status]) return null;
+  return <span className={`lx-tag lx-life is-${status}`}>{LIFECYCLE_LABELS[status]}</span>;
+}
+
+function LifecycleNote({ model, onJump }) {
+  const summary = lifecycleSummary(model);
+  if (!summary) return null;
+  const next = replacementFor(model);
+  return (
+    <p className={`lx-life-note is-${model.lifecycle.status}`}>
+      <span>{summary}</span>
+      {next && (
+        <button className="lx-link-btn" onClick={() => onJump(next)}>
+          Switch to {next.name} →
+        </button>
+      )}
+      {model.lifecycle.source && (
+        <a href={model.lifecycle.source} target="_blank" rel="noopener noreferrer">Source ↗</a>
+      )}
+    </p>
+  );
+}
 
 function CapabilityBar({ label, value }) {
   return (
@@ -57,12 +92,12 @@ function Heat({ capabilities }) {
   );
 }
 
-function ModelCard({ model, expanded, onToggle, index }) {
+function ModelCard({ model, expanded, onToggle, onJump, index }) {
   const cat = CATEGORY_COLORS[model.category];
   return (
     <motion.article
       id={`lx-${model.id}`}
-      className={`lx-card ${expanded ? 'is-open' : ''}`}
+      className={`lx-card ${expanded ? 'is-open' : ''} ${isRetired(model) ? 'is-retired' : ''}`}
       style={{ '--rail': model.providerColor }}
       layout
       initial={{ opacity: 0, y: 16 }}
@@ -78,6 +113,7 @@ function ModelCard({ model, expanded, onToggle, index }) {
             <span style={{ color: cat }}>{model.category}</span>
             <span>{model.releaseDate}</span>
             {model.isNew && <span className="lx-tag-new">New</span>}
+            <LifecycleBadge model={model} />
             {model.openSource && <span className="lx-tag">Open</span>}
             {model.multimodal && <span className="lx-tag">Multimodal</span>}
           </span>
@@ -92,6 +128,7 @@ function ModelCard({ model, expanded, onToggle, index }) {
         <div><dt>Params</dt><dd>{model.parameters}</dd></div>
         <div><dt>Tier</dt><dd>{model.pricingTier}</dd></div>
       </dl>
+      <LifecycleNote model={model} onJump={onJump} />
       <Heat capabilities={model.capabilities} />
 
       <AnimatePresence initial={false}>
@@ -193,6 +230,7 @@ export default function LlmRubric() {
   const [pricingFilter, setPricingFilter] = useState('All');
   const [openSourceOnly, setOpenSourceOnly] = useState(false);
   const [multimodalOnly, setMultimodalOnly] = useState(false);
+  const [showRetired, setShowRetired] = useState(false);
   const [sortBy, setSortBy] = useState('releaseDate');
   const [sortDir, setSortDir] = useState('desc');
   const [expandedId, setExpandedId] = useState(null);
@@ -215,6 +253,7 @@ export default function LlmRubric() {
     if (pricingFilter !== 'All') result = result.filter((m) => m.pricingTier === pricingFilter);
     if (openSourceOnly) result = result.filter((m) => m.openSource);
     if (multimodalOnly) result = result.filter((m) => m.multimodal);
+    if (!showRetired) result = result.filter((m) => !isRetired(m));
 
     const value = (m) =>
       ['reasoning', 'coding', 'math', 'speed'].includes(sortBy) ? m.capabilities[sortBy] : m[sortBy] ?? m.name;
@@ -225,7 +264,7 @@ export default function LlmRubric() {
       return sortDir === 'asc' ? cmp : -cmp;
     });
     return result;
-  }, [search, providerFilter, categoryFilter, pricingFilter, openSourceOnly, multimodalOnly, sortBy, sortDir]);
+  }, [search, providerFilter, categoryFilter, pricingFilter, openSourceOnly, multimodalOnly, showRetired, sortBy, sortDir]);
 
   const toggleSort = (field) => {
     if (sortBy === field) setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
@@ -234,14 +273,15 @@ export default function LlmRubric() {
 
   const clearFilters = () => {
     setSearch(''); setProviderFilter('All'); setCategoryFilter('All'); setPricingFilter('All');
-    setOpenSourceOnly(false); setMultimodalOnly(false); setSortBy('releaseDate'); setSortDir('desc');
+    setOpenSourceOnly(false); setMultimodalOnly(false); setShowRetired(false); setSortBy('releaseDate'); setSortDir('desc');
   };
 
   const hasActiveFilters = search || providerFilter !== 'All' || categoryFilter !== 'All' ||
-    pricingFilter !== 'All' || openSourceOnly || multimodalOnly;
+    pricingFilter !== 'All' || openSourceOnly || multimodalOnly || showRetired;
 
   const jumpTo = (model) => {
     clearFilters();
+    if (isRetired(model)) setShowRetired(true);
     setViewMode('cards');
     setExpandedId(model.id);
     requestAnimationFrame(() => requestAnimationFrame(() => {
@@ -302,6 +342,31 @@ export default function LlmRubric() {
         </ul>
       </div>
 
+      {RETIRING_SOON.length > 0 && (
+        <div className="lx-retiring">
+          <div className="lx-band-head">
+            <h3>Retiring soon</h3>
+            <span>Plan your migration before these stop working</span>
+          </div>
+          <ul className="lx-retiring-list">
+            {RETIRING_SOON.map((m) => {
+              const next = replacementFor(m);
+              return (
+                <li key={m.id} style={{ '--rail': m.providerColor }}>
+                  <button className="lx-link-btn lx-retiring-name" onClick={() => jumpTo(m)}>{m.name}</button>
+                  <span className="lx-retiring-date">retires {fmtDate(m.lifecycle.retiresOn)}</span>
+                  {next ? (
+                    <button className="lx-link-btn" onClick={() => jumpTo(next)}>Switch to {next.name} →</button>
+                  ) : (
+                    <span className="lx-retiring-date">no replacement named</span>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
+
       <Incident />
 
       <div className="lx-controls" ref={catalogRef}>
@@ -345,6 +410,11 @@ export default function LlmRubric() {
         </button>
         <button className="lx-chip" aria-pressed={openSourceOnly} onClick={() => setOpenSourceOnly(!openSourceOnly)}>Open source</button>
         <button className="lx-chip" aria-pressed={multimodalOnly} onClick={() => setMultimodalOnly(!multimodalOnly)}>Multimodal</button>
+        {RETIRED_COUNT > 0 && (
+          <button className="lx-chip" aria-pressed={showRetired} onClick={() => setShowRetired(!showRetired)}>
+            Show retired ({RETIRED_COUNT})
+          </button>
+        )}
         {hasActiveFilters && <button className="lx-link-btn" onClick={clearFilters}>Reset</button>}
       </div>
 
@@ -366,6 +436,7 @@ export default function LlmRubric() {
                 index={i}
                 expanded={expandedId === m.id}
                 onToggle={() => setExpandedId(expandedId === m.id ? null : m.id)}
+                onJump={jumpTo}
               />
             ))}
           </AnimatePresence>
@@ -396,6 +467,12 @@ export default function LlmRubric() {
                   <td className="lx-td-name">
                     <span className="lx-dot" style={{ background: m.providerColor }} />
                     {m.name}{m.isNew && <span className="lx-tag-new">New</span>}
+                    <LifecycleBadge model={m} />
+                    {replacementFor(m) && (
+                      <button className="lx-link-btn lx-td-next" onClick={() => jumpTo(replacementFor(m))}>
+                        → {replacementFor(m).name}
+                      </button>
+                    )}
                   </td>
                   <td style={{ color: m.providerColor }}>{m.provider}</td>
                   <td>{fmtTokens(m.contextWindow)}</td>

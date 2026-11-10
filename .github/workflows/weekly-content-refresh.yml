@@ -53,8 +53,8 @@ jobs:
             or merge into `main`. If nothing but `dataAsOf` would change, stop without
             committing or opening a PR.
           claude_args: |
-            --max-turns 150
-            --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,Skill,Bash(date:*),Bash(npm run build),Bash(npx eslint:*),Bash(node --check:*),Bash(git status:*),Bash(git diff:*),Bash(git checkout:*),Bash(git switch:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*)"
+            --max-turns 200
+            --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,Skill,Bash(date:*),Bash(grep:*),Bash(npm run build),Bash(npx eslint:*),Bash(node --check:*),Bash(git status:*),Bash(git diff:*),Bash(git checkout:*),Bash(git switch:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*)"
 
       # Claude's output is hidden in the public log, so summarise the outcome and any
       # blocked tool calls on the run page and keep the full transcript as an artifact.
@@ -75,7 +75,7 @@ jobs:
 
       - name: Upload Claude transcript
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: claude-transcript
           path: ${{ runner.temp }}/claude-execution-output.json

@@ -107,3 +107,7 @@
   .ml-brow { grid-template-columns: 96px 1fr 46px; }
 }
 @media (prefers-reduced-motion: reduce) { .ml-track i, .ml-prog i, .ml-toast { transition: none; } }
+.ml-providers { padding-bottom: 4px; }
+.ml-providers .ml-chip { font-size: 12.5px; padding: 5px 11px; }
+.ml-lab a:not(.ml-btn) { color: var(--accent); text-underline-offset: 3px; }
+.ml-note { font-size: 14px; line-height: 1.55; color: var(--text-secondary); }

@@ -4,34 +4,10 @@ import {
   labAsOf, LAUNCH_URL, FAMILY, WAYS, WAY_FILTERS, BENCH_MODELS, BENCHMARKS, COST_PRESETS, COST_ROWS,
   PICK_QUESTIONS, PATTERN_TASKS, PATTERN_MODES, ACCESS_REQUESTS, MISSIONS, QUIZ, RADAR, RADAR_SINCE, RADAR_UNVERIFIED,
 } from '../data/modelLabData';
+import { usePersisted, money } from './labShared';
+import { Dot, Tech, CopyBlock } from './LabUi';
+import FrontierLab from './FrontierLab';
 import './ModelLab.css';
-
-function usePersisted(key, initial) {
-  const [value, setValue] = useState(() => {
-    try { const v = localStorage.getItem(`ai-explorer-lab-${key}`); return v == null ? initial : JSON.parse(v); }
-    catch { return initial; }
-  });
-  useEffect(() => { try { localStorage.setItem(`ai-explorer-lab-${key}`, JSON.stringify(value)); } catch { /* storage unavailable */ } }, [key, value]);
-  return [value, setValue];
-}
-
-const money = (n) => (Number.isFinite(n) ? `$${n.toLocaleString(undefined, { maximumFractionDigits: n < 1 ? 4 : 2, minimumFractionDigits: n < 10 ? 2 : 0 })}` : '—');
-const Dot = ({ color }) => <span className="ml-dot" style={{ background: color }} aria-hidden="true" />;
-const Tech = ({ children }) => <p className="ml-tech">{children}</p>;
-
-function CopyBlock({ text, label = 'Copy' }) {
-  const [state, setState] = useState(label);
-  const copy = () => {
-    const done = () => { setState('Copied'); setTimeout(() => setState(label), 1500); };
-    try { navigator.clipboard.writeText(text).then(done, () => setState('Select and copy')); } catch { setState('Select and copy'); }
-  };
-  return (
-    <div className="ml-code">
-      <pre>{text}</pre>
-      <button type="button" className="ml-copy" onClick={copy}>{state}</button>
-    </div>
-  );
-}
 
 /* ───────── Family ───────── */
 function Family({ onStamp }) {
@@ -476,7 +452,15 @@ function Radar() {
 const TABS = [['family', 'Family'], ['ways', 'Ways in'], ['pick', 'Pick a model'], ['cost', 'Cost lab'], ['bench', 'Benchmarks'], ['patterns', 'Patterns'], ['access', 'Access'], ['try', 'Try it'], ['quiz', 'Quiz'], ['radar', "What's new"]];
 const STAMP_LABELS = { family: 'Met the family', ways: 'Found a way in', picker: 'Picked a model', cost: 'Ran the numbers', bench: 'Made a prediction', patterns: 'Routed a task', access: 'Tested safeguards', try: 'Finished a mission', quiz: 'Passed the quiz' };
 
+const PROVIDERS = [
+  ['anthropic', 'Anthropic'], ['openai', 'OpenAI'], ['google', 'Google DeepMind'], ['xai', 'xAI / Grok'], ['mistral', 'Mistral AI'],
+  ['deepseek', 'DeepSeek'], ['meta', 'Meta'], ['qwen', 'Alibaba / Qwen'], ['moonshot', 'Moonshot AI / Kimi'],
+];
+
 export default function ModelLab() {
+  const [provider, setProvider] = usePersisted('provider', 'anthropic');
+  const [pack, setPack] = useState(null);
+  const [packError, setPackError] = useState(false);
   const [tab, setTab] = useState('family');
   const [depth, setDepth] = usePersisted('depth', 'simple');
   const [stamps, setStamps] = usePersisted('stamps', []);
@@ -487,29 +471,53 @@ export default function ModelLab() {
     setToast(`Stamp earned: ${STAMP_LABELS[k]}`);
     setTimeout(() => setToast(''), 2200);
   }, [stamps, setStamps]);
+  // The frontier provider pack is large, so load it only when someone picks a non-Anthropic provider.
+  useEffect(() => {
+    if (provider === 'anthropic' || pack) return;
+    import('../data/frontierLabs.json').then((m) => setPack(m.default), () => setPackError(true));
+  }, [provider, pack]);
   const total = Object.keys(STAMP_LABELS).length;
   const panes = { family: Family, ways: Ways, pick: Pick, cost: Cost, bench: Bench, patterns: Patterns, access: Access, try: Missions, quiz: Quiz, radar: Radar };
   const Pane = panes[tab];
+  const isClaude = provider === 'anthropic';
+  const title = isClaude ? 'Claude 5 family, hands on'
+    : pack?.providers.find((x) => x.id === provider)?.title || `${PROVIDERS.find(([id]) => id === provider)?.[1]} models, hands on`;
   return (
     <section className="section" id="model-lab">
       <motion.div className="section-header" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
         <span className="section-badge">Model Lab</span>
-        <h2>Claude 5 family, hands on</h2>
-        <p>Pick a model, price it, argue with the benchmarks, find every way in, and run seven missions. Based on the Fable 5.2 and Mythos 5.2 launch of November 9, 2026 (<a href={LAUNCH_URL} target="_blank" rel="noopener noreferrer">read the original</a>).</p>
+        <h2>{title}</h2>
+        {isClaude
+          ? <p>Pick a model, price it, argue with the benchmarks, find every way in, and run seven missions. Based on the Fable 5.2 and Mythos 5.2 launch of November 9, 2026 (<a href={LAUNCH_URL} target="_blank" rel="noopener noreferrer">read the original</a>).</p>
+          : <p>Pick a provider, find a model that fits, price a realistic task, check the evidence, and learn by doing.</p>}
       </motion.div>
       <div className={`ml-lab depth-${depth}`}>
+        <div className="ml-row ml-providers" role="group" aria-label="Choose a provider">
+          <span className="ml-small">Choose a provider:</span>
+          {PROVIDERS.map(([id, label]) => (
+            <button key={id} type="button" className="ml-chip" aria-pressed={provider === id} onClick={() => setProvider(id)}>{label}</button>
+          ))}
+        </div>
         <div className="ml-bar">
           <div className="ml-seg" role="group" aria-label="Detail level">
             <button type="button" aria-pressed={depth === 'simple'} onClick={() => setDepth('simple')}>Simple</button>
             <button type="button" aria-pressed={depth === 'tech'} onClick={() => setDepth('tech')}>Technical</button>
           </div>
-          <span className="ml-count">{stamps.length}/{total} stamps</span>
+          {isClaude && <span className="ml-count">{stamps.length}/{total} stamps</span>}
         </div>
-        <div className="ml-tabs" role="tablist">
-          {TABS.map(([k, label]) => <button key={k} type="button" role="tab" aria-selected={tab === k} onClick={() => setTab(k)}>{label}</button>)}
-        </div>
-        <Pane onStamp={onStamp} onJump={setTab} />
-        <div className={`ml-toast${toast ? ' show' : ''}`} role="status" aria-live="polite">{toast}</div>
+        {isClaude ? (
+          <>
+            <div className="ml-tabs" role="tablist">
+              {TABS.map(([k, label]) => <button key={k} type="button" role="tab" aria-selected={tab === k} onClick={() => setTab(k)}>{label}</button>)}
+            </div>
+            <Pane onStamp={onStamp} onJump={setTab} />
+            <div className={`ml-toast${toast ? ' show' : ''}`} role="status" aria-live="polite">{toast}</div>
+          </>
+        ) : pack ? (
+          <FrontierLab key={provider} pack={pack} providerId={provider} />
+        ) : (
+          <p className="ml-small">{packError ? 'Could not load this provider. Reload the page to try again.' : 'Loading…'}</p>
+        )}
       </div>
     </section>
   );

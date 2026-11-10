@@ -1,0 +1,2266 @@
+{
+  "schemaVersion": "1.0",
+  "checkedOn": "2026-11-10",
+  "scope": "Editorial content pack; not a drop-in schema for the existing application",
+  "sources": {
+    "oa_models": "https://developers.openai.com/api/docs/models",
+    "oa_guide": "https://developers.openai.com/api/docs/guides/latest-model",
+    "oa_select": "https://developers.openai.com/api/docs/guides/model-selection",
+    "oa_start": "https://developers.openai.com/api/docs/quickstart",
+    "oa_news": "https://developers.openai.com/api/docs/changelog",
+    "g_models": "https://aistudio.google.com/docs/models",
+    "g_carbon": "https://aistudio.google.com/docs/models/gemini-4-carbon",
+    "g_prices": "https://ai.google.dev/gemini-api/docs/pricing",
+    "g_liveprices": "https://aistudio.google.com/docs/pricing",
+    "x_models": "https://docs.x.ai/developers/models",
+    "x_prices": "https://docs.x.ai/developers/pricing",
+    "m_models": "https://docs.mistral.ai/models",
+    "m_large": "https://docs.mistral.ai/models/mistral-large-4",
+    "m_small": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+    "m_prices": "https://docs.mistral.ai/inference/pricing",
+    "m_platform": "https://docs.mistral.ai/getting-started/platform-overview",
+    "m_news": "https://docs.mistral.ai/resources/changelogs",
+    "d_prices": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "d_news": "https://api-docs.deepseek.com/news/news261017/",
+    "meta_select": "https://dev.meta.ai/docs/choose-a-model",
+    "meta_prices": "https://dev.meta.ai/docs/pricing-rate-limits",
+    "meta_overview": "https://dev.meta.ai/docs/overview",
+    "q_models": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+    "q_prices": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "k_home": "https://www.moonshot.ai/",
+    "k_pro": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+    "k_k3": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+    "k_prices": "https://platform.kimi.ai/docs/pricing/chat"
+  },
+  "shared": {
+    "tabs": [
+      "Family",
+      "Ways in",
+      "Pick a model",
+      "Cost lab",
+      "Benchmarks",
+      "Patterns",
+      "Access",
+      "Try it",
+      "Quiz",
+      "What’s new"
+    ],
+    "selectorLabel": "Choose a provider",
+    "intro": "Pick a provider, find a model that fits, price a realistic task, check the evidence, and learn by doing.",
+    "simpleHelp": "Plain-language roles and examples. Start here if model names feel like alphabet soup.",
+    "technicalHelp": "Exact IDs, supported capabilities, pricing conditions, and linked documentation.",
+    "pricingDisclaimer": "API estimates, not subscription prices. Prices in USD per million tokens unless stated otherwise. Tools, cache writes, storage, media, retries, taxes, and special service tiers may add cost.",
+    "benchmarkIntro": "A benchmark is evidence about a test setup. Use it to form a hypothesis, then test the model on your work.",
+    "benchmarkEmptyState": "No comparable verified score is available for this view. Open the source or run the lab’s task set.",
+    "unknownPriceLabel": "Check pricing",
+    "costPresets": [
+      {
+        "name": "Chat reply",
+        "inputTokens": 2000,
+        "outputTokens": 500,
+        "requestsPerDay": 200
+      },
+      {
+        "name": "Code review",
+        "inputTokens": 20000,
+        "outputTokens": 5000,
+        "requestsPerDay": 200
+      },
+      {
+        "name": "Agent run",
+        "inputTokens": 100000,
+        "outputTokens": 10000,
+        "requestsPerDay": 20
+      }
+    ],
+    "costFormula": "(uncached_input_tokens * input_rate + cached_input_tokens * cached_input_rate + billed_output_tokens * output_rate) / 1_000_000 + tool_fees + cache_write_fees + other_fees",
+    "benchmarkFields": [
+      "modelId",
+      "resolvedVersion",
+      "benchmarkName",
+      "benchmarkVersion",
+      "score",
+      "unit",
+      "higherIsBetter",
+      "reasoningEffort",
+      "toolsEnabled",
+      "harness",
+      "tokenBudget",
+      "attempts",
+      "sourceUrl",
+      "publishedDate",
+      "checkedOn"
+    ],
+    "stampRule": "Keep progress per provider. The nine learning tabs award stamps; What’s new is informational. Keep seven mission checkboxes and quiz progress separately."
+  },
+  "providers": [
+    {
+      "id": "openai",
+      "provider": "OpenAI",
+      "title": "OpenAI models, hands on",
+      "intro": "Match the model to the job. Compare Astra, Sol, Terra, and Luna, estimate a real workload, connect the tools you need, and complete seven practical missions.",
+      "simple": "Astra tackles the hardest work. Sol balances capability and cost. Terra is geared toward visual work, computer interaction, and writing. Luna handles focused work that repeats.",
+      "technical": "The current flagship catalog lists text-and-image input, text output, approximately 1.05M context, and 128K maximum output for these four models. Supported effort levels differ: Astra and Sol start at low; Terra and Luna also offer none.",
+      "familySource": [
+        "oa_models",
+        "oa_guide"
+      ],
+      "models": [
+        {
+          "name": "GPT-6 Astra",
+          "modelId": "gpt-6-astra",
+          "cardCopy": "For difficult reasoning, complex code, and demanding professional work.",
+          "contextTokens": 1050000,
+          "sourceUrl": "https://developers.openai.com/api/docs/models",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "GPT-6.1 Sol",
+          "modelId": "gpt-6.1-sol",
+          "cardCopy": "For complex work when you also need to manage time and cost.",
+          "contextTokens": 1050000,
+          "sourceUrl": "https://developers.openai.com/api/docs/models",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "GPT-6.1 Terra",
+          "modelId": "gpt-6.1-terra",
+          "cardCopy": "For visual reasoning, computer use, concise writing, and scoped code changes.",
+          "contextTokens": 1050000,
+          "sourceUrl": "https://developers.openai.com/api/docs/models",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "GPT-6 Luna",
+          "modelId": "gpt-6-luna",
+          "cardCopy": "For classification, routing, extraction, and other focused tasks at volume.",
+          "contextTokens": 1050000,
+          "sourceUrl": "https://developers.openai.com/api/docs/models",
+          "verifiedOn": "2026-11-10"
+        }
+      ],
+      "ways": [
+        [
+          "Explore",
+          "Use the official model-selection guide to match your workflow to the models available in ChatGPT or Codex. Product access and settings can differ from the API.",
+          "oa_select"
+        ],
+        [
+          "Build",
+          "Use the OpenAI API quickstart and Responses API to call an explicit model ID.",
+          "oa_start"
+        ]
+      ],
+      "picker": [
+        [
+          "Quick extraction or routing",
+          "GPT-6 Luna"
+        ],
+        [
+          "Visual tasks, writing from supplied material, scoped fixes",
+          "GPT-6.1 Terra"
+        ],
+        [
+          "Complex work with a cost constraint",
+          "GPT-6.1 Sol"
+        ],
+        [
+          "Hard, ambiguous, or extended professional work",
+          "GPT-6 Astra"
+        ]
+      ],
+      "pickerNote": "Suggested lab routing, based on the official model-selection guidance. A quality-first learner can start with Astra, establish a baseline, then test cheaper candidates against it.",
+      "rates": [
+        {
+          "modelId": "gpt-6-astra",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 10,
+          "output": 50,
+          "sourceUrl": "https://developers.openai.com/api/docs/models",
+          "checkedOn": "2026-11-10",
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.45,
+          "exampleCodeReview30DayUSD": 2700.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "gpt-6.1-sol",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 2,
+          "output": 10,
+          "sourceUrl": "https://developers.openai.com/api/docs/models",
+          "checkedOn": "2026-11-10",
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.09,
+          "exampleCodeReview30DayUSD": 540.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "gpt-6.1-terra",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 1,
+          "output": 5,
+          "sourceUrl": "https://developers.openai.com/api/docs/models",
+          "checkedOn": "2026-11-10",
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.045,
+          "exampleCodeReview30DayUSD": 270.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "gpt-6-luna",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.1,
+          "output": 0.5,
+          "sourceUrl": "https://developers.openai.com/api/docs/models",
+          "checkedOn": "2026-11-10",
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.0045,
+          "exampleCodeReview30DayUSD": 27.0,
+          "calculatorEnabledByDefault": true
+        }
+      ],
+      "costCopy": "At fixed token counts, Astra costs five times Sol, and Sol costs twice Terra. Use the calculator to ask whether the difference buys better completed work. Actual token use may differ.",
+      "benchmarkCopy": "Build a task set with repository fixes, source-grounded writing, and screenshot interpretation. Compare the four models on the same inputs and acceptance criteria. Show a completed-task rate next to cost and elapsed time.",
+      "pattern": "Suggested pattern: Sol handles routine work, Luna extracts and routes, Terra handles suitable visual or writing subtasks, and Astra reviews difficult decisions. In a custom app, the orchestrator must implement the routing and verification; a prompt alone does not create a working multi-model system.",
+      "access": "Use the general models for the general lab. OpenAI lists separate cybersecurity and life-sciences offerings; the catalog explicitly describes Rosalind as intended for approved organizations. Link to the relevant access documentation before adding specialist missions. Model names, effort settings, and product entitlements are separate choices.",
+      "accessSource": [
+        "oa_models",
+        "oa_select"
+      ],
+      "missions": [
+        [
+          "Beginner",
+          "Meet the family",
+          "Run the same prompt on Sol and Luna.",
+          "Turn these rough notes into five actions. Preserve every owner and deadline. Use “unspecified” where the notes omit one: <notes>",
+          "Check every extracted field against the notes."
+        ],
+        [
+          "Beginner",
+          "Try visual reasoning",
+          "Give Terra a screenshot you are allowed to share.",
+          "Describe the visible problem in this screen. Cite the visual evidence and separate observations from hypotheses.",
+          "Count claims supported by the screenshot."
+        ],
+        [
+          "Builder",
+          "Change the effort",
+          "Compare two supported effort settings on the same model.",
+          "Find the bug in this function. Give a minimal failing example and a corrected implementation: <function>",
+          "Run the example and compare time, tokens, and correctness."
+        ],
+        [
+          "Builder",
+          "Give it a contract",
+          "Ask Sol to produce a plan against explicit requirements.",
+          "Propose a migration plan for <module>. Include acceptance checks, rollback steps, and unanswered questions.",
+          "Have another person check the plan against the requirements."
+        ],
+        [
+          "Expert",
+          "Escalate a difficult case",
+          "Compare Sol’s result with Astra’s result.",
+          "Review this proposed fix for concurrency failures. Identify a concrete failure schedule or explain what evidence is missing: <fix>",
+          "Use a reproducible test to decide which answer helps."
+        ],
+        [
+          "Expert",
+          "Build a router",
+          "In your application, route easy and difficult test cases to different models.",
+          "Classify this task as bounded or open-ended. State the evidence for that label and a measurable success condition: <task>",
+          "Log actual model IDs and compare the routed workflow with one-model execution."
+        ],
+        [
+          "Expert",
+          "Call it from code",
+          "Run the Responses API example in the appendix.",
+          "Review this function for bugs and return one minimal failing test: <function>",
+          "Record response.model, usage, and a test result."
+        ]
+      ],
+      "quiz": [
+        {
+          "question": "What should decide whether a cheaper model is good enough?",
+          "options": [
+            "Its name",
+            "Results on representative tasks",
+            "Its parameter count alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use examples with known acceptance criteria and compare quality, latency, and cost."
+        },
+        {
+          "question": "Does a larger context window guarantee perfect recall?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for PDFs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Capacity is a limit, not a guarantee that the model will use every detail correctly."
+        },
+        {
+          "question": "Which number helps you price a working agent?",
+          "options": [
+            "Cost per successful completed task",
+            "Input price alone",
+            "The longest possible answer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Retries, tools, output, and failed attempts can change the total."
+        },
+        {
+          "question": "What makes a benchmark comparison useful?",
+          "options": [
+            "The same benchmark version and comparable settings",
+            "A larger bar",
+            "A provider logo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Record tools, effort, token budget, harness, date, and model version."
+        },
+        {
+          "question": "What should happen before a tool makes an important external change?",
+          "options": [
+            "Nothing",
+            "Review the planned action and apply the workflow’s approval rules",
+            "Increase temperature"
+          ],
+          "correctIndex": 1,
+          "explanation": "Separate proposing an action from executing it."
+        },
+        {
+          "question": "How should an unavailable price appear?",
+          "options": [
+            "As zero",
+            "As a verified free tier",
+            "As unknown, with a pricing link"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unknown and free have different meanings."
+        },
+        {
+          "question": "Which model is aimed at focused, high-volume tasks?",
+          "options": [
+            "Luna",
+            "Astra",
+            "The image-generation model"
+          ],
+          "correctIndex": 0,
+          "explanation": "Luna occupies the efficient execution role in the current catalog."
+        },
+        {
+          "question": "Can API and app access be assumed identical?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for paid users"
+          ],
+          "correctIndex": 1,
+          "explanation": "Check the product’s available models, tools, and settings separately."
+        }
+      ],
+      "whatsNew": "Current catalog snapshot: GPT-6 Astra, GPT-6.1 Sol, GPT-6.1 Terra, and GPT-6 Luna are listed. For dated release entries, use the API changelog; “checked today” is not a release date.",
+      "newsSource": [
+        "oa_models",
+        "oa_news"
+      ]
+    },
+    {
+      "id": "google",
+      "provider": "Google DeepMind",
+      "title": "Gemini models, hands on",
+      "intro": "Choose a reasoning model, a fast execution model, or a specialist for voice and media. Compare the results on text, documents, and visual inputs, then price the workflow you actually run.",
+      "simple": "Carbon is the strongest reasoning option in the current Gemini 4 catalog. Argon is the more efficient Gemini 4 option. Flash and Flash-Lite offer additional choices for repeated work. Voice and generated media have dedicated models.",
+      "technical": "Carbon accepts text, image, video, audio, and PDF and returns text. Its 1,048,576-token context is a unified input/output limit. Default synchronous output is 65,536 tokens; long decode supports more under its documented workflow. Carbon supports tools and structured output, but does not itself provide image generation, audio generation, or the Live API.",
+      "familySource": [
+        "g_models",
+        "g_carbon"
+      ],
+      "models": [
+        {
+          "name": "Gemini 4 Carbon",
+          "modelId": "gemini-4-carbon",
+          "cardCopy": "For the most demanding reasoning and multimodal knowledge work.",
+          "contextTokens": 1048576,
+          "sourceUrl": "https://aistudio.google.com/docs/models/gemini-4-carbon",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "Gemini 4 Argon",
+          "modelId": "gemini-4-argon",
+          "cardCopy": "For Gemini 4 reasoning with an emphasis on efficiency.",
+          "contextTokens": 1048576,
+          "sourceUrl": "https://aistudio.google.com/docs/models",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "Gemini 3.8 Flash",
+          "modelId": "gemini-3.8-flash",
+          "cardCopy": "A Flash option for coding, agents, and enterprise workflows.",
+          "contextTokens": null,
+          "sourceUrl": "https://aistudio.google.com/docs/models",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "Gemini 3.5 Flash-Lite",
+          "modelId": "gemini-3.5-flash-lite",
+          "cardCopy": "For cost-sensitive, high-throughput execution.",
+          "contextTokens": null,
+          "sourceUrl": "https://aistudio.google.com/docs/models",
+          "verifiedOn": "2026-11-10"
+        }
+      ],
+      "ways": [
+        [
+          "Prototype",
+          "Use Google AI Studio to inspect the available model and experiment with supplied inputs.",
+          "g_models"
+        ],
+        [
+          "Build",
+          "Use the Gemini API with an explicit model ID and check each model’s tool and modality support.",
+          "g_carbon"
+        ],
+        [
+          "Voice and media",
+          "Use the catalog’s Live, image, video, or speech models for the output you need.",
+          "g_models"
+        ]
+      ],
+      "picker": [
+        [
+          "Routine high-volume processing",
+          "Gemini 3.5 Flash-Lite"
+        ],
+        [
+          "A Flash baseline for agents and coding",
+          "Gemini 3.8 Flash"
+        ],
+        [
+          "Difficult reasoning with efficiency in mind",
+          "Gemini 4 Argon"
+        ],
+        [
+          "Most demanding multimodal reasoning",
+          "Gemini 4 Carbon"
+        ],
+        [
+          "Real-time spoken conversation",
+          "A catalog-listed Live model"
+        ],
+        [
+          "Generate an image or video",
+          "A catalog-listed image or video model"
+        ]
+      ],
+      "pickerNote": "Suggested lab routing. First filter by required input, output, and tools; compare quality and cost only among compatible candidates.",
+      "rates": [
+        {
+          "modelId": "gemini-4-carbon",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": null,
+          "output": null,
+          "sourceUrl": "https://aistudio.google.com/docs/pricing",
+          "checkedOn": "2026-11-10",
+          "verificationStatus": "needs_price_verification",
+          "exampleCodeReviewRequestUSD": null,
+          "exampleCodeReview30DayUSD": null,
+          "calculatorEnabledByDefault": false
+        },
+        {
+          "modelId": "gemini-4-argon",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 2,
+          "output": 10,
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+          "checkedOn": "2026-11-10",
+          "effectiveTo": "2026-11-30",
+          "verificationStatus": "official_search_index_only",
+          "exampleCodeReviewRequestUSD": 0.09,
+          "exampleCodeReview30DayUSD": 540.0,
+          "calculatorEnabledByDefault": false
+        },
+        {
+          "modelId": "gemini-4-argon",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 4,
+          "output": 20,
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+          "checkedOn": "2026-11-10",
+          "effectiveFrom": "2026-12-01",
+          "verificationStatus": "official_search_index_only",
+          "exampleCodeReviewRequestUSD": 0.18,
+          "exampleCodeReview30DayUSD": 1080.0,
+          "calculatorEnabledByDefault": false
+        },
+        {
+          "modelId": "gemini-3.8-flash",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.75,
+          "output": 3.75,
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+          "checkedOn": "2026-11-10",
+          "effectiveTo": "2026-12-31",
+          "verificationStatus": "official_search_index_only",
+          "exampleCodeReviewRequestUSD": 0.03375,
+          "exampleCodeReview30DayUSD": 202.5,
+          "calculatorEnabledByDefault": false
+        },
+        {
+          "modelId": "gemini-3.8-flash",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 1.5,
+          "output": 7.5,
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+          "checkedOn": "2026-11-10",
+          "effectiveFrom": "2027-01-01",
+          "verificationStatus": "official_search_index_only",
+          "exampleCodeReviewRequestUSD": 0.0675,
+          "exampleCodeReview30DayUSD": 405.0,
+          "calculatorEnabledByDefault": false
+        },
+        {
+          "modelId": "gemini-3.5-flash-lite",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.3,
+          "output": 2.5,
+          "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+          "checkedOn": "2026-11-10",
+          "verificationStatus": "official_search_index_only",
+          "exampleCodeReviewRequestUSD": 0.0185,
+          "exampleCodeReview30DayUSD": 111.0,
+          "calculatorEnabledByDefault": false
+        }
+      ],
+      "costCopy": "Price by date, model, modality, and service tier. The official indexed pricing lists Argon at $2/$10 through November 30, then $4/$20; Flash 3.8 at $0.75/$3.75 through December 31, then $1.50/$7.50. Prices are input/output per million tokens. Thinking tokens are included in output billing. Editorial verification note: the live pricing page rendered its headings but not numeric tables during this review. Reconfirm these indexed rates before enabling the calculator. Carbon has no verified numeric rate in this pack.",
+      "benchmarkCopy": "Give each compatible model the same document, screenshot, and short video question. Score evidence location, factual correctness, omissions, latency, and cost. Test audio understanding separately from voice generation so the lab measures the intended capability.",
+      "pattern": "Suggested pattern: a compatible efficient model extracts candidate facts from each input, Argon synthesizes them, and Carbon handles difficult exceptions. Keep evidence locations alongside extracted facts so a reviewer can verify the final answer.",
+      "access": "The pricing documentation excludes Gemini 4 from the free API tier. Consumer plans and API billing should be checked separately. Tool support varies: Carbon’s support for audio input does not mean it generates speech. Present the specific endpoint and capability needed for every mission.",
+      "accessSource": [
+        "g_prices",
+        "g_carbon"
+      ],
+      "missions": [
+        [
+          "Beginner",
+          "Compare the family",
+          "Run one document question on Flash and Argon.",
+          "From this document, list five decisions and quote the short evidence phrase for each. Say when a decision is only implied.",
+          "Check every evidence phrase in the original."
+        ],
+        [
+          "Beginner",
+          "Read a screenshot",
+          "Use an input-compatible model on a screenshot.",
+          "Explain the chart in this screenshot. State units, visible trend, and two things the image does not establish.",
+          "Check axes, units, and unsupported claims."
+        ],
+        [
+          "Builder",
+          "Understand a clip",
+          "Use a model that lists video input support.",
+          "Create a timeline of visible events in this short clip. Include timestamps and mark uncertain actions.",
+          "Compare timestamps with the video."
+        ],
+        [
+          "Builder",
+          "Find the right output",
+          "Compare a text model with the relevant media workflow.",
+          "Write a storyboard for a 10-second product demonstration, including a shot list and voiceover.",
+          "Use the storyboard as input to the separately selected video tool; compare it with the result."
+        ],
+        [
+          "Expert",
+          "Ground a current claim",
+          "Enable the supported search tool in the API or product.",
+          "Find the current official documentation for <feature>. Give its status, evidence links, and the date checked.",
+          "Open the links and check whether they support the answer."
+        ],
+        [
+          "Expert",
+          "Control the bill",
+          "Repeat a measured workload with a shorter answer requirement.",
+          "Answer the same question in no more than 150 words, preserving all decision-critical evidence: <question>",
+          "Compare billed tokens and task quality; include search charges where used."
+        ],
+        [
+          "Expert",
+          "Call it from code",
+          "Use the Gemini API example in the appendix.",
+          "Return three risks in this migration plan and a check for each: <plan>",
+          "Record model, usage metadata, time, and acceptance checks."
+        ]
+      ],
+      "quiz": [
+        {
+          "question": "What should decide whether a cheaper model is good enough?",
+          "options": [
+            "Its name",
+            "Results on representative tasks",
+            "Its parameter count alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use examples with known acceptance criteria and compare quality, latency, and cost."
+        },
+        {
+          "question": "Does a larger context window guarantee perfect recall?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for PDFs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Capacity is a limit, not a guarantee that the model will use every detail correctly."
+        },
+        {
+          "question": "Which number helps you price a working agent?",
+          "options": [
+            "Cost per successful completed task",
+            "Input price alone",
+            "The longest possible answer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Retries, tools, output, and failed attempts can change the total."
+        },
+        {
+          "question": "What makes a benchmark comparison useful?",
+          "options": [
+            "The same benchmark version and comparable settings",
+            "A larger bar",
+            "A provider logo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Record tools, effort, token budget, harness, date, and model version."
+        },
+        {
+          "question": "What should happen before a tool makes an important external change?",
+          "options": [
+            "Nothing",
+            "Review the planned action and apply the workflow’s approval rules",
+            "Increase temperature"
+          ],
+          "correctIndex": 1,
+          "explanation": "Separate proposing an action from executing it."
+        },
+        {
+          "question": "How should an unavailable price appear?",
+          "options": [
+            "As zero",
+            "As a verified free tier",
+            "As unknown, with a pricing link"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unknown and free have different meanings."
+        },
+        {
+          "question": "Does Carbon’s audio input support imply spoken output?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for short clips"
+          ],
+          "correctIndex": 1,
+          "explanation": "Its model page lists text output and no audio generation."
+        },
+        {
+          "question": "What changes an introductory API price?",
+          "options": [
+            "The date and published pricing terms",
+            "The chat title",
+            "A longer prompt alone"
+          ],
+          "correctIndex": 0,
+          "explanation": "Store effective dates and avoid silently keeping expired rates."
+        }
+      ],
+      "whatsNew": "Carbon’s model page says “Latest update: November 2026”; no release day is inferred here. The catalog says Gemini 2.5 Pro and Flash API requests will auto-route to newer models on December 1, 2026. Review migration guidance before that date.",
+      "newsSource": [
+        "g_carbon",
+        "g_models"
+      ]
+    },
+    {
+      "id": "xai",
+      "provider": "xAI / Grok",
+      "title": "Grok, hands on",
+      "intro": "Separate the reasoning model from its search tools. Compare a supplied-evidence answer with a grounded answer, then measure the cost of the complete workflow.",
+      "simple": "Grok 4.7 is the general-purpose flagship. Imagine and Voice cover other output types. Current information requires the relevant search tools.",
+      "technical": "The model catalog lists Grok 4.7 with 500K context and configurable reasoning. Web Search and X Search supply current information; the model alone is not a live feed.",
+      "familySource": [
+        "x_models"
+      ],
+      "models": [
+        {
+          "name": "Grok 4.7",
+          "modelId": "grok-4.7",
+          "cardCopy": "For general reasoning, coding, and tool-based workflows.",
+          "contextTokens": 500000,
+          "sourceUrl": "https://docs.x.ai/developers/models",
+          "verifiedOn": "2026-11-10"
+        }
+      ],
+      "ways": [
+        [
+          "Explore",
+          "Use Grok or the API console playground, checking which model and tools the surface exposes.",
+          "x_models"
+        ],
+        [
+          "Build",
+          "Use the API and enable Web Search or X Search when the task needs current sources.",
+          "x_models"
+        ],
+        [
+          "Other outputs",
+          "Select Imagine for image/video workflows or Voice for speech workflows.",
+          "x_models"
+        ]
+      ],
+      "picker": [
+        [
+          "General reasoning or coding",
+          "Grok 4.7"
+        ],
+        [
+          "Current web or X information",
+          "Grok 4.7 with the relevant search tool"
+        ],
+        [
+          "Image, video, or voice output",
+          "The corresponding specialist API"
+        ]
+      ],
+      "pickerNote": "Suggested routing: choose required tools and output first. Compare versions using measured results rather than assuming recency guarantees a win.",
+      "rates": [
+        {
+          "modelId": "grok-4.7",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 2,
+          "output": 6,
+          "sourceUrl": "https://docs.x.ai/developers/pricing",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.5,
+          "inputTokensMaxExclusive": 200000,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.07,
+          "exampleCodeReview30DayUSD": 420.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "grok-4.7",
+          "label": "Long context",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 4,
+          "output": 12,
+          "sourceUrl": "https://docs.x.ai/developers/pricing",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 1,
+          "inputTokensMinInclusive": 200000,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": null,
+          "exampleCodeReview30DayUSD": null,
+          "calculatorEnabledByDefault": true
+        }
+      ],
+      "costCopy": "The main pricing table sets a 200K long-context threshold and charges the long-context rate for the whole request. Grok 4.7 Fast is a distinct serving option limited to Cursor and Grok Build, not a public API model ID. Keep it separate from standard API pricing.",
+      "benchmarkCopy": "Use two tracks: closed-book reasoning over supplied material, and current-information research with search enabled. Score citation validity and freshness in the second track. Include tool fees and repeated searches in the reported cost.",
+      "pattern": "Suggested pattern: retrieve candidate claims, build a claim-to-source table, check contradictions, then draft the answer. A second pass should verify that every current factual claim has supporting evidence.",
+      "access": "The presence of an X integration does not give every API response automatic live knowledge. The lab should show whether search is enabled, which tool ran, and the sources actually returned.",
+      "accessSource": [
+        "x_models"
+      ],
+      "missions": [
+        [
+          "Beginner",
+          "Separate memory from evidence",
+          "Ask about a supplied article.",
+          "Summarize this article into five claims. Attach one evidence phrase to each: <article>",
+          "Check all five against the article."
+        ],
+        [
+          "Beginner",
+          "Spot stale information",
+          "Compare a supplied-data answer with a search-enabled answer.",
+          "What is the current status of <public project>? Use dated primary sources and distinguish announcements from completed changes.",
+          "Verify dates and links."
+        ],
+        [
+          "Builder",
+          "Audit X evidence",
+          "Where available, enable X Search.",
+          "Find public statements about <topic>. Distinguish first-hand statements, commentary, and unverified reports.",
+          "Check attribution in the original posts."
+        ],
+        [
+          "Builder",
+          "Review code",
+          "Give Grok a small function.",
+          "Find a failing input for this function and suggest the smallest correction: <function>",
+          "Run the test."
+        ],
+        [
+          "Expert",
+          "Measure a context threshold",
+          "Use synthetic inputs on either side of the published tier threshold.",
+          "Extract the requested IDs from the supplied records: <records>",
+          "Check the selected rate and all-request billing."
+        ],
+        [
+          "Expert",
+          "Verify a research answer",
+          "Run a source verification pass.",
+          "For each claim below, state whether the linked source directly supports it. Flag mismatched dates and missing context: <claims and links>",
+          "Open a sample of original sources."
+        ],
+        [
+          "Expert",
+          "Record a real run",
+          "Use the official API quickstart linked from the model catalog.",
+          "Explain the root cause in this public bug report using only supplied evidence: <report>",
+          "Log model, tools, tokens, time, and verified result."
+        ]
+      ],
+      "quiz": [
+        {
+          "question": "What should decide whether a cheaper model is good enough?",
+          "options": [
+            "Its name",
+            "Results on representative tasks",
+            "Its parameter count alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use examples with known acceptance criteria and compare quality, latency, and cost."
+        },
+        {
+          "question": "Does a larger context window guarantee perfect recall?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for PDFs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Capacity is a limit, not a guarantee that the model will use every detail correctly."
+        },
+        {
+          "question": "Which number helps you price a working agent?",
+          "options": [
+            "Cost per successful completed task",
+            "Input price alone",
+            "The longest possible answer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Retries, tools, output, and failed attempts can change the total."
+        },
+        {
+          "question": "What makes a benchmark comparison useful?",
+          "options": [
+            "The same benchmark version and comparable settings",
+            "A larger bar",
+            "A provider logo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Record tools, effort, token budget, harness, date, and model version."
+        },
+        {
+          "question": "What should happen before a tool makes an important external change?",
+          "options": [
+            "Nothing",
+            "Review the planned action and apply the workflow’s approval rules",
+            "Increase temperature"
+          ],
+          "correctIndex": 1,
+          "explanation": "Separate proposing an action from executing it."
+        },
+        {
+          "question": "How should an unavailable price appear?",
+          "options": [
+            "As zero",
+            "As a verified free tier",
+            "As unknown, with a pricing link"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unknown and free have different meanings."
+        },
+        {
+          "question": "Is Grok automatically current without search tools?",
+          "options": [
+            "Yes",
+            "No",
+            "Only on weekends"
+          ],
+          "correctIndex": 1,
+          "explanation": "The catalog explicitly says current information requires search tools."
+        },
+        {
+          "question": "Is Grok 4.7 Fast a public API option?",
+          "options": [
+            "Yes",
+            "No",
+            "It is a free tier"
+          ],
+          "correctIndex": 1,
+          "explanation": "The pricing page limits it to Cursor and Grok Build."
+        }
+      ],
+      "whatsNew": "The official catalog lists Grok 4.7 as flagship. This pack does not infer a launch day from a crawl date or the documentation footer.",
+      "newsSource": [
+        "x_models"
+      ]
+    },
+    {
+      "id": "mistral",
+      "provider": "Mistral AI",
+      "title": "Mistral models, hands on",
+      "intro": "Compare a large model with an efficient one, discover specialist document and audio tools, and distinguish hosted API pricing from running weights yourself.",
+      "simple": "Large 4 is the general-purpose multimodal flagship. Small 4 combines instruction following, reasoning, and coding in a smaller option. Specialist OCR and audio services address different jobs.",
+      "technical": "Large 4’s current card lists 1M context and an open-weight release under the Mistral Ecosystem Open Weight License. The card now says GA; the older October 6 changelog describes its earlier preview state. Use the current model card for present availability.",
+      "familySource": [
+        "m_models",
+        "m_large",
+        "m_small",
+        "m_news"
+      ],
+      "models": [
+        {
+          "name": "Mistral Large 4",
+          "modelId": "mistral-large-4",
+          "cardCopy": "For general multimodal work and complex reasoning.",
+          "contextTokens": 1000000,
+          "sourceUrl": "https://docs.mistral.ai/models/mistral-large-4",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "Mistral Small 4",
+          "modelId": "mistral-small-2603",
+          "cardCopy": "For an efficient baseline across instruction, reasoning, and coding tasks.",
+          "contextTokens": 256000,
+          "sourceUrl": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+          "verifiedOn": "2026-11-10"
+        }
+      ],
+      "ways": [
+        [
+          "Explore",
+          "Use Vibe for the product experience and Studio’s Playground for API experiments.",
+          "m_platform"
+        ],
+        [
+          "Build",
+          "Use Studio for API keys and model calls.",
+          "m_platform"
+        ],
+        [
+          "Deploy",
+          "For an open-weight release, inspect the exact checkpoint, license, runtime requirements, and serving cost.",
+          "m_large"
+        ]
+      ],
+      "picker": [
+        [
+          "General demanding multimodal work",
+          "Mistral Large 4"
+        ],
+        [
+          "Cost-sensitive general work",
+          "Mistral Small 4"
+        ],
+        [
+          "Document text extraction",
+          "The OCR service"
+        ],
+        [
+          "Transcription or speech",
+          "The relevant Voxtral service"
+        ]
+      ],
+      "pickerNote": "Suggested lab routing. Compare extraction quality separately from the quality of the answer written from extracted text.",
+      "rates": [
+        {
+          "modelId": "mistral-large-4",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.7,
+          "output": 2.1,
+          "sourceUrl": "https://docs.mistral.ai/inference/pricing",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.07,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.0245,
+          "exampleCodeReview30DayUSD": 147.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "mistral-small-2603",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.15,
+          "output": 0.6,
+          "sourceUrl": "https://docs.mistral.ai/inference/pricing",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.015,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.006,
+          "exampleCodeReview30DayUSD": 36.0,
+          "calculatorEnabledByDefault": true
+        }
+      ],
+      "costCopy": "Hosted API rates and self-hosting costs answer different questions. For a deployment exercise, add GPU time, utilization, engineering, and operations to the model comparison. Open weights do not make inference cost-free.",
+      "benchmarkCopy": "Use a document task with a known answer, a multilingual task, and a code task. Score extraction and synthesis separately. For self-hosted comparisons, record quantization, hardware, serving runtime, and concurrency.",
+      "pattern": "Suggested pattern: extract document content, normalize fields with a smaller model, and escalate inconsistent records to a larger model. Preserve page references through every step.",
+      "access": "Treat each weight release’s license and deployment route as its own choice. A model hosted in Mistral Studio may come from another lab: a third-party DeepSeek or GLM listing does not make that model a Mistral-developed model.",
+      "accessSource": [
+        "m_models",
+        "m_large"
+      ],
+      "missions": [
+        [
+          "Beginner",
+          "Read the same task twice",
+          "Compare Large and Small on supplied notes.",
+          "Extract every deadline and responsible person. Mark missing fields: <notes>",
+          "Measure exact extraction accuracy."
+        ],
+        [
+          "Beginner",
+          "Work across languages",
+          "Use parallel source passages.",
+          "Summarize the same policy in English and <language>. Preserve all numerical limits: <policy>",
+          "Check numbers and meaning in both outputs."
+        ],
+        [
+          "Builder",
+          "Separate OCR from reasoning",
+          "Use a public scanned document.",
+          "Using the extracted text, list all fees and the page on which each appears: <text>",
+          "Check OCR mistakes before judging the language model."
+        ],
+        [
+          "Builder",
+          "Test code changes",
+          "Use a small function and an executable test.",
+          "Improve this function without changing documented behavior. Add a regression test: <function>",
+          "Run the test before and after."
+        ],
+        [
+          "Expert",
+          "Inspect a deployment",
+          "Review an exact model card and runtime proposal.",
+          "Compare these deployment options by hardware cost, utilization, latency, and operational work: <options>",
+          "Use measured infrastructure figures."
+        ],
+        [
+          "Expert",
+          "Route exceptions",
+          "Create a mixed document set with ambiguous records.",
+          "Extract fields and flag contradictions that need a second pass: <records>",
+          "Review the escalated records and missed exceptions."
+        ],
+        [
+          "Expert",
+          "Measure end-to-end cost",
+          "Use the hosted API or a measured serving endpoint.",
+          "Produce a source-grounded answer to this document question: <question and sources>",
+          "Include extraction, generation, retries, and serving costs."
+        ]
+      ],
+      "quiz": [
+        {
+          "question": "What should decide whether a cheaper model is good enough?",
+          "options": [
+            "Its name",
+            "Results on representative tasks",
+            "Its parameter count alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use examples with known acceptance criteria and compare quality, latency, and cost."
+        },
+        {
+          "question": "Does a larger context window guarantee perfect recall?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for PDFs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Capacity is a limit, not a guarantee that the model will use every detail correctly."
+        },
+        {
+          "question": "Which number helps you price a working agent?",
+          "options": [
+            "Cost per successful completed task",
+            "Input price alone",
+            "The longest possible answer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Retries, tools, output, and failed attempts can change the total."
+        },
+        {
+          "question": "What makes a benchmark comparison useful?",
+          "options": [
+            "The same benchmark version and comparable settings",
+            "A larger bar",
+            "A provider logo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Record tools, effort, token budget, harness, date, and model version."
+        },
+        {
+          "question": "What should happen before a tool makes an important external change?",
+          "options": [
+            "Nothing",
+            "Review the planned action and apply the workflow’s approval rules",
+            "Increase temperature"
+          ],
+          "correctIndex": 1,
+          "explanation": "Separate proposing an action from executing it."
+        },
+        {
+          "question": "How should an unavailable price appear?",
+          "options": [
+            "As zero",
+            "As a verified free tier",
+            "As unknown, with a pricing link"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unknown and free have different meanings."
+        },
+        {
+          "question": "Does “open weight” mean zero serving cost?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for vision"
+          ],
+          "correctIndex": 1,
+          "explanation": "Hardware and operations still cost money."
+        },
+        {
+          "question": "Is every model in Mistral’s catalog developed by Mistral?",
+          "options": [
+            "Yes",
+            "No",
+            "Only the largest ones"
+          ],
+          "correctIndex": 1,
+          "explanation": "The catalog also lists third-party models."
+        }
+      ],
+      "whatsNew": "Large 4’s current card is dated November 5, 2026 and marked GA. The October 6 changelog records the earlier preview launch; present both milestones with their own sources.",
+      "newsSource": [
+        "m_large",
+        "m_news"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "provider": "DeepSeek",
+      "title": "DeepSeek models, hands on",
+      "intro": "Compare Flash and Pro, experiment with thinking and tools, and see how cached input and peak hours change the bill.",
+      "simple": "Flash is the lower-priced option and supports vision in the current API table. Pro is another reasoning option but does not currently support vision on this endpoint. Test both on your own text tasks.",
+      "technical": "The API table maps deepseek-flash to DeepSeek-V4.1-Flash-1017 and deepseek-v4-pro to DeepSeek-V4-Pro-0813. Both list 1M context, up to 384K output, thinking/non-thinking modes, JSON, and tool calls.",
+      "familySource": [
+        "d_prices"
+      ],
+      "models": [
+        {
+          "name": "DeepSeek V4.1 Flash 1017",
+          "modelId": "deepseek-flash",
+          "cardCopy": "For a lower-cost baseline, including supported image input.",
+          "contextTokens": 1000000,
+          "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "DeepSeek V4 Pro 0813",
+          "modelId": "deepseek-v4-pro",
+          "cardCopy": "For comparison on difficult text reasoning and coding tasks.",
+          "contextTokens": 1000000,
+          "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+          "verifiedOn": "2026-11-10"
+        }
+      ],
+      "ways": [
+        [
+          "Build",
+          "Use the documented OpenAI-format or Anthropic-format endpoint and its supported fields.",
+          "d_prices"
+        ],
+        [
+          "Search",
+          "Search and Fetch are separately billed APIs; include them explicitly in a research workflow.",
+          "d_prices"
+        ],
+        [
+          "Explore releases",
+          "Read the official release page for version-specific capabilities and open-weight information.",
+          "d_news"
+        ]
+      ],
+      "picker": [
+        [
+          "Image understanding on the direct endpoint",
+          "DeepSeek Flash"
+        ],
+        [
+          "Cost-sensitive text work",
+          "Start by evaluating Flash"
+        ],
+        [
+          "Harder text work that fails your Flash checks",
+          "Compare Pro on the failed cases"
+        ]
+      ],
+      "pickerNote": "Suggested evaluation path. Pro’s name is not evidence that it wins every workload; use a scored comparison.",
+      "rates": [
+        {
+          "modelId": "deepseek-flash",
+          "label": "Peak",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.3,
+          "output": 1.2,
+          "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.006,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.012,
+          "exampleCodeReview30DayUSD": 72.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "deepseek-flash",
+          "label": "Off-peak",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.15,
+          "output": 0.6,
+          "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.003,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.006,
+          "exampleCodeReview30DayUSD": 36.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "deepseek-v4-pro",
+          "label": "Peak",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 1.32,
+          "output": 3.96,
+          "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.044,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.0462,
+          "exampleCodeReview30DayUSD": 277.2,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "deepseek-v4-pro",
+          "label": "Off-peak",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.66,
+          "output": 1.98,
+          "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.022,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.0231,
+          "exampleCodeReview30DayUSD": 138.6,
+          "calculatorEnabledByDefault": true
+        }
+      ],
+      "costCopy": "Peak hours are 01:00–04:00 and 06:00–10:00 UTC, Monday–Friday excluding Chinese public holidays. Other hours are off-peak. Cache-hit and cache-miss input have different rates. Show a rate selector and disclose its timezone; do not apply one flat price to all requests.",
+      "benchmarkCopy": "Use matched text reasoning and code tasks for Flash versus Pro. Use a separate image track for Flash. Compare thinking modes with the same acceptance checks and report total billed work.",
+      "pattern": "Suggested pattern: Flash handles bounded extraction; cases that fail validation go to a second reasoning pass. Use Pro only when the second-pass results justify it. Search results should be passed as evidence with attribution.",
+      "access": "Select by required modality before cost: the direct API currently lists vision for Flash and no vision for Pro. Compatibility with another provider’s request format does not promise identical tools or behavior.",
+      "accessSource": [
+        "d_prices"
+      ],
+      "missions": [
+        [
+          "Beginner",
+          "Meet Flash",
+          "Use a short supplied record.",
+          "Extract dates, names, and amounts from this record. Do not infer omitted values: <record>",
+          "Check each field."
+        ],
+        [
+          "Beginner",
+          "Try image input",
+          "Use Flash with a supported image.",
+          "List the text and visible numerical values in this image. Mark anything unclear.",
+          "Compare with the original image."
+        ],
+        [
+          "Builder",
+          "Compare thinking",
+          "Run the same text problem in supported modes.",
+          "Find a counterexample to this proposed algorithm or explain the assumptions needed: <algorithm>",
+          "Verify the counterexample with code."
+        ],
+        [
+          "Builder",
+          "Compare Pro",
+          "Use a task that failed the Flash baseline.",
+          "Find the smallest fix for this reproducible failure: <code and failure>",
+          "Run the regression test."
+        ],
+        [
+          "Expert",
+          "Observe caching",
+          "Repeat a stable synthetic prefix and inspect reported usage.",
+          "Answer the final query using only the supplied reference block: <reference and query>",
+          "Use actual cache-hit counts instead of assuming the whole prompt was cached."
+        ],
+        [
+          "Expert",
+          "Price the schedule",
+          "Evaluate peak and off-peak scenarios without generating traffic unnecessarily.",
+          "Estimate this batch using both published schedules: <token counts>",
+          "Check UTC boundaries and public-holiday handling."
+        ],
+        [
+          "Expert",
+          "Add retrieval",
+          "Connect documented Search or Fetch in your own app.",
+          "Answer this public-document question with evidence links: <question>",
+          "Record retrieval fees separately from generation."
+        ]
+      ],
+      "quiz": [
+        {
+          "question": "What should decide whether a cheaper model is good enough?",
+          "options": [
+            "Its name",
+            "Results on representative tasks",
+            "Its parameter count alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use examples with known acceptance criteria and compare quality, latency, and cost."
+        },
+        {
+          "question": "Does a larger context window guarantee perfect recall?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for PDFs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Capacity is a limit, not a guarantee that the model will use every detail correctly."
+        },
+        {
+          "question": "Which number helps you price a working agent?",
+          "options": [
+            "Cost per successful completed task",
+            "Input price alone",
+            "The longest possible answer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Retries, tools, output, and failed attempts can change the total."
+        },
+        {
+          "question": "What makes a benchmark comparison useful?",
+          "options": [
+            "The same benchmark version and comparable settings",
+            "A larger bar",
+            "A provider logo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Record tools, effort, token budget, harness, date, and model version."
+        },
+        {
+          "question": "What should happen before a tool makes an important external change?",
+          "options": [
+            "Nothing",
+            "Review the planned action and apply the workflow’s approval rules",
+            "Increase temperature"
+          ],
+          "correctIndex": 1,
+          "explanation": "Separate proposing an action from executing it."
+        },
+        {
+          "question": "How should an unavailable price appear?",
+          "options": [
+            "As zero",
+            "As a verified free tier",
+            "As unknown, with a pricing link"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unknown and free have different meanings."
+        },
+        {
+          "question": "Which direct-API model currently lists vision support?",
+          "options": [
+            "Flash",
+            "Pro",
+            "Both"
+          ],
+          "correctIndex": 0,
+          "explanation": "The current pricing/capability table lists vision only for Flash."
+        },
+        {
+          "question": "Which timezone defines peak hours?",
+          "options": [
+            "Your browser timezone",
+            "UTC",
+            "Pacific Time"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use the published UTC schedule and holiday exceptions."
+        }
+      ],
+      "whatsNew": "The October 17, 2026 release page introduces V4.1 Flash 1017. The current API table says the legacy Flash names route to this version; display both the requested alias and resolved version when available.",
+      "newsSource": [
+        "d_news",
+        "d_prices"
+      ]
+    },
+    {
+      "id": "meta",
+      "provider": "Meta",
+      "title": "Muse models, hands on",
+      "intro": "Compare planning with repeated execution, choose Standard or Contributor mode deliberately, and measure a workflow that combines model roles.",
+      "simple": "Wonder handles complex, long-running work. Spark is the lower-cost agentic and coding option. Ember handles repeated, bounded execution.",
+      "technical": "The current comparison lists Wonder 1.0, Spark 1.3, and Ember 1.0 with 1,048,576-token context and multimodal inputs. Spark 1.3 is the recommended Spark version. The guide flags degraded audio quality on Spark 1.3 and recommends Spark 1.2 or Voice Transcribe for that need.",
+      "familySource": [
+        "meta_select"
+      ],
+      "models": [
+        {
+          "name": "Muse Wonder",
+          "modelId": "muse-wonder-1.0",
+          "cardCopy": "For complex software engineering and long-horizon agents.",
+          "contextTokens": 1048576,
+          "sourceUrl": "https://dev.meta.ai/docs/choose-a-model",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "Muse Spark 1.3",
+          "modelId": "muse-spark-1.3",
+          "cardCopy": "For lower-cost agentic and coding work.",
+          "contextTokens": 1048576,
+          "sourceUrl": "https://dev.meta.ai/docs/choose-a-model",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "Muse Ember",
+          "modelId": "muse-ember-1.0",
+          "cardCopy": "For repeated execution, routing, and bounded subtasks.",
+          "contextTokens": 1048576,
+          "sourceUrl": "https://dev.meta.ai/docs/choose-a-model",
+          "verifiedOn": "2026-11-10"
+        }
+      ],
+      "ways": [
+        [
+          "Build",
+          "Call Meta Model API using the documented request surface.",
+          "meta_overview"
+        ],
+        [
+          "Code",
+          "Use Muse Code or a documented integration with an existing agent.",
+          "meta_overview"
+        ],
+        [
+          "Self-host",
+          "Explore the separate Spark Open or Glimmer releases and their requirements.",
+          "meta_overview"
+        ]
+      ],
+      "picker": [
+        [
+          "Hard, long-running repository changes",
+          "Muse Wonder"
+        ],
+        [
+          "Agent or coding work with a tighter cost target",
+          "Muse Spark 1.3"
+        ],
+        [
+          "High-volume bounded subtasks",
+          "Muse Ember"
+        ],
+        [
+          "Audio understanding",
+          "Check the guide’s Spark 1.2 or transcription recommendation"
+        ]
+      ],
+      "pickerNote": "Suggested routing follows the current model-selection guide. Check availability for the chosen product and variant.",
+      "rates": [
+        {
+          "modelId": "muse-wonder-1.0",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 4,
+          "output": 20,
+          "sourceUrl": "https://dev.meta.ai/docs/pricing-rate-limits",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.2,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.18,
+          "exampleCodeReview30DayUSD": 1080.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "muse-spark-1.3",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 1.25,
+          "output": 4.25,
+          "sourceUrl": "https://dev.meta.ai/docs/pricing-rate-limits",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.15,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.04625,
+          "exampleCodeReview30DayUSD": 277.5,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "muse-spark-1.3-contributor",
+          "label": "Contributor",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.1,
+          "output": 0.2,
+          "sourceUrl": "https://dev.meta.ai/docs/pricing-rate-limits",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.002,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.003,
+          "exampleCodeReview30DayUSD": 18.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "muse-ember-1.0",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.1,
+          "output": 0.5,
+          "sourceUrl": "https://dev.meta.ai/docs/pricing-rate-limits",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.004,
+          "inputTokensMaxInclusive": 200000,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.0045,
+          "exampleCodeReview30DayUSD": 27.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "muse-ember-1.0",
+          "label": "Long context",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.3,
+          "output": 1.5,
+          "sourceUrl": "https://dev.meta.ai/docs/pricing-rate-limits",
+          "checkedOn": "2026-11-10",
+          "cachedInput": 0.012,
+          "inputTokensMinExclusive": 200000,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": null,
+          "exampleCodeReview30DayUSD": null,
+          "calculatorEnabledByDefault": true
+        }
+      ],
+      "costCopy": "Standard mode does not use your content to train Meta models. Contributor mode trades permission to train on submitted content and responses for a lower price or more usage. The pricing page says Muse Code subscriptions default to Contributor mode. Ember has a higher all-request rate above 200K input; Wonder and Spark do not have that long-context premium.",
+      "benchmarkCopy": "Compare a long repository task and many bounded extraction tasks. Record whether the stronger model planned and verified the work or merely generated a plan. Compare at the same data-use mode and include every worker call.",
+      "pattern": "Suggested pattern: Wonder or Spark plans and checks the outcome; Ember executes well-scoped tasks. Define a result schema and acceptance check for each worker before comparing the combined workflow with solo execution.",
+      "access": "Wonder Full is a Muse Code-only variant, not an API model selected by setting reasoning effort to max. Contributor mode is a data-use choice, not a capability or safety setting. Display it before the user sends content.",
+      "accessSource": [
+        "meta_select",
+        "meta_prices"
+      ],
+      "missions": [
+        [
+          "Beginner",
+          "Meet Spark",
+          "Use synthetic task notes.",
+          "Organize these notes into decisions, actions, and unanswered questions: <notes>",
+          "Check every claim."
+        ],
+        [
+          "Beginner",
+          "Meet Ember",
+          "Use a set of labeled example records.",
+          "Classify each ticket as billing, bug, or feature request and give a short evidence phrase: <tickets>",
+          "Compare with known labels."
+        ],
+        [
+          "Builder",
+          "Review the mode",
+          "Read the account’s data-use setting before submitting real material.",
+          "List what content this workflow sends and whether each item is suitable for the selected data-use mode: <workflow>",
+          "Confirm against the actual setting and policy."
+        ],
+        [
+          "Builder",
+          "Try a difficult change",
+          "Compare Spark and Wonder on a small repository task.",
+          "Fix <reproducible bug>. First write a regression test; report all changed files.",
+          "Run the test and inspect the diff."
+        ],
+        [
+          "Expert",
+          "Split planning and execution",
+          "Implement separate planner and worker calls.",
+          "Split this task into independently checkable subtasks. Give inputs, output schema, and a test for each: <task>",
+          "Check the worker’s actual output and planner verification."
+        ],
+        [
+          "Expert",
+          "Check long-context rates",
+          "Estimate the Ember bill for two synthetic input sizes.",
+          "Compare this workload below and above 200K input tokens using the published all-request rates: <counts>",
+          "Check the exact threshold."
+        ],
+        [
+          "Expert",
+          "Compare the complete workflow",
+          "Run a repeatable benchmark in your application.",
+          "Complete <task> and return the acceptance evidence.",
+          "Log every model call, mode, token count, and verified outcome."
+        ]
+      ],
+      "quiz": [
+        {
+          "question": "What should decide whether a cheaper model is good enough?",
+          "options": [
+            "Its name",
+            "Results on representative tasks",
+            "Its parameter count alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use examples with known acceptance criteria and compare quality, latency, and cost."
+        },
+        {
+          "question": "Does a larger context window guarantee perfect recall?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for PDFs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Capacity is a limit, not a guarantee that the model will use every detail correctly."
+        },
+        {
+          "question": "Which number helps you price a working agent?",
+          "options": [
+            "Cost per successful completed task",
+            "Input price alone",
+            "The longest possible answer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Retries, tools, output, and failed attempts can change the total."
+        },
+        {
+          "question": "What makes a benchmark comparison useful?",
+          "options": [
+            "The same benchmark version and comparable settings",
+            "A larger bar",
+            "A provider logo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Record tools, effort, token budget, harness, date, and model version."
+        },
+        {
+          "question": "What should happen before a tool makes an important external change?",
+          "options": [
+            "Nothing",
+            "Review the planned action and apply the workflow’s approval rules",
+            "Increase temperature"
+          ],
+          "correctIndex": 1,
+          "explanation": "Separate proposing an action from executing it."
+        },
+        {
+          "question": "How should an unavailable price appear?",
+          "options": [
+            "As zero",
+            "As a verified free tier",
+            "As unknown, with a pricing link"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unknown and free have different meanings."
+        },
+        {
+          "question": "What changes when you choose Contributor mode?",
+          "options": [
+            "Only answer length",
+            "Permission to use your content for model training",
+            "The context window alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Choose the mode based on the permitted use of your content."
+        },
+        {
+          "question": "Does max effort select Wonder Full on the API?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for image input"
+          ],
+          "correctIndex": 1,
+          "explanation": "The guide identifies Wonder Full as available only in Muse Code."
+        }
+      ],
+      "whatsNew": "The current catalog includes Wonder, Spark 1.3, and Ember. Release dates are not asserted here because the reviewed comparison and pricing pages do not establish them.",
+      "newsSource": [
+        "meta_select",
+        "meta_prices"
+      ]
+    },
+    {
+      "id": "qwen",
+      "provider": "Alibaba / Qwen",
+      "title": "Qwen models, hands on",
+      "intro": "Move between Max, Plus, and Flash, use the same general model on text and visual input, and learn why region and context tier belong in every cost estimate.",
+      "simple": "Max prioritizes capability, Plus balances capability and cost, and Flash prioritizes cost. Evaluate the exact version available in your deployment region.",
+      "technical": "The current Model Studio guide recommends qwen3.8-max, qwen3.7-plus, and qwen3.8-flash. All three list 1M context, text/image/video input, thinking, function calling, built-in tools, and structured output.",
+      "familySource": [
+        "q_models"
+      ],
+      "models": [
+        {
+          "name": "Qwen3.8 Max",
+          "modelId": "qwen3.8-max",
+          "cardCopy": "For higher reasoning and understanding requirements.",
+          "contextTokens": 1000000,
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "Qwen3.7 Plus",
+          "modelId": "qwen3.7-plus",
+          "cardCopy": "A balanced starting point.",
+          "contextTokens": 1000000,
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "Qwen3.8 Flash",
+          "modelId": "qwen3.8-flash",
+          "cardCopy": "For cost-sensitive repeated work.",
+          "contextTokens": 1000000,
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+          "verifiedOn": "2026-11-10"
+        }
+      ],
+      "ways": [
+        [
+          "Build",
+          "Use Alibaba Cloud Model Studio and choose the region and deployment scope explicitly.",
+          "q_models"
+        ],
+        [
+          "Choose a specialist",
+          "Use the task-specific guides for OCR, translation, long documents, and research.",
+          "q_models"
+        ]
+      ],
+      "picker": [
+        [
+          "Balanced starting point",
+          "Qwen3.7 Plus"
+        ],
+        [
+          "Higher reasoning requirements",
+          "Qwen3.8 Max"
+        ],
+        [
+          "Cost-sensitive bounded work",
+          "Qwen3.8 Flash"
+        ],
+        [
+          "Specialist extraction or translation",
+          "Compare the relevant specialist with your general-model baseline"
+        ]
+      ],
+      "pickerNote": "Suggested routing follows Model Studio’s guide. Hosted model names and available open-weight checkpoints are separate catalog choices.",
+      "rates": [
+        {
+          "modelId": "qwen3.8-max",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 2,
+          "output": 6,
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "checkedOn": "2026-11-10",
+          "scope": "Singapore / International",
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.07,
+          "exampleCodeReview30DayUSD": 420.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "qwen3.7-plus",
+          "label": "List price, short context",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.4,
+          "output": 1.6,
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "checkedOn": "2026-11-10",
+          "scope": "Singapore / International",
+          "inputTokensMaxInclusive": 256000,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.016,
+          "exampleCodeReview30DayUSD": 96.0,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "qwen3.7-plus",
+          "label": "List price, long context",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 1.2,
+          "output": 4.8,
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "checkedOn": "2026-11-10",
+          "scope": "Singapore / International",
+          "inputTokensMinExclusive": 256000,
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": null,
+          "exampleCodeReview30DayUSD": null,
+          "calculatorEnabledByDefault": true
+        },
+        {
+          "modelId": "qwen3.8-flash",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": 0.15,
+          "output": 0.47,
+          "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "checkedOn": "2026-11-10",
+          "scope": "Singapore / International",
+          "verificationStatus": "verified_official_page",
+          "exampleCodeReviewRequestUSD": 0.00535,
+          "exampleCodeReview30DayUSD": 32.1,
+          "calculatorEnabledByDefault": true
+        }
+      ],
+      "costCopy": "These rows use Singapore / International list pricing. The Plus alias currently advertises a temporary discount, excluded from this baseline. Other regions, deployment scopes, and promotions differ. For tiered prices, the input size selects the rate for the whole request.",
+      "benchmarkCopy": "Use matched English and Chinese tasks, a screenshot task, and a code task. Score factual preservation, structured field accuracy, and executable correctness. Report the region and model ID with each result.",
+      "pattern": "Suggested pattern: Flash extracts records, Plus writes routine summaries, and Max handles difficult contradictions. Apply one validation schema across the routes so quality is compared consistently.",
+      "access": "Region and invocation methods vary by model. A model listing elsewhere does not establish availability on your endpoint. Confirm the required tools and deployment scope before enabling a mission.",
+      "accessSource": [
+        "q_models",
+        "q_prices"
+      ],
+      "missions": [
+        [
+          "Beginner",
+          "Meet Plus",
+          "Use supplied notes.",
+          "Turn these notes into a concise decision log with evidence phrases: <notes>",
+          "Check factual preservation."
+        ],
+        [
+          "Beginner",
+          "Compare languages",
+          "Use the same source in a bilingual task.",
+          "Summarize this policy in English and Chinese without changing dates, quantities, or conditions: <policy>",
+          "Check all numbers and conditions."
+        ],
+        [
+          "Builder",
+          "Read a screen",
+          "Supply a screenshot.",
+          "Extract visible labels and values into a table. Mark unclear text: <image>",
+          "Compare with the original."
+        ],
+        [
+          "Builder",
+          "Compare Flash",
+          "Use the same labeled extraction set on Flash and Plus.",
+          "Extract these fields without inventing missing values: <records and schema>",
+          "Measure field accuracy and cost."
+        ],
+        [
+          "Expert",
+          "Escalate to Max",
+          "Use failed or ambiguous cases from the baseline.",
+          "Resolve this contradiction using only the supplied evidence. Say if the evidence is insufficient: <case>",
+          "Check whether escalation improved the answer."
+        ],
+        [
+          "Expert",
+          "Price your region",
+          "Select exact region, scope, and token tier.",
+          "Estimate this workload with the selected region’s published list rates: <counts>",
+          "Compare with the correct table, not a different region’s headline price."
+        ],
+        [
+          "Expert",
+          "Build a validated output",
+          "Enable the documented structured-output mode in your app.",
+          "Extract the requested fields according to this schema: <schema and input>",
+          "Validate the returned JSON and compare field values with the source."
+        ]
+      ],
+      "quiz": [
+        {
+          "question": "What should decide whether a cheaper model is good enough?",
+          "options": [
+            "Its name",
+            "Results on representative tasks",
+            "Its parameter count alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use examples with known acceptance criteria and compare quality, latency, and cost."
+        },
+        {
+          "question": "Does a larger context window guarantee perfect recall?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for PDFs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Capacity is a limit, not a guarantee that the model will use every detail correctly."
+        },
+        {
+          "question": "Which number helps you price a working agent?",
+          "options": [
+            "Cost per successful completed task",
+            "Input price alone",
+            "The longest possible answer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Retries, tools, output, and failed attempts can change the total."
+        },
+        {
+          "question": "What makes a benchmark comparison useful?",
+          "options": [
+            "The same benchmark version and comparable settings",
+            "A larger bar",
+            "A provider logo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Record tools, effort, token budget, harness, date, and model version."
+        },
+        {
+          "question": "What should happen before a tool makes an important external change?",
+          "options": [
+            "Nothing",
+            "Review the planned action and apply the workflow’s approval rules",
+            "Increase temperature"
+          ],
+          "correctIndex": 1,
+          "explanation": "Separate proposing an action from executing it."
+        },
+        {
+          "question": "How should an unavailable price appear?",
+          "options": [
+            "As zero",
+            "As a verified free tier",
+            "As unknown, with a pricing link"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unknown and free have different meanings."
+        },
+        {
+          "question": "Which model does the current guide suggest as the balanced start?",
+          "options": [
+            "Qwen3.7 Plus",
+            "An unspecified qwen-latest alias",
+            "Every model equally"
+          ],
+          "correctIndex": 0,
+          "explanation": "The guide explicitly recommends qwen3.7-plus as its balanced starting point."
+        },
+        {
+          "question": "Is one regional price valid for all Model Studio deployments?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for Flash"
+          ],
+          "correctIndex": 1,
+          "explanation": "Record region, deployment scope, context tier, and promotion terms."
+        }
+      ],
+      "whatsNew": "The model guide reviewed here was updated November 5, 2026, and the pricing page November 7. These are documentation update dates, not inferred model launch dates.",
+      "newsSource": [
+        "q_models",
+        "q_prices"
+      ]
+    },
+    {
+      "id": "moonshot",
+      "provider": "Moonshot AI / Kimi",
+      "title": "Kimi models, hands on",
+      "intro": "Explore long-context coding and document work, distinguish product subscriptions from API usage, and measure a long task with explicit evidence and stopping conditions.",
+      "simple": "Kimi K3.1 Pro is Moonshot’s current flagship for demanding agentic work. K3 provides another model to compare. Use an exact ID and verify access before starting.",
+      "technical": "K3-series documentation lists a 1,048,576-token context window. K3.1 Pro uses the ID kimi-k3.1-pro, always enables thinking, and accepts low, high, or max reasoning effort, defaulting to max. A high-speed variant is separately listed.",
+      "familySource": [
+        "k_home",
+        "k_prices",
+        "k_pro"
+      ],
+      "models": [
+        {
+          "name": "Kimi K3.1 Pro",
+          "modelId": "kimi-k3.1-pro",
+          "cardCopy": "For demanding long-horizon coding and complex agentic work.",
+          "contextTokens": 1048576,
+          "sourceUrl": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "name": "Kimi K3",
+          "modelId": "kimi-k3",
+          "cardCopy": "A second K3-series baseline for your task set.",
+          "contextTokens": 1048576,
+          "sourceUrl": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+          "verifiedOn": "2026-11-10"
+        }
+      ],
+      "ways": [
+        [
+          "Explore",
+          "Use Kimi’s product experience for supported document and creation workflows.",
+          "k_home"
+        ],
+        [
+          "Code",
+          "Use the separately offered Kimi Code product and its plan details.",
+          "k_home"
+        ],
+        [
+          "Build",
+          "Use the Kimi API platform and the documented model IDs.",
+          "k_pro"
+        ]
+      ],
+      "picker": [
+        [
+          "Demanding long-context agentic work",
+          "Evaluate Kimi K3.1 Pro"
+        ],
+        [
+          "Compare another K3-series baseline",
+          "Kimi K3"
+        ],
+        [
+          "Need a high-speed variant",
+          "Check the separately listed variant’s availability and price"
+        ]
+      ],
+      "pickerNote": "Suggested evaluation path. Do not assume that a product subscription grants equivalent API credit or identical model access.",
+      "rates": [
+        {
+          "modelId": "kimi-k3.1-pro",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": null,
+          "output": null,
+          "sourceUrl": "https://platform.kimi.ai/docs/pricing/chat",
+          "checkedOn": "2026-11-10",
+          "verificationStatus": "needs_price_verification",
+          "exampleCodeReviewRequestUSD": null,
+          "exampleCodeReview30DayUSD": null,
+          "calculatorEnabledByDefault": false
+        },
+        {
+          "modelId": "kimi-k3",
+          "label": "Standard",
+          "currency": "USD",
+          "unit": "per_1m_tokens",
+          "input": null,
+          "output": null,
+          "sourceUrl": "https://platform.kimi.ai/docs/pricing/chat",
+          "checkedOn": "2026-11-10",
+          "verificationStatus": "needs_price_verification",
+          "exampleCodeReviewRequestUSD": null,
+          "exampleCodeReview30DayUSD": null,
+          "calculatorEnabledByDefault": false
+        }
+      ],
+      "costCopy": "No numeric Kimi rates are asserted in this pack: the readable inference-pricing page did not expose a rate table. It does state that supported K3 batch requests are billed at 60% of standard pricing, and that caching can add TTL-dependent write charges. Verify the complete rate before enabling calculation.",
+      "benchmarkCopy": "Use a long document with facts planted near the beginning, middle, and end, plus a repository change with explicit regression tests. Measure retrieval accuracy and completed work rather than prompt capacity alone.",
+      "pattern": "Suggested pattern: inspect and index the evidence, plan the task, execute bounded steps, and stop at defined checkpoints. Keep a ledger of evidence, changed files, tests, and remaining uncertainty.",
+      "access": "The Pro quickstart says the flagship unlocks after a successful top-up of at least $1. API inference is pay-as-you-go and separate from Kimi membership and Kimi Code. Check the exact account and endpoint rather than assuming product access transfers.",
+      "accessSource": [
+        "k_pro",
+        "k_prices"
+      ],
+      "missions": [
+        [
+          "Beginner",
+          "Meet Kimi",
+          "Use a supplied public document.",
+          "Write a decision brief with five findings, an evidence location for each, and three unresolved questions.",
+          "Check every location."
+        ],
+        [
+          "Beginner",
+          "Test long context",
+          "Use a synthetic document with known facts in different sections.",
+          "Find every occurrence of <target fact> and identify conflicting versions.",
+          "Compare with the known source set."
+        ],
+        [
+          "Builder",
+          "Write a change plan",
+          "Use a small repository task.",
+          "Plan this change with explicit file dependencies, regression checks, and a stopping point: <task>",
+          "Review the plan before execution."
+        ],
+        [
+          "Builder",
+          "Compare effort",
+          "Use two documented effort settings on Pro.",
+          "Find a reproducible counterexample to this implementation: <code>",
+          "Run it and compare time and tokens."
+        ],
+        [
+          "Expert",
+          "Track a long task",
+          "Use a multi-step task with a fixed acceptance check.",
+          "Complete <task>. At each checkpoint, report verified work, failed checks, and the next bounded step.",
+          "Check the work ledger against actual artifacts."
+        ],
+        [
+          "Expert",
+          "Evaluate caching",
+          "Use a stable synthetic prefix and recorded usage.",
+          "Answer this query from the reference material: <reference and query>",
+          "Include cache write and hit charges once rates are verified."
+        ],
+        [
+          "Expert",
+          "Call the API",
+          "Follow the official Pro quickstart.",
+          "Review this function and return the smallest failing example: <function>",
+          "Record model, effort, usage, and test outcome."
+        ]
+      ],
+      "quiz": [
+        {
+          "question": "What should decide whether a cheaper model is good enough?",
+          "options": [
+            "Its name",
+            "Results on representative tasks",
+            "Its parameter count alone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use examples with known acceptance criteria and compare quality, latency, and cost."
+        },
+        {
+          "question": "Does a larger context window guarantee perfect recall?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for PDFs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Capacity is a limit, not a guarantee that the model will use every detail correctly."
+        },
+        {
+          "question": "Which number helps you price a working agent?",
+          "options": [
+            "Cost per successful completed task",
+            "Input price alone",
+            "The longest possible answer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Retries, tools, output, and failed attempts can change the total."
+        },
+        {
+          "question": "What makes a benchmark comparison useful?",
+          "options": [
+            "The same benchmark version and comparable settings",
+            "A larger bar",
+            "A provider logo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Record tools, effort, token budget, harness, date, and model version."
+        },
+        {
+          "question": "What should happen before a tool makes an important external change?",
+          "options": [
+            "Nothing",
+            "Review the planned action and apply the workflow’s approval rules",
+            "Increase temperature"
+          ],
+          "correctIndex": 1,
+          "explanation": "Separate proposing an action from executing it."
+        },
+        {
+          "question": "How should an unavailable price appear?",
+          "options": [
+            "As zero",
+            "As a verified free tier",
+            "As unknown, with a pricing link"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unknown and free have different meanings."
+        },
+        {
+          "question": "Can K3.1 Pro’s thinking be assumed disabled by default?",
+          "options": [
+            "Yes",
+            "No",
+            "Only in batch"
+          ],
+          "correctIndex": 1,
+          "explanation": "Its guide says thinking is always enabled, with configurable effort."
+        },
+        {
+          "question": "Does Kimi membership automatically equal API credit?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for coding"
+          ],
+          "correctIndex": 1,
+          "explanation": "The API pricing guide distinguishes pay-as-you-go inference from memberships and Kimi Code."
+        }
+      ],
+      "whatsNew": "Moonshot’s homepage dates K3.1 Pro to October 24, 2026. The API pricing page says K2 models closed to new users on October 31 and are planned for retirement by the end of December 2026.",
+      "newsSource": [
+        "k_home",
+        "k_prices"
+      ]
+    }
+  ],
+  "benchmarkScores": []
+}

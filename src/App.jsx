@@ -144,7 +144,7 @@ function App() {
       <footer className="site-footer">
         <div className="footer-content">
           <p className="footer-main"><strong>AI-Explorer</strong>: an interactive field guide to understanding AI from the ground up.</p>
-          <p className="footer-credit">Made by <a href="https://github.com/thejaredchapman" target="_blank" rel="noopener noreferrer">Jared Chapman</a></p>
+          <p className="footer-credit">Made by <a href="https://www.linkedin.com/in/thejaredchapman/" target="_blank" rel="noopener noreferrer">Jared Chapman</a></p>
           <div className="footer-links">
             <a href="https://github.com/thejaredchapman/AI-Explorer" target="_blank" rel="noopener noreferrer">GitHub</a>
             <span className="footer-divider">|</span>

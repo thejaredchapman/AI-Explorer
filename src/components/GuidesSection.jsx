@@ -91,6 +91,15 @@ function GuideCard({ guide, isExpanded, onToggle, index }) {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
+            {guide.setup?.length > 0 && (
+              <div className="guide-setup">
+                <span className="guide-concepts-label">Before you start:</span>
+                <ol className="guide-setup-list">
+                  {guide.setup.map(step => <li key={step}>{step}</li>)}
+                </ol>
+              </div>
+            )}
+
             <div className="guide-concepts">
               <span className="guide-concepts-label">Key Concepts:</span>
               <div className="guide-concept-tags">
@@ -116,6 +125,18 @@ function GuideCard({ guide, isExpanded, onToggle, index }) {
               <span className="guide-run-label">Run it:</span>
               <code className="guide-run-command">{guide.runCommand}</code>
             </div>
+
+            {guide.docsUrl && (
+              <a
+                className="guide-docs-link"
+                href={guide.docsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: pColor }}
+              >
+                {guide.docsLabel || 'Official docs'} ↗
+              </a>
+            )}
           </motion.div>
         )}
       </AnimatePresence>

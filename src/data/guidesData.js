@@ -12,6 +12,9 @@ export const providers = [
   { id: 'langchain', label: 'LangChain', icon: '🦜', color: '#1c3c3c', description: 'LLM orchestration framework — chains, agents, RAG, and tool integration across any model.' },
   { id: 'langgraph', label: 'LangGraph', icon: '🕸️', color: '#0f766e', description: 'Stateful, multi-actor agent framework — graph-based workflows, cycles, persistence, and human-in-the-loop.' },
   { id: 'crewai', label: 'CrewAI', icon: '👷', color: '#e63946', description: 'Multi-agent orchestration — define roles, goals, and tasks for crews of AI agents that collaborate autonomously.' },
+  { id: 'bedrock', label: 'AWS Bedrock', icon: '🪨', color: '#ff9900', description: 'Run Claude inside your AWS account — IAM auth, AWS billing, CloudWatch logs, and data that stays in the AWS boundary.' },
+  { id: 'vertex', label: 'Google Vertex AI', icon: '🔺', color: '#34a853', description: 'Claude on Google Cloud (Vertex AI, now called Agent Platform) — gcloud auth, Google Cloud billing, global or regional endpoints.' },
+  { id: 'foundry', label: 'Microsoft Foundry', icon: '🔷', color: '#0078d4', description: 'Claude in Azure through Microsoft Foundry — deploy a model, call it with an API key or Entra ID, billed on your Azure invoice.' },
 ];
 
 export const categories = [
@@ -1714,6 +1717,421 @@ result = flow.kickoff(inputs={"topic": "AI agents in production"})
 print(result)`,
       runCommand: 'python crewai_06_flows.py',
     },
+
+    // ═══════════════════════════════════════
+    // AWS BEDROCK GUIDES
+    // Source: platform.claude.com/docs/en/build-with-claude/claude-in-amazon-bedrock
+    // ═══════════════════════════════════════
+    {
+      id: 'bedrock-first-call',
+      number: 'BR1',
+      title: 'Get Started: Your First Claude Call on Bedrock',
+      file: 'bedrock_01_first_call.py',
+      category: 'beginner',
+      provider: 'bedrock',
+      model: 'Claude Sonnet 5.5 on Bedrock',
+      icon: '🚀',
+      color: '#ff9900',
+      description: 'Go from an AWS account to a working Claude response. Bedrock serves Claude through the same Messages API shape as the Claude API, so you authenticate with AWS and keep the request code you already know.',
+      setup: [
+        'Create or sign in to an AWS account and pick a region such as us-east-1.',
+        'In the Bedrock console, open Model access and enable the Claude models you want. Sonnet 5 and Opus 4.8 are open to all accounts; check access criteria for Sonnet 5.5 and Opus 5.5.',
+        'Give your IAM identity the bedrock-mantle:CreateInference permission.',
+        'Configure credentials with aws configure, aws sso login, or a short-term Bedrock API key in AWS_BEARER_TOKEN_BEDROCK.',
+        'Install the SDK: pip install -U "anthropic[bedrock]"',
+      ],
+      docsUrl: 'https://platform.claude.com/docs/en/build-with-claude/claude-in-amazon-bedrock',
+      docsLabel: 'Claude in Amazon Bedrock docs',
+      concepts: ['AWS credentials', 'Model access', 'Bedrock model IDs', 'Global vs regional endpoints'],
+      codePreview: `from anthropic import AnthropicBedrockMantle
+
+# Uses your AWS credential chain (aws configure / SSO / env vars)
+# or AWS_BEARER_TOKEN_BEDROCK if it is set.
+client = AnthropicBedrockMantle(aws_region="us-east-1")
+
+message = client.messages.create(
+    model="anthropic.claude-sonnet-5-5",  # Bedrock IDs carry an "anthropic." prefix
+    max_tokens=1024,
+    messages=[{"role": "user", "content": "Explain Amazon Bedrock in two sentences."}],
+)
+
+print(next(b.text for b in message.content if b.type == "text"))`,
+      runCommand: 'python bedrock_01_first_call.py',
+    },
+    {
+      id: 'bedrock-support-bot',
+      number: 'BR2',
+      title: 'Project: Support Triage Bot with Tool Use',
+      file: 'bedrock_02_support_bot.py',
+      category: 'intermediate',
+      provider: 'bedrock',
+      model: 'Claude Sonnet 5.5 on Bedrock',
+      icon: '🎫',
+      color: '#ff9900',
+      description: 'Build a small but complete project: a support assistant that looks up orders through a tool you define, then answers the customer. The same loop works for any internal API you want Claude to call.',
+      setup: [
+        'Finish BR1 so your credentials and model access work.',
+        'Replace lookup_order with a call to your real system (DynamoDB, an internal API, etc.).',
+        'To answer from your own documents instead, add a Bedrock Knowledge Base and expose a search tool the same way.',
+        'Turn on Bedrock logging to CloudWatch and keep at least 30 days of activity logs.',
+      ],
+      docsUrl: 'https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview',
+      docsLabel: 'Tool use docs',
+      concepts: ['Tool definitions', 'Agentic loop', 'tool_result blocks', 'Grounded answers'],
+      codePreview: `from anthropic import AnthropicBedrockMantle
+
+client = AnthropicBedrockMantle(aws_region="us-east-1")
+MODEL = "anthropic.claude-sonnet-5-5"
+
+tools = [{
+    "name": "lookup_order",
+    "description": "Get the status of a customer order by its ID.",
+    "input_schema": {
+        "type": "object",
+        "properties": {"order_id": {"type": "string"}},
+        "required": ["order_id"],
+    },
+}]
+
+def lookup_order(order_id):
+    # Swap in your real data source here
+    return {"order_id": order_id, "status": "shipped", "eta": "2 days"}
+
+messages = [{"role": "user", "content": "Where is order A-1042?"}]
+
+while True:
+    response = client.messages.create(
+        model=MODEL, max_tokens=1024, tools=tools, messages=messages,
+        system="You are a friendly support agent. Use tools for order facts.",
+    )
+    messages.append({"role": "assistant", "content": response.content})
+    if response.stop_reason != "tool_use":
+        break
+    results = [
+        {"type": "tool_result", "tool_use_id": block.id,
+         "content": str(lookup_order(**block.input))}
+        for block in response.content if block.type == "tool_use"
+    ]
+    messages.append({"role": "user", "content": results})
+
+print(next(b.text for b in response.content if b.type == "text"))`,
+      runCommand: 'python bedrock_02_support_bot.py',
+    },
+    {
+      id: 'bedrock-agent-sdk',
+      number: 'BR3',
+      title: 'Ship It: Claude Agent SDK on Bedrock',
+      file: 'bedrock_03_agent.py',
+      category: 'advanced',
+      provider: 'bedrock',
+      model: 'Claude Agent SDK + Bedrock',
+      icon: '🤖',
+      color: '#ff9900',
+      description: 'Run a full agent (the same engine behind Claude Code) entirely on your AWS account. Point the Agent SDK at Bedrock with environment variables, then let it read files, run tools, and finish a task end to end.',
+      setup: [
+        'pip install claude-agent-sdk',
+        'export CLAUDE_CODE_USE_MANTLE=1 and export AWS_REGION=us-east-1',
+        'Grant bedrock-mantle:CreateInference (and bedrock-mantle:CountTokens) to the IAM role the agent runs as.',
+        'In production, run under an IAM role (ECS task role, Lambda role, or EC2 instance profile) instead of long-lived keys.',
+        'Add Bedrock Guardrails for content filtering and set budgets or alarms in AWS Cost Explorer before rolling out.',
+      ],
+      docsUrl: 'https://code.claude.com/docs/en/amazon-bedrock',
+      docsLabel: 'Claude Code / Agent SDK on Bedrock',
+      concepts: ['Claude Agent SDK', 'CLAUDE_CODE_USE_MANTLE', 'IAM roles', 'Guardrails'],
+      codePreview: `import asyncio
+from claude_agent_sdk import query, ClaudeAgentOptions, ResultMessage
+
+# Shell setup:
+#   export CLAUDE_CODE_USE_MANTLE=1
+#   export AWS_REGION=us-east-1
+
+async def main():
+    options = ClaudeAgentOptions(
+        model="anthropic.claude-sonnet-5-5",
+        allowed_tools=["Read", "Glob", "Grep"],  # read-only agent
+    )
+    async for message in query(
+        prompt="Summarize what this repo does and list its entry points.",
+        options=options,
+    ):
+        if isinstance(message, ResultMessage):
+            print(message.result)
+            print(f"Cost: {message.total_cost_usd:.4f} USD")
+
+asyncio.run(main())`,
+      runCommand: 'CLAUDE_CODE_USE_MANTLE=1 AWS_REGION=us-east-1 python bedrock_03_agent.py',
+    },
+
+    // ═══════════════════════════════════════
+    // GOOGLE VERTEX AI (AGENT PLATFORM) GUIDES
+    // Source: platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/google-managed
+    // ═══════════════════════════════════════
+    {
+      id: 'vertex-first-call',
+      number: 'VX1',
+      title: 'Get Started: Your First Claude Call on Vertex AI',
+      file: 'vertex_01_first_call.py',
+      category: 'beginner',
+      provider: 'vertex',
+      model: 'Claude Sonnet 5.5 on Vertex AI',
+      icon: '🚀',
+      color: '#34a853',
+      description: 'Call Claude from a Google Cloud project. Google has renamed Vertex AI to Agent Platform, but the SDK client is still AnthropicVertex and the model IDs match the Claude API.',
+      setup: [
+        'Create a Google Cloud project with billing enabled.',
+        'Enable the API: gcloud services enable aiplatform.googleapis.com',
+        'In Model Garden, search "Claude" and enable the models you want (approval can take up to 24-48 hours).',
+        'Grant your account the Agent Platform User role (roles/aiplatform.user).',
+        'Authenticate locally: gcloud auth application-default login',
+        'Install the SDK: pip install -U "anthropic[vertex]"',
+      ],
+      docsUrl: 'https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/google-managed',
+      docsLabel: 'Claude on Google Cloud docs',
+      concepts: ['Application Default Credentials', 'Model Garden', 'Global endpoint', 'Project IDs'],
+      codePreview: `from anthropic import AnthropicVertex
+
+# "global" routes to any region with capacity (no price premium).
+# Use "us" / "eu" for multi-region data residency (+10%).
+client = AnthropicVertex(project_id="MY_PROJECT_ID", region="global")
+
+message = client.messages.create(
+    model="claude-sonnet-5-5",
+    max_tokens=1024,
+    messages=[{"role": "user", "content": "Explain Vertex AI in two sentences."}],
+)
+
+print(next(b.text for b in message.content if b.type == "text"))`,
+      runCommand: 'python vertex_01_first_call.py',
+    },
+    {
+      id: 'vertex-doc-qa',
+      number: 'VX2',
+      title: 'Project: Document Q&A with Prompt Caching',
+      file: 'vertex_02_doc_qa.py',
+      category: 'intermediate',
+      provider: 'vertex',
+      model: 'Claude Sonnet 5.5 on Vertex AI',
+      icon: '📄',
+      color: '#34a853',
+      description: 'Build a question-answering tool over a long document, such as a handbook, contract, or spec. Prompt caching stores the document after the first question, so follow-up questions are faster and much cheaper.',
+      setup: [
+        'Finish VX1 so authentication and model access work.',
+        'Put your source document in handbook.txt (Claude Sonnet 5.5 has a 1M-token context window).',
+        'Keep request payloads under 30 MB, the Agent Platform limit.',
+        'Turn on Agent Platform request-response logging and keep at least 30 days of logs.',
+      ],
+      docsUrl: 'https://platform.claude.com/docs/en/build-with-claude/prompt-caching',
+      docsLabel: 'Prompt caching docs',
+      concepts: ['Long context', 'Prompt caching', 'cache_control', 'Usage tracking'],
+      codePreview: `from anthropic import AnthropicVertex
+
+client = AnthropicVertex(project_id="MY_PROJECT_ID", region="global")
+document = open("handbook.txt").read()
+
+def ask(question):
+    response = client.messages.create(
+        model="claude-sonnet-5-5",
+        max_tokens=1024,
+        system=[
+            {"type": "text", "text": "Answer only from the document. Quote it when you can."},
+            {"type": "text", "text": document,
+             "cache_control": {"type": "ephemeral"}},  # cache the big part
+        ],
+        messages=[{"role": "user", "content": question}],
+    )
+    u = response.usage
+    print(f"[cache read: {u.cache_read_input_tokens} tokens]")
+    return response.content[0].text
+
+print(ask("What is the vacation policy?"))
+print(ask("Who approves expenses over $500?"))  # reuses the cached document`,
+      runCommand: 'python vertex_02_doc_qa.py',
+    },
+    {
+      id: 'vertex-agent-sdk',
+      number: 'VX3',
+      title: 'Ship It: Claude Agent SDK on Vertex AI',
+      file: 'vertex_03_agent.py',
+      category: 'advanced',
+      provider: 'vertex',
+      model: 'Claude Agent SDK + Vertex AI',
+      icon: '🤖',
+      color: '#34a853',
+      description: 'Run a full Claude agent on your Google Cloud project. Three environment variables switch the Agent SDK to Vertex AI. The agent then works through multi-step tasks with the tools you allow.',
+      setup: [
+        'pip install claude-agent-sdk',
+        'export CLAUDE_CODE_USE_VERTEX=1, CLOUD_ML_REGION=global, and ANTHROPIC_VERTEX_PROJECT_ID=your-project-id',
+        'In production, run as a service account with roles/aiplatform.user (Cloud Run, GKE, or Compute Engine) instead of user credentials.',
+        'Pin model versions so the agent does not change models when defaults move.',
+        'Use a dedicated project for the agent to simplify cost tracking and quota requests.',
+      ],
+      docsUrl: 'https://code.claude.com/docs/en/google-vertex-ai',
+      docsLabel: 'Claude Code / Agent SDK on Vertex AI',
+      concepts: ['Claude Agent SDK', 'CLAUDE_CODE_USE_VERTEX', 'Service accounts', 'Quotas'],
+      codePreview: `import asyncio
+from claude_agent_sdk import query, ClaudeAgentOptions, ResultMessage
+
+# Shell setup:
+#   export CLAUDE_CODE_USE_VERTEX=1
+#   export CLOUD_ML_REGION=global
+#   export ANTHROPIC_VERTEX_PROJECT_ID=your-project-id
+
+async def main():
+    options = ClaudeAgentOptions(
+        model="claude-sonnet-5-5",
+        allowed_tools=["Read", "Glob", "Grep"],
+    )
+    async for message in query(
+        prompt="Find every TODO in this repo and group them by file.",
+        options=options,
+    ):
+        if isinstance(message, ResultMessage):
+            print(message.result)
+
+asyncio.run(main())`,
+      runCommand: 'python vertex_03_agent.py',
+    },
+
+    // ═══════════════════════════════════════
+    // MICROSOFT FOUNDRY GUIDES
+    // Source: platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry
+    // ═══════════════════════════════════════
+    {
+      id: 'foundry-first-call',
+      number: 'MF1',
+      title: 'Get Started: Your First Claude Call on Foundry',
+      file: 'foundry_01_first_call.py',
+      category: 'beginner',
+      provider: 'foundry',
+      model: 'Claude Sonnet 5.5 on Foundry',
+      icon: '🚀',
+      color: '#0078d4',
+      description: 'Deploy Claude in Microsoft Foundry and call it from Python. In Foundry you create a resource, deploy a model into it, and pass the deployment name as the model.',
+      setup: [
+        'Sign in to the Foundry portal (ai.azure.com) with an Azure subscription.',
+        'Create a Foundry resource (or a Foundry project, which creates one) and note the resource name.',
+        'Open Discover → Models, pick a Claude model, select Deploy, and accept the Azure Marketplace terms on your first deployment. Claude Sonnet 5.5 needs the Global region scope.',
+        'Under Build → Models → your deployment → Details, copy the Key and the Target URI.',
+        'export ANTHROPIC_FOUNDRY_API_KEY=... and ANTHROPIC_FOUNDRY_RESOURCE=your-resource-name',
+        'Install the SDK: pip install -U anthropic',
+      ],
+      docsUrl: 'https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry',
+      docsLabel: 'Claude in Microsoft Foundry docs',
+      concepts: ['Resources vs deployments', 'API key auth', 'Deployment names', 'Azure Marketplace billing'],
+      codePreview: `from anthropic import AnthropicFoundry
+
+# Reads ANTHROPIC_FOUNDRY_API_KEY and ANTHROPIC_FOUNDRY_RESOURCE from the env.
+client = AnthropicFoundry()
+
+message = client.messages.create(
+    model="claude-sonnet-5-5",  # your *deployment name* (defaults to the model ID)
+    max_tokens=1024,
+    messages=[{"role": "user", "content": "Explain Microsoft Foundry in two sentences."}],
+)
+
+print(next(b.text for b in message.content if b.type == "text"))`,
+      runCommand: 'python foundry_01_first_call.py',
+    },
+    {
+      id: 'foundry-invoice-extractor',
+      number: 'MF2',
+      title: 'Project: Invoice Extractor with Entra ID Auth',
+      file: 'foundry_02_invoice_extractor.py',
+      category: 'intermediate',
+      provider: 'foundry',
+      model: 'Claude Sonnet 5.5 on Foundry',
+      icon: '🧾',
+      color: '#0078d4',
+      description: 'Turn messy invoice text into clean JSON you can load into a database. This project uses Entra ID instead of an API key, which is the setup most Azure organizations require.',
+      setup: [
+        'Finish MF1 and enable Microsoft Entra ID authentication on your Foundry resource.',
+        'Give your identity the Foundry User (formerly Azure AI User) or Cognitive Services User role.',
+        'pip install azure-identity, then sign in locally with az login.',
+        'Monitor usage and cost with Azure Monitor and Cost Management.',
+      ],
+      docsUrl: 'https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry#microsoft-entra-authentication',
+      docsLabel: 'Entra ID auth docs',
+      concepts: ['Entra ID tokens', 'Forced tool choice', 'JSON extraction', 'Azure RBAC'],
+      codePreview: `from anthropic import AnthropicFoundry
+from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+
+token_provider = get_bearer_token_provider(
+    DefaultAzureCredential(), "https://ai.azure.com/.default"
+)
+client = AnthropicFoundry(resource="my-resource", azure_ad_token_provider=token_provider)
+
+invoice_tool = {
+    "name": "record_invoice",
+    "description": "Record structured invoice fields.",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "vendor": {"type": "string"},
+            "invoice_number": {"type": "string"},
+            "total": {"type": "number"},
+            "due_date": {"type": "string", "description": "YYYY-MM-DD"},
+        },
+        "required": ["vendor", "invoice_number", "total"],
+    },
+}
+
+text = open("invoice.txt").read()
+response = client.messages.create(
+    model="claude-sonnet-5-5",
+    max_tokens=1024,
+    tools=[invoice_tool],
+    tool_choice={"type": "tool", "name": "record_invoice"},  # always return JSON
+    messages=[{"role": "user", "content": f"Extract the invoice fields:\\n\\n{text}"}],
+)
+
+print(next(b.input for b in response.content if b.type == "tool_use"))`,
+      runCommand: 'az login && python foundry_02_invoice_extractor.py',
+    },
+    {
+      id: 'foundry-agent-sdk',
+      number: 'MF3',
+      title: 'Ship It: Claude Agent SDK on Foundry',
+      file: 'foundry_03_agent.py',
+      category: 'advanced',
+      provider: 'foundry',
+      model: 'Claude Agent SDK + Foundry',
+      icon: '🤖',
+      color: '#0078d4',
+      description: 'Run a Claude agent on your Azure deployment. Foundry has no setup wizard, so you configure it entirely with environment variables. Pin each model alias to a deployment name you created.',
+      setup: [
+        'pip install claude-agent-sdk',
+        'export CLAUDE_CODE_USE_FOUNDRY=1 and ANTHROPIC_FOUNDRY_RESOURCE=your-resource-name',
+        'Authenticate with ANTHROPIC_FOUNDRY_API_KEY, or leave it unset to use Entra ID (az login or a managed identity).',
+        'Pin models to your deployments: export ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-5-5 (Foundry has no startup model check, so unpinned defaults can fail).',
+        'To host the agent as a managed service, package it as a container and deploy it as a Foundry Agent Service hosted agent.',
+      ],
+      docsUrl: 'https://code.claude.com/docs/en/microsoft-foundry',
+      docsLabel: 'Claude Code / Agent SDK on Foundry',
+      concepts: ['Claude Agent SDK', 'CLAUDE_CODE_USE_FOUNDRY', 'Model pinning', 'Hosted agents'],
+      codePreview: `import asyncio
+from claude_agent_sdk import query, ClaudeAgentOptions, ResultMessage
+
+# Shell setup:
+#   export CLAUDE_CODE_USE_FOUNDRY=1
+#   export ANTHROPIC_FOUNDRY_RESOURCE=my-resource
+#   export ANTHROPIC_FOUNDRY_API_KEY=...        # or use az login
+#   export ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-5-5
+
+async def main():
+    options = ClaudeAgentOptions(
+        model="claude-sonnet-5-5",  # deployment name
+        allowed_tools=["Read", "Glob", "Grep"],
+    )
+    async for message in query(
+        prompt="Review the README and suggest three improvements.",
+        options=options,
+    ):
+        if isinstance(message, ResultMessage):
+            print(message.result)
+
+asyncio.run(main())`,
+      runCommand: 'python foundry_03_agent.py',
+    },
   ],
 };
 
@@ -1725,4 +2143,7 @@ export const providerColors = {
   langchain: '#1c3c3c',
   langgraph: '#0f766e',
   crewai: '#e63946',
+  bedrock: '#ff9900',
+  vertex: '#34a853',
+  foundry: '#0078d4',
 };

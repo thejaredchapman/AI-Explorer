@@ -53,8 +53,33 @@ function ToolCard({ topic, isExpanded, onToggle, index }) {
               <p>{topic.analogy}</p>
             </div>
 
+            {topic.questionTypes && (
+              <div className="tool-card-qtypes">
+                <span className="tool-card-examples-label">Question types</span>
+                <table>
+                  <thead><tr><th>Type</th><th>You ask</th><th>You get back</th></tr></thead>
+                  <tbody>
+                    {topic.questionTypes.map((q) => (
+                      <tr key={q.type}>
+                        <td style={{ color: topic.color }}>{q.type}</td>
+                        <td>{q.ask}</td>
+                        <td><code>{q.returns}</code></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            {topic.code && (
+              <div className="tool-card-code">
+                <span className="tool-card-examples-label">Example request (Python)</span>
+                <pre><code>{topic.code}</code></pre>
+              </div>
+            )}
+
             <div className="tool-card-examples">
-              <span className="tool-card-examples-label">Real-World Examples</span>
+              <span className="tool-card-examples-label">{topic.questionTypes ? 'Use cases' : 'Real-World Examples'}</span>
               <div className="tool-card-examples-grid">
                 {topic.examples.map((ex, i) => (
                   <div key={i} className="tool-card-example" style={{ borderColor: `${topic.color}25` }}>
@@ -69,6 +94,12 @@ function ToolCard({ topic, isExpanded, onToggle, index }) {
               <span className="tool-card-connects-label">How It Connects</span>
               <p>{topic.howItConnects}</p>
             </div>
+
+            {topic.docsUrl && (
+              <a className="tool-card-docs" href={topic.docsUrl} target="_blank" rel="noopener noreferrer" style={{ color: topic.color }}>
+                {topic.docsLabel || 'Official docs'} ↗
+              </a>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
@@ -154,7 +185,7 @@ export default function AiToolsSection() {
   ];
 
   const coreIds = ['agents', 'mcp', 'api'];
-  const devIds = ['api-codes', 'sdk', 'tool-use'];
+  const devIds = ['api-codes', 'sdk', 'tool-use', 'jev'];
 
   const filteredTopics = activeFilter === 'all'
     ? toolTopics

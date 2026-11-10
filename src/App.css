@@ -1633,6 +1633,21 @@ body {
   color: var(--text-secondary);
   line-height: 1.55;
 }
+.tool-card-qtypes { margin-top: 16px; overflow-x: auto; }
+.tool-card-qtypes table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.tool-card-qtypes th, .tool-card-qtypes td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.tool-card-qtypes th { font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); }
+.tool-card-qtypes td:first-child { font-weight: 700; white-space: nowrap; }
+.tool-card-qtypes td { color: var(--text-secondary); }
+.tool-card-qtypes code { font-size: 11.5px; }
+.tool-card-code { margin-top: 16px; }
+.tool-card-code pre {
+  margin: 6px 0 0; padding: 14px; border-radius: 5px; overflow-x: auto;
+  background: var(--code-body-bg); color: var(--code-text); border: 1px solid var(--code-border);
+  font: 11.5px/1.6 'SF Mono', 'Fira Code', Consolas, monospace; white-space: pre;
+}
+.tool-card-docs { display: inline-block; margin-top: 14px; font-size: 12.5px; font-weight: 700; text-decoration: none; }
+.tool-card-docs:hover { text-decoration: underline; }
 .tool-card-connects {
   padding: 14px 18px;
   border-radius: var(--radius-sm);

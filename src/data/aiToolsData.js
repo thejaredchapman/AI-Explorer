@@ -136,6 +136,70 @@ export const toolTopics = [
     ],
     howItConnects: 'Function calling is the mechanism that makes Agents and MCP possible. When an agent "uses a tool," it is performing function calling. MCP standardizes how tools are described and discovered, but function calling is the underlying capability in the LLM that makes it all work.',
   },
+  {
+    // Source: TypeSafe docs (docs.typesafe.ai), checked 2026-11-10.
+    id: 'jev',
+    title: 'Structured Decisions with Jev',
+    icon: '🎯',
+    color: '#0891b2',
+    tagline: 'Typed answers your code can act on, not paragraphs to parse',
+    summary: 'Jev is TypeSafe\'s "System One" model for decisions inside software. With a normal LLM you ask in words, get prose back, and write code to pull a decision out of it. With Jev you send your data (the state) plus typed questions, and get back values your code branches on directly: a chosen option, a score, a probability, or an image location, each with probabilities that say how sure it is. Every question is evaluated separately and in parallel against the same state, so adding questions barely adds latency and one question cannot bias another.',
+    keyPoints: [
+      'Four question types: Choice (pick one of up to 255 described options), Score (place it on an ordered scale; can land between levels, e.g. 1.43), Noul (probability a statement is true, 0 to 1), Box (where something is in an image, as fractions of width and height)',
+      'Choice and Score return confidence from 0 (probability spread evenly) to 1 (all on one answer). It measures how settled the answer is, not a guarantee it is right',
+      'Route on it: act automatically when sure, ask a person to confirm when unsure, and demand a higher bar for risky actions (about 0.9 before anything destructive)',
+      'Ask one specific question per factor and combine the answers in your own code, instead of one vague "rate this" question',
+      'Python: pip install typesafe-sdk; JS/TS: npm install @typesafe-ai/sdk; HTTP: POST https://api.typesafe.ai/v1/systemone with a bearer key from TYPESAFE_API_KEY',
+    ],
+    analogy: 'An LLM is a consultant who writes you a report; you still have to read it and decide. Jev is a panel of specialists who each answer one form question with a checkbox and how sure they are. Your code reads the checkboxes and acts, and anything marked "unsure" goes to a human.',
+    questionTypes: [
+      { type: 'Choice', ask: 'Which of these options fits?', returns: 'choice, probabilities, confidence' },
+      { type: 'Score', ask: 'Where on this ordered scale?', returns: 'score, probabilities, confidence, legend' },
+      { type: 'Noul', ask: 'Is this statement true?', returns: 'noul (probability of yes)' },
+      { type: 'Box', ask: 'Where is it in this image?', returns: 'box (top, bottom, left, right), confidence' },
+    ],
+    code: `from typesafe_sdk import Choice, Noul, Score, TypeSafeClient
+
+with TypeSafeClient() as client:  # reads TYPESAFE_API_KEY
+    response = client.system_one(
+        state="Charged twice this month and nobody has replied in 3 days.",
+        questions={
+            "team": Choice(
+                instructions="Which team should own this ticket?",
+                criteria={
+                    "billing": "Charges, refunds, invoices",
+                    "technical": "Bugs, outages, errors",
+                    "account": "Login, access, profile changes",
+                },
+            ),
+            "frustration": Score(
+                instructions="How frustrated is the customer?",
+                criteria=["Calm", "Annoyed", "Angry or threatening to leave"],
+            ),
+            "refund": Noul(instructions="Does the customer ask for money back?"),
+        },
+    )
+
+team = response.answers["team"]
+if team.probabilities["billing"] > 0.9:   # sure enough to act
+    assign("billing")
+else:
+    send_to_triage()                        # unsure: a person decides`,
+    examples: [
+      { name: 'Support ticket routing', desc: 'A Choice picks the owning team, a Score rates frustration and a Noul spots refund requests, all in one call. Confident tickets are assigned automatically; unclear ones go to triage.' },
+      { name: 'Moderation with a human in the loop', desc: 'One Noul per policy (harassment, personal data, spam). Remove above 0.9, approve below 0.1, and send the uncertain middle band to a moderator.' },
+      { name: 'Cheap pre-filter', desc: 'Ask one Noul ("is this a real sales lead?") before an expensive step such as a frontier LLM, human review or database write, and run it only on the passes.' },
+      { name: 'Composite scoring', desc: 'Score market size, feasibility and differentiation separately, then weight them in code (0.5, 0.3, 0.2). Weights change without re-prompting, and each factor can be audited.' },
+      { name: 'Safe agent actions', desc: 'Before an agent runs a tool, ask which action the request maps to. Read-only actions run at a lower bar; destructive ones need about 0.9 or user confirmation.' },
+      { name: '"None of the above" detection', desc: 'A Choice always returns its top option. Pair it with a Noul ("does any category fit?") and ignore the Choice when that is low.' },
+      { name: 'Checking AI output', desc: 'Grade another model\'s draft with Scores for "uses only the source facts", "answers the question" and "right tone", and rewrite or review anything that scores low.' },
+      { name: 'Document and screenshot inspection', desc: 'A Noul asks "is there a signature?", then a Box finds where it is. Coordinates are fractions, so they work at any resolution for cropping, redaction or highlighting.' },
+      { name: 'Speculative fan-out', desc: 'Ask everything you might need (language, intent, urgency, personal data, escalation) in one request and use only what your code ends up needing. Questions run in parallel, so this is usually cheaper and faster than chaining calls.' },
+    ],
+    howItConnects: 'Jev complements generative models rather than replacing them: use Claude or GPT to write, summarise and converse, and Jev to decide, route, check and score around them. In agents it acts as a guard step before function calls, with thresholds you can measure. Confidence is not calibrated accuracy, so before automating anything important, run Jev on examples where you already know the right answer and set thresholds from those results.',
+    docsUrl: 'https://docs.typesafe.ai/introduction',
+    docsLabel: 'TypeSafe docs',
+  },
 ];
 
 export const connectionMap = [
@@ -146,6 +210,7 @@ export const connectionMap = [
   { from: 'sdk', to: 'api', label: 'wraps for easy use' },
   { from: 'tool-use', to: 'agents', label: 'core capability of' },
   { from: 'tool-use', to: 'mcp', label: 'mechanism behind' },
+  { from: 'jev', to: 'agents', label: 'guards the actions of' },
 ];
 
 export const quickReference = {

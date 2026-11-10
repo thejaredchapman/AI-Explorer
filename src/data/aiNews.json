@@ -1,0 +1,14 @@
+{
+  "updatedAt": null,
+  "from": null,
+  "to": null,
+  "outlets": [
+    { "domain": "apnews.com", "name": "AP News", "count": 0, "error": null },
+    { "domain": "cnn.com", "name": "CNN", "count": 0, "error": null },
+    { "domain": "foxnews.com", "name": "Fox News", "count": 0, "error": null },
+    { "domain": "bloomberg.com", "name": "Bloomberg", "count": 0, "error": null },
+    { "domain": "theverge.com", "name": "The Verge", "count": 0, "error": null },
+    { "domain": "gizmodo.com", "name": "Gizmodo", "count": 0, "error": null }
+  ],
+  "articles": []
+}

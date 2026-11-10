@@ -2,6 +2,7 @@
 // bearing = 360 * index / SECTIONS.length, so Home sits at due north (000°).
 export const SECTIONS = [
   { id: 'hero', label: 'Home', blurb: 'Start here' },
+  { id: 'ai-news', label: 'AI News', blurb: 'The past 30 days' },
   { id: 'ai-examples', label: 'Examples', blurb: 'AI at work' },
   { id: 'use-cases', label: 'Use Cases', blurb: '500 ideas, graded for safety' },
   { id: 'concepts', label: 'AI Concepts', blurb: 'The vocabulary' },

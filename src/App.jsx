@@ -20,6 +20,7 @@ import UseCaseAtlas from './components/UseCaseAtlas';
 import ModelLab from './components/ModelLab';
 import GlassDemo from './components/GlassDemo';
 import Compass from './components/Compass';
+import AiNewsSection from './components/AiNewsSection';
 import DemoTour from './components/DemoTour';
 import { SECTIONS } from './data/sections';
 import './App.css';
@@ -116,6 +117,7 @@ function App() {
         ) : (
           <main className="main-content" key="overview">
             <Hero onNavigate={navigateTo} onStartDemo={startDemo} />
+            <AiNewsSection />
             <AiExamples />
             <UseCaseAtlas />
             <AiConcepts onOpenDetail={openConceptDetail} />

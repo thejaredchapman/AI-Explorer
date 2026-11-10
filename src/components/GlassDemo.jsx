@@ -388,7 +388,7 @@ export default function GlassDemo() {
           <div className="gd-glass gd-cta">
             <div>
               <strong>Watch the guided demo</strong>
-              <span>Six short scenes show every view. Pause or take over any time.</span>
+              <span>Press the Play button to start the demo. It never starts on its own; pause or take over any time.</span>
             </div>
             <button type="button" className="gd-btn gd-btn-pri gd-play-big" onClick={start}>
               <span aria-hidden="true">▶</span> Play demo

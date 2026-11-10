@@ -55,3 +55,29 @@ jobs:
           claude_args: |
             --max-turns 80
             --allowedTools Read,Edit,Write,Glob,Grep,WebFetch,Skill,Bash(date:*),Bash(npm run build),Bash(npx eslint:*),Bash(git status:*),Bash(git diff:*),Bash(git checkout:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*)
+
+      # Claude's output is hidden in the public log, so summarise the outcome and any
+      # blocked tool calls on the run page and keep the full transcript as an artifact.
+      - name: Summarise Claude's run
+        if: always()
+        run: |
+          f="$RUNNER_TEMP/claude-execution-output.json"
+          if [ ! -f "$f" ]; then echo "No Claude transcript found." >> "$GITHUB_STEP_SUMMARY"; exit 0; fi
+          {
+            echo "## Claude result"
+            jq -r '[.[] | select(.type=="result")] | last | .result // "(no result text)"' "$f"
+            echo
+            echo "## Permission denials"
+            echo '```json'
+            jq '[.[] | select(.type=="result")] | last | .permission_denials // []' "$f"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload Claude transcript
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude-transcript
+          path: ${{ runner.temp }}/claude-execution-output.json
+          retention-days: 14
+          if-no-files-found: warn

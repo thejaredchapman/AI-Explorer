@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { DEMO_STOPS, DEMO_STEP_MS } from '../data/demoTour';
 import './DemoTour.css';
-  typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
 export default function DemoTour({ active, onExit, onNavigate }) {
   // Bar mounts fresh each time the tour opens, so its state starts clean.

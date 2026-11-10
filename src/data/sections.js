@@ -7,6 +7,7 @@ export const SECTIONS = [
   { id: 'concepts', label: 'AI Concepts', blurb: 'The vocabulary' },
   { id: 'llm-rubric', label: 'Compare Models', blurb: 'Who is best at what' },
   { id: 'model-lab', label: 'Model Lab', blurb: 'Pick, price, practice' },
+  { id: 'glass-demo', label: 'Glass Demo', blurb: 'Interactive demo mode' },
   { id: 'model-training', label: 'Training', blurb: 'How models are made' },
   { id: 'prompt-engineering', label: 'Prompting', blurb: 'Getting better answers' },
   { id: 'products', label: 'Products', blurb: 'What you can use' },

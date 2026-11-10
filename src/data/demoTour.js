@@ -7,6 +7,7 @@ export const DEMO_STOPS = [
   { id: 'concepts', title: 'The vocabulary', text: 'Tokens, embeddings, agents, RAG. Open any card for a deeper walkthrough.' },
   { id: 'llm-rubric', title: 'Compare models', text: 'A side-by-side model table with the date the data was pulled, and a one-click Markdown export.' },
   { id: 'model-lab', title: 'Model Lab', text: 'Pick a model, price a workload in the cost lab, run missions and take the quiz.' },
+  { id: 'glass-demo', title: 'Glass Demo', text: 'A hands-on demo mode: compare two models head to head, rank every model by your priorities, or start from a use case. Press Play for its own walkthrough.' },
   { id: 'prompt-engineering', title: 'Prompting', text: 'The techniques that reliably get better answers, with examples you can copy.' },
   { id: 'ai-tools', title: 'Tools and protocols', text: 'MCP versus plain APIs, and how agents connect to the outside world.' },
   { id: 'learning-games', title: 'Learn by playing', text: 'Seven levels from concept cards to a boss quiz. Earn XP as you go.' },

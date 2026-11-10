@@ -3,9 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { DEMO_STOPS, DEMO_STEP_MS } from '../data/demoTour';
 import './DemoTour.css';
 
-const reducedMotion = () =>
-  typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-
 export default function DemoTour({ active, onExit, onNavigate }) {
   // Bar mounts fresh each time the tour opens, so its state starts clean.
   return <AnimatePresence>{active && <TourBar key="bar" onExit={onExit} onNavigate={onNavigate} />}</AnimatePresence>;
@@ -13,7 +10,7 @@ export default function DemoTour({ active, onExit, onNavigate }) {
 
 function TourBar({ onExit, onNavigate }) {
   const [index, setIndex] = useState(0);
-  const [playing, setPlaying] = useState(() => !reducedMotion());
+  const [playing, setPlaying] = useState(false) // never autoplay: the viewer presses Play;
   const timer = useRef(null);
   const last = DEMO_STOPS.length - 1;
   const stop = DEMO_STOPS[index];
@@ -76,10 +73,11 @@ function TourBar({ onExit, onNavigate }) {
             <span className="demo-step">Stop {index + 1} of {DEMO_STOPS.length}</span>
             <h3>{stop.title}</h3>
             <p>{stop.text}</p>
+            {!playing && index === 0 && <p className="demo-hint"><strong>Press the Play button to start the demo.</strong></p>}
           </div>
           <div className="demo-controls">
             <button className="btn btn-ghost" onClick={prev} disabled={index === 0}>&larr; Back</button>
-            <button className="btn btn-ghost" onClick={() => setPlaying((p) => !p)}>{playing ? 'Pause' : 'Play'}</button>
+            <button className="btn btn-ghost" onClick={() => setPlaying((p) => !p)}>{playing ? '❚❚ Pause' : '▶ Play'}</button>
             {index < last
               ? <button className="btn btn-dark" onClick={next}>Next &rarr;</button>
               : <button className="btn btn-dark" onClick={onExit}>Finish</button>}

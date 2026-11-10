@@ -1,4 +1,4 @@
-name: Daily AI news
+name: Daily AI news and community events
 
 on:
   schedule:
@@ -27,27 +27,35 @@ jobs:
           node-version: 24
           cache: npm
 
+      # Each fetch keeps its existing file if it fails, so one outage doesn't block the other.
       - name: Fetch AI headlines from NewsAPI
+        continue-on-error: true
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
         run: node scripts/fetch-ai-news.mjs
+
+      - name: Fetch community events (Luma calendars)
+        continue-on-error: true
+        run: node scripts/fetch-community-events.mjs
 
       - name: Check the site still builds
         run: |
           npm ci
           npm run build
 
-      # Only the news data file is committed. Vercel redeploys on the push.
-      - name: Commit updated headlines
+      # Only the two data files are committed. Vercel redeploys on the push.
+      - name: Commit updated data
         run: |
-          if git diff --quiet -- src/data/aiNews.json; then
-            echo "No new headlines." >> "$GITHUB_STEP_SUMMARY"
+          FILES="src/data/aiNews.json src/data/communityEvents.json"
+          if git diff --quiet -- $FILES; then
+            echo "No changes." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/aiNews.json
-          git commit -m "update AI news headlines ($(date -u +%F))"
+          git add $FILES
+          git commit -m "update AI news and community events ($(date -u +%F))"
           git pull --rebase origin main
           git push origin HEAD:main
-          jq -r '"Committed \(.articles | length) headlines from \(.from) to \(.to)."' src/data/aiNews.json >> "$GITHUB_STEP_SUMMARY"
+          jq -r '"Headlines: \(.articles | length) (\(.from) to \(.to))"' src/data/aiNews.json >> "$GITHUB_STEP_SUMMARY"
+          jq -r '"Events: " + ([.calendars | to_entries[] | "\(.key) \(.value.events | length)"] | join(", "))' src/data/communityEvents.json >> "$GITHUB_STEP_SUMMARY"

@@ -21,6 +21,7 @@ import ModelLab from './components/ModelLab';
 import GlassDemo from './components/GlassDemo';
 import Compass from './components/Compass';
 import AiNewsSection from './components/AiNewsSection';
+import CommunitySection from './components/CommunitySection';
 import DemoTour from './components/DemoTour';
 import { SECTIONS } from './data/sections';
 import './App.css';
@@ -117,23 +118,24 @@ function App() {
         ) : (
           <main className="main-content" key="overview">
             <Hero onNavigate={navigateTo} onStartDemo={startDemo} />
-            <AiNewsSection />
             <AiExamples />
-            <UseCaseAtlas />
             <AiConcepts onOpenDetail={openConceptDetail} />
+            <UseCaseAtlas />
             <LlmRubric />
             <ModelLab />
-            <GlassDemo />
             <ModelTraining />
             <PromptEngineering />
             <ProductsExplorer />
             <AiToolsSection />
             <CodeAssistants />
             <SkillsSection />
+            <GlassDemo />
             <LearningGames />
+            <GuidesSection />
             <FreeLearningSection />
             <ResourcesSection />
-            <GuidesSection />
+            <AiNewsSection />
+            <CommunitySection />
           </main>
         )}
       </AnimatePresence>

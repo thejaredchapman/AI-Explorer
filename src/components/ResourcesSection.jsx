@@ -94,7 +94,7 @@ export default function ResourcesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <span className="section-badge">Step 7 — Stay Updated</span>
+        <span className="section-badge">Step 8 — Stay Updated</span>
         <h2>Resources & Community</h2>
         <p>
           Publications, forums, newsletters, courses, and podcasts to keep you at the

@@ -17,8 +17,11 @@ const OUTLETS = [
 ];
 
 const QUERY = '"artificial intelligence" OR AI OR OpenAI OR Anthropic OR ChatGPT OR Gemini OR Claude OR chatbot OR "large language model"';
+// NewsAPI can match on article text it doesn't return, so keep only stories whose
+// headline or summary actually mentions AI.
+const RELEVANT = /\b(AI|A\.I\.|artificial intelligence|OpenAI|Anthropic|ChatGPT|Gemini|Claude|Copilot|chatbots?|LLMs?|large language models?|machine learning|deepfakes?|generative)\b|AI-/i;
 const DAYS = 30;
-const PER_OUTLET = 40; // NewsAPI pageSize; 6 requests per run
+const PER_OUTLET = 100; // NewsAPI's maximum pageSize; 6 requests per run
 const OUT_FILE = new URL('../src/data/aiNews.json', import.meta.url);
 
 const key = process.env.NEWS_API_KEY;
@@ -56,6 +59,7 @@ async function fetchOutlet({ domain, name }) {
   }
   return body.articles
     .filter((a) => a.title && a.title !== '[Removed]' && isHttps(a.url))
+    .filter((a) => RELEVANT.test(`${a.title} ${a.description || ''}`))
     .map((a) => ({
       title: clean(a.title),
       description: clean(a.description).slice(0, 300),

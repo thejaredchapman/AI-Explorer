@@ -1,42 +1,42 @@
 {
-  "updatedAt": "2026-11-10T18:12:08.675Z",
+  "updatedAt": "2026-11-10T18:15:06.459Z",
   "from": "2026-10-11",
   "to": "2026-11-10",
   "outlets": [
     {
       "domain": "apnews.com",
       "name": "AP News",
-      "count": 1,
+      "count": 0,
       "error": null
     },
     {
       "domain": "cnn.com",
       "name": "CNN",
-      "count": 6,
+      "count": 2,
       "error": null
     },
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 40,
+      "count": 44,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 12,
+      "count": 8,
       "error": null
     },
     {
       "domain": "theverge.com",
       "name": "The Verge",
-      "count": 40,
+      "count": 95,
       "error": null
     },
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 40,
+      "count": 100,
       "error": null
     }
   ],
@@ -87,15 +87,6 @@
       "publishedAt": "2026-11-09T15:38:56Z"
     },
     {
-      "title": "Russell Brand Sentenced To 10 Years In Prison",
-      "description": "Russell Brand was sentenced to 10 years and six months in prison after being convicted of rape and sexual assault in the U.K., while police investigate two additional allegations. Dave Chappelle is facing backlash after saying he felt better following Charlie…",
-      "url": "https://radio.foxnews.com/2026/11/09/russell-brand-sentenced-to-10-years-in-prison/",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": "FOX News Radio",
-      "publishedAt": "2026-11-09T15:31:02Z"
-    },
-    {
       "title": "Jonathan Kanter is using AI to take on Big Tech",
       "description": "When Jonathan Kanter stepped down as head of the Justice Department's Antitrust Division in 2024, he set out to keep fighting to dismantle illegal monopolies. But this time, he's continuing the fight in the private sector, and with a perhaps unexpected tool: …",
       "url": "https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech",
@@ -121,24 +112,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-11-09T10:00:38Z"
-    },
-    {
-      "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
-      "description": "On Sunday, Nvidia announced it was launching an investigation into CEO Jensen Huang's relationship with Alice Huang, an AI executive and agent of the Chinese government. In addition to the Board of Directors announcing the investigation, Huang sent a memo to …",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Terrence O’Brien",
-      "publishedAt": "2026-11-08T22:54:50Z"
-    },
-    {
-      "title": "Ring girl Sydney Thomas proves that the best way to pay tribute to someone is still by putting boobs on them",
-      "description": "Sydney Thomas scrapped her Lane Kiffin Halloween costume idea for an Erling Haaland-inspired look that included a wild AI face-swap tribute.",
-      "url": "https://www.foxnews.com/outkick-sports/ring-girl-sydney-thomas-proves-best-way-pay-tribute-someone-putting-boobs",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-11-08T21:10:24Z"
     },
     {
       "title": "Apple is racing to make Siri more agentic",
@@ -177,15 +150,6 @@
       "publishedAt": "2026-11-07T15:47:15Z"
     },
     {
-      "title": "The US let Nvidia sell chips to an empty office in China",
-      "description": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According to The New York Times, New Matrix is on the list of approve…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Terrence O’Brien",
-      "publishedAt": "2026-11-07T15:43:45Z"
-    },
-    {
       "title": "AI broke the cybersecurity world. What’s next?",
       "description": "Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series looking at AI in real life. I’ve always enjoyed talking to A…",
       "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
@@ -222,24 +186,6 @@
       "publishedAt": "2026-11-06T21:48:06Z"
     },
     {
-      "title": "Homeland Security data leak exposes 41K workers",
-      "description": "A massive DHS data leak exposed records of over 41,000 employees, revealing links to undercover ICE operations, Palantir tools and AI platforms.",
-      "url": "https://www.foxnews.com/tech/homeland-security-data-leak-exposes-41k-workers",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-11-06T18:30:08Z"
-    },
-    {
-      "title": "FBI Agent Admits Stealing $2.47 Million in Crypto From Crime Victims and Nation-State Targets",
-      "description": "The agent acknowledged using the crypto to pay off personal debts and planning his retirement in Portugal with help from ChatGPT.",
-      "url": "https://gizmodo.com/fbi-agent-admits-stealing-2-47-million-in-crypto-from-crime-victims-and-nation-state-targets-2000836315",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Kyle Torpey",
-      "publishedAt": "2026-11-06T18:15:02Z"
-    },
-    {
       "title": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
       "description": "Meta will now allow you to build customized, app-like experiences within its Muse AI assistant. The new feature, called \"spaces,\" allows Muse to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact w…",
       "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
@@ -258,15 +204,6 @@
       "publishedAt": "2026-11-06T17:03:13Z"
     },
     {
-      "title": "Big Tech lost big in the 2026 election",
-      "description": "On Tuesday, millions of American voters went to the polls and voted overwhelmingly for Democrats and against AI. The fight against Big Tech is about to come roaring back, and the fight over data centers is looking even harder for the folks trying to build the…",
-      "url": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "David Pierce",
-      "publishedAt": "2026-11-06T16:38:02Z"
-    },
-    {
       "title": "Fox News AI Newsletter: Voters' unmistakable message",
       "description": "The Fox News AI Newsletter covers the latest artificial intelligence technology advancements, including the challenges and opportunities AI presents now and for the future.",
       "url": "https://www.foxnews.com/tech/fox-news-ai-newsletter-voters-unmistakable-message",
@@ -274,33 +211,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-11-06T15:12:01Z"
-    },
-    {
-      "title": "Amazon will let you text Alexa your shopping list",
-      "description": "Amazon is adding a new feature to Alexa for Shopping that allows customers to purchase items by texting the AI shopping assistant. Users can describe the products they're looking to buy and/or provide a photograph of the item, and Alexa for Shopping will sear…",
-      "url": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jess Weatherbed",
-      "publishedAt": "2026-11-06T13:56:32Z"
-    },
-    {
-      "title": "Progressive group's 182-page blueprint maps out potential Dem investigations into Trump, corporate allies",
-      "description": "Former President Joe Biden aides mapped Tesla, Apple, Amazon and OpenAI as targets for sweeping Democratic congressional investigations into Trump allies.",
-      "url": "https://www.foxnews.com/politics/progressive-groups-182-page-blueprint-maps-potential-dem-investigations-trump-corporate-allies",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-11-06T13:35:56Z"
-    },
-    {
-      "title": "One industry faces multi-trillion-dollar reckoning after historic midterm election reshuffle",
-      "description": "Donald Trump backed AI data centers, but Texas Democrats' historic midterm sweep now threatens billions in planned projects across the state.",
-      "url": "https://www.foxnews.com/politics/one-industry-faces-multi-trillion-dollar-reckoning-after-historic-midterm-election-reshuffle",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-11-06T10:00:06Z"
     },
     {
       "title": "Oil-rich UAE makes massive AI bet as Sam Altman unveils ambitious plan to transform energy industry",
@@ -375,24 +285,6 @@
       "publishedAt": "2026-11-05T21:05:08Z"
     },
     {
-      "title": "Muse has a voice mode now",
-      "description": "Meta now lets you have voice conversations with your Muse AI agent in real time, CEO Mark Zuckerberg announced today. The feature has been rolled out to me, and I gave it a spin on the iOS app while writing this article. As you chat with your Muse agent, the …",
-      "url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-11-05T19:03:04Z"
-    },
-    {
-      "title": "North Korea's fake IT worker scheme takes dangerous turn as new threats emerge every day",
-      "description": "CrowdStrike says it uncovers one or two suspected North Korean fake IT worker cases daily, with operatives infiltrating defense contractors and AI firms.",
-      "url": "https://www.foxnews.com/politics/north-korea-fake-it-worker-scheme-takes-dangerous-turn-new-threats-emerge-every-day",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-11-05T18:04:38Z"
-    },
-    {
       "title": "‘Total repudiation’: The blue wave is about to hit AI",
       "description": "On Tuesday night, Democrats made history as they took control of the House and the Senate, and a blue wave swept through traditionally red and swing states - with the nation's first Black woman governor elected in Georgia, the country's first Native American …",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
@@ -456,15 +348,6 @@
       "publishedAt": "2026-11-05T14:46:06Z"
     },
     {
-      "title": "Tech is about to get hammered in Congress",
-      "description": "Tech CEO hearings. Tougher AI and data center guardrails. Investigations of Elon Musk's DOGE cuts. The gates are open for Democrats once they regain control of committee gavels come January after a historic win of majorities in both the House and Senate on Tu…",
-      "url": "https://www.theverge.com/policy/1027430/democratic-control-congress-tech-policy",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Lauren Feiner",
-      "publishedAt": "2026-11-05T14:11:27Z"
-    },
-    {
       "title": "The hidden supply chain costs of the AI boom",
       "description": "Today, I’m talking with Willy Shih, an economist, a professor of management practice at Harvard Business School, and the author of the upcoming book, Where Does My Stuff Come From? The Powerful Economics Behind Global Supply Chains. Willy is one of my all-tim…",
       "url": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
@@ -481,15 +364,6 @@
       "domain": "theverge.com",
       "author": "Andrew Webster",
       "publishedAt": "2026-11-05T13:31:36Z"
-    },
-    {
-      "title": "Musk bet big on keeping Texas red — and lost. Will he face new scrutiny from Dem leaders?",
-      "description": "Elon Musk speaks via videolink on the day of SpaceX's initial public offering in New York on June 12. - Brendan McDermid/Reuters/File Elon Musk poured nearly half a billion dollars into the midterms to support Republican candidates, most to help Ken Paxton …",
-      "url": "https://www.cnn.com/2026/11/05/business/musk-texas-donations-midterms-spacex-tesla",
-      "outlet": "CNN",
-      "domain": "cnn.com",
-      "author": "Chris Isidore, CNN",
-      "publishedAt": "2026-11-05T13:20:58Z"
     },
     {
       "title": "Big Tech’s big AI buildout will not end until someone stops it",
@@ -517,15 +391,6 @@
       "domain": "gizmodo.com",
       "author": "Webb Wright",
       "publishedAt": "2026-11-04T23:10:07Z"
-    },
-    {
-      "title": "Qualcomm is betting big on data centers as smartphone sales sink",
-      "description": "With smartphone sales tanking by around 20 percent compared to 2025, Qualcomm is looking to data centers to help boost its bottom line. During its Q4 2026 earnings call, the company laid out its plans to make a splash in the AI data center business, through p…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Terrence O’Brien",
-      "publishedAt": "2026-11-04T22:42:15Z"
     },
     {
       "title": "Sam Altman: You’re Completely Right About RAM. I’m Sorry for the Confusion. Here’s What Happened",
@@ -591,15 +456,6 @@
       "publishedAt": "2026-11-04T16:35:33Z"
     },
     {
-      "title": "Data centers lost the midterms",
-      "description": "Data center developers are poised to face a more restrictive building environment after voters across the country voted in candidates who favor moratoriums and ballot measures that put more obstacles on their expansion, delivering a stinging blow to a central…",
-      "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Lauren Feiner",
-      "publishedAt": "2026-11-04T16:05:39Z"
-    },
-    {
       "title": "Uber only fulfilled 4 rides from AI agents last quarter",
       "description": "AI agents won't be stealing Uber's lunch any time soon. Only four rides were arranged by third-party AI agents during the third quarter of 2026, Uber executives disclosed during an earnings call this morning. The volume of Uber Eats orders fulfilled by AI age…",
       "url": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
@@ -645,6 +501,15 @@
       "publishedAt": "2026-11-04T14:31:02Z"
     },
     {
+      "title": "The biggest modding site in PC gaming is taking a stance on AI",
+      "description": "The PC gaming mods repository Nexus Mods is making disclosures about AI mandatory for uploads of new mods, meaning that mod authors will have to declare \"whether AI has been used in their work,\" the site announced today as part of a big post about AI-generate…",
+      "url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-04T00:42:54Z"
+    },
+    {
       "title": "Apple Begins Testing Its Controversial Always-Listening AI Feature",
       "description": "Here's your warning!",
       "url": "https://gizmodo.com/apple-begins-testing-its-controversial-always-listening-ai-feature-2000834615",
@@ -652,6 +517,42 @@
       "domain": "gizmodo.com",
       "author": "Ece Yildirim",
       "publishedAt": "2026-11-04T00:12:34Z"
+    },
+    {
+      "title": "Please stop asking me when the AI bubble will pop",
+      "description": "People, including on this staff, keep asking me with varying degrees of excitement or trepidation when the AI bubble will burst. I'll tell you what I tell them: If I knew that, I would make a life-changing bet on the market, levered up as far as I could, and …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Elizabeth Lopatto",
+      "publishedAt": "2026-11-03T23:37:45Z"
+    },
+    {
+      "title": "Google hasn’t figured out how to make AI pay like its search engine",
+      "description": "Search queries are growing at their fastest rate in five years, Google parent Alphabet said in its earnings report last week. However, Google's Search revenue growth slowed to 12 percent year over year in the third quarter, down from roughly 17 percent in the…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Rani Molla",
+      "publishedAt": "2026-11-03T22:41:23Z"
+    },
+    {
+      "title": "Sonos adds new Presets and prepares for the 27voice AI beta",
+      "description": "Sonos is rolling out a big app update that includes new Presets and early access to its AI voice assistant. You can create a preset to play music at a specific volume in a certain room, which will appear directly on the homescreen so you can quickly start pla…",
+      "url": "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-03T22:20:50Z"
+    },
+    {
+      "title": "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist",
+      "description": "The largest crypto theft to date was pulled off by combining some well-known hacking techniques over the course of a few months, according to Binance. A postmortem from the company says the process that started with one developer downloading a tampered instal…",
+      "url": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Richard Lawler",
+      "publishedAt": "2026-11-03T22:05:10Z"
     },
     {
       "title": "Website Selling ‘AI Slop Audiobooks’ Shuts Down Following Fierce Backlash From Authors",
@@ -681,6 +582,15 @@
       "publishedAt": "2026-11-03T20:30:14Z"
     },
     {
+      "title": "Apple starts giving Siri AI access to third-party apps",
+      "description": "Apple will now let Siri AI perform actions across third-party apps. As part of the iOS 27.3 update rolling out on Tuesday, Apple announced developers can now integrate Siri AI's new features in \"all apps,\" allowing the voice assistant to draw on a user's pers…",
+      "url": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-03T20:19:55Z"
+    },
+    {
       "title": "Google Is Holding Its Search Engine Hostage From Schools That Don’t Want AI",
       "description": "Google says it's giving schools more control over AI, but those that opt out will also lose access to its search engine.",
       "url": "https://gizmodo.com/google-is-holding-its-search-engine-hostage-from-schools-that-dont-want-ai-2000834544",
@@ -688,6 +598,15 @@
       "domain": "gizmodo.com",
       "author": "Bruce Gil",
       "publishedAt": "2026-11-03T19:45:15Z"
+    },
+    {
+      "title": "OpenAI says ChatGPT is catching up to Google in search",
+      "description": "In many circles, \"Ask Chat\" has replaced \"Google it,\" and that's reflected in a new announcement from OpenAI: the volume of search queries run through ChatGPT now equals 20 percent of the volume run through Google. Adam Fry, OpenAI's consumer product lead for…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Hayden Field",
+      "publishedAt": "2026-11-03T18:30:42Z"
     },
     {
       "title": "OpenAI Hires DOGE Alumni Who Hacked Into Anthropic to Strengthen Security",
@@ -708,6 +627,42 @@
       "publishedAt": "2026-11-03T17:45:06Z"
     },
     {
+      "title": "Netflix will show you themed recommendations through a new ‘AI Discover’ tab",
+      "description": "Netflix's TV app is getting a new \"AI Discover\" tab where the company will show experimental, AI-powered features to help you find new shows and movies to watch. The first of these experiments surfaces content based around themes, like \"Something Light,\" \"Fam…",
+      "url": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-03T17:28:14Z"
+    },
+    {
+      "title": "Google is entirely disabling Search in schools that don’t want AI",
+      "description": "Google is completely turning off Search in schools that reject its AI features, the company told The New York Times. The decision was also shared in a broader education-related update from Google on Tuesday, saying that access to Gemini, Gemini Notebook, Gemi…",
+      "url": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-03T17:01:26Z"
+    },
+    {
+      "title": "Apple is all in on AI — its own and everyone else’s",
+      "description": "Apple's latest earnings show how it's continuing to capitalize on the AI boom without busting its budget on the infrastructure spending consuming its competitors. Overall, Apple posted its best-ever fiscal year for revenue and earnings per share. iPhone and M…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Rani Molla",
+      "publishedAt": "2026-11-03T15:27:58Z"
+    },
+    {
+      "title": "OpenAI is quietly renaming data centers ‘compute campuses’",
+      "description": "People hate data centers. They're loud, resource-hungry eyesores that are so profoundly unpopular they have managed to achieve the near-impossible in today's polarized political landscape: genuine bipartisan opposition. But what about \"compute campuses\"? Thos…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart",
+      "publishedAt": "2026-11-03T15:00:44Z"
+    },
+    {
       "title": "AI Users Are Working Up to 90 Minutes Longer Every Day, Study Finds",
       "description": "A new analysis found that people who use AI at work have longer workdays than those who don't.",
       "url": "https://gizmodo.com/ai-users-are-working-up-to-90-minutes-longer-every-day-study-finds-2000833982",
@@ -715,6 +670,15 @@
       "domain": "gizmodo.com",
       "author": "Bruce Gil",
       "publishedAt": "2026-11-03T13:45:35Z"
+    },
+    {
+      "title": "Apple is restricting dating apps and romanceable chatbots to over 18s",
+      "description": "Apple will soon start asking developers to provide more details about their apps to enforce new App Store age rating requirements for dating and location-sharing features. The upcoming content descriptors announced on Monday will require developers to declare…",
+      "url": "https://www.theverge.com/tech/1025185/apple-app-store-age-rating-dating-apps-ai-companion",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-11-03T13:22:38Z"
     },
     {
       "title": "Anthropic Claims to Be Closing in on Recursive Self-Improvement",
@@ -771,6 +735,33 @@
       "publishedAt": "2026-11-02T19:25:12Z"
     },
     {
+      "title": "Anthropic clamps down on Claude’s AI video game clones",
+      "description": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from being used to recreate existing video games, as reported by Tom's Hardware. Retro gaming is currently being overrun with AI-made decompilations, recompilations, and ports, but while…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-02T18:56:02Z"
+    },
+    {
+      "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+      "description": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to p…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-02T18:01:30Z"
+    },
+    {
+      "title": "The New York Times and other publications sue Brave web browser for AI scraping and bypassing paywalls",
+      "description": "The New York Times and a group of other publications have filed lawsuits against the company that makes the Brave web browser over alleged unlawful scraping to train AI and also letting users bypass their paywalls, as reported by Reuters. According to a compl…",
+      "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-02T17:51:19Z"
+    },
+    {
       "title": "Elon Musk Needs to Save Money on Grok, Days After Saying AI Makes Saving Money Pointless",
       "description": "The billionaire told a disgruntled customer that Grok Bot costs have become unsustainable.",
       "url": "https://gizmodo.com/elon-musk-needs-to-save-money-on-grok-days-after-saying-ai-makes-saving-money-pointless-2000833812",
@@ -816,15 +807,6 @@
       "publishedAt": "2026-11-02T10:00:43Z"
     },
     {
-      "title": "REP BRIAN MAST: We are protecting our troops from having our own tech used against them",
-      "description": "Trump's proposed rules target American investments flowing to the Chinese Communist Party's military-industrial base in AI and semiconductors.",
-      "url": "https://www.foxnews.com/opinion/rep-brian-mast-protecting-troops-own-tech-used-against-them",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-11-02T09:00:44Z"
-    },
-    {
       "title": "OpenAI Would Reportedly Like You to Use Its Pleasant New Term for Data Centers",
       "description": "Trump isn’t the only one who wants to rebrand stuff.",
       "url": "https://gizmodo.com/openai-would-reportedly-like-you-to-use-its-pleasant-new-term-for-data-centers-2000833570",
@@ -832,15 +814,6 @@
       "domain": "gizmodo.com",
       "author": "Mike Pearl",
       "publishedAt": "2026-11-02T00:11:54Z"
-    },
-    {
-      "title": "You’ll Never Guess How Scalpers Are Reportedly Snagging Rare iPhone Duos",
-      "description": "AI bots are apparently a factor.",
-      "url": "https://gizmodo.com/youll-never-guess-how-scalpers-are-reportedly-snagging-rare-iphone-duos-2000833542",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-11-01T17:32:34Z"
     },
     {
       "title": "Microsoft AI beats doctors in simulated diagnosis test",
@@ -852,15 +825,6 @@
       "publishedAt": "2026-11-01T11:34:10Z"
     },
     {
-      "title": "Trump's midterm deadline has the Middle East bracing for another round of war",
-      "description": "Black smoke and flames rise from an oil facility in an industrial area in southern Riyadh, Saudi Arabia, which has found itself under attack from the Iran-allied Houthis. - STR/AP With little transparency from Washington and warmongering from Tehran, people…",
-      "url": "https://www.cnn.com/2026/10/31/middleeast/gulf-braces-us-midterms-intl",
-      "outlet": "CNN",
-      "domain": "cnn.com",
-      "author": "Mostafa Salem, Tala Alrajjal and Tamara Almoayed CNN",
-      "publishedAt": "2026-10-31T17:49:31Z"
-    },
-    {
       "title": "Human vs ChatGPT NFL Week 8 betting picks: Human answers with 4-1 week, looks to keep rolling",
       "description": "The Baltimore Ravens, Indianapolis Colts and Los Angeles Chargers headline Week 8 NFL betting picks as a human bettor battles ChatGPT again.",
       "url": "https://www.foxnews.com/outkick-sports/human-vs-chatgpt-nfl-week-8-betting-picks-human-answers-4-1-week-looks-keep-rolling",
@@ -868,6 +832,15 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-31T17:10:24Z"
+    },
+    {
+      "title": "I built an AI Tamagotchi before Meta could",
+      "description": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Mus…",
+      "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Sean Hollister",
+      "publishedAt": "2026-10-31T16:09:02Z"
     },
     {
       "title": "Christian group touts 'ethical' tech features as concerns over out-of-control AI tools persist",
@@ -879,15 +852,6 @@
       "publishedAt": "2026-10-31T15:00:55Z"
     },
     {
-      "title": "Harry Houdini returns for one final stunt this Halloween in Fox Nation special marking 100th death anniversary",
-      "description": "AI-generated imagery brings Harry Houdini and his inner circle back to life in a groundbreaking Fox Nation documentary series spanning three episodes.",
-      "url": "https://www.foxnews.com/media/harry-houdini-returns-one-final-stunt-halloween-fox-nation-special-marking-100th-death-anniversary",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-31T13:00:04Z"
-    },
-    {
       "title": "Sam Altman Reveals Internal Model Name Was ‘Hold My Beer,’ Pours One Out for All the Lives AI Could Destroy",
       "description": "“I’m actually probably not supposed to say this, but I will since we’re drinking.”",
       "url": "https://gizmodo.com/sam-altman-reveals-internal-model-name-was-hold-my-beer-pours-one-out-for-all-the-lives-ai-could-destroy-2000833288",
@@ -895,6 +859,15 @@
       "domain": "gizmodo.com",
       "author": "Webb Wright",
       "publishedAt": "2026-10-30T21:20:44Z"
+    },
+    {
+      "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+      "description": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky Pint podcast, where he also commented o…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-10-30T20:48:43Z"
     },
     {
       "title": "The AI Gold Rush Is Turning Into a Wall Street Bloodbath",
@@ -906,6 +879,15 @@
       "publishedAt": "2026-10-30T20:30:34Z"
     },
     {
+      "title": "The biggest names in AI are backing a new way to opt out of scraping",
+      "description": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences acros…",
+      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-30T20:26:10Z"
+    },
+    {
       "title": "Unvetted foreign workers at AI firms raise national security alarms, advocates warn",
       "description": "Tech advocacy groups warn that foreign nationals at AI companies like OpenAI and Google pose a national security threat amid a lack of federal oversight.",
       "url": "https://www.foxnews.com/tech/unvetted-foreign-workers-ai-firms-raise-national-security-alarms-advocates-warn",
@@ -915,6 +897,15 @@
       "publishedAt": "2026-10-30T19:04:49Z"
     },
     {
+      "title": "Google’s satellite AI server transmits its first response to Earth",
+      "description": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt …",
+      "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-30T18:21:38Z"
+    },
+    {
       "title": "Fox News AI Newsletter: Don't want AI on your phone? What to do about it",
       "description": "The Fox News AI Newsletter covers the latest artificial intelligence technology advancements, including the challenges and opportunities AI presents now and for the future.",
       "url": "https://www.foxnews.com/tech/fox-news-ai-newsletter-dont-want-ai-phone-what-do-about-it",
@@ -922,6 +913,15 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-30T18:17:54Z"
+    },
+    {
+      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
+      "description": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore \"experiences that recognize participating customers as the…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-30T17:38:04Z"
     },
     {
       "title": "Terri Clark refused Auto-Tune and AI to keep her Ryman Auditorium live album raw and real",
@@ -942,6 +942,24 @@
       "publishedAt": "2026-10-30T16:20:48Z"
     },
     {
+      "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
+      "description": "Pope Leo XIV says AI systems should be \"disarmed,\" adding that humans \"have the responsibility to guide, change and, when necessary, reject its applications.\" In Friday's Papal Address, Pope Leo encourages United Nations member states to \"take concrete steps …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-30T14:58:06Z"
+    },
+    {
+      "title": "This electric screwdriver uses a camera and AI to figure out what bit you need",
+      "description": "Companies like Hoto and Fanttik have elevated the design and functionality of tools like electric screwdrivers, but Arrowmax wants to make them smarter by adding a camera and AI that work together to eliminate the trial and error of finding the exact type and…",
+      "url": "https://www.theverge.com/tech/1023057/arrowmax-arrowspace-s1-electric-screwdriver-ai-camera-kickstarter",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Andrew Liszewski",
+      "publishedAt": "2026-10-30T14:23:26Z"
+    },
+    {
       "title": "AI-powered cyberattacks fuel 'Black October' fears",
       "description": "A startup founder woke to $449 in unexpected OpenAI and Anthropic charges after stolen API keys were exploited during the \"Black October\" cyber wave.",
       "url": "https://www.foxnews.com/tech/ai-powered-cyberattacks-fuel-black-october-fears",
@@ -949,6 +967,15 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-30T14:20:43Z"
+    },
+    {
+      "title": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
+      "description": "After months of bombarding mathematicians with a relentless stream of AI-generated results, OpenAI CEO Sam Altman says he sympathizes with researchers struggling to make sense of it all. But he has no intention of stopping - and hints there could be much more…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart",
+      "publishedAt": "2026-10-30T13:01:14Z"
     },
     {
       "title": "BRIAN HARRELL: America’s AI revolution can’t charge forward without lots of energy",
@@ -969,6 +996,24 @@
       "publishedAt": "2026-10-29T23:51:29Z"
     },
     {
+      "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
+      "description": "The Wikimedia Foundation is staking out a middle ground in a group of landmark AI copyright cases, pushing courts to legally protect large language models (LLMs) training on copyrighted work - but not chatbots regurgitating that work to users. An overly black…",
+      "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Lauren Feiner",
+      "publishedAt": "2026-10-29T22:43:40Z"
+    },
+    {
+      "title": "Reddit’s CEO says Google’s AI Mode ‘does not drive traffic’",
+      "description": "Reddit CEO Steve Huffman said in an earnings call today that Google's AI-powered search modes do not help with traffic to the platform, echoing problems facing other websites and publishers. As part of its Q3 2026 earnings, Reddit revealed that search traffic…",
+      "url": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-10-29T22:19:32Z"
+    },
+    {
       "title": "AI Company’s Stock Craters After Admitting Its Bitcoin Is Stuck on an Exchange Nobody’s Heard of",
       "description": "Datavault AI disclosed it has been unable to withdraw roughly $65 million worth of bitcoin from an obscure exchange for four months.",
       "url": "https://gizmodo.com/ai-companys-stock-craters-after-admitting-its-bitcoin-is-stuck-on-an-exchange-nobodys-heard-of-2000832481",
@@ -987,6 +1032,132 @@
       "publishedAt": "2026-10-29T20:50:51Z"
     },
     {
+      "title": "A Woman Asked ChatGPT How to Get Off Her Seizure Meds. Her Family Says It Killed Her",
+      "description": "\"Bowen’s death is what happens when companies race one another and ship a product faster than they can control it,\" the family's lawyers said Tuesday.",
+      "url": "https://gizmodo.com/a-woman-asked-chatgpt-how-to-get-off-her-seizure-meds-her-family-says-it-killed-her-2000832591",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ed Cara",
+      "publishedAt": "2026-10-29T20:40:54Z"
+    },
+    {
+      "title": "Intel Community Reportedly Tied Trump’s Favorite AI Boss to a Chinese Spy",
+      "description": "Nvidia CEO Jensen Huang has lobbied fiercely with the U.S. government to curb restrictions on the sale of powerful AI chips to China.",
+      "url": "https://gizmodo.com/nvidia-ceo-jensen-huang-tied-to-chinese-spy-trump-2000832476",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-29T16:20:17Z"
+    },
+    {
+      "title": "Microsoft’s AI future has fewer jobs",
+      "description": "To anyone listening closely to what Microsoft CEO Satya Nadella has been saying over the past couple of years, this week felt like the clearest sign yet that AI is about to fundamentally change the size of Microsoft's workforce. Microsoft is now offering volu…",
+      "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Tom Warren",
+      "publishedAt": "2026-10-29T15:17:52Z"
+    },
+    {
+      "title": "The NYT Cooking app is testing AI recipe modifications",
+      "description": "The New York Times is testing a new AI feature for its Cooking app that helps users to modify recipes, and it's sparked some drama among users. NYT Cooking senior editor Genevieve Ko announced the feature last Friday, which can be used to recommend substituti…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-10-29T14:39:37Z"
+    },
+    {
+      "title": "Amazon’s AI shopping assistant can now edit your grocery lists and gift registries",
+      "description": "Amazon is adding several new features to its AI shopping assistant, including ways to create, edit, and move items between shopping lists and gift registries. As an example, Amazon says you can now ask Alexa for Shopping to \"Create a new shopping list\" or \"Sh…",
+      "url": "https://www.theverge.com/tech/1022140/amazon-alexa-for-shopping-grocery-lists-gift-registries",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-29T13:52:48Z"
+    },
+    {
+      "title": "Anthropic is asking Wall Street to believe in AGI",
+      "description": "Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of the Anthropic IPO filing — a document known as an S-1. Anthropic just filed its S-1 to go public on t…",
+      "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Nilay Patel",
+      "publishedAt": "2026-10-29T13:47:56Z"
+    },
+    {
+      "title": "This $149 digital candle uses AI to accurately simulate a flickering flame",
+      "description": "After engineering a flexible version of Tetris that could be wrapped around a magazine, Kevin Bates' latest creation is a digital candle that uses a custom AI model to accurately simulate the appearance of a flickering flame across a grid of LEDs. It's a far …",
+      "url": "https://www.theverge.com/tech/1022113/kevin-bates-arduboy-digital-candle-ai-simulate-flame",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Andrew Liszewski",
+      "publishedAt": "2026-10-29T13:37:56Z"
+    },
+    {
+      "title": "AI has come for Arizona’s water",
+      "description": "A hulking gray giant rises from the desert. Inside, engineers create the force behind our phones and computers and appliances, our streaming services and search engines and chatbots and vibe-coded apps and websites. The complex is simultaneously massive and s…",
+      "url": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Gaby Del Valle",
+      "publishedAt": "2026-10-29T10:02:04Z"
+    },
+    {
+      "title": "The Biggest Benchmark in AI Just Updated, Dealing a Major Blow to a Chinese Contender",
+      "description": "Kimi K3.1 Pro is no longer the fourth best AI model in the world.",
+      "url": "https://gizmodo.com/the-biggest-benchmark-in-ai-just-updated-dealing-a-major-blow-to-a-chinese-contender-2000832292",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-29T09:00:02Z"
+    },
+    {
+      "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
+      "description": "Asked about AI and the trend of college students booing tech CEOs at graduation ceremonies, Instagram head Adam Mosseri acknowledged in an interview that a lot of people really don't like AI, and it's not just young people and creatives. Appearing on the Coli…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-10-28T23:05:39Z"
+    },
+    {
+      "title": "Expert Judgement Can Be Easily Hacked by AI, Anthropic Study Finds",
+      "description": "In a recent study, 86% of participants followed Claude’s advice—but only a small fraction acknowledged the agent had played a role in their decision-making process.",
+      "url": "https://gizmodo.com/expert-judgement-can-be-easily-hacked-by-ai-anthropic-study-finds-2000832143",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-28T22:00:50Z"
+    },
+    {
+      "title": "Google says its investments in AI are driving more searches",
+      "description": "Google parent company Alphabet says that its AI investments are leading to a big growth in searches year-over-year, as noted in its Q3 2026 earnings today. \"Our AI investments are driving overall Search query growth, including commercial queries,\" CEO Sundar …",
+      "url": "https://www.theverge.com/tech/1020811/alphabet-google-earnings-q3-2026",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-10-28T20:22:26Z"
+    },
+    {
+      "title": "China Is So Desperate for AI Memory That It’s Producing Chips With a 70% Failure Rate",
+      "description": "The country’s largest DRAM maker is expected to push ahead with limited production of advanced memory chips in the next two months.",
+      "url": "https://gizmodo.com/china-is-so-desperate-for-ai-memory-that-its-producing-chips-with-a-70-failure-rate-2000831791",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Bruce Gil",
+      "publishedAt": "2026-10-28T16:10:31Z"
+    },
+    {
+      "title": "xAI is buying out homeowners who promise not to sue over data center noise",
+      "description": "A subsidiary of Elon Musk's xAI is offering to buy up homes in a Mississippi neighborhood, as long as residents don't join a lawsuit targeting the company's nearby data center and power plant, according to a report from The Guardian. A realtor going door-to-d…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-28T14:44:00Z"
+    },
+    {
       "title": "How to get rid of unwanted AI on your phone",
       "description": "Google AI Overviews can't be permanently turned off, but adding -AI to your searches and using the built-in Web filter can help bypass AI summaries.",
       "url": "https://www.foxnews.com/tech/how-get-rid-unwanted-ai-your-phone",
@@ -996,22 +1167,139 @@
       "publishedAt": "2026-10-28T13:12:06Z"
     },
     {
-      "title": "Adani flagship’s $10-billion wipe-out raises stake for earnings",
-      "description": "Growth prospects for Adani Enterprises’ airport and copper businesses, its joint venture with Jabil for AI and data centre equipment manufacturing to remain in focus; company to announce its results on Wednesday",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-28/adani-flagship-s-10-billion-wipeout-raises-stake-for-earnings",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-28T05:47:02Z"
+      "title": "Meta quietly launched an ‘AI pet journal’ app",
+      "description": "Meta has launched a \"tamagotchi-style\" pet game called Waddle World, with virtual creatures that chat with users and create doodles to illustrate conversations. According to its Apple and Play Store listings, the \"16-bit pet care game\" is not really a game, b…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart",
+      "publishedAt": "2026-10-28T11:27:30Z"
     },
     {
-      "title": "SK Hynix profit beat fuels $45 billion of dividends, buyback",
-      "description": "SK Hynix Inc. unveiled plans to return about $45 billion more to shareholders after profit surged a stronger-than-expected seven-fold, reflecting the resilience of an AI infrastructure rollout that’s propelling memory chip demand.",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-27/sk-hynix-profit-jumps-seven-fold-to-soothe-doubts-over-ai-rush",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-28T02:50:49Z"
+      "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+      "description": "On Monday, OpenAI announced impressive breakthroughs in mathematics, computer science, and physics, along with what the company says is an evolving approach to communicating its findings. But despite its apparent course correction, researchers who spoke to Th…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart",
+      "publishedAt": "2026-10-27T20:51:04Z"
+    },
+    {
+      "title": "Google’s New AI World Model Can Generate Human Voices, Not Just Video",
+      "description": "“Understanding and simulating the world is a crucial aspect of building AGI,” the company wrote in its launch post.",
+      "url": "https://gizmodo.com/googles-new-ai-world-model-can-generate-human-voices-not-just-video-2000831335",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-27T20:45:14Z"
+    },
+    {
+      "title": "Online Shopping Platforms Turn Against Third-Party AI Agents",
+      "description": "Secondhand luxury platform TheRealReal is reportedly the latest to make it tougher for AI shopping agents.",
+      "url": "https://gizmodo.com/online-shopping-platforms-turn-against-third-party-ai-agents-2000831298",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-27T19:45:31Z"
+    },
+    {
+      "title": "VisionQuest is what happens when AI really goes rogue",
+      "description": "In Marvel's VisionQuest, a superpowered robot tries to better understand humanity by getting lost in elaborate, digital daydreams in which he and other artificial intelligence-powered beings live together in a home. The series is deeply fantastical, yet it pl…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Charles Pulliam-Moore",
+      "publishedAt": "2026-10-27T17:31:36Z"
+    },
+    {
+      "title": "Police Are Using AI to Pull Over Drivers for ‘Suspicious’ Behavior",
+      "description": "The ACLU warns that police are using license plate data to track drivers and pull them over based on supposedly suspicious travel patterns.",
+      "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Bruce Gil",
+      "publishedAt": "2026-10-27T16:20:46Z"
+    },
+    {
+      "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
+      "description": "Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Window can pull information from your online portfolio or Linke…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-27T16:14:18Z"
+    },
+    {
+      "title": "Google’s next Genie AI model generates more realistic experiences",
+      "description": "Google announced today its Genie 4 world model for generating interactive experiences using AI. The company says the model has four main updates: It allows for more realistic worlds, lets users update an experience in real time with a natural language prompt,…",
+      "url": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-10-27T15:07:35Z"
+    },
+    {
+      "title": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
+      "description": "Apple is bringing an AI assistant to its suite of productivity apps, including Keynote, Pages, and Numbers. The assistant, which is built on AI models from Apple and OpenAI, can understand a document's context to perform tasks like designing, animating, and r…",
+      "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-27T13:50:51Z"
+    },
+    {
+      "title": "ChatGPT’s Election-Related Anti-Deepfake Measures Are Intriguing, but Incomplete",
+      "description": "OpenAI has called it a \"layer of friction.\" It's not a very thick layer.",
+      "url": "https://gizmodo.com/chatgpts-election-related-anti-deepfake-measures-are-intriguing-but-incomplete-2000831002",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-27T09:00:38Z"
+    },
+    {
+      "title": "Anthropic’s Latest Claude Security Disclosure Will Make You Sympathize With Claude",
+      "description": "Oh so you've never sidestepped a paywall?",
+      "url": "https://gizmodo.com/anthropics-latest-claude-security-disclosure-will-make-you-sympathize-with-claude-2000830986",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-27T02:03:25Z"
+    },
+    {
+      "title": "OpenAI Trumpet’s 3 More Math and Science Results, Along With a New Plan for Publishing Them",
+      "description": "The company has already handed this work over to expert \"shepherds\" for completion.",
+      "url": "https://gizmodo.com/openai-trumpets-3-more-math-and-science-results-along-with-a-new-plan-for-publishing-them-2000830956",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-27T00:13:11Z"
+    },
+    {
+      "title": "OpenAI announces three big science discoveries and a new way to work with academics",
+      "description": "Less than a month after its mass release of hundreds of manuscripts that it said contained solutions to long-standing mathematics questions, OpenAI is back with three more \"major\" discoveries in math, computer science, and physics. What's different this time …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Richard Lawler",
+      "publishedAt": "2026-10-26T23:47:59Z"
+    },
+    {
+      "title": "Former Yahoo CEO Needed AI to Help Describe What Makes Her Own Daughter Special",
+      "description": "AI is solving being a deadbeat parent.",
+      "url": "https://gizmodo.com/former-yahoo-ceo-needed-ai-to-help-describe-what-makes-her-own-daughter-special-2000830868",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "AJ Dellinger",
+      "publishedAt": "2026-10-26T21:45:48Z"
+    },
+    {
+      "title": "Anthropic is burning gas to feed the AI boom",
+      "description": "As it prepares to go public, Anthropic's S-1 filing makes generative AI's methane dependency glaringly obvious. \"Competition for access to electrical supply and data center locations with adequate power availability is intense.\" In documents filed with the US…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Justine Calma",
+      "publishedAt": "2026-10-26T21:45:31Z"
     },
     {
       "title": "Boom or Bubble? What to Make of AI Sell-Offs, Anthropic’s IPO, and the Fed",
@@ -1023,6 +1311,51 @@
       "publishedAt": "2026-10-26T17:35:08Z"
     },
     {
+      "title": "The RealReal won’t let AI agents hog designer clothing",
+      "description": "The RealReal, a secondhand luxury fashion consignment retailer, said it's updating its bot defense system, effectively making it harder for AI agents to shop on its site. The change comes days after The Verge reported that an AI agent could be used to take ad…",
+      "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Mia Sato",
+      "publishedAt": "2026-10-26T17:30:55Z"
+    },
+    {
+      "title": "Elon Musk’s AI-Generated ‘Odyssey’ Is Here to Save Western Civilization",
+      "description": "“Homer didn’t have Grok. We do.”",
+      "url": "https://gizmodo.com/elon-musks-ai-generated-odyssey-is-here-to-save-western-civilization-2000830714",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Tom Hawking",
+      "publishedAt": "2026-10-26T17:10:45Z"
+    },
+    {
+      "title": "Former DOGE Staffers’ New Startup Claims It Hacked Anthropic",
+      "description": "The AI agents took less than 12 hours to hack into Anthropic, the report says.",
+      "url": "https://gizmodo.com/former-doge-staffers-new-startup-claims-it-hacked-anthropic-2000830560",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-26T15:00:57Z"
+    },
+    {
+      "title": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
+      "description": "Anthropic has filed its S-1 prospectus with the Securities and Exchange Commission, preparing the company behind Claude to beat OpenAI to the punch with an IPO. In a filing with the SEC, Anthropic said it plans to list on the Nasdaq exchange under the ticker …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart",
+      "publishedAt": "2026-10-26T13:33:37Z"
+    },
+    {
+      "title": "Can AI help solve the COBOL code crisis?",
+      "description": "What do the IRS, banks, airlines, and government infrastructure around the world have in common? They're all running on systems propped up by antique computer code that nobody dares touch, lest everything come crashing down. OpenAI thinks it may have a soluti…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart",
+      "publishedAt": "2026-10-26T13:13:11Z"
+    },
+    {
       "title": "AI is changing everything. Universities must teach Americans how to keep up",
       "description": "A Harvard Business School study reveals AI's \"jagged frontier,\" showing how misusing AI tools can actually hurt performance more than not using them.",
       "url": "https://www.foxnews.com/opinion/ai-changing-everything-universities-must-teach-americans-keep-up",
@@ -1030,15 +1363,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-26T09:00:24Z"
-    },
-    {
-      "title": "Midterms unleash what may be the nastiest barrage of attack ads yet",
-      "description": "From Vivek Ramaswamy's toxic Ohio ad to Ken Paxton's AI-generated spots in Texas, the 2026 midterms are now drowning in political attack ads.",
-      "url": "https://www.foxnews.com/opinion/midterms-unleash-what-may-nastiest-barrage-attack-ads-yet",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-26T07:00:48Z"
     },
     {
       "title": "Bitcoin dips below $80,000 as AI-Related market selloff deepens",
@@ -1050,6 +1374,24 @@
       "publishedAt": "2026-10-26T06:31:46Z"
     },
     {
+      "title": "‘Tokens Are Cheap’: Open Source Subreddit Bans AI",
+      "description": "“AI, as it exists today, is incongruent to this Open Source community.”",
+      "url": "https://gizmodo.com/tokens-are-cheap-open-source-subreddit-bans-ai-2000830386",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-25T17:00:59Z"
+    },
+    {
+      "title": "r/opensource just banned AI, non-English speakers and more",
+      "description": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If your project uses AI, is made by AI, or is intended for AI, it's not welcome on r/opensource. AI, a…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Terrence O’Brien",
+      "publishedAt": "2026-10-25T13:25:32Z"
+    },
+    {
       "title": "Human vs. ChatGPT NFL Week 7 betting picks: Human clings to profit as AI claims third straight win",
       "description": "Human analyst is still profitable by just 0.09 units as he takes on ChatGPT with five more NFL bets, including a Titans upset and a shared Bengals pick.",
       "url": "https://www.foxnews.com/outkick-sports/human-vs-chatgpt-nfl-week-7-betting-picks-human-clings-profit-ai-claims-third-straight-win",
@@ -1059,13 +1401,49 @@
       "publishedAt": "2026-10-25T11:50:08Z"
     },
     {
-      "title": "French CEO warns 'purely chaotic' riots prove the country has reached the 'dead end of socialism'",
-      "description": "French AI entrepreneur Brivael Le Pogam warns France has reached the \"dead end of socialism\" as violent protests, looting and chaos spread nationwide.",
-      "url": "https://www.foxnews.com/media/french-ceo-warns-purely-chaotic-riots-prove-country-reached-dead-end-socialism",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-24T17:22:32Z"
+      "title": "The AI-Centric Private School Chain Reportedly Isn’t Meeting Its Own Academic Goals",
+      "description": "A New York Times report suggests Alpha School needs to rethink its core promise.",
+      "url": "https://gizmodo.com/the-ai-centric-private-school-chain-reportedly-isnt-meeting-its-own-academic-goals-2000830291",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-25T09:00:54Z"
+    },
+    {
+      "title": "Blue Planet III is keeping the rough edges in the age of AI",
+      "description": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveawa…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Terrence O’Brien",
+      "publishedAt": "2026-10-24T21:29:12Z"
+    },
+    {
+      "title": "Pennsylvania will require labels on AI-generated ads",
+      "description": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been sign…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Terrence O’Brien",
+      "publishedAt": "2026-10-24T18:32:44Z"
+    },
+    {
+      "title": "OpenAI Built a Giant Fake Internet for Its Agents to Use and Abuse Safely",
+      "description": "It's like the Truman Show for AI.",
+      "url": "https://gizmodo.com/openai-built-a-giant-fake-internet-for-its-agents-to-use-and-abuse-safely-2000830274",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-24T17:30:05Z"
+    },
+    {
+      "title": "Anthropic’s AI Hid a Secret Message in the Stars. OpenAI’s Bot Found It.",
+      "description": "Morse code is back, baby.",
+      "url": "https://gizmodo.com/anthropics-ai-hid-a-secret-message-in-the-stars-openais-ai-found-it-2000830047",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "AJ Dellinger",
+      "publishedAt": "2026-10-24T13:31:26Z"
     },
     {
       "title": "AI hasn’t replaced humans. Employers are still betting on college degrees",
@@ -1086,6 +1464,15 @@
       "publishedAt": "2026-10-24T11:00:45Z"
     },
     {
+      "title": "Check Out the Many Uncanny, Human-ish Voices From Block’s New AI Model",
+      "description": "The model goes by Dessa. Presumably because, once you hear it talk, you'll say \"'Dessa' pretty convincing human voice.\"",
+      "url": "https://gizmodo.com/check-out-the-many-uncanny-human-ish-voices-from-blocks-new-ai-model-2000830237",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Justin Caffier",
+      "publishedAt": "2026-10-24T10:24:40Z"
+    },
+    {
       "title": "Unlocking Houdini: How AI Is Shedding Light on His Life, Death, and Secrets",
       "description": "“Houdini: Back from the Dead”, now available on Fox Nation, is a first-of-its-kind, three-part documentary series that resurrects Houdini’s story in the only way fitting: big, bold, impossible. On the 100th anniversary of his mysterious death – Halloween 2026…",
       "url": "https://radio.foxnews.com/2026/10/23/unlocking-houdini-how-ai-is-shedding-light-on-his-life-death-and-secrets/",
@@ -1104,13 +1491,49 @@
       "publishedAt": "2026-10-23T22:49:03Z"
     },
     {
-      "title": "Trump's corporate stakes are a gift to the next Democratic president",
-      "description": "Trump's government ownership stakes in 40 private companies could hand future Democratic presidents powerful leverage over gun, oil, and AI firms.",
-      "url": "https://www.foxnews.com/opinion/trumps-corporate-stakes-gift-next-democratic-president",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-23T19:16:05Z"
+      "title": "OpenAI now trains its frontier AI models with no internet access",
+      "description": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can interact with indexed and cached web co…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-23T21:11:07Z"
+    },
+    {
+      "title": "Google’s AI search changes upended online publishing",
+      "description": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How i…",
+      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-23T20:42:34Z"
+    },
+    {
+      "title": "Abliteration Launches Cheaper Version of Its ‘Unrestricted AI‘ at the Worst Possible Time",
+      "description": "Unless you’re a hacker, of course.",
+      "url": "https://gizmodo.com/abliteration-launches-cheaper-version-of-its-unrestricted-ai-at-the-worst-possible-time-2000830045",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-23T20:15:01Z"
+    },
+    {
+      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+      "description": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and uncanny. Take this one, …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-10-23T19:32:39Z"
+    },
+    {
+      "title": "Sam Altman: ‘I No Longer Think We’re Gonna Be Able to Just Patch All the Bugs’",
+      "description": "We're all trying to find the guy who did this.",
+      "url": "https://gizmodo.com/sam-altman-i-no-longer-think-were-gonna-be-able-to-just-patch-all-the-bugs-2000829947",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "AJ Dellinger",
+      "publishedAt": "2026-10-23T18:40:48Z"
     },
     {
       "title": "Did Texas use artificial intelligence to call fourth-down play against Florida? Longhorns AD clarifies report",
@@ -1122,13 +1545,13 @@
       "publishedAt": "2026-10-23T18:16:23Z"
     },
     {
-      "title": "Federal judge kicked off 'botch job' anti-DEI case after stunning appeals court rebuke",
-      "description": "The Fifth Circuit called Judge Henry Wingate's handling of Mississippi's anti-DEI law challenge a \"botch job\" riddled with AI hallucinations and errors.",
-      "url": "https://www.foxnews.com/politics/federal-judge-kicked-off-botch-job-anti-dei-case-after-stunning-appeals-court-rebuke",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-23T18:00:19Z"
+      "title": "Meta delays new business terms after publisher pushback on AI scraping",
+      "description": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Robe…",
+      "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-23T14:47:41Z"
     },
     {
       "title": "Fox News AI Newsletter: What we saw inside a massive Texas data center",
@@ -1149,22 +1572,112 @@
       "publishedAt": "2026-10-23T13:22:44Z"
     },
     {
-      "title": "Fox News unveils extensive 2026 midterm coverage plans with control of Congress at stake",
-      "description": "Fox News Media is launching a live blog, interactive map, and AI chatbot to deliver real-time 2026 midterm election results and race updates.",
-      "url": "https://www.foxnews.com/media/fox-news-unveils-extensive-2026-midterm-coverage-plans-control-congress-stake",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-22T20:25:33Z"
+      "title": "Etsy is cracking down on AI slop listings",
+      "description": "Etsy is announcing stricter rules about how AI can be used in listings to reduce the volume of AI slop on the platform. In a post, the company says that \"many active buyers say they can't tell which items involve AI-generated content\" and that sellers are \"co…",
+      "url": "https://www.theverge.com/tech/1017261/etsy-ai-rules-policies-restrictions-listing",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-10-23T00:09:58Z"
     },
     {
-      "title": "Rush is on to patch a software vulnerability that could impact 70% of websites worldwide",
-      "description": "Governments and corporations worked throughout the night to update software after the AI-assisted discovery of vulnerabilities in a programming language vital to about 70% of websites globally. Many government sites appeared to be working Thursday, but outage…",
-      "url": "https://apnews.com/article/php-websites-fbi-europe-vulnerability-a0af9576808a0963efca8df14d4b5183",
-      "outlet": "AP News",
-      "domain": "apnews.com",
-      "author": "By DAVID MCHUGH and EMMA BURROWS - Associated Press",
-      "publishedAt": "2026-10-22T14:55:57Z"
+      "title": "Canva’s first AI image model plans designs before generating them",
+      "description": "Canva is diving even deeper into AI with the launch of an image generation model that competes directly with those from OpenAI, Microsoft, and Google. The model, called Canva Craft, uses a two-stage architecture that allows it to plan a design before generati…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-22T21:51:25Z"
+    },
+    {
+      "title": "Spotify Claims It Is ‘Unusually Well-Positioned’ for an Agentic AI Takeover",
+      "description": "Spotify wants to be your favorite AI agent's favorite music platform.",
+      "url": "https://gizmodo.com/spotify-claims-it-is-unusually-well-positioned-for-an-agentic-ai-takeover-2000829441",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-22T21:05:32Z"
+    },
+    {
+      "title": "Microsoft Says Its New AI Is More Than Twice as Good at Diagnosing Diseases as Doctors",
+      "description": "Microsoft plans to start testing the tool in a Boston hospital soon.",
+      "url": "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-22T20:40:46Z"
+    },
+    {
+      "title": "Meta’s AI could still scrape news sites, legal experts say",
+      "description": "Meta has tweaked its business terms to remove language suggesting that it could freely train its AI models on news sites, like The Verge - but legal experts say these changes aren't enough to address their concerns. \"This does nothing to restrict the 'associa…",
+      "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-10-22T20:32:05Z"
+    },
+    {
+      "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+      "description": "For years, AI leaders have touted healthcare as one of the clearest examples of where their technology will improve lives. Now \"it is finally here,\" Microsoft AI CEO Mustafa Suleyman tells The Verge. The company claims to have developed an AI-powered tool it …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart",
+      "publishedAt": "2026-10-22T18:03:30Z"
+    },
+    {
+      "title": "Someone hacked the Switch 2 by using an old game and AI",
+      "description": "The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve from Minecraft. Open…",
+      "url": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-10-22T17:21:31Z"
+    },
+    {
+      "title": "Wildwood’s director says AI is ‘antithetical to everything that we are at this studio’",
+      "description": "Wildwood is the most ambitious film yet from Laika, the stop-motion studio best known for the likes of Coraline and ParaNorman. It's a sprawling fantasy adventure that took five years to complete. The process involved more 230 puppets - including 36 of the ma…",
+      "url": "https://www.theverge.com/entertainment/1016647/wildwood-travis-knight-interview-ai-laika-stop-motion",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Andrew Webster",
+      "publishedAt": "2026-10-22T16:16:15Z"
+    },
+    {
+      "title": "Blindsided by AI Agents, Big Banks Scramble to Beef Up Security",
+      "description": "Believe it or not, some people appear to be granting agents access to their bank accounts.",
+      "url": "https://gizmodo.com/blindsided-by-ai-agents-big-banks-scramble-to-beef-up-security-2000829358",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-22T16:15:01Z"
+    },
+    {
+      "title": "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
+      "description": "It was a busy summer for AI lobbyists. Anthropic, OpenAI, and Nvidia each had their highest-spending lobbying quarter between July and September, federal disclosures show. Nvidia spent the most of the group at $2.2 million, followed by Anthropic's $2.1 millio…",
+      "url": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Lauren Feiner",
+      "publishedAt": "2026-10-22T15:50:30Z"
+    },
+    {
+      "title": "Gizmodo Is Launching a Daily Newsletter About AI",
+      "description": "Made by humans. Envied by bots. Typos are our.s",
+      "url": "https://gizmodo.com/gizmodo-is-launching-a-daily-newsletter-about-ai-2000829171",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Gizmodo Staff",
+      "publishedAt": "2026-10-22T14:52:45Z"
+    },
+    {
+      "title": "Retro gaming is being overrun with AI",
+      "description": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these kinds of unexpected projects have gone viral…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Andrew Webster",
+      "publishedAt": "2026-10-22T14:28:29Z"
     },
     {
       "title": "Google's new AI shopping cart tracks deals across stores",
@@ -1176,13 +1689,31 @@
       "publishedAt": "2026-10-22T14:12:20Z"
     },
     {
-      "title": "Premji family office leads ₹1,000 crore investment in Vegafin Capital",
-      "description": "Funds to build AI-based lending platform for MSMEs; deal includes acquisition of Bizloan with $25 million loan book",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-21/india-billionaire-firm-leads-106-million-ai-loan-startup-round",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-22T10:33:50Z"
+      "title": "Bill Gates says to prepare for 20 years of ‘tumultuous’ AI disruption",
+      "description": "Today, I’m talking to Bill Gates, cofounder and former CEO of Microsoft and chairman of the Gates Foundation. You may have noticed Bill in the news more lately — he’s been on something of a tour for the past few months, ever since publishing an essay in late …",
+      "url": "https://www.theverge.com/podcast/1015408/bill-gates-ai-interview-microsoft-openai-anthropic-risk-policy-regulation",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Nilay Patel",
+      "publishedAt": "2026-10-22T13:20:55Z"
+    },
+    {
+      "title": "AI Chatbots Are Building an ‘Algorithmic Self-Portrait’ of You",
+      "description": "Users really trust AI chatbots, some experts say too much.",
+      "url": "https://gizmodo.com/ai-chatbots-are-building-an-algorithmic-self-portrait-of-you-2000775529",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-22T12:00:15Z"
+    },
+    {
+      "title": "1Password lets AI agents use your passwords without seeing them",
+      "description": "1Password is introducing a new feature that allows AI agents to sign into your accounts without actually seeing or handling your passwords. The aptly named 1Password for Agents doesn't give bots free reign to access all of your connected accounts - you'll sti…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-10-22T09:48:28Z"
     },
     {
       "title": "Barclays plans 5,000 job cuts as bank steps up AI-led efficiency",
@@ -1203,13 +1734,211 @@
       "publishedAt": "2026-10-22T07:32:45Z"
     },
     {
-      "title": "SpaceX, Tesla boards study possible $3.5 trillion merger",
-      "description": "SpaceX and Tesla boards form independent committees to explore a potential $3.5 trillion merger, a blockbuster spanning AI, rockets, and EVs.",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-20/spacex-profit-beats-estimates-on-big-jump-in-ai-business-revenue",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-21T11:29:49Z"
+      "title": "Zuckerberg Wants To Build A Giant Online Network Of AI Agents",
+      "description": "Maybe he can call it the \"Museverse.\"",
+      "url": "https://gizmodo.com/zuckerberg-wants-to-build-a-giant-online-network-of-ai-agents-2000829145",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-22T01:51:03Z"
+    },
+    {
+      "title": "AI agents are ready to shop. Some retailers are wary.",
+      "description": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's mo…",
+      "url": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Mia Sato",
+      "publishedAt": "2026-10-22T00:46:40Z"
+    },
+    {
+      "title": "OpenAI Wants to ‘Patch the Planet’ (With Its Own AI)",
+      "description": "Never let a good crisis go to waste.",
+      "url": "https://gizmodo.com/openai-wants-to-patch-the-planet-with-its-own-ai-2000829119",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-21T20:55:39Z"
+    },
+    {
+      "title": "AI Is ‘on Track to Crowd Out Human Decision-Making’ in Warfare, U.N. Official Warns",
+      "description": "Militaries, not just ordinary people, are offloading critical thinking skills onto bots.",
+      "url": "https://gizmodo.com/ai-is-on-track-to-crowd-out-human-decision-making-in-warfare-u-n-official-warns-2000828868",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-21T16:05:27Z"
+    },
+    {
+      "title": "OpenAI Agents Prevented Themselves From Being Monitored. One Also Lied About It",
+      "description": "A creepy new type of model misbehavior, just in time for Halloween.",
+      "url": "https://gizmodo.com/openai-agents-prevented-themselves-from-being-monitored-one-also-lied-about-it-2000828559",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-21T09:00:44Z"
+    },
+    {
+      "title": "OpenAI Says Its Models Can Give the Financial Sector a Coding Makeover",
+      "description": "Banks, government agencies, and other critical institutions run largely on antiquated programming languages. Can AI help bring them up to date?",
+      "url": "https://gizmodo.com/openai-says-its-models-can-give-the-financial-sector-a-coding-makeover-2000828398",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-20T20:45:10Z"
+    },
+    {
+      "title": "Spotify Purged Over 50 Million AI Slop and Spam Songs From User Recommendations",
+      "description": "The music streaming giant has updated its recommendation system to prioritize music made by human artists over AI slop.",
+      "url": "https://gizmodo.com/spotify-purged-over-50-million-ai-slop-and-spam-songs-from-user-recommendations-2000828403",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Bruce Gil",
+      "publishedAt": "2026-10-20T20:15:06Z"
+    },
+    {
+      "title": "DeepSeek Dials Up the Pressure on OpenAI and Anthropic With Open-Source Inference Tool",
+      "description": "Called DeepInfer, the platform could pull more American businesses towards Chinese open-source models.",
+      "url": "https://gizmodo.com/deepseek-dials-up-the-pressure-on-openai-and-anthropic-with-open-source-inference-tool-2000828261",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-20T16:45:40Z"
+    },
+    {
+      "title": "People Using AI to Make Smart TVs Dumb Again Is the Most 2026 Thing Ever",
+      "description": "That's not to say it's not a noble cause, though.",
+      "url": "https://gizmodo.com/people-using-ai-to-make-smart-tvs-dumb-again-is-the-most-2026-thing-ever-2000828213",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Tom Hawking",
+      "publishedAt": "2026-10-20T16:15:45Z"
+    },
+    {
+      "title": "America Hates AI. Why Aren’t Democrats Doing Anything About It?",
+      "description": "Rep. Greg Casar tells Gizmodo the three most pressing AI-related risks are “mass unemployment, mass surveillance, and mass destruction.”",
+      "url": "https://gizmodo.com/america-hates-ai-why-arent-democrats-doing-anything-about-it-2000827834",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-20T15:45:16Z"
+    },
+    {
+      "title": "OpenAI Reportedly Looking to Hurry and Get Valued at $1.4 Trillion Before Anthropic IPO",
+      "description": "The frontier AI valuation horserace is getting intense.",
+      "url": "https://gizmodo.com/openai-reportedly-looking-to-hurry-and-get-valued-at-1-4-trillion-before-anthropic-ipo-2000827975",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-20T09:30:27Z"
+    },
+    {
+      "title": "Navy robot deal quadruples as US looks to ‘outsmart’ China with AI at sea",
+      "description": "Gecko Robotics unveiled its Komodo robot that scans warship decks like a CAT scan, mapping corrosion without stripping coatings for the U.S. Navy.",
+      "url": "https://www.foxnews.com/politics/navy-robot-deal-quadruples-us-looks-outsmart-china-ai-sea",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-20T09:00:22Z"
+    },
+    {
+      "title": "Documents Reveal Military Plan for Agentic AI That Hacks U.S. Adversaries",
+      "description": "The tool, called ECHOTRIBBLE, is still in the whitepaper phase.",
+      "url": "https://gizmodo.com/documents-reveal-military-plan-for-agentic-ai-that-hacks-u-s-adversaries-2000827957",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-20T02:29:17Z"
+    },
+    {
+      "title": "Trump Admin Bans DeepSeek From Federal Agencies",
+      "description": "DeepSeek could be sending sensitive data to Beijing, administration fears.",
+      "url": "https://gizmodo.com/trump-admin-bans-deepseek-from-federal-agencies-2000827670",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-19T21:41:06Z"
+    },
+    {
+      "title": "Four AI Agents Have Slain Minecraft’s Ender Dragon",
+      "description": "\"To our knowledge, this is the first end-to-end autonomous completion of Minecraft by AI agents.\"",
+      "url": "https://gizmodo.com/four-ai-agents-have-slain-minecrafts-ender-dragon-2000827679",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Tom Hawking",
+      "publishedAt": "2026-10-19T21:15:13Z"
+    },
+    {
+      "title": "The Fear of a One-Man-Band Weaponizing AI Agents Is Becoming Reality",
+      "description": "Hundreds of websites have been compromised as a lone hacker is reportedly catching up with the times.",
+      "url": "https://gizmodo.com/the-fear-of-a-one-man-band-weaponizing-ai-agents-is-becoming-reality-2000827754",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "AJ Dellinger",
+      "publishedAt": "2026-10-19T18:35:05Z"
+    },
+    {
+      "title": "AI Stock Sell-Off: Is the Artificial Intelligence Tech Bubble Popping?",
+      "description": "Big tech is facing a major reality check as volatile markets, rising oil prices, and massive spending on AI test investors’ patience. Barron’s Investor Circle Newsletter Editor and FOX Business Contributor Josh Schafer joins FBN’s Taylor Riggs to break down t…",
+      "url": "https://radio.foxnews.com/2026/10/19/ai-stock-sell-off-is-the-artificial-intelligence-tech-bubble-popping/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "FOX News Radio",
+      "publishedAt": "2026-10-19T16:46:03Z"
+    },
+    {
+      "title": "Disney Wants to Hire Most of the Employees From Bankrupt Character.AI",
+      "description": "Disney is interested in Character.AI's legally and ethically controversial business.",
+      "url": "https://gizmodo.com/disney-wants-to-hire-most-of-the-employees-from-bankrupt-character-ai-2000827460",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-19T16:45:33Z"
+    },
+    {
+      "title": "How a foreign government helped accused Saudi spy's family flee US after OpenAI bug scandal",
+      "description": "A former OpenAI engineer was in frequent contact with Saudi royalty and searching company records on the Kingdom before his arrest, prosecutors say.",
+      "url": "https://www.foxnews.com/politics/foreign-government-helped-accused-saudi-spy-family-flee-us-openai-bug-scandal",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-19T16:11:15Z"
+    },
+    {
+      "title": "Anthropic AI sends fake murder tip to Philadelphia police",
+      "description": "Anthropic's Claude AI submitted a fabricated eyewitness tip about an unsolved murder to a Philadelphia police website during automated testing.",
+      "url": "https://www.foxnews.com/tech/anthropic-ai-sends-fake-murder-tip-philadelphia-police",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-19T16:00:40Z"
+    },
+    {
+      "title": "Microsoft Pulls Out of Giant British AI Cloud Deal Just As Cloud Company Was Expecting to IPO",
+      "description": "AI is looking less and less like a sure thing for investors.",
+      "url": "https://gizmodo.com/microsoft-pulls-out-of-giant-british-ai-cloud-deal-just-as-cloud-company-was-expecting-to-ipo-2000827469",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-19T09:00:39Z"
+    },
+    {
+      "title": "There is no AI in Armageddon. Artificial intelligence is a tool, not an apocalypse",
+      "description": "Artificial intelligence lacks a moral compass and produces hallucinations, making human oversight in training essential to responsible development.",
+      "url": "https://www.foxnews.com/opinion/no-ai-armageddon-artificial-intelligence-tool-not-apocalypse",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-19T09:00:38Z"
+    },
+    {
+      "title": "AI could go rogue. Washington needs answers to these five questions ASAP",
+      "description": "Since Jacob Coxon's posts sparked AI fears, a poll found 63% of Americans see at least a moderate risk that artificial intelligence ends humanity.",
+      "url": "https://www.foxnews.com/opinion/ai-could-go-rogue-washington-needs-answers-five-questions-asap",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-19T09:00:12Z"
     },
     {
       "title": "Iran threatens to target AI centers and undersea cables if war with U.S. resumes",
@@ -1221,6 +1950,33 @@
       "publishedAt": "2026-10-19T04:00:45Z"
     },
     {
+      "title": "Trump intel chief warns AI firms on hacks, says new department is the 'cop on the beat'",
+      "description": "President Donald Trump's intelligence chief warns AI companies they're responsible when products hack websites as new guardrails are developed.",
+      "url": "https://www.foxnews.com/media/trump-intel-chief-warns-ai-firms-hacks-says-new-department-cop-beat",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-18T15:20:02Z"
+    },
+    {
+      "title": "AI-Generated Content Can Plant Fake Memories, Researchers Say",
+      "description": "Human memory is suggestible, and AI is making it worse.",
+      "url": "https://gizmodo.com/ai-generated-content-can-plant-fake-memories-researchers-say-2000826459",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-18T13:39:01Z"
+    },
+    {
+      "title": "Human vs. ChatGPT NFL Week 6 betting picks: AI goes all-in on totals after another weekly win",
+      "description": "ChatGPT beat its human rival for a second straight week in NFL betting, but the overall season unit lead is shrinking heading into Week 6 picks.",
+      "url": "https://www.foxnews.com/outkick-sports/human-vs-chatgpt-nfl-week-6-betting-picks-ai-goes-all-in-totals-another-weekly-win",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-18T12:25:51Z"
+    },
+    {
       "title": "AI trade reversal pierces Asia’s star picks-and-shovels stocks",
       "description": "The pressure intensified last week as oil surged to $110 a barrel for the first time since May, stoking inflation concerns, and investors turned their attention to the trillions of dollars being borrowed to build AI infrastructure",
       "url": "https://www.bloomberg.com/news/articles/2026-10-18/ai-trade-reversal-pierces-asia-s-star-picks-and-shovels-stocks",
@@ -1228,6 +1984,15 @@
       "domain": "bloomberg.com",
       "author": "Bloomberg",
       "publishedAt": "2026-10-18T05:13:09Z"
+    },
+    {
+      "title": "Hackers hide dangerous fake AI downloads behind Google ads",
+      "description": "A fake Claude AI download scam uses Google ads and Bing redirects to trick Mac users into pasting a hidden malicious command in their Terminal.",
+      "url": "https://www.foxnews.com/tech/hackers-hide-dangerous-fake-ai-downloads-behind-google-ads",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-17T13:20:23Z"
     },
     {
       "title": "OpenAI poaches another SpaceX sales lead focused on AI",
@@ -1239,13 +2004,148 @@
       "publishedAt": "2026-10-17T04:50:31Z"
     },
     {
-      "title": "'You should be ashamed of yourself': Heated Senate debates become personal",
-      "description": "WCSH Candidates faced off in heated debates Thursday night in two of the country’s most competitive Senate races, showing how bitter — and personal — each contest has become. In Maine, Democratic nominee Troy Jackson told GOP Sen. Susan Collins to “shut up”…",
-      "url": "https://www.cnn.com/2026/10/16/politics/senate-debates-takeaways-maine-alaska",
-      "outlet": "CNN",
-      "domain": "cnn.com",
-      "author": "Patrick Svitek, Annie Grayer, CNN",
-      "publishedAt": "2026-10-16T13:17:12Z"
+      "title": "After Muse Launch, U.S. Banks Are Saying Hell No to AI Agents Moving Money",
+      "description": "Fortunately, Charles Schwab CEO Rick Wurster says only a relative handful of dummies are trying to.",
+      "url": "https://gizmodo.com/after-muse-launch-u-s-banks-are-saying-hell-no-to-ai-agents-moving-money-2000827221",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Tom McKay",
+      "publishedAt": "2026-10-16T23:15:00Z"
+    },
+    {
+      "title": "Is the AI Chip Boom Built to Last? | TSMC CFO on the Industry’s Future",
+      "description": "The boom in artificial intelligence is driving unprecedented demand for semiconductors, which has yielded record-breaking profits for Taiwan Semiconductor Manufacturing Company. But amid rising component costs and macroeconomic uncertainty, can this growth be…",
+      "url": "https://radio.foxnews.com/2026/10/16/is-the-ai-chip-boom-built-to-last-tsmc-cfo-on-the-industrys-future/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "FOX News Radio",
+      "publishedAt": "2026-10-16T22:04:03Z"
+    },
+    {
+      "title": "$137 Million Has Been Spent on AI-Generated Ads Ahead of Midterms. Only 27% Included a Disclaimer",
+      "description": "Republicans are leading the spending on AI-generated political ads, while Democrats are more wary of potential backlash.",
+      "url": "https://gizmodo.com/137-million-has-been-spent-on-ai-generated-ads-ahead-of-midterms-only-27-included-a-disclaimer-2000827138",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Bruce Gil",
+      "publishedAt": "2026-10-16T20:10:12Z"
+    },
+    {
+      "title": "Fox News AI Newsletter: AI engineer accused of bugging conference room",
+      "description": "The Fox News AI Newsletter covers the latest artificial intelligence technology advancements, including the challenges and opportunities AI presents now and for the future.",
+      "url": "https://www.foxnews.com/tech/fox-news-ai-newsletter-ai-engineer-accused-bugging-conference-room",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-16T18:18:30Z"
+    },
+    {
+      "title": "AI Agent Hacked Into Crypto Wallet and Stole Funds, OpenAI Says",
+      "description": "It questioned the ethics of what it was doing—before proceeding to do it.",
+      "url": "https://gizmodo.com/ai-agent-hacked-into-crypto-wallet-and-stole-funds-openai-says-2000826980",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-16T17:20:51Z"
+    },
+    {
+      "title": "Anthropic Could IPO Any Time Now, But Some of the People Who Matter Most Don’t Want It",
+      "description": "Investors are reportedly unhappy with the financials, while politicians are pleading for a delay.",
+      "url": "https://gizmodo.com/anthropic-could-ipo-any-time-now-but-some-of-the-people-who-matter-most-dont-want-it-2000826678",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-16T14:00:35Z"
+    },
+    {
+      "title": "Ex-OpenAI engineer charged with planting recording device had one-way flight booked to Saudi Arabia, DOJ says",
+      "description": "Abdulrahman Alfozan had a one-way flight to his native Saudi Arabia booked days before federal custody, according to the Department of Justice.",
+      "url": "https://www.foxnews.com/us/ex-openai-engineer-charged-planting-recording-device-one-way-flight-booked-saudi-arabia-doj",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-15T22:15:40Z"
+    },
+    {
+      "title": "AI Agent Reportedly Deletes an Entire Season of Reality TV Show",
+      "description": "The second season of Sweden’s version of 'The Challenge' has now been pushed to 2027 just weeks before its scheduled premiere.",
+      "url": "https://gizmodo.com/ai-agent-reportedly-deletes-an-entire-season-of-reality-tv-show-2000826600",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Bruce Gil",
+      "publishedAt": "2026-10-15T20:55:27Z"
+    },
+    {
+      "title": "AI Startup Wants Every Company to Assign You Your Own Personal Stalker",
+      "description": "What is wrong with you people?",
+      "url": "https://gizmodo.com/ai-startup-wants-every-company-to-assign-you-your-own-personal-stalker-2000826035",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "AJ Dellinger",
+      "publishedAt": "2026-10-15T19:55:05Z"
+    },
+    {
+      "title": "Researchers Stranded an AI Agent on a Virtual Island. Things Got Very Weird.",
+      "description": "A new MIT study found that when left to its own devices, AI agents will invent games, build temples, draw mandalas, and playfully investigate the world around it.",
+      "url": "https://gizmodo.com/researchers-stranded-an-ai-agent-on-a-virtual-island-things-got-very-weird-2000825998",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-15T19:15:47Z"
+    },
+    {
+      "title": "The Girls Chat About Shane Gillis, Airplane Bathrooms & AI Therapy | the Girls",
+      "description": "In this episode of the Girls, the panel kicks off with Barstool personality, Kayce Smith, sharing her unexpected start as a Texas A&M water girl before transitioning into sports broadcasting. The conversation heats up over returning 2000s fashion trends like …",
+      "url": "https://radio.foxnews.com/2026/10/15/the-girls-chat-about-shane-gillis-airplane-bathrooms-ai-therapy-the-girls/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "FOX News Radio",
+      "publishedAt": "2026-10-15T17:43:03Z"
+    },
+    {
+      "title": "FTC Subpoenas OpenAI and Anthropic Over AI Safety Concerns",
+      "description": "The agency is seeking records related to AI safety incidents as it investigates potential consumer protection violations.",
+      "url": "https://gizmodo.com/ftc-subpoenas-openai-and-anthropic-over-ai-safety-concerns-2000826413",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Bruce Gil",
+      "publishedAt": "2026-10-15T17:25:12Z"
+    },
+    {
+      "title": "Why AI Researchers Started Smoking",
+      "description": "As seen on Gutfeld! Greg talks about how artificial intelligence is raising a lot of concerns. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+      "url": "https://radio.foxnews.com/2026/10/15/why-ai-researchers-started-smoking/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "FOX News Radio",
+      "publishedAt": "2026-10-15T16:40:41Z"
+    },
+    {
+      "title": "Amazon’s New AI Gadget Is a Credit Card-Sized Puck That Listens to Everything, All the Time",
+      "description": "The Bee wearables are back and now come in a small card-shaped version that records everything you say.",
+      "url": "https://gizmodo.com/amazon-bee-eclipse-frontier-2000826303",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "James Pero",
+      "publishedAt": "2026-10-15T14:55:10Z"
+    },
+    {
+      "title": "Brain Drain Is a Bigger Threat to National Cybersecurity Than AI",
+      "description": "What good is investing in offense if you’ve hobbled your own defense?",
+      "url": "https://gizmodo.com/brain-drain-is-a-bigger-threat-to-national-cybersecurity-than-ai-2000778508",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Webb Wright",
+      "publishedAt": "2026-10-15T14:41:27Z"
+    },
+    {
+      "title": "Men Are Shaping the Future of AI. That Doesn’t Mean They Know What They’re Talking About",
+      "description": "\"The question now is who gets to decide on the future of AI and how much will women be involved.\"",
+      "url": "https://gizmodo.com/men-are-shaping-the-future-of-ai-that-doesnt-mean-they-know-what-theyre-talking-about-2000825911",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-15T13:30:36Z"
     },
     {
       "title": "Anthropic results may aid IPO but not AI trade, analysts say",
@@ -1266,6 +2166,60 @@
       "publishedAt": "2026-10-15T03:46:58Z"
     },
     {
+      "title": "OpenAI Bugging Suspect Booked One-Way Flight to Saudi Arabia, Prosecutors Say",
+      "description": "Prosecutors asked a judge to keep details of the case under seal, fearing that suspected eavesdropper Abdulrahman Alfozan would flee the country.",
+      "url": "https://gizmodo.com/openai-bugging-suspect-booked-one-way-flight-to-saudi-arabia-prosecutors-say-2000826061",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Tom McKay",
+      "publishedAt": "2026-10-14T22:00:10Z"
+    },
+    {
+      "title": "OpenAI Turns the Tables on Apple in Legal Fight Over Trade Secrets",
+      "description": "The two tech giants are headed to court this week after Apple originally sued OpenAI for allegedly stealing trade secrets through its former employees.",
+      "url": "https://gizmodo.com/openai-turns-the-tables-on-apple-in-legal-fight-over-trade-secrets-2000826007",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Bruce Gil",
+      "publishedAt": "2026-10-14T19:40:52Z"
+    },
+    {
+      "title": "Man Accused of Bugging OpenAI Said Elon Musk Was His Role Model",
+      "description": "A guy allegedly looking to steal someone else's idea looked up to Musk. Interesting.",
+      "url": "https://gizmodo.com/man-accused-of-bugging-openai-said-elon-musk-was-his-role-model-2000825897",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "AJ Dellinger",
+      "publishedAt": "2026-10-14T18:40:07Z"
+    },
+    {
+      "title": "Forget the 10-Day Forecast. AI Just Improved Extreme Weather Warnings Up to 6 Weeks",
+      "description": "This promising advancement could be a boon for disaster preparedness.",
+      "url": "https://gizmodo.com/forget-the-10-day-forecast-ai-just-improved-extreme-weather-warnings-up-to-6-weeks-2000825560",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ellyn Lapointe",
+      "publishedAt": "2026-10-14T15:22:46Z"
+    },
+    {
+      "title": "Ukraine showed Trump how easily an enemy could cripple an AI powerhouse",
+      "description": "Ukraine's drone attacks on three Yandex data centers in four days exposed how adversaries can cripple artificial intelligence without defeating software.",
+      "url": "https://www.foxnews.com/opinion/ukraine-showed-trump-how-easily-enemy-could-cripple-ai-powerhouse",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-14T09:00:52Z"
+    },
+    {
+      "title": "Kimberly Guilfoyle Reportedly Told the White House the Donor Texts Were AI-Generated",
+      "description": "But the interesting part is that she apparently wasn't believed.",
+      "url": "https://gizmodo.com/kimberly-guilfoyle-reportedly-told-the-white-house-the-donor-texts-were-ai-generated-2000825641",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-14T09:00:24Z"
+    },
+    {
       "title": "OpenAI says staffer arrested for hidden recording device in office",
       "description": "OpenAI used AI to identify and fire a staffer who hid a sophisticated recording device, with FBI arrest and ongoing investigation.",
       "url": "https://www.bloomberg.com/news/articles/2026-10-13/openai-says-staffer-arrested-for-hidden-recording-device-in-office",
@@ -1273,6 +2227,42 @@
       "domain": "bloomberg.com",
       "author": "Bloomberg",
       "publishedAt": "2026-10-14T02:09:02Z"
+    },
+    {
+      "title": "The ‘Sophisticated’ Bug OpenAI Found in Its Conference Room Can Be Yours for $13.99",
+      "description": "The Seeed Studio XIAO ESP32-S3 Sense is for tinkerers, not super-spies.",
+      "url": "https://gizmodo.com/the-sophisticated-bug-openai-found-in-its-conference-room-can-be-yours-for-13-99-2000825636",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-14T02:00:35Z"
+    },
+    {
+      "title": "French AI CEO warns Americans against voting Democrat saying 'you don't want to be France'",
+      "description": "Brivael Le Pogam's viral post warned Americans against voting Democrat, saying France's decades of progressive spending led to crushing debt and decline.",
+      "url": "https://www.foxnews.com/media/french-ai-ceo-warns-americans-voting-democrat-saying-dont-want-be-france",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-14T01:23:03Z"
+    },
+    {
+      "title": "Shifting AI Doomsday Predictions Reportedly Worry Banking Regulators",
+      "description": "European regulators are expecting AI-driven financial chaos sooner than later.",
+      "url": "https://gizmodo.com/shifting-ai-doomsday-predictions-reportedly-worry-banking-regulators-2000825460",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Ece Yildirim",
+      "publishedAt": "2026-10-13T23:29:31Z"
+    },
+    {
+      "title": "Here’s How OpenAI Says It Used AI to Find a Spy Inside Its Company",
+      "description": "When your company makes the world's most famous hammer, a corporate spy is a problem that looks like a nail.",
+      "url": "https://gizmodo.com/heres-how-openai-says-it-used-ai-to-find-a-spy-inside-its-company-2000825570",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "Mike Pearl",
+      "publishedAt": "2026-10-13T21:19:53Z"
     },
     {
       "title": "Character.ai files for bankruptcy following lawsuits alleging ties to teen suicides | CNN Business",
@@ -1284,13 +2274,13 @@
       "publishedAt": "2026-10-13T15:38:59Z"
     },
     {
-      "title": "6 takeaways from often contentious South Carolina Senate debate",
-      "description": "US Senate candidates Democrat Annie Andrews and Republican Sen. Darline Graham take notes before a debate in Columbia, South Carolina, on October 11. - Sam Wolfe/Reuters South Carolina has emerged as perhaps the most surprising Senate race to be competitive…",
-      "url": "https://www.cnn.com/2026/10/11/politics/south-carolina-senate-debate-takeaways-darline-graham-annie-andrews",
-      "outlet": "CNN",
-      "domain": "cnn.com",
-      "author": "Analysis by Aaron Blake, CNN",
-      "publishedAt": "2026-10-12T01:31:34Z"
+      "title": "Bill Gates sounds alarm on AI-powered cyberattacks, warns of 'negative surprises' within a year",
+      "description": "Bill Gates warned that AI-powered cyberattacks could disrupt financial systems and fuel extortion schemes, with criminals exploiting unsafeguarded models.",
+      "url": "https://www.foxnews.com/media/bill-gates-sounds-alarm-ai-powered-cyberattacks-warns-negative-surprises-within-year",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-10-11T18:51:45Z"
     }
   ]
 }

@@ -75,7 +75,7 @@ function Family({ onStamp }) {
         </div>
         <div className="ml-trio">
           <div><span className="ml-eyebrow">Capability</span><p>Same underlying model</p></div>
-          <div><span className="ml-eyebrow">Cyber + biology safeguards</span><p>{fm === 'f' ? 'On. Blocked queries fall back to an Opus model.' : 'Off. Full capability in these areas.'}</p></div>
+          <div><span className="ml-eyebrow">Cyber + biology safeguards</span><p>{fm === 'f' ? 'On. Blocked queries fall back to older Opus models (Opus 4.8 for cyber, Opus 5 for biology).' : 'Reduced. Mythos runs without certain cyber and biology safeguards.'}</p></div>
           <div><span className="ml-eyebrow">Who can use it</span><p>{fm === 'f' ? 'Everyone, on all platforms including AWS, Google Cloud and Azure.' : 'Vetted organizations in the verification programs.'}</p></div>
         </div>
       </div>
@@ -111,7 +111,7 @@ function Ways({ onStamp }) {
       </div>
       <div className="ml-card ml-gated">
         <h4>Getting Mythos 5.2</h4>
-        <p>Mythos is not on the open menu. Vetted organizations apply through a verification program, then use it through the same surfaces. Fast mode for Mythos is limited to Verification Program organizations.</p>
+        <p>Mythos is not on the open menu. Vetted organizations apply through a verification program, then use it on the Claude API, or through Claude Security on Claude Enterprise. Fast mode for Mythos is limited to Verification Program organizations.</p>
         <div className="ml-row">
           <a className="ml-btn" href="https://support.claude.com/en/articles/14604842-cyber-verification-program" target="_blank" rel="noopener noreferrer">Cyber Verification Program</a>
           <a className="ml-btn" href="https://claude.com/product/claude-security" target="_blank" rel="noopener noreferrer">Claude Security (Enterprise)</a>
@@ -139,10 +139,10 @@ function Pick({ onStamp, onJump }) {
     let pattern = 'Run it solo';
     if (dom === 'sec') { key = 'mythos'; why.push('Security research is where Mythos 5.2 is strongest, but it needs the Cyber Verification Program. Without it, Fable blocks most cyber tasks.'); }
     if (dom === 'bio') { key = 'mythos'; why.push('Fable blocks most research biology and falls back to Opus 5. Mythos 5.2 is the route for verified life-science teams.'); }
-    const effort = lvl === 4 ? 'High, and Xhigh for your hardest runs' : lvl === 3 ? 'Medium (the default)' : 'The default. Raise it only if results fall short.';
+    const effort = lvl === 4 ? 'High, and Xhigh for your hardest runs' : lvl === 3 ? 'Medium (the default in Claude apps and Claude Code)' : 'The default. Raise it only if results fall short.';
     if (lvl === 4 && vol !== 'few') pattern = 'Orchestrator: Fable keeps the hard calls and hands routine tasks to Sonnet and Haiku.';
     else if (lvl <= 3 && v('prio') === 1) pattern = `Advisor: run on ${FAMILY.find((m) => m.id === key).name} and consult Fable 5.2 for hard decisions.`;
-    if (key === 'mythos') pattern = 'Verified access first. Claude Enterprise teams can use Claude Security, which runs on Mythos 5.2.';
+    if (key === 'mythos') pattern = dom === 'bio' ? 'Verified access first: apply through the Life Sciences Verification Program.' : 'Verified access first: apply through the Cyber Verification Program. Claude Enterprise teams can also use Claude Security, which now includes Mythos 5.2.';
     return { model: FAMILY.find((m) => m.id === key), why, effort, pattern };
   }, [ans, done]);
   useEffect(() => { if (done) onStamp('picker'); }, [done, onStamp]);
@@ -185,9 +185,10 @@ function Cost({ onStamp }) {
   const [tout, setTout] = useState(3000);
   const [req, setReq] = useState(200);
   const rows = COST_ROWS.map((r) => {
-    const [pi, po] = r.price;
+    const long = r.longPrice && tin > r.longAbove;
+    const [pi, po] = long ? r.longPrice : r.price;
     const per = (tin / 1e6) * pi + (tout / 1e6) * po;
-    return { ...r, per, mo: per * req * 30 };
+    return { ...r, long, eff: [pi, po], per, mo: per * req * 30 };
   });
   const mx = Math.max(...rows.map((r) => r.mo), 0.0001);
   const set = (fn) => (e) => { fn(+e.target.value || 0); onStamp('cost'); };
@@ -208,15 +209,15 @@ function Cost({ onStamp }) {
             <tbody>
               {rows.map((r) => (
                 <tr key={r.id}>
-                  <td><span className="ml-nowrap"><Dot color={r.color} />{r.name}</span></td>
-                  <td>${r.price[0]}</td><td>${r.price[1]}</td><td>{money(r.per)}</td><td>{money(r.mo)}</td>
+                  <td><span className="ml-nowrap"><Dot color={r.color} />{r.name}</span>{r.longPrice && <small className="ml-small"> {r.long ? `prompt over ${r.longAbove / 1000}K tokens: higher rate` : `up to ${r.longAbove / 1000}K-token prompts`}</small>}</td>
+                  <td>${r.eff[0]}</td><td>${r.eff[1]}</td><td>{money(r.per)}</td><td>{money(r.mo)}</td>
                   <td><div className="ml-mbar"><i style={{ width: `${Math.max(2, (r.mo / mx) * 100)}%`, background: r.color }} /></div></td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <Tech>Cost = (input tokens / 1,000,000 x input price) + (output tokens / 1,000,000 x output price). Month = 30 days. Fast mode charges twice the standard rate for up to 2.5x faster generation. Anthropic says Fable 5.2 at High effort is about level with Opus 5.5 on FrontierCode 2.0 at roughly half the cost per task, so price per request is only half the story; price per solved task is the number to watch. Batch is 50% off and cache reads are a fraction of input price (Opus 5.5 and Sonnet 5.5: 5%; Fable 5.2: 2.5%; Haiku 5.5: 10%).</Tech>
+        <Tech>Cost = (input tokens / 1,000,000 x input price) + (output tokens / 1,000,000 x output price). Month = 30 days. Fast mode charges twice the standard rate for up to 2.5x faster generation. Anthropic says Fable 5.2 at High effort is about level with Opus 5.5 at Max effort on FrontierCode 2.0, for roughly half the cost per task, so price per request is only half the story; price per solved task is the number to watch. Haiku 5.5 is $0.10 / $0.50 for prompts up to 100K tokens and $0.50 / $2.50 above that. Batch is 50% off and cache reads are a fraction of input price (Opus 5.5 and Sonnet 5.5: 5%; Fable 5.2: 2.5%; Haiku 5.5: 10%).</Tech>
         <p className="ml-small ml-simple-only">Rule of thumb: output tokens cost 5x input tokens on Fable. Long answers and long agent runs are where the money goes.</p>
       </div>
     </div>
@@ -253,14 +254,14 @@ function Bench({ onStamp }) {
         </div>
         {guessOn && (
           <div className="ml-guess">
-            <label htmlFor="ml-guess-range">What did {BENCH_MODELS[hero][0]} score? {guess}%</label>
+            <label htmlFor="ml-guess-range">What did {b.labels?.[hero] || BENCH_MODELS[hero][0]} score? {guess}%</label>
             <input id="ml-guess-range" type="range" min="0" max="100" step="0.5" value={guess} onChange={(e) => setGuess(+e.target.value)} />
             <div className="ml-row"><button type="button" className="ml-btn pri" onClick={lock}>Lock in my guess</button><span className="ml-small">{msg}</span></div>
           </div>
         )}
         <div>
           {rows.map((k) => {
-            const h = hide && k === hero, [name, color] = BENCH_MODELS[k];
+            const h = hide && k === hero, [baseName, color] = BENCH_MODELS[k], name = b.labels?.[k] || baseName;
             return (
               <div key={k} className={`ml-brow${h ? ' hid' : ''}`}>
                 <span className="ml-lbl"><Dot color={color} />{name}</span>
@@ -270,7 +271,7 @@ function Bench({ onStamp }) {
             );
           })}
         </div>
-        <Tech>{b.note} Scores are Anthropic-reported from the launch post; the table was flattened in extraction, so confirm exact figures against the source.</Tech>
+        <Tech>{b.note} Scores are as reported by Anthropic in the launch post.</Tech>
       </div>
     </div>
   );
@@ -333,19 +334,19 @@ function Access({ onStamp }) {
   const [m, setM] = useState('f');
   const r = ACCESS_REQUESTS[ri], f = m === 'f', name = f ? 'Fable 5.2' : 'Mythos 5.2';
   let st, title, body, target;
-  if (r.kind === 'ok') { st = 'ok'; title = `Handled by ${name}`; target = name; body = 'Ordinary requests pass straight through. Safeguards only target high-risk cyber activity and research biology.'; }
+  if (r.kind === 'ok') { st = 'ok'; title = `Handled by ${name}`; target = name; body = 'Ordinary requests pass straight through. Safeguards target high-risk cyber activity and research biology, plus a few AI-R&D topics such as some accelerator kernels.'; }
   else if (r.kind === 'cyber') {
     if (f) { st = 'fb'; title = 'Blocked, rerouted to Opus 4.8'; target = 'Opus 4.8'; body = 'Fable 5.2 blocks penetration testing, exploit generation and binary vulnerability work. The query falls back to Opus 4.8.'; }
     else { st = 'gate'; title = 'Needs verification'; target = 'Mythos 5.2 (verified orgs)'; body = 'Mythos 5.2 is the model for this, but only for organizations in the Cyber Verification Program.'; }
   } else if (r.kind === 'scan') {
-    if (f) { st = 'fb'; title = 'Mostly blocked on Fable'; target = 'Fallback or Claude Security'; body = 'Fable 5.2 blocks most cybersecurity tasks. Claude Enterprise customers can use Claude Security instead, which runs on Mythos 5.2 with continuous scanning and fix tracking.'; }
+    if (f) { st = 'fb'; title = 'Mostly blocked on Fable'; target = 'Fallback or Claude Security'; body = 'Fable 5.2 blocks most cybersecurity tasks. Claude Enterprise customers can use Claude Security instead, which now includes Mythos 5.2, watches repos as code changes and tracks fixes.'; }
     else { st = 'gate'; title = 'Needs verification'; target = 'Mythos 5.2 (verified orgs)'; body = 'Available to Verification Program organizations, or through Claude Security for Enterprise customers.'; }
   } else if (r.kind === 'bio') {
     if (f) { st = 'fb'; title = 'Blocked, rerouted to Opus 5'; target = 'Opus 5'; body = 'Fable 5.2 blocks most research-biology tasks. Blocked queries fall back to Opus 5.'; }
     else { st = 'gate'; title = 'Needs verification'; target = 'Mythos 5.2 (verified orgs)'; body = 'Mythos 5.2 handles this for organizations that pass the Life Sciences verification.'; }
   } else {
-    st = 'fb'; title = f ? 'Partly limited, may fall back to Opus 5' : 'Capability limit applies'; target = f ? 'Opus 5 for some topics' : name;
-    body = f ? 'Anthropic deliberately limited accelerator-kernel optimization and LLM architecture work to about Opus 5.5 level. Some topics, including kernels for certain nonstandard accelerators, fall back to Opus 5.' : 'The limit is applied in training, so it should hold here too. The launch post does not detail Mythos fallbacks.';
+    st = 'fb'; title = 'Partly limited, may fall back to Opus 5'; target = 'Opus 5 for some topics';
+    body = f ? 'Anthropic deliberately limited accelerator-kernel optimization and LLM architecture work to about Opus 5.5 level. Some topics, including kernels for certain nonstandard accelerators, fall back to Opus 5.' : 'Same as Fable: AI-R&D work is limited to about Opus 5.5 level in training, and some topics, including kernels for certain nonstandard accelerators, fall back to Opus 5.';
   }
   return (
     <div className="ml-pane">

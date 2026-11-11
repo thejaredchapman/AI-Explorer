@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-10T18:27:03.052Z",
-  "from": "2026-10-11",
-  "to": "2026-11-10",
+  "updatedAt": "2026-11-11T18:13:18.626Z",
+  "from": "2026-10-12",
+  "to": "2026-11-11",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -12,13 +12,13 @@
     {
       "domain": "cnn.com",
       "name": "CNN",
-      "count": 2,
+      "count": 3,
       "error": null
     },
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 44,
+      "count": 45,
       "error": null
     },
     {
@@ -41,6 +41,132 @@
     }
   ],
   "articles": [
+    {
+      "title": "The indie game community is in disarray over AI and Big Walk",
+      "description": "Some Independent Games Festival (IGF) jurors published a statement yesterday saying they would not vote for games that use generative AI in \"any capacity.\" Soon after, the developer of indie hit Big Walk has published a statement saying it \"sparingly\" used AI…",
+      "url": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-10T17:32:47Z"
+    },
+    {
+      "title": "ChatGPT is getting verified AI ‘Business Agents’",
+      "description": "ChatGPT is going to let you chat with verified \"Business Agents\" that represent a brand to help you with things like comparison shopping. The feature, available first to \"eligible\" e-commerce and online service businesses in the US, is launching as part of a …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-10T16:34:41Z"
+    },
+    {
+      "title": "eBay appears to have shut the door on third-party AI agents",
+      "description": "eBay appears to have blocked AI agents, including Meta's Muse, from browsing on the platform - the latest speed bump in the AI agent race. A reader tells The Verge that for several weeks he's had his Muse agent browse and curate a daily digest of watches for …",
+      "url": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Mia Sato",
+      "publishedAt": "2026-11-10T16:20:30Z"
+    },
+    {
+      "title": "Anthropic has its own AI-powered office suite now",
+      "description": "For years, Anthropic has been known for its focus on enterprise and coding tools that attract high-flying corporate clients, inspiring competing frontier labs - like OpenAI, SpaceXSI, and Meta - to copy its strategies. Earlier this year, Claude Code went thro…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Hayden Field",
+      "publishedAt": "2026-11-10T15:13:38Z"
+    },
+    {
+      "title": "Anthropic targets $1.4 trillion IPO",
+      "description": "Anthropic confirmed on Tuesday that its IPO could be one of the biggest ever, even while falling short of previous expectations. Its IPO price is expected to be between $70.00 and $78.00 per share and according to the Wall Street Journal's sources, Anthropic …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-10T14:06:54Z"
+    },
+    {
+      "title": "Hands-on with Ring’s new AI drone camera for your home",
+      "description": "Ring is finally shipping a flying indoor drone camera. For real this time. The Ring Drone Cam will arrive on January 27th, 2027, for $249.99, Ring founder Jamie Siminoff said at a launch event in New York City this week. If it does actually ship, it will arri…",
+      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jennifer Pattison Tuohy",
+      "publishedAt": "2026-11-10T13:35:53Z"
+    },
+    {
+      "title": "AI phishing scams turn your social posts against you",
+      "description": "University of Texas at Arlington researchers reveal how AI analyzes public Instagram posts to craft spear phishing emails that feel personal.",
+      "url": "https://www.foxnews.com/tech/ai-phishing-scams-turn-your-social-posts-against-you",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-10T12:33:37Z"
+    },
+    {
+      "title": "Adobe is going all in on agentic AI",
+      "description": "Adobe is committing itself to the notion that chatbots and AI agents could be your next design assistant, or even automate creative workflows and repetitive tasks on your behalf. Some of the tools and features announced today at Adobe's Max conference in Miam…",
+      "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-11-10T11:24:56Z"
+    },
+    {
+      "title": "China set for record trade surplus as AI boom pushes it past $1 trillion in just 10 months",
+      "description": "China’s trade surplus surged past $1 trillion in the first 10 months as a global race to build AI infrastructure buoyed sales of high-tech products and helped offset weak domestic demand, a dynamic likely to sharpen tensions with major trading partners.",
+      "url": "https://www.cnn.com/2026/11/09/business/china-trade-surplus-1-trillion-intl-hnk",
+      "outlet": "CNN",
+      "domain": "cnn.com",
+      "author": null,
+      "publishedAt": "2026-11-10T04:10:24Z"
+    },
+    {
+      "title": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
+      "description": "During Paramount Skydance's latest earnings call, CEO David Ellison said \"it's hard to imagine\" AI won't have a bigger impact on the film industry than CGI. In response to a question about the company's outlook for AI, Ellison said: \"I think when you zoom out…",
+      "url": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-10T00:28:49Z"
+    },
+    {
+      "title": "The global pledge to use AI for climate good is a cruel joke",
+      "description": "At this point, reading through the latest splashy pledge to use AI for the good of the environment feels like downing a nonalcoholic beer. Admittedly, I'm suspicious from the onset. How can this be good? But I love beer and our planet enough to give it a whir…",
+      "url": "https://www.theverge.com/science/1030252/ai-data-center-climate-pledge-united-nations-cop31",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Justine Calma",
+      "publishedAt": "2026-11-09T21:13:16Z"
+    },
+    {
+      "title": "New AI malware ranks victims by how much they're worth",
+      "description": "VOLTA-AUTODOXER malware uses AI to analyze stolen data and rank victims by potential value, helping criminals target the most profitable accounts.",
+      "url": "https://www.foxnews.com/tech/new-ai-malware-ranks-victims-how-much-theyre-worth",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-09T19:30:21Z"
+    },
+    {
+      "title": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
+      "description": "After publishing a support article in early September outlining usage limits for some Apple Intelligence features, the company has updated Logic Pro with an option to \"Buy More Usage\" for a one-time purchase price of $49.99, as spotted by 9to5Mac. It has a bu…",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Andrew Liszewski",
+      "publishedAt": "2026-11-09T19:09:58Z"
+    },
+    {
+      "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+      "description": "Anthropic is announcing two new models today: Claude Fable 5.2 and Claude Mythos 5.2, which it says are designed to take on \"daunting\" technical challenges. The company claims the new models show improvements in coding, reasoning, and vision, and can generate…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-09T18:58:38Z"
+    },
     {
       "title": "Instagram’s Effect Builder makes new filters from AI prompts",
       "description": "After expanding its Edits app to macOS last week, Instagram's next move is launching this Effect Builder that generates custom filters for your Stories posts with AI. Available now for US residents who are over 18, it has a prompt box for describing your filt…",
@@ -1572,24 +1698,6 @@
       "publishedAt": "2026-10-23T13:22:44Z"
     },
     {
-      "title": "Etsy is cracking down on AI slop listings",
-      "description": "Etsy is announcing stricter rules about how AI can be used in listings to reduce the volume of AI slop on the platform. In a post, the company says that \"many active buyers say they can't tell which items involve AI-generated content\" and that sellers are \"co…",
-      "url": "https://www.theverge.com/tech/1017261/etsy-ai-rules-policies-restrictions-listing",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-10-23T00:09:58Z"
-    },
-    {
-      "title": "Canva’s first AI image model plans designs before generating them",
-      "description": "Canva is diving even deeper into AI with the launch of an image generation model that competes directly with those from OpenAI, Microsoft, and Google. The model, called Canva Craft, uses a two-stage architecture that allows it to plan a design before generati…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-22T21:51:25Z"
-    },
-    {
       "title": "Spotify Claims It Is ‘Unusually Well-Positioned’ for an Agentic AI Takeover",
       "description": "Spotify wants to be your favorite AI agent's favorite music platform.",
       "url": "https://gizmodo.com/spotify-claims-it-is-unusually-well-positioned-for-an-agentic-ai-takeover-2000829441",
@@ -1608,42 +1716,6 @@
       "publishedAt": "2026-10-22T20:40:46Z"
     },
     {
-      "title": "Meta’s AI could still scrape news sites, legal experts say",
-      "description": "Meta has tweaked its business terms to remove language suggesting that it could freely train its AI models on news sites, like The Verge - but legal experts say these changes aren't enough to address their concerns. \"This does nothing to restrict the 'associa…",
-      "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-22T20:32:05Z"
-    },
-    {
-      "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
-      "description": "For years, AI leaders have touted healthcare as one of the clearest examples of where their technology will improve lives. Now \"it is finally here,\" Microsoft AI CEO Mustafa Suleyman tells The Verge. The company claims to have developed an AI-powered tool it …",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Robert Hart",
-      "publishedAt": "2026-10-22T18:03:30Z"
-    },
-    {
-      "title": "Someone hacked the Switch 2 by using an old game and AI",
-      "description": "The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve from Minecraft. Open…",
-      "url": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-10-22T17:21:31Z"
-    },
-    {
-      "title": "Wildwood’s director says AI is ‘antithetical to everything that we are at this studio’",
-      "description": "Wildwood is the most ambitious film yet from Laika, the stop-motion studio best known for the likes of Coraline and ParaNorman. It's a sprawling fantasy adventure that took five years to complete. The process involved more 230 puppets - including 36 of the ma…",
-      "url": "https://www.theverge.com/entertainment/1016647/wildwood-travis-knight-interview-ai-laika-stop-motion",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Andrew Webster",
-      "publishedAt": "2026-10-22T16:16:15Z"
-    },
-    {
       "title": "Blindsided by AI Agents, Big Banks Scramble to Beef Up Security",
       "description": "Believe it or not, some people appear to be granting agents access to their bank accounts.",
       "url": "https://gizmodo.com/blindsided-by-ai-agents-big-banks-scramble-to-beef-up-security-2000829358",
@@ -1651,15 +1723,6 @@
       "domain": "gizmodo.com",
       "author": "Webb Wright",
       "publishedAt": "2026-10-22T16:15:01Z"
-    },
-    {
-      "title": "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
-      "description": "It was a busy summer for AI lobbyists. Anthropic, OpenAI, and Nvidia each had their highest-spending lobbying quarter between July and September, federal disclosures show. Nvidia spent the most of the group at $2.2 million, followed by Anthropic's $2.1 millio…",
-      "url": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Lauren Feiner",
-      "publishedAt": "2026-10-22T15:50:30Z"
     },
     {
       "title": "Gizmodo Is Launching a Daily Newsletter About AI",
@@ -1671,15 +1734,6 @@
       "publishedAt": "2026-10-22T14:52:45Z"
     },
     {
-      "title": "Retro gaming is being overrun with AI",
-      "description": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these kinds of unexpected projects have gone viral…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Andrew Webster",
-      "publishedAt": "2026-10-22T14:28:29Z"
-    },
-    {
       "title": "Google's new AI shopping cart tracks deals across stores",
       "description": "Google Universal Cart tracks price drops, surfaces promo codes and uses Google Wallet to match your best credit card rewards before checkout.",
       "url": "https://www.foxnews.com/tech/google-new-ai-shopping-cart-tracks-deals-across-stores",
@@ -1689,15 +1743,6 @@
       "publishedAt": "2026-10-22T14:12:20Z"
     },
     {
-      "title": "Bill Gates says to prepare for 20 years of ‘tumultuous’ AI disruption",
-      "description": "Today, I’m talking to Bill Gates, cofounder and former CEO of Microsoft and chairman of the Gates Foundation. You may have noticed Bill in the news more lately — he’s been on something of a tour for the past few months, ever since publishing an essay in late …",
-      "url": "https://www.theverge.com/podcast/1015408/bill-gates-ai-interview-microsoft-openai-anthropic-risk-policy-regulation",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Nilay Patel",
-      "publishedAt": "2026-10-22T13:20:55Z"
-    },
-    {
       "title": "AI Chatbots Are Building an ‘Algorithmic Self-Portrait’ of You",
       "description": "Users really trust AI chatbots, some experts say too much.",
       "url": "https://gizmodo.com/ai-chatbots-are-building-an-algorithmic-self-portrait-of-you-2000775529",
@@ -1705,15 +1750,6 @@
       "domain": "gizmodo.com",
       "author": "Ece Yildirim",
       "publishedAt": "2026-10-22T12:00:15Z"
-    },
-    {
-      "title": "1Password lets AI agents use your passwords without seeing them",
-      "description": "1Password is introducing a new feature that allows AI agents to sign into your accounts without actually seeing or handling your passwords. The aptly named 1Password for Agents doesn't give bots free reign to access all of your connected accounts - you'll sti…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jess Weatherbed",
-      "publishedAt": "2026-10-22T09:48:28Z"
     },
     {
       "title": "Barclays plans 5,000 job cuts as bank steps up AI-led efficiency",
@@ -1741,15 +1777,6 @@
       "domain": "gizmodo.com",
       "author": "Ece Yildirim",
       "publishedAt": "2026-10-22T01:51:03Z"
-    },
-    {
-      "title": "AI agents are ready to shop. Some retailers are wary.",
-      "description": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's mo…",
-      "url": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Mia Sato",
-      "publishedAt": "2026-10-22T00:46:40Z"
     },
     {
       "title": "OpenAI Wants to ‘Patch the Planet’ (With Its Own AI)",
@@ -2272,15 +2299,6 @@
       "domain": "cnn.com",
       "author": "Clare Duffy",
       "publishedAt": "2026-10-13T15:38:59Z"
-    },
-    {
-      "title": "Bill Gates sounds alarm on AI-powered cyberattacks, warns of 'negative surprises' within a year",
-      "description": "Bill Gates warned that AI-powered cyberattacks could disrupt financial systems and fuel extortion schemes, with criminals exploiting unsafeguarded models.",
-      "url": "https://www.foxnews.com/media/bill-gates-sounds-alarm-ai-powered-cyberattacks-warns-negative-surprises-within-year",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-11T18:51:45Z"
     }
   ]
 }

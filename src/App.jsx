@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import AiExamples from './components/AiExamples';
@@ -157,6 +158,7 @@ function App() {
           <p className="footer-disclaimer">Not affiliated with any company mentioned. For educational purposes.</p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }

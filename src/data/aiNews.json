@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-11T18:13:18.626Z",
-  "from": "2026-10-12",
-  "to": "2026-11-11",
+  "updatedAt": "2026-11-12T18:38:59.668Z",
+  "from": "2026-10-13",
+  "to": "2026-11-12",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -12,13 +12,13 @@
     {
       "domain": "cnn.com",
       "name": "CNN",
-      "count": 3,
+      "count": 4,
       "error": null
     },
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 45,
+      "count": 47,
       "error": null
     },
     {
@@ -41,6 +41,69 @@
     }
   ],
   "articles": [
+    {
+      "title": "AI data center opponents are cheering midterm results, but they say the fight isn’t over | CNN Business",
+      "description": "Texas resident Maggie Elizabeth Hill stayed up late on election night to watch the midterm results trickle in. But she was up early again the next morning, already thinking about how she could work with the state’s newly elected Democratic leaders to slow the…",
+      "url": "https://www.cnn.com/2026/11/11/tech/ai-data-center-opponents-midterm-fight",
+      "outlet": "CNN",
+      "domain": "cnn.com",
+      "author": "Clare Duffy",
+      "publishedAt": "2026-11-11T15:30:42Z"
+    },
+    {
+      "title": "Instagram's AI may catch teens lying about their age",
+      "description": "Meta's AI age-estimation technology now scans Instagram accounts worldwide, placing millions of teens into stricter safety settings automatically.",
+      "url": "https://www.foxnews.com/tech/instagrams-ai-may-catch-teens-lying-about-age",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-11T14:20:08Z"
+    },
+    {
+      "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
+      "description": "Google has cooked up a new experimental AI tool called Tabletop that generates customized collaborative hubs to help you coordinate with family, and friends. The Tabletop platform shares some visual similarities with workplace management apps like Asana and M…",
+      "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-11-11T14:15:27Z"
+    },
+    {
+      "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
+      "description": "Some of the most impressive tech that Adobe showcases at its annual Max conference each year is the experimental features it's developing, and the latest of those tools are being announced today: they can transform images into explorable 3D scenes, design AI …",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-11-11T12:56:24Z"
+    },
+    {
+      "title": "Oura is acquiring medical AI chatbot startup Counsel Health",
+      "description": "Oura announced its quarterly earnings today and said it agreed to acquire Counsel Health for $625 million, after adding the company's AI chatbot to its app earlier this year. Counsel Health calls itself an \"AI-native primary care company,\" using the app to de…",
+      "url": "https://www.theverge.com/gadgets/1031284/oura-counsel-health-acquisition",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-10T21:40:31Z"
+    },
+    {
+      "title": "Is AI deciding who's dangerous in Michigan prisons?",
+      "description": "Michigan's new prison scoring system claims 30% better violence prediction, but Recidiviz says it doesn't actually use AI to classify inmates.",
+      "url": "https://www.foxnews.com/tech/ai-deciding-whos-dangerous-michigan-prisons",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-10T19:30:01Z"
+    },
+    {
+      "title": "The US is winning the AI race. Jensen Huang could have blown it",
+      "description": "As espionage targets go, Jensen Huang is perhaps one of the least surprising on Earth. The Nvidia CEO runs one of the world's most valuable companies, controls the in-demand technology fueling the AI boom, and is cozy with presidents, CEOs, and all manner of …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart",
+      "publishedAt": "2026-11-10T19:04:05Z"
+    },
     {
       "title": "The indie game community is in disarray over AI and Big Walk",
       "description": "Some Independent Games Festival (IGF) jurors published a statement yesterday saying they would not vote for games that use generative AI in \"any capacity.\" Soon after, the developer of indie hit Big Walk has published a statement saying it \"sparingly\" used AI…",
@@ -1617,24 +1680,6 @@
       "publishedAt": "2026-10-23T22:49:03Z"
     },
     {
-      "title": "OpenAI now trains its frontier AI models with no internet access",
-      "description": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can interact with indexed and cached web co…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-23T21:11:07Z"
-    },
-    {
-      "title": "Google’s AI search changes upended online publishing",
-      "description": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How i…",
-      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-23T20:42:34Z"
-    },
-    {
       "title": "Abliteration Launches Cheaper Version of Its ‘Unrestricted AI‘ at the Worst Possible Time",
       "description": "Unless you’re a hacker, of course.",
       "url": "https://gizmodo.com/abliteration-launches-cheaper-version-of-its-unrestricted-ai-at-the-worst-possible-time-2000830045",
@@ -1642,15 +1687,6 @@
       "domain": "gizmodo.com",
       "author": "Webb Wright",
       "publishedAt": "2026-10-23T20:15:01Z"
-    },
-    {
-      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-      "description": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and uncanny. Take this one, …",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-10-23T19:32:39Z"
     },
     {
       "title": "Sam Altman: ‘I No Longer Think We’re Gonna Be Able to Just Patch All the Bugs’",
@@ -1669,15 +1705,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-23T18:16:23Z"
-    },
-    {
-      "title": "Meta delays new business terms after publisher pushback on AI scraping",
-      "description": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Robe…",
-      "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-23T14:47:41Z"
     },
     {
       "title": "Fox News AI Newsletter: What we saw inside a massive Texas data center",

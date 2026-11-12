@@ -1,105 +1,9 @@
 {
-  "updatedAt": "2026-11-11T18:13:19.720Z",
+  "updatedAt": "2026-11-12T18:39:01.035Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Cancun | Claude For Hospitality",
-          "start": "2026-11-11T19:00:00Z",
-          "allDay": false,
-          "city": "Cancun",
-          "address": "Universidad Anáhuac Cancún, Blvd. Luis Donaldo Colosio Km 13.5 M 2 Zona 8 SM 299, Carr. Cancún - Tulum, 77565 Cancún, Q.R., Mexico",
-          "url": "https://luma.com/claudecancun"
-        },
-        {
-          "title": "Sao Paulo | Claude Code Meetup",
-          "start": "2026-11-11T21:30:00Z",
-          "allDay": false,
-          "city": "Sao Paulo",
-          "address": null,
-          "url": "https://luma.com/claude-fqch"
-        },
-        {
-          "title": "Claude Code Software Factory | Claude Community Bogotá Workshop",
-          "start": "2026-11-11T23:00:00Z",
-          "allDay": false,
-          "city": "Claude Code Software Factory",
-          "address": "Chamber of Commerce of Bogota Centro Empresarial Cedritos, Cra 19 #140-29, Bogotá, Colombia",
-          "url": "https://luma.com/claude-ii14"
-        },
-        {
-          "title": "Adelaide | Claude Code Workshop",
-          "start": "2026-11-12T07:30:00Z",
-          "allDay": false,
-          "city": "Adelaide",
-          "address": "Adelaide University, Adelaide City Campus East, Corner of North Terrace and, Frome Rd, Adelaide SA 5001, Australia",
-          "url": "https://luma.com/claude-tfni"
-        },
-        {
-          "title": "Shinjuku | Claude for SMBs",
-          "start": "2026-11-12T09:30:00Z",
-          "allDay": false,
-          "city": "Shinjuku",
-          "address": "Kai・Ketsu Ii Kaigishitsu, Japan, 〒160-0021 Tokyo, Shinjuku City, Kabukichō, 2-chōme−4−１ Kdx Higashi Shinjuku, 3F または 8F",
-          "url": "https://luma.com/claude-k18t"
-        },
-        {
-          "title": "Sapporo | Claude Code Meetup",
-          "start": "2026-11-12T10:00:00Z",
-          "allDay": false,
-          "city": "Sapporo",
-          "address": "NEC, Japan, 〒060-0035 Hokkaido, Sapporo, Chuo Ward, Kita 5 Jōhigashi, 2-chōme−１ ＡＦＴビル",
-          "url": "https://luma.com/sap-claude-code-01"
-        },
-        {
-          "title": "Copenhagen | Claude for Science",
-          "start": "2026-11-12T15:00:00Z",
-          "allDay": false,
-          "city": "Copenhagen",
-          "address": null,
-          "url": "https://luma.com/claude-xq8s"
-        },
-        {
-          "title": "Paris | Claude Workshop X swanbase",
-          "start": "2026-11-12T17:30:00Z",
-          "allDay": false,
-          "city": "Paris",
-          "address": null,
-          "url": "https://luma.com/claude-6fvl"
-        },
-        {
-          "title": "Torino | Claude Code Workshop: Build and Manage Your Self-Hosted Server",
-          "start": "2026-11-12T17:30:00Z",
-          "allDay": false,
-          "city": "Torino",
-          "address": null,
-          "url": "https://luma.com/claude-community-torino-6"
-        },
-        {
-          "title": "Claude Community Madrid Meetup (Claude Tag)",
-          "start": "2026-11-12T17:30:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/claude-0rc8"
-        },
-        {
-          "title": "Build your first AI sales workflow with Claude and Zapier",
-          "start": "2026-11-12T17:45:00Z",
-          "allDay": false,
-          "city": null,
-          "address": "Qube Shoreditch, 29 -33 Scrutton St, London EC2A 4HU, UK",
-          "url": "https://luma.com/jnfrqse7"
-        },
-        {
-          "title": "Edinburgh | Claude Code Curious",
-          "start": "2026-11-12T18:00:00Z",
-          "allDay": false,
-          "city": "Edinburgh",
-          "address": null,
-          "url": "https://luma.com/ccc-edinburgh"
-        },
         {
           "title": "Morgantown | Claude Code Workshop",
           "start": "2026-11-12T22:30:00Z",
@@ -365,7 +269,7 @@
           "url": "https://luma.com/claude-6o13"
         },
         {
-          "title": "Barcelona | Workshop & Cowork - Claude for LinkedIn",
+          "title": "Barcelona | (Women in Tech) Workshop & Cowork - Claude for LinkedIn",
           "start": "2026-11-19T09:00:00Z",
           "allDay": false,
           "city": "Barcelona",
@@ -541,6 +445,14 @@
           "url": "https://luma.com/claudemonterrey"
         },
         {
+          "title": "Budapest | Claude Meetup For Everyone",
+          "start": "2026-11-23T16:30:00Z",
+          "allDay": false,
+          "city": "Budapest",
+          "address": "CREATE26 Coworking, Budapest, Király u. 26, 1061 Hungary",
+          "url": "https://luma.com/claude-nk9s"
+        },
+        {
           "title": "Adelaide | Claude in Motion",
           "start": "2026-11-24T07:30:00Z",
           "allDay": false,
@@ -643,6 +555,94 @@
           "city": "Tokyo",
           "address": null,
           "url": "https://luma.com/Claude_PEAK_HR1"
+        },
+        {
+          "title": "Claude Code for Senior B2B Marketers: Claude Community x B2B Unplugged",
+          "start": "2026-11-26T14:00:00Z",
+          "allDay": false,
+          "city": null,
+          "address": "Great Portland Street, Great Portland St, London, UK",
+          "url": "https://luma.com/claude-ox93"
+        },
+        {
+          "title": "Lisbon | Claude Code Conversation: Standout projects",
+          "start": "2026-11-26T18:30:00Z",
+          "allDay": false,
+          "city": "Lisbon",
+          "address": "Heden Workspaces - Rossio, Largo do Duque de Cadaval 17 Fracção I, 1200-160 Lisboa, Portugal",
+          "url": "https://luma.com/claude-gyoj"
+        },
+        {
+          "title": "Byron Bay | Claude Workshop",
+          "start": "2026-11-26T23:00:00Z",
+          "allDay": false,
+          "city": "Byron Bay",
+          "address": null,
+          "url": "https://luma.com/claude-4fqw"
+        },
+        {
+          "title": "Claude Community x AWS: Claude Code For Frontier AI",
+          "start": "2026-11-26T23:30:00Z",
+          "allDay": false,
+          "city": null,
+          "address": "Amazon México Oficinas, Periférico Blvrd Manuel Ávila Camacho 261, Polanco, Lomas de Chapultepec III Secc, Miguel Hidalgo, 11510 Ciudad de M",
+          "url": "https://luma.com/claudeaws"
+        },
+        {
+          "title": "Dubai | Claude Meetup for Executives",
+          "start": "2026-11-27T04:30:00Z",
+          "allDay": false,
+          "city": "Dubai",
+          "address": null,
+          "url": "https://luma.com/claude-ejvw"
+        },
+        {
+          "title": "Byron Bay | Claude Meetup: Community Talks In collaboration with Byron Tech Community",
+          "start": "2026-11-27T07:00:00Z",
+          "allDay": false,
+          "city": "Byron Bay",
+          "address": null,
+          "url": "https://luma.com/claude-p46v"
+        },
+        {
+          "title": "Kurume | Claude Meetup",
+          "start": "2026-11-27T10:00:00Z",
+          "allDay": false,
+          "city": "Kurume",
+          "address": "Mekuruto, 2F Daiichi Tanaka Bldg., 11-1 Chuo-machi, Kurume, Fukuoka 830-0023",
+          "url": "https://luma.com/claude-cg1n"
+        },
+        {
+          "title": "Limassol | Claude Meetup",
+          "start": "2026-11-27T17:00:00Z",
+          "allDay": false,
+          "city": "Limassol",
+          "address": null,
+          "url": "https://luma.com/claude-ymvo"
+        },
+        {
+          "title": "Claude Community x distritoQRO: Claude for Aerospace",
+          "start": "2026-11-27T23:30:00Z",
+          "allDay": false,
+          "city": null,
+          "address": "EGADE Business School Querétaro, Prol. Tecnológico, La Piedad, 76159 Santiago de Querétaro, Qro., Mexico",
+          "url": "https://luma.com/claudequeretaro"
+        },
+        {
+          "title": "Mumbai | Claude & Coffee",
+          "start": "2026-11-28T04:30:00Z",
+          "allDay": false,
+          "city": "Mumbai",
+          "address": null,
+          "url": "https://luma.com/claude-coffee"
+        },
+        {
+          "title": "Claude Community × HappyRobot Hackathon — Agents coaching agents",
+          "start": "2026-11-28T08:00:00Z",
+          "allDay": false,
+          "city": null,
+          "address": "HappyRobot Madrid Office, Madrid, Spain",
+          "url": "https://luma.com/claude-82uv"
         }
       ],
       "error": null

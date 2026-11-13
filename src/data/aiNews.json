@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-12T18:38:59.668Z",
-  "from": "2026-10-13",
-  "to": "2026-11-12",
+  "updatedAt": "2026-11-13T18:18:30.148Z",
+  "from": "2026-10-14",
+  "to": "2026-11-13",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -12,7 +12,7 @@
     {
       "domain": "cnn.com",
       "name": "CNN",
-      "count": 4,
+      "count": 3,
       "error": null
     },
     {
@@ -36,11 +36,47 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 100,
+      "count": 98,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "AI chatbots are recommending fake retail websites, study finds",
+      "description": "Shoppers using AI chatbots to research products or find places to buy items could be directed to imposters and other risky websites, a new study found. The study conducted by IP protection firm Podqi and shared exclusively with The Verge prompted ChatGPT, Gem…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Mia Sato",
+      "publishedAt": "2026-11-12T16:57:11Z"
+    },
+    {
+      "title": "More game developers are using generative AI than they did last year",
+      "description": "More video game developers are using generative AI tools in their jobs compared to last year, according to the GDC Festival of Gaming's latest annual industry survey. 40 percent of developers surveyed say they use it \"as part of their job,\" an increase from 3…",
+      "url": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-12T16:55:21Z"
+    },
+    {
+      "title": "I tried Google’s AI glasses and Meta’s finally got real competition",
+      "description": "It's a weird time to launch a new pair of smart glasses. These last few years, Meta has been the dominant player in pushing a fragile smart glasses resurgence. Unfortunately, its privacy reputation led to the \"pervert glasses\" moniker. Smart glasses have neve…",
+      "url": "https://www.theverge.com/tech/1031647/google-android-xr-warby-parker-gentle-monster-hands-on",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Victoria Song",
+      "publishedAt": "2026-11-12T14:05:52Z"
+    },
+    {
+      "title": "United won’t let your AI agent book your flight",
+      "description": "United says it won't let personal AI assistants book tickets on the airline, citing both privacy and regulatory concerns. The company says it hasn't yet seen many people try to use AI agents to book their flights, The Wall Street Journal reports, in line with…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Lauren Feiner",
+      "publishedAt": "2026-11-11T21:54:21Z"
+    },
     {
       "title": "AI data center opponents are cheering midterm results, but they say the fight isn’t over | CNN Business",
       "description": "Texas resident Maggie Elizabeth Hill stayed up late on election night to watch the midterm results trickle in. But she was up early again the next morning, already thinking about how she could work with the state’s newly elected Democratic leaders to slow the…",
@@ -1536,15 +1572,6 @@
       "publishedAt": "2026-10-26T13:33:37Z"
     },
     {
-      "title": "Can AI help solve the COBOL code crisis?",
-      "description": "What do the IRS, banks, airlines, and government infrastructure around the world have in common? They're all running on systems propped up by antique computer code that nobody dares touch, lest everything come crashing down. OpenAI thinks it may have a soluti…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Robert Hart",
-      "publishedAt": "2026-10-26T13:13:11Z"
-    },
-    {
       "title": "AI is changing everything. Universities must teach Americans how to keep up",
       "description": "A Harvard Business School study reveals AI's \"jagged frontier,\" showing how misusing AI tools can actually hurt performance more than not using them.",
       "url": "https://www.foxnews.com/opinion/ai-changing-everything-universities-must-teach-americans-keep-up",
@@ -1572,15 +1599,6 @@
       "publishedAt": "2026-10-25T17:00:59Z"
     },
     {
-      "title": "r/opensource just banned AI, non-English speakers and more",
-      "description": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If your project uses AI, is made by AI, or is intended for AI, it's not welcome on r/opensource. AI, a…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Terrence O’Brien",
-      "publishedAt": "2026-10-25T13:25:32Z"
-    },
-    {
       "title": "Human vs. ChatGPT NFL Week 7 betting picks: Human clings to profit as AI claims third straight win",
       "description": "Human analyst is still profitable by just 0.09 units as he takes on ChatGPT with five more NFL bets, including a Titans upset and a shared Bengals pick.",
       "url": "https://www.foxnews.com/outkick-sports/human-vs-chatgpt-nfl-week-7-betting-picks-human-clings-profit-ai-claims-third-straight-win",
@@ -1597,24 +1615,6 @@
       "domain": "gizmodo.com",
       "author": "Mike Pearl",
       "publishedAt": "2026-10-25T09:00:54Z"
-    },
-    {
-      "title": "Blue Planet III is keeping the rough edges in the age of AI",
-      "description": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveawa…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Terrence O’Brien",
-      "publishedAt": "2026-10-24T21:29:12Z"
-    },
-    {
-      "title": "Pennsylvania will require labels on AI-generated ads",
-      "description": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been sign…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Terrence O’Brien",
-      "publishedAt": "2026-10-24T18:32:44Z"
     },
     {
       "title": "OpenAI Built a Giant Fake Internet for Its Agents to Use and Abuse Safely",
@@ -2299,33 +2299,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-14T01:23:03Z"
-    },
-    {
-      "title": "Shifting AI Doomsday Predictions Reportedly Worry Banking Regulators",
-      "description": "European regulators are expecting AI-driven financial chaos sooner than later.",
-      "url": "https://gizmodo.com/shifting-ai-doomsday-predictions-reportedly-worry-banking-regulators-2000825460",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-13T23:29:31Z"
-    },
-    {
-      "title": "Here’s How OpenAI Says It Used AI to Find a Spy Inside Its Company",
-      "description": "When your company makes the world's most famous hammer, a corporate spy is a problem that looks like a nail.",
-      "url": "https://gizmodo.com/heres-how-openai-says-it-used-ai-to-find-a-spy-inside-its-company-2000825570",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-13T21:19:53Z"
-    },
-    {
-      "title": "Character.ai files for bankruptcy following lawsuits alleging ties to teen suicides | CNN Business",
-      "description": "Artificial intelligence chat startup Character.ai— which has faced a wave of claims that its app contributed to mental health issues and suicides among teens — has filed for Chapter 11 bankruptcy.",
-      "url": "https://www.cnn.com/2026/10/13/tech/character-ai-bankruptcy-filing",
-      "outlet": "CNN",
-      "domain": "cnn.com",
-      "author": "Clare Duffy",
-      "publishedAt": "2026-10-13T15:38:59Z"
     }
   ]
 }

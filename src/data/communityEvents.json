@@ -1,73 +1,9 @@
 {
-  "updatedAt": "2026-11-12T18:39:01.035Z",
+  "updatedAt": "2026-11-13T18:18:32.515Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Morgantown | Claude Code Workshop",
-          "start": "2026-11-12T22:30:00Z",
-          "allDay": false,
-          "city": "Morgantown",
-          "address": null,
-          "url": "https://luma.com/claude-lw2c"
-        },
-        {
-          "title": "Atlanta | Claude Code Workshop",
-          "start": "2026-11-12T23:00:00Z",
-          "allDay": false,
-          "city": "Atlanta",
-          "address": "Kennesaw State University Marietta Campus, 1100 South Marietta Pkwy SE, Marietta, GA 30060, USA",
-          "url": "https://luma.com/claude-gjw7"
-        },
-        {
-          "title": "Claude for CMOs and Operators Workshop: The New Operating Model",
-          "start": "2026-11-12T23:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/claude-h03c"
-        },
-        {
-          "title": "Miami | Claude Code Workshop with doxx.net",
-          "start": "2026-11-12T23:00:00Z",
-          "allDay": false,
-          "city": "Miami",
-          "address": "The DOCK, 400 NW 26th St, Miami, FL 33127, USA",
-          "url": "https://luma.com/claude-wavu"
-        },
-        {
-          "title": "Austin | Claude Projects Workshop",
-          "start": "2026-11-13T00:00:00Z",
-          "allDay": false,
-          "city": "Austin",
-          "address": "Capital Factory, Austin, TX",
-          "url": "https://luma.com/claude-z05v"
-        },
-        {
-          "title": "Marin | Talking Paintings and Story Machines: Claude in Creative Tech.",
-          "start": "2026-11-13T02:00:00Z",
-          "allDay": false,
-          "city": "Marin",
-          "address": null,
-          "url": "https://luma.com/claude-ptps"
-        },
-        {
-          "title": "Miami | Claude & Coffee Co-Working Day",
-          "start": "2026-11-13T14:00:00Z",
-          "allDay": false,
-          "city": "Miami",
-          "address": "The DOCK, 400 NW 26th St, Miami, FL 33127, USA",
-          "url": "https://luma.com/claude-kgq5"
-        },
-        {
-          "title": "Savannah | Claude Code Build Day",
-          "start": "2026-11-13T16:00:00Z",
-          "allDay": false,
-          "city": "Savannah",
-          "address": null,
-          "url": "https://luma.com/claude-pksj"
-        },
         {
           "title": "NYC Claude Art & AI: Go-to-Market (G2M) Meetup",
           "start": "2026-11-13T22:00:00Z",
@@ -123,6 +59,14 @@
           "city": "Boston",
           "address": "40 Leon St, Boston, MA 02115, USA",
           "url": "https://luma.com/claude-hovn"
+        },
+        {
+          "title": "Nairobi | Claude Conversation: Touch Grass at Karura Forest",
+          "start": "2026-11-15T07:00:00Z",
+          "allDay": false,
+          "city": "Nairobi",
+          "address": "Karura Forest Gate A, Karura Forest Gate Parking, Nairobi, Kenya",
+          "url": "https://luma.com/claude-sznz"
         },
         {
           "title": "京都｜Claude Code Workshop",
@@ -285,6 +229,14 @@
           "url": "https://luma.com/claude-w6t1"
         },
         {
+          "title": "Nairobi | Claude CAD Workshop",
+          "start": "2026-11-19T13:00:00Z",
+          "allDay": false,
+          "city": "Nairobi",
+          "address": "Hackhouse Africa, 124 Manyani East Rd, Nairobi, Kenya",
+          "url": "https://luma.com/claude-t9v5"
+        },
+        {
           "title": "Tel Aviv | How To - Claude Code Workshop",
           "start": "2026-11-19T14:00:00Z",
           "allDay": false,
@@ -381,6 +333,14 @@
           "url": "https://luma.com/claude-328k"
         },
         {
+          "title": "Nairobi | Claude Impact Lab",
+          "start": "2026-11-21T05:30:00Z",
+          "allDay": false,
+          "city": "Nairobi",
+          "address": "Hackhouse Africa, 124 Manyani East Rd, Nairobi",
+          "url": "https://luma.com/claude-ptdd"
+        },
+        {
           "title": "Sendai | Claude Workshop",
           "start": "2026-11-21T08:00:00Z",
           "allDay": false,
@@ -395,6 +355,14 @@
           "city": "Barcelona",
           "address": null,
           "url": "https://luma.com/claude-k2tk"
+        },
+        {
+          "title": "Brussels | Claude Code Workshop",
+          "start": "2026-11-21T13:00:00Z",
+          "allDay": false,
+          "city": "Brussels",
+          "address": "HSBXL, Brussels, Belgium",
+          "url": "https://luma.com/claude-mmu8"
         },
         {
           "title": "NYC | Claude Impact Lab - Digital Health",
@@ -549,7 +517,7 @@
           "url": "https://luma.com/claude-5igh"
         },
         {
-          "title": "Tokyo | Claude Meetup (for HR)",
+          "title": "Tokyo | Claude Meetup for HR",
           "start": "2026-11-26T10:00:00Z",
           "allDay": false,
           "city": "Tokyo",
@@ -643,6 +611,38 @@
           "city": null,
           "address": "HappyRobot Madrid Office, Madrid, Spain",
           "url": "https://luma.com/claude-82uv"
+        },
+        {
+          "title": "Mexico City | Claude Build Day At UniconHub Hack",
+          "start": "2026-11-28T15:00:00Z",
+          "allDay": false,
+          "city": "Mexico City",
+          "address": "Sandbox Hub, Luis G. Urbina 4-dpto. 103, Polanco, Polanco IV Secc, Miguel Hidalgo, 11550 Ciudad de México, CDMX, Mexico",
+          "url": "https://luma.com/claude-unicon-hack"
+        },
+        {
+          "title": "Byron Bay | Claude Meetup - Touch Grass + Coffee @ The Farm",
+          "start": "2026-11-28T23:00:00Z",
+          "allDay": false,
+          "city": "Byron Bay",
+          "address": "The Farm Byron Bay, 11 Ewingsdale Rd, Ewingsdale NSW 2481, Australia",
+          "url": "https://luma.com/claude-e5e8"
+        },
+        {
+          "title": "Sapporo | Claude Meetup",
+          "start": "2026-11-29T04:00:00Z",
+          "allDay": false,
+          "city": "Sapporo",
+          "address": "TKP Sapporo Conference Centre, Japan, 〒060-0003 Hokkaido, Sapporo, Chuo Ward, Kita 3 Jōnishi, 3-chōme−1−６ 札幌小暮ビル 6~7階（事務所：7階",
+          "url": "https://luma.com/claude-ne4b"
+        },
+        {
+          "title": "Aridagawa | Claude Code Meetup",
+          "start": "2026-11-29T04:30:00Z",
+          "allDay": false,
+          "city": "Aridagawa",
+          "address": "有田川町地域交流センター ALEC, 和歌山県有田郡有田川町下津野704",
+          "url": "https://luma.com/claude-whye"
         }
       ],
       "error": null
@@ -650,39 +650,7 @@
     "langchain": {
       "events": [
         {
-          "title": "Agents in the Sandboxes — LangChain Community London × Focused.io",
-          "start": "2026-11-12T18:30:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/po68337t"
-        },
-        {
-          "title": "Meet Your Quota: An SDR Recruiting Social at LangChain - NYC",
-          "start": "2026-11-12T23:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/langchain-np4d"
-        },
-        {
-          "title": "LangChain Boston Meetup: Friends of LangChain",
-          "start": "2026-11-12T23:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/x2d94ihu"
-        },
-        {
-          "title": "Friends of LangChain Party",
-          "start": "2026-11-13T02:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/i4xu7a6l"
-        },
-        {
-          "title": "Friends of LangChain Party (New York)",
+          "title": "Celebrating LangChain’s Series C (New York)",
           "start": "2026-11-17T23:00:00Z",
           "allDay": false,
           "city": null,
@@ -728,6 +696,14 @@
           "city": null,
           "address": "evroc, Katarinavägen 9, 116 45 Stockholm, Sweden",
           "url": "https://luma.com/9dni7s4o"
+        },
+        {
+          "title": "LangChain x hackers&wizards Hackathon: Building with Agent Harnesses (Hamburg)",
+          "start": "2026-12-04T16:00:00Z",
+          "allDay": false,
+          "city": null,
+          "address": null,
+          "url": "https://luma.com/s77skh49"
         }
       ],
       "error": null

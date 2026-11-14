@@ -1,68 +1,12 @@
 {
-  "updatedAt": "2026-11-13T18:18:32.515Z",
+  "updatedAt": "2026-11-14T16:47:30.163Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
         {
-          "title": "NYC Claude Art & AI: Go-to-Market (G2M) Meetup",
-          "start": "2026-11-13T22:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/claude-cgq5"
-        },
-        {
-          "title": "AI Agents for Founders Workshop: Claude Community x Taxfix",
-          "start": "2026-11-14T09:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": "Köpenicker Str. 122, 10179 Berlin, Germany",
-          "url": "https://luma.com/claude-uzq6"
-        },
-        {
-          "title": "Mumbai | Claude for Product Managers & Doctors",
-          "start": "2026-11-14T10:30:00Z",
-          "allDay": false,
-          "city": "Mumbai",
-          "address": null,
-          "url": "https://luma.com/claude-pm"
-        },
-        {
-          "title": "Bhopal | Claude Code Workshop",
-          "start": "2026-11-14T12:00:00Z",
-          "allDay": false,
-          "city": "Bhopal",
-          "address": null,
-          "url": "https://luma.com/claude-vtm6"
-        },
-        {
-          "title": "Berlin | Game Jam Workshop with Claude",
-          "start": "2026-11-14T13:00:00Z",
-          "allDay": false,
-          "city": "Berlin",
-          "address": null,
-          "url": "https://luma.com/claude-eqmm"
-        },
-        {
-          "title": "Miami | Opus 5.5 Build Day - Marketing Sprint",
-          "start": "2026-11-14T14:30:00Z",
-          "allDay": false,
-          "city": "Miami",
-          "address": "The LAB Miami, 2750 NW 3rd Ave #24, Miami, FL 33127, USA",
-          "url": "https://luma.com/claude-drvz"
-        },
-        {
-          "title": "Boston | AI Healthcare Hackathon with Claude Build Day",
-          "start": "2026-11-14T15:00:00Z",
-          "allDay": false,
-          "city": "Boston",
-          "address": "40 Leon St, Boston, MA 02115, USA",
-          "url": "https://luma.com/claude-hovn"
-        },
-        {
           "title": "Nairobi | Claude Conversation: Touch Grass at Karura Forest",
-          "start": "2026-11-15T07:00:00Z",
+          "start": "2026-11-15T11:00:00Z",
           "allDay": false,
           "city": "Nairobi",
           "address": "Karura Forest Gate A, Karura Forest Gate Parking, Nairobi, Kenya",
@@ -277,10 +221,10 @@
           "url": "https://luma.com/claude-f90a"
         },
         {
-          "title": "Claude Community x CRISKCO: Claude for Finance",
+          "title": "Claude Community x CRISKCO | Claude for Finance",
           "start": "2026-11-19T23:00:00Z",
           "allDay": false,
-          "city": null,
+          "city": "Claude Community x CRISKCO",
           "address": "BBVA Open Space México, Torre BBVA Bancomer, Av. P.º de la Reforma 510-Planta 33, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
           "url": "https://luma.com/claudeforfinance"
         },
@@ -589,10 +533,10 @@
           "url": "https://luma.com/claude-ymvo"
         },
         {
-          "title": "Claude Community x distritoQRO: Claude for Aerospace",
+          "title": "Claude Community x distritoQRO | Claude for Aerospace",
           "start": "2026-11-27T23:30:00Z",
           "allDay": false,
-          "city": null,
+          "city": "Claude Community x distritoQRO",
           "address": "EGADE Business School Querétaro, Prol. Tecnológico, La Piedad, 76159 Santiago de Querétaro, Qro., Mexico",
           "url": "https://luma.com/claudequeretaro"
         },
@@ -643,6 +587,62 @@
           "city": "Aridagawa",
           "address": "有田川町地域交流センター ALEC, 和歌山県有田郡有田川町下津野704",
           "url": "https://luma.com/claude-whye"
+        },
+        {
+          "title": "Fukuoka | Claude Meetup",
+          "start": "2026-11-29T07:00:00Z",
+          "allDay": false,
+          "city": "Fukuoka",
+          "address": "Fukuoka Growth Next, 2-chōme-6-11 Daimyō, Chuo Ward, Fukuoka, 810-0041, Japan",
+          "url": "https://luma.com/claude-ah22"
+        },
+        {
+          "title": "Bhopal | Claude Code Workshop for Government Officials",
+          "start": "2026-11-29T11:30:00Z",
+          "allDay": false,
+          "city": "Bhopal",
+          "address": null,
+          "url": "https://luma.com/claude-4xxl"
+        },
+        {
+          "title": "Yokohama | Claude Community x SS-F Workshop",
+          "start": "2026-11-30T06:00:00Z",
+          "allDay": false,
+          "city": "Yokohama",
+          "address": "SS-F Lighthouse Lab lounge, Kannai, Yokohama",
+          "url": "https://luma.com/claude-pvbt"
+        },
+        {
+          "title": "Ahmedabad | Claude Fable 5.2 Build Day",
+          "start": "2026-11-30T09:30:00Z",
+          "allDay": false,
+          "city": "Ahmedabad",
+          "address": null,
+          "url": "https://luma.com/claude-5j11"
+        },
+        {
+          "title": "Miami | Claude Meetup - Responsible AI for Impact",
+          "start": "2026-11-30T13:30:00Z",
+          "allDay": false,
+          "city": "Miami",
+          "address": "Books & Books, 265 Aragon Avenue, Coral Gables, FL 33134",
+          "url": "https://luma.com/claude-mha1"
+        },
+        {
+          "title": "Oslo | Claude Build Day",
+          "start": "2026-11-30T15:00:00Z",
+          "allDay": false,
+          "city": "Oslo",
+          "address": "Mesh Youngstorget - Mesh Community, Møllergata 6, 8, 0179 Oslo, Norway",
+          "url": "https://luma.com/claude-s587"
+        },
+        {
+          "title": "Hamburg | Claude Code Build Day",
+          "start": "2026-11-30T17:00:00Z",
+          "allDay": false,
+          "city": "Hamburg",
+          "address": "House of AI Hamburg, Hongkongstraße 2, 20457 Hamburg, Germany",
+          "url": "https://luma.com/claude-dhp9"
         }
       ],
       "error": null

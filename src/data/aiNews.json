@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-13T18:18:30.148Z",
-  "from": "2026-10-14",
-  "to": "2026-11-13",
+  "updatedAt": "2026-11-14T16:47:28.615Z",
+  "from": "2026-10-15",
+  "to": "2026-11-14",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -18,13 +18,13 @@
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 47,
+      "count": 49,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 8,
+      "count": 7,
       "error": null
     },
     {
@@ -36,11 +36,65 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 98,
+      "count": 92,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "Could AI reduce shipping costs and grocery bills?",
+      "description": "EAIGLE says its AI camera technology cuts truck check-ins from 10 minutes to under 30 seconds, potentially reducing fuel waste across supply chains.",
+      "url": "https://www.foxnews.com/tech/could-ai-reduce-shipping-costs-grocery-bills",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-13T16:08:51Z"
+    },
+    {
+      "title": "Fox News AI Newsletter: 'Godfather of AI' resigns, testing American juggernaut",
+      "description": "The Fox News AI Newsletter covers the latest artificial intelligence technology advancements, including the challenges and opportunities AI presents.",
+      "url": "https://www.foxnews.com/tech/fox-news-ai-newsletter-godfather-ai-resigns-testing-american-juggernaut",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-13T15:27:06Z"
+    },
+    {
+      "title": "A spy took out Nvidia’s CEO. Here’s how America still wins the AI race",
+      "description": "Nvidia CEO Jensen Huang's resignation throws the AI chip giant into turmoil. It matters greatly because the AI race is one the U.S. government cannot win by itself.",
+      "url": "https://www.foxnews.com/opinion/spy-took-out-nvidias-ceo-heres-how-america-still-wins-ai-race",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-13T09:50:01Z"
+    },
+    {
+      "title": "Human vs. ChatGPT NFL Week 10 betting picks: Ice-cold human seeks a rebound as AI gains ground",
+      "description": "Week 10 NFL picks feature Pittsburgh Steelers at Cincinnati Bengals, Kansas City Chiefs at Atlanta Falcons, and a bold over on Dolphins-Colts.",
+      "url": "https://www.foxnews.com/outkick-sports/human-vs-chatgpt-nfl-week-10-betting-picks-ice-cold-human-seeks-rebound-ai-gains-ground",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-12T22:27:01Z"
+    },
+    {
+      "title": "Google’s new Gemini model is better at understanding complicated questions",
+      "description": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.\" The new model can break down your questions and address each part…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-12T21:55:32Z"
+    },
+    {
+      "title": "No, AI agents did not discover a previously unknown Maya site",
+      "description": "Armed with a team of AI agents, Google researcher Pietro Miotti claimed earlier this week to have discovered a potentially unmapped Maya site in Mexico. There was just one problem: The site had already been discovered and was published in an academic journal …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart",
+      "publishedAt": "2026-11-12T19:42:40Z"
+    },
     {
       "title": "AI chatbots are recommending fake retail websites, study finds",
       "description": "Shoppers using AI chatbots to research products or find places to buy items could be directed to imposters and other risky websites, a new study found. The study conducted by IP protection firm Podqi and shared exclusively with The Verge prompted ChatGPT, Gem…",
@@ -1536,15 +1590,6 @@
       "publishedAt": "2026-10-26T17:35:08Z"
     },
     {
-      "title": "The RealReal won’t let AI agents hog designer clothing",
-      "description": "The RealReal, a secondhand luxury fashion consignment retailer, said it's updating its bot defense system, effectively making it harder for AI agents to shop on its site. The change comes days after The Verge reported that an AI agent could be used to take ad…",
-      "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Mia Sato",
-      "publishedAt": "2026-10-26T17:30:55Z"
-    },
-    {
       "title": "Elon Musk’s AI-Generated ‘Odyssey’ Is Here to Save Western Civilization",
       "description": "“Homer didn’t have Grok. We do.”",
       "url": "https://gizmodo.com/elon-musks-ai-generated-odyssey-is-here-to-save-western-civilization-2000830714",
@@ -1561,15 +1606,6 @@
       "domain": "gizmodo.com",
       "author": "Ece Yildirim",
       "publishedAt": "2026-10-26T15:00:57Z"
-    },
-    {
-      "title": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
-      "description": "Anthropic has filed its S-1 prospectus with the Securities and Exchange Commission, preparing the company behind Claude to beat OpenAI to the punch with an IPO. In a filing with the SEC, Anthropic said it plans to list on the Nasdaq exchange under the ticker …",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Robert Hart",
-      "publishedAt": "2026-10-26T13:33:37Z"
     },
     {
       "title": "AI is changing everything. Universities must teach Americans how to keep up",
@@ -2218,87 +2254,6 @@
       "domain": "bloomberg.com",
       "author": "Bloomberg",
       "publishedAt": "2026-10-15T03:46:58Z"
-    },
-    {
-      "title": "OpenAI Bugging Suspect Booked One-Way Flight to Saudi Arabia, Prosecutors Say",
-      "description": "Prosecutors asked a judge to keep details of the case under seal, fearing that suspected eavesdropper Abdulrahman Alfozan would flee the country.",
-      "url": "https://gizmodo.com/openai-bugging-suspect-booked-one-way-flight-to-saudi-arabia-prosecutors-say-2000826061",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Tom McKay",
-      "publishedAt": "2026-10-14T22:00:10Z"
-    },
-    {
-      "title": "OpenAI Turns the Tables on Apple in Legal Fight Over Trade Secrets",
-      "description": "The two tech giants are headed to court this week after Apple originally sued OpenAI for allegedly stealing trade secrets through its former employees.",
-      "url": "https://gizmodo.com/openai-turns-the-tables-on-apple-in-legal-fight-over-trade-secrets-2000826007",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Bruce Gil",
-      "publishedAt": "2026-10-14T19:40:52Z"
-    },
-    {
-      "title": "Man Accused of Bugging OpenAI Said Elon Musk Was His Role Model",
-      "description": "A guy allegedly looking to steal someone else's idea looked up to Musk. Interesting.",
-      "url": "https://gizmodo.com/man-accused-of-bugging-openai-said-elon-musk-was-his-role-model-2000825897",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "AJ Dellinger",
-      "publishedAt": "2026-10-14T18:40:07Z"
-    },
-    {
-      "title": "Forget the 10-Day Forecast. AI Just Improved Extreme Weather Warnings Up to 6 Weeks",
-      "description": "This promising advancement could be a boon for disaster preparedness.",
-      "url": "https://gizmodo.com/forget-the-10-day-forecast-ai-just-improved-extreme-weather-warnings-up-to-6-weeks-2000825560",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ellyn Lapointe",
-      "publishedAt": "2026-10-14T15:22:46Z"
-    },
-    {
-      "title": "Ukraine showed Trump how easily an enemy could cripple an AI powerhouse",
-      "description": "Ukraine's drone attacks on three Yandex data centers in four days exposed how adversaries can cripple artificial intelligence without defeating software.",
-      "url": "https://www.foxnews.com/opinion/ukraine-showed-trump-how-easily-enemy-could-cripple-ai-powerhouse",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-14T09:00:52Z"
-    },
-    {
-      "title": "Kimberly Guilfoyle Reportedly Told the White House the Donor Texts Were AI-Generated",
-      "description": "But the interesting part is that she apparently wasn't believed.",
-      "url": "https://gizmodo.com/kimberly-guilfoyle-reportedly-told-the-white-house-the-donor-texts-were-ai-generated-2000825641",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-14T09:00:24Z"
-    },
-    {
-      "title": "OpenAI says staffer arrested for hidden recording device in office",
-      "description": "OpenAI used AI to identify and fire a staffer who hid a sophisticated recording device, with FBI arrest and ongoing investigation.",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-13/openai-says-staffer-arrested-for-hidden-recording-device-in-office",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-14T02:09:02Z"
-    },
-    {
-      "title": "The ‘Sophisticated’ Bug OpenAI Found in Its Conference Room Can Be Yours for $13.99",
-      "description": "The Seeed Studio XIAO ESP32-S3 Sense is for tinkerers, not super-spies.",
-      "url": "https://gizmodo.com/the-sophisticated-bug-openai-found-in-its-conference-room-can-be-yours-for-13-99-2000825636",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-14T02:00:35Z"
-    },
-    {
-      "title": "French AI CEO warns Americans against voting Democrat saying 'you don't want to be France'",
-      "description": "Brivael Le Pogam's viral post warned Americans against voting Democrat, saying France's decades of progressive spending led to crushing debt and decline.",
-      "url": "https://www.foxnews.com/media/french-ai-ceo-warns-americans-voting-democrat-saying-dont-want-be-france",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-14T01:23:03Z"
     }
   ]
 }

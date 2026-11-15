@@ -1,17 +1,9 @@
 {
-  "updatedAt": "2026-11-14T16:47:30.163Z",
+  "updatedAt": "2026-11-15T17:30:23.772Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Nairobi | Claude Conversation: Touch Grass at Karura Forest",
-          "start": "2026-11-15T11:00:00Z",
-          "allDay": false,
-          "city": "Nairobi",
-          "address": "Karura Forest Gate A, Karura Forest Gate Parking, Nairobi, Kenya",
-          "url": "https://luma.com/claude-sznz"
-        },
         {
           "title": "京都｜Claude Code Workshop",
           "start": "2026-11-16T06:30:00Z",
@@ -643,6 +635,14 @@
           "city": "Hamburg",
           "address": "House of AI Hamburg, Hongkongstraße 2, 20457 Hamburg, Germany",
           "url": "https://luma.com/claude-dhp9"
+        },
+        {
+          "title": "Shibuya | Claude for Business | Claude Code時代のWeb開発会社の働き方と新しいビジネスモデル - オフレコ座談会",
+          "start": "2026-12-01T10:00:00Z",
+          "allDay": false,
+          "city": "Shibuya",
+          "address": null,
+          "url": "https://luma.com/claude-zrgg"
         }
       ],
       "error": null

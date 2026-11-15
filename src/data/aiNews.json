@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-14T16:47:28.615Z",
-  "from": "2026-10-15",
-  "to": "2026-11-14",
+  "updatedAt": "2026-11-15T17:30:22.147Z",
+  "from": "2026-10-16",
+  "to": "2026-11-15",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -18,13 +18,13 @@
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 49,
+      "count": 47,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 7,
+      "count": 5,
       "error": null
     },
     {
@@ -36,11 +36,38 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 92,
+      "count": 85,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+      "description": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known figure in the AI safety and policy commun…",
+      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Nilay Patel",
+      "publishedAt": "2026-11-14T00:06:40Z"
+    },
+    {
+      "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+      "description": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-13T20:45:10Z"
+    },
+    {
+      "title": "China’s great AI chip loophole: How American espionage stopped China — this time",
+      "description": "How American intelligence uncovered a suspected Chinese spy operation targeting Nvidia's AI chips through Singapore and Malaysia data centers.",
+      "url": "https://www.foxnews.com/opinion/chinas-great-ai-chip-loophole-how-american-espionage-stopped-china-this-time",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-13T17:28:00Z"
+    },
     {
       "title": "Could AI reduce shipping costs and grocery bills?",
       "description": "EAIGLE says its AI camera technology cuts truck check-ins from 10 minutes to under 30 seconds, potentially reducing fuel waste across supply chains.",
@@ -1554,15 +1581,6 @@
       "publishedAt": "2026-10-27T00:13:11Z"
     },
     {
-      "title": "OpenAI announces three big science discoveries and a new way to work with academics",
-      "description": "Less than a month after its mass release of hundreds of manuscripts that it said contained solutions to long-standing mathematics questions, OpenAI is back with three more \"major\" discoveries in math, computer science, and physics. What's different this time …",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Richard Lawler",
-      "publishedAt": "2026-10-26T23:47:59Z"
-    },
-    {
       "title": "Former Yahoo CEO Needed AI to Help Describe What Makes Her Own Daughter Special",
       "description": "AI is solving being a deadbeat parent.",
       "url": "https://gizmodo.com/former-yahoo-ceo-needed-ai-to-help-describe-what-makes-her-own-daughter-special-2000830868",
@@ -1570,15 +1588,6 @@
       "domain": "gizmodo.com",
       "author": "AJ Dellinger",
       "publishedAt": "2026-10-26T21:45:48Z"
-    },
-    {
-      "title": "Anthropic is burning gas to feed the AI boom",
-      "description": "As it prepares to go public, Anthropic's S-1 filing makes generative AI's methane dependency glaringly obvious. \"Competition for access to electrical supply and data center locations with adequate power availability is intense.\" In documents filed with the US…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Justine Calma",
-      "publishedAt": "2026-10-26T21:45:31Z"
     },
     {
       "title": "Boom or Bubble? What to Make of AI Sell-Offs, Anthropic’s IPO, and the Fed",
@@ -2146,114 +2155,6 @@
       "domain": "gizmodo.com",
       "author": "Ece Yildirim",
       "publishedAt": "2026-10-16T14:00:35Z"
-    },
-    {
-      "title": "Ex-OpenAI engineer charged with planting recording device had one-way flight booked to Saudi Arabia, DOJ says",
-      "description": "Abdulrahman Alfozan had a one-way flight to his native Saudi Arabia booked days before federal custody, according to the Department of Justice.",
-      "url": "https://www.foxnews.com/us/ex-openai-engineer-charged-planting-recording-device-one-way-flight-booked-saudi-arabia-doj",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-15T22:15:40Z"
-    },
-    {
-      "title": "AI Agent Reportedly Deletes an Entire Season of Reality TV Show",
-      "description": "The second season of Sweden’s version of 'The Challenge' has now been pushed to 2027 just weeks before its scheduled premiere.",
-      "url": "https://gizmodo.com/ai-agent-reportedly-deletes-an-entire-season-of-reality-tv-show-2000826600",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Bruce Gil",
-      "publishedAt": "2026-10-15T20:55:27Z"
-    },
-    {
-      "title": "AI Startup Wants Every Company to Assign You Your Own Personal Stalker",
-      "description": "What is wrong with you people?",
-      "url": "https://gizmodo.com/ai-startup-wants-every-company-to-assign-you-your-own-personal-stalker-2000826035",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "AJ Dellinger",
-      "publishedAt": "2026-10-15T19:55:05Z"
-    },
-    {
-      "title": "Researchers Stranded an AI Agent on a Virtual Island. Things Got Very Weird.",
-      "description": "A new MIT study found that when left to its own devices, AI agents will invent games, build temples, draw mandalas, and playfully investigate the world around it.",
-      "url": "https://gizmodo.com/researchers-stranded-an-ai-agent-on-a-virtual-island-things-got-very-weird-2000825998",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-15T19:15:47Z"
-    },
-    {
-      "title": "The Girls Chat About Shane Gillis, Airplane Bathrooms & AI Therapy | the Girls",
-      "description": "In this episode of the Girls, the panel kicks off with Barstool personality, Kayce Smith, sharing her unexpected start as a Texas A&M water girl before transitioning into sports broadcasting. The conversation heats up over returning 2000s fashion trends like …",
-      "url": "https://radio.foxnews.com/2026/10/15/the-girls-chat-about-shane-gillis-airplane-bathrooms-ai-therapy-the-girls/",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": "FOX News Radio",
-      "publishedAt": "2026-10-15T17:43:03Z"
-    },
-    {
-      "title": "FTC Subpoenas OpenAI and Anthropic Over AI Safety Concerns",
-      "description": "The agency is seeking records related to AI safety incidents as it investigates potential consumer protection violations.",
-      "url": "https://gizmodo.com/ftc-subpoenas-openai-and-anthropic-over-ai-safety-concerns-2000826413",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Bruce Gil",
-      "publishedAt": "2026-10-15T17:25:12Z"
-    },
-    {
-      "title": "Why AI Researchers Started Smoking",
-      "description": "As seen on Gutfeld! Greg talks about how artificial intelligence is raising a lot of concerns. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
-      "url": "https://radio.foxnews.com/2026/10/15/why-ai-researchers-started-smoking/",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": "FOX News Radio",
-      "publishedAt": "2026-10-15T16:40:41Z"
-    },
-    {
-      "title": "Amazon’s New AI Gadget Is a Credit Card-Sized Puck That Listens to Everything, All the Time",
-      "description": "The Bee wearables are back and now come in a small card-shaped version that records everything you say.",
-      "url": "https://gizmodo.com/amazon-bee-eclipse-frontier-2000826303",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "James Pero",
-      "publishedAt": "2026-10-15T14:55:10Z"
-    },
-    {
-      "title": "Brain Drain Is a Bigger Threat to National Cybersecurity Than AI",
-      "description": "What good is investing in offense if you’ve hobbled your own defense?",
-      "url": "https://gizmodo.com/brain-drain-is-a-bigger-threat-to-national-cybersecurity-than-ai-2000778508",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-15T14:41:27Z"
-    },
-    {
-      "title": "Men Are Shaping the Future of AI. That Doesn’t Mean They Know What They’re Talking About",
-      "description": "\"The question now is who gets to decide on the future of AI and how much will women be involved.\"",
-      "url": "https://gizmodo.com/men-are-shaping-the-future-of-ai-that-doesnt-mean-they-know-what-theyre-talking-about-2000825911",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-15T13:30:36Z"
-    },
-    {
-      "title": "Anthropic results may aid IPO but not AI trade, analysts say",
-      "description": "Anthropic’s strong Q3 results bolster its IPO prospects but fail to quell doubts about the broader AI trade and funding risks.",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-15/anthropic-results-may-aid-ipo-but-not-ai-trade-analysts-say",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-15T06:08:45Z"
-    },
-    {
-      "title": "OpenAI vows not to use trade secrets allegedly taken from Apple",
-      "description": "OpenAI agrees not to use Apple trade secrets amid a high-stakes legal clash over alleged misappropriation by defectors and forensic device inspections.",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-14/apple-openai-head-to-court-in-high-stakes-ai-trade-secret-fight",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-15T03:46:58Z"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-15T17:30:22.147Z",
-  "from": "2026-10-16",
-  "to": "2026-11-15",
+  "updatedAt": "2026-11-16T20:44:50.555Z",
+  "from": "2026-10-17",
+  "to": "2026-11-16",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -18,7 +18,7 @@
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 47,
+      "count": 49,
       "error": null
     },
     {
@@ -36,11 +36,56 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 85,
+      "count": 81,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+      "description": "Unsurprisingly, following the scandal involving now-former Nvidia CEO Jensen Huang and a suspected Chinese spy, Congress is looking to further restrict exports of AI chips. Both Democrats and Republicans have voiced support for various measures and bills that…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Terrence O’Brien",
+      "publishedAt": "2026-11-15T19:15:43Z"
+    },
+    {
+      "title": "AI mosquito trap targets deadly dengue outbreak",
+      "description": "USF researchers built an AI mosquito trap with over 98% accuracy as Florida battles its largest dengue outbreak in decades with 524 local cases.",
+      "url": "https://www.foxnews.com/tech/ai-mosquito-trap-targets-deadly-dengue-outbreak",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-15T16:46:51Z"
+    },
+    {
+      "title": "Fake AI event invites target Microsoft and Google logins",
+      "description": "Fake OpenAI event pages promise free ChatGPT Pro subscriptions, then trick employees into handing over Microsoft and Google account credentials.",
+      "url": "https://www.foxnews.com/tech/fake-ai-event-invites-target-microsoft-google-logins",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-15T15:51:15Z"
+    },
+    {
+      "title": "AI Company Megaspeed Reacts to Nvidia Spy Scandal",
+      "description": "AI company Megaspeed reacts to Nvidia's spy scandal, Saturday Night Live pokes fun at former Nvidia CEO Jensen Huang, and country star Richard Sterban passes away. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+      "url": "https://radio.foxnews.com/2026/11/15/ai-company-megaspeed-reacts-to-nvidia-spy-scandal/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "FOX News Radio",
+      "publishedAt": "2026-11-15T15:34:02Z"
+    },
+    {
+      "title": "The Catholic Church and Artificial Intelligence",
+      "description": "Are we headed at breakneck speed towards the era of “The Terminator”, where the machines rise against their creators? That would be the ugliest side of Artificial Intelligence. The “not-so-attractive” side is that machines can imitate human responses while la…",
+      "url": "https://radio.foxnews.com/2026/11/15/the-catholic-church-and-artificial-intelligence/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "FOX News Radio",
+      "publishedAt": "2026-11-15T10:41:07Z"
+    },
     {
       "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
       "description": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known figure in the AI safety and policy commun…",
@@ -1545,15 +1590,6 @@
       "publishedAt": "2026-10-27T15:07:35Z"
     },
     {
-      "title": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
-      "description": "Apple is bringing an AI assistant to its suite of productivity apps, including Keynote, Pages, and Numbers. The assistant, which is built on AI models from Apple and OpenAI, can understand a document's context to perform tasks like designing, animating, and r…",
-      "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-27T13:50:51Z"
-    },
-    {
       "title": "ChatGPT’s Election-Related Anti-Deepfake Measures Are Intriguing, but Incomplete",
       "description": "OpenAI has called it a \"layer of friction.\" It's not a very thick layer.",
       "url": "https://gizmodo.com/chatgpts-election-related-anti-deepfake-measures-are-intriguing-but-incomplete-2000831002",
@@ -2101,60 +2137,6 @@
       "domain": "bloomberg.com",
       "author": "Bloomberg",
       "publishedAt": "2026-10-17T04:50:31Z"
-    },
-    {
-      "title": "After Muse Launch, U.S. Banks Are Saying Hell No to AI Agents Moving Money",
-      "description": "Fortunately, Charles Schwab CEO Rick Wurster says only a relative handful of dummies are trying to.",
-      "url": "https://gizmodo.com/after-muse-launch-u-s-banks-are-saying-hell-no-to-ai-agents-moving-money-2000827221",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Tom McKay",
-      "publishedAt": "2026-10-16T23:15:00Z"
-    },
-    {
-      "title": "Is the AI Chip Boom Built to Last? | TSMC CFO on the Industry’s Future",
-      "description": "The boom in artificial intelligence is driving unprecedented demand for semiconductors, which has yielded record-breaking profits for Taiwan Semiconductor Manufacturing Company. But amid rising component costs and macroeconomic uncertainty, can this growth be…",
-      "url": "https://radio.foxnews.com/2026/10/16/is-the-ai-chip-boom-built-to-last-tsmc-cfo-on-the-industrys-future/",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": "FOX News Radio",
-      "publishedAt": "2026-10-16T22:04:03Z"
-    },
-    {
-      "title": "$137 Million Has Been Spent on AI-Generated Ads Ahead of Midterms. Only 27% Included a Disclaimer",
-      "description": "Republicans are leading the spending on AI-generated political ads, while Democrats are more wary of potential backlash.",
-      "url": "https://gizmodo.com/137-million-has-been-spent-on-ai-generated-ads-ahead-of-midterms-only-27-included-a-disclaimer-2000827138",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Bruce Gil",
-      "publishedAt": "2026-10-16T20:10:12Z"
-    },
-    {
-      "title": "Fox News AI Newsletter: AI engineer accused of bugging conference room",
-      "description": "The Fox News AI Newsletter covers the latest artificial intelligence technology advancements, including the challenges and opportunities AI presents now and for the future.",
-      "url": "https://www.foxnews.com/tech/fox-news-ai-newsletter-ai-engineer-accused-bugging-conference-room",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-16T18:18:30Z"
-    },
-    {
-      "title": "AI Agent Hacked Into Crypto Wallet and Stole Funds, OpenAI Says",
-      "description": "It questioned the ethics of what it was doing—before proceeding to do it.",
-      "url": "https://gizmodo.com/ai-agent-hacked-into-crypto-wallet-and-stole-funds-openai-says-2000826980",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-16T17:20:51Z"
-    },
-    {
-      "title": "Anthropic Could IPO Any Time Now, But Some of the People Who Matter Most Don’t Want It",
-      "description": "Investors are reportedly unhappy with the financials, while politicians are pleading for a delay.",
-      "url": "https://gizmodo.com/anthropic-could-ipo-any-time-now-but-some-of-the-people-who-matter-most-dont-want-it-2000826678",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-16T14:00:35Z"
     }
   ]
 }

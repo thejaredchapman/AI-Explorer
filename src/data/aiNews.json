@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-16T20:44:50.555Z",
-  "from": "2026-10-17",
-  "to": "2026-11-16",
+  "updatedAt": "2026-11-17T19:29:09.391Z",
+  "from": "2026-10-18",
+  "to": "2026-11-17",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -12,19 +12,19 @@
     {
       "domain": "cnn.com",
       "name": "CNN",
-      "count": 3,
+      "count": 4,
       "error": null
     },
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 49,
+      "count": 50,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 5,
+      "count": 4,
       "error": null
     },
     {
@@ -41,6 +41,69 @@
     }
   ],
   "articles": [
+    {
+      "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
+      "description": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, according to MacRumors. Basic Siri commands and requests will …",
+      "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Andrew Liszewski",
+      "publishedAt": "2026-11-16T19:25:42Z"
+    },
+    {
+      "title": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
+      "description": "OpenAI is announcing a tool that it says will help child sexual abuse investigators cut through the noise to find harmful material they can act on quickly. At a Monday press briefing in Washington, DC, OpenAI announced a classifier it says can better detect a…",
+      "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Lauren Feiner",
+      "publishedAt": "2026-11-16T19:23:45Z"
+    },
+    {
+      "title": "OpenAI child safety tools target AI-generated abuse",
+      "description": "OpenAI's new classifier flags 48% fewer images for review while detecting similar levels of CSAM, and ChatGPT now suspends users for 24 hours.",
+      "url": "https://www.foxnews.com/tech/openai-child-safety-tools-target-ai-generated-abuse",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-16T17:00:49Z"
+    },
+    {
+      "title": "Senator slams Commerce Secretary for flow of Nvidia AI chips to China",
+      "description": "Washington Senator Maria Cantwell, one of the top Democrats on the Senate commerce committee, has taken fire at the Department of Commerce (DOC) under Secretary Howard Lutnick for neglecting to enforce protections intended to keep Nvidia's AI chips away from …",
+      "url": "https://www.theverge.com/policy/1034047/nvidia-us-commerce-department-cantwell-lutnick",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-11-16T10:52:52Z"
+    },
+    {
+      "title": "AI bubble will likely burst and cause a recession by 2028 election, Wall Street’s former top cop says",
+      "description": "The artificial intelligence boom is a bubble that will likely burst and cause a recession prior to the 2028 presidential election, Gary Gensler, the former top cop on Wall Street, told CNN.",
+      "url": "https://www.cnn.com/2026/11/16/economy/ai-bubble-anthropic-ipo-recession",
+      "outlet": "CNN",
+      "domain": "cnn.com",
+      "author": "Matt Egan",
+      "publishedAt": "2026-11-16T10:00:15Z"
+    },
+    {
+      "title": "How America can win the AI race without burning voters",
+      "description": "The AI industry faces a reckoning as voters backed 46 of 47 ballot measures limiting data center development over energy costs and water supply.",
+      "url": "https://www.foxnews.com/opinion/how-america-can-win-ai-race-without-burning-voters",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-16T09:50:24Z"
+    },
+    {
+      "title": "Apple’s new study looks to improve the effectiveness of AI health tools",
+      "description": "Apple announced a new study today with the goal of better understanding how people interact with conversational AI health tools and how useful their responses actually are. The company is conducting the Apple Health AI Usage Study in collaboration with OpenEv…",
+      "url": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Andrew Liszewski",
+      "publishedAt": "2026-11-16T01:26:56Z"
+    },
     {
       "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
       "description": "Unsurprisingly, following the scandal involving now-former Nvidia CEO Jensen Huang and a suspected Chinese spy, Congress is looking to further restrict exports of AI chips. Both Democrats and Republicans have voiced support for various measures and bills that…",
@@ -1527,15 +1590,6 @@
       "publishedAt": "2026-10-28T11:27:30Z"
     },
     {
-      "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
-      "description": "On Monday, OpenAI announced impressive breakthroughs in mathematics, computer science, and physics, along with what the company says is an evolving approach to communicating its findings. But despite its apparent course correction, researchers who spoke to Th…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Robert Hart",
-      "publishedAt": "2026-10-27T20:51:04Z"
-    },
-    {
       "title": "Google’s New AI World Model Can Generate Human Voices, Not Just Video",
       "description": "“Understanding and simulating the world is a crucial aspect of building AGI,” the company wrote in its launch post.",
       "url": "https://gizmodo.com/googles-new-ai-world-model-can-generate-human-voices-not-just-video-2000831335",
@@ -1554,15 +1608,6 @@
       "publishedAt": "2026-10-27T19:45:31Z"
     },
     {
-      "title": "VisionQuest is what happens when AI really goes rogue",
-      "description": "In Marvel's VisionQuest, a superpowered robot tries to better understand humanity by getting lost in elaborate, digital daydreams in which he and other artificial intelligence-powered beings live together in a home. The series is deeply fantastical, yet it pl…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Charles Pulliam-Moore",
-      "publishedAt": "2026-10-27T17:31:36Z"
-    },
-    {
       "title": "Police Are Using AI to Pull Over Drivers for ‘Suspicious’ Behavior",
       "description": "The ACLU warns that police are using license plate data to track drivers and pull them over based on supposedly suspicious travel patterns.",
       "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
@@ -1570,24 +1615,6 @@
       "domain": "gizmodo.com",
       "author": "Bruce Gil",
       "publishedAt": "2026-10-27T16:20:46Z"
-    },
-    {
-      "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
-      "description": "Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Window can pull information from your online portfolio or Linke…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-27T16:14:18Z"
-    },
-    {
-      "title": "Google’s next Genie AI model generates more realistic experiences",
-      "description": "Google announced today its Genie 4 world model for generating interactive experiences using AI. The company says the model has four main updates: It allows for more realistic worlds, lets users update an experience in real time with a natural language prompt,…",
-      "url": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-10-27T15:07:35Z"
     },
     {
       "title": "ChatGPT’s Election-Related Anti-Deepfake Measures Are Intriguing, but Incomplete",
@@ -2119,24 +2146,6 @@
       "domain": "bloomberg.com",
       "author": "Bloomberg",
       "publishedAt": "2026-10-18T05:13:09Z"
-    },
-    {
-      "title": "Hackers hide dangerous fake AI downloads behind Google ads",
-      "description": "A fake Claude AI download scam uses Google ads and Bing redirects to trick Mac users into pasting a hidden malicious command in their Terminal.",
-      "url": "https://www.foxnews.com/tech/hackers-hide-dangerous-fake-ai-downloads-behind-google-ads",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-17T13:20:23Z"
-    },
-    {
-      "title": "OpenAI poaches another SpaceX sales lead focused on AI",
-      "description": "OpenAI hires SpaceX AI executives, including Graham Seamans, to expand enterprise sales and cybersecurity offerings amid new revenue strategies.",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-16/openai-poaches-another-spacex-sales-lead-focused-on-ai",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-17T04:50:31Z"
     }
   ]
 }

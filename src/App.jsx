@@ -145,6 +145,7 @@ function App() {
         <div className="footer-content">
           <p className="footer-main"><strong>AI-Explorer</strong>: an interactive field guide to understanding AI from the ground up.</p>
           <p className="footer-credit">Made by <a href="https://www.linkedin.com/in/thejaredchapman/" target="_blank" rel="noopener noreferrer">Jared Chapman</a></p>
+          <p className="footer-credit">This site is updated with Anthropic's Claude Agent SDK.</p>
           <div className="footer-links">
             <a href="https://github.com/thejaredchapman/AI-Explorer" target="_blank" rel="noopener noreferrer">GitHub</a>
             <span className="footer-divider">|</span>

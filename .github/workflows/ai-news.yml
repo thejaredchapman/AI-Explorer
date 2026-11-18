@@ -38,15 +38,22 @@ jobs:
         continue-on-error: true
         run: node scripts/fetch-community-events.mjs
 
+      # Stamp the site's "updated" date (Hero, Model Lab) with today's run date.
+      - name: Set dataAsOf to today
+        run: |
+          TODAY=$(date -u +%F)
+          sed -i -E "s/^export const dataAsOf = '[0-9]{4}-[0-9]{2}-[0-9]{2}';/export const dataAsOf = '$TODAY';/" src/data/llmData.js
+          grep -q "^export const dataAsOf = '$TODAY';" src/data/llmData.js
+
       - name: Check the site still builds
         run: |
           npm ci
           npm run build
 
-      # Only the two data files are committed. Vercel redeploys on the push.
+      # Only the data files are committed. Vercel redeploys on the push.
       - name: Commit updated data
         run: |
-          FILES="src/data/aiNews.json src/data/communityEvents.json"
+          FILES="src/data/aiNews.json src/data/communityEvents.json src/data/llmData.js"
           if git diff --quiet -- $FILES; then
             echo "No changes." >> "$GITHUB_STEP_SUMMARY"
             exit 0

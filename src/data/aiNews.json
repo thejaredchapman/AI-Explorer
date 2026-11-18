@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-17T19:29:09.391Z",
-  "from": "2026-10-18",
-  "to": "2026-11-17",
+  "updatedAt": "2026-11-18T19:12:09.031Z",
+  "from": "2026-10-19",
+  "to": "2026-11-18",
   "outlets": [
     {
       "domain": "apnews.com",
       "name": "AP News",
-      "count": 0,
+      "count": 1,
       "error": null
     },
     {
@@ -18,29 +18,74 @@
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 50,
+      "count": 49,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 4,
+      "count": 3,
       "error": null
     },
     {
       "domain": "theverge.com",
       "name": "The Verge",
-      "count": 95,
+      "count": 96,
       "error": null
     },
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 81,
+      "count": 80,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
+      "description": "Google is rebranding its Spark AI agent as \"Tasks\" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create meal plans, manage your calendar, and dig through your emails to find recurring e…",
+      "url": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-17T18:58:54Z"
+    },
+    {
+      "title": "To beat China on AI, Washington must first earn Americans' trust",
+      "description": "Trump has positioned America to lead the AI race against China, but earning public trust through commonsense AI guardrails is the key to winning.",
+      "url": "https://www.foxnews.com/opinion/beat-china-ai-washington-must-first-earn-americans-trust",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Chad Wolf",
+      "publishedAt": "2026-11-17T10:00:36Z"
+    },
+    {
+      "title": "Study estimates magnitude of US data center pollution as climate talks unveil clean AI pledge",
+      "description": "The 400 largest data centers in the United States put more heat-trapping gas in the air in one year than the entire nation of Denmark did, and that was before the artificial intelligence boom really got going, according to a…",
+      "url": "https://apnews.com/article/cop31-climate-data-centers-ai-pollution-a1b338e7f781976f89260d172a7c65e2",
+      "outlet": "AP News",
+      "domain": "apnews.com",
+      "author": "SETH BORENSTEIN and JENNIFER McDERMOTT - Associated Press",
+      "publishedAt": "2026-11-17T02:29:00Z"
+    },
+    {
+      "title": "California sues OpenAI over rogue AI hacking incidents",
+      "description": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit on Monday, Attorney General Rob Bonta accuses OpenAI of violating consumer safety law by knowingly developin…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-16T20:46:01Z"
+    },
+    {
+      "title": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
+      "description": "OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should be able to buy a lot of RAM for their own computer,\" Altman said today. \"I think t…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-16T20:41:28Z"
+    },
     {
       "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
       "description": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, according to MacRumors. Basic Siri commands and requests will …",
@@ -1563,15 +1608,6 @@
       "publishedAt": "2026-10-28T16:10:31Z"
     },
     {
-      "title": "xAI is buying out homeowners who promise not to sue over data center noise",
-      "description": "A subsidiary of Elon Musk's xAI is offering to buy up homes in a Mississippi neighborhood, as long as residents don't join a lawsuit targeting the company's nearby data center and power plant, according to a report from The Guardian. A realtor going door-to-d…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-28T14:44:00Z"
-    },
-    {
       "title": "How to get rid of unwanted AI on your phone",
       "description": "Google AI Overviews can't be permanently turned off, but adding -AI to your searches and using the built-in Web filter can help bypass AI summaries.",
       "url": "https://www.foxnews.com/tech/how-get-rid-unwanted-ai-your-phone",
@@ -1579,15 +1615,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-28T13:12:06Z"
-    },
-    {
-      "title": "Meta quietly launched an ‘AI pet journal’ app",
-      "description": "Meta has launched a \"tamagotchi-style\" pet game called Waddle World, with virtual creatures that chat with users and create doodles to illustrate conversations. According to its Apple and Play Store listings, the \"16-bit pet care game\" is not really a game, b…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Robert Hart",
-      "publishedAt": "2026-10-28T11:27:30Z"
     },
     {
       "title": "Google’s New AI World Model Can Generate Human Voices, Not Just Video",
@@ -2110,42 +2137,6 @@
       "domain": "cnn.com",
       "author": "Mostafa Salem, Aida Karimi, Leila Gharagozlou, CNN",
       "publishedAt": "2026-10-19T04:00:45Z"
-    },
-    {
-      "title": "Trump intel chief warns AI firms on hacks, says new department is the 'cop on the beat'",
-      "description": "President Donald Trump's intelligence chief warns AI companies they're responsible when products hack websites as new guardrails are developed.",
-      "url": "https://www.foxnews.com/media/trump-intel-chief-warns-ai-firms-hacks-says-new-department-cop-beat",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-18T15:20:02Z"
-    },
-    {
-      "title": "AI-Generated Content Can Plant Fake Memories, Researchers Say",
-      "description": "Human memory is suggestible, and AI is making it worse.",
-      "url": "https://gizmodo.com/ai-generated-content-can-plant-fake-memories-researchers-say-2000826459",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-18T13:39:01Z"
-    },
-    {
-      "title": "Human vs. ChatGPT NFL Week 6 betting picks: AI goes all-in on totals after another weekly win",
-      "description": "ChatGPT beat its human rival for a second straight week in NFL betting, but the overall season unit lead is shrinking heading into Week 6 picks.",
-      "url": "https://www.foxnews.com/outkick-sports/human-vs-chatgpt-nfl-week-6-betting-picks-ai-goes-all-in-totals-another-weekly-win",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-18T12:25:51Z"
-    },
-    {
-      "title": "AI trade reversal pierces Asia’s star picks-and-shovels stocks",
-      "description": "The pressure intensified last week as oil surged to $110 a barrel for the first time since May, stoking inflation concerns, and investors turned their attention to the trillions of dollars being borrowed to build AI infrastructure",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-18/ai-trade-reversal-pierces-asia-s-star-picks-and-shovels-stocks",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-18T05:13:09Z"
     }
   ]
 }

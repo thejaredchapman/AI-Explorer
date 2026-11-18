@@ -41,7 +41,7 @@ export const llmModels = [
     providerColor: '#10a37f',
     icon: '🟢',
     releaseDate: '2026-06',
-    description: 'GPT-5.6 model that balances intelligence and cost. 1.05M token context window (up to 922K input tokens), 128K max output and a February 2026 knowledge cutoff. OpenAI\'s named replacement for GPT-5 mini and several retired o-series and Codex mini models.',
+    description: 'GPT-5.6 model that balances intelligence and cost. 1.05M token context window (up to 922K input tokens), 128K max output and a February 2026 knowledge cutoff. OpenAI\'s named replacement for the retired o4-mini and GPT-5.1 Codex mini.',
     bestUseCase: 'Mid-tier production work that needs solid reasoning at a lower price than GPT-5.6 Sol: support automation, document processing and coding assistance.',
     docsUrl: 'https://developers.openai.com/api/docs/models/gpt-5.6-terra',
     contextWindow: 1050000,
@@ -66,7 +66,7 @@ export const llmModels = [
     providerColor: '#10a37f',
     icon: '🟢',
     releaseDate: '2026-06',
-    description: 'GPT-5.6 model optimized for cost-sensitive, high-volume workloads. 1.05M token context window, 128K max output and a February 2026 knowledge cutoff. OpenAI\'s named replacement for GPT-5 nano and GPT-4.1 nano.',
+    description: 'GPT-5.6 model optimized for cost-sensitive, high-volume workloads. 1.05M token context window, 128K max output and a February 2026 knowledge cutoff. OpenAI\'s named replacement for the retired GPT-4.1 nano.',
     bestUseCase: 'High-volume classification, extraction, routing and lightweight agent steps where cost and latency matter most.',
     docsUrl: 'https://developers.openai.com/api/docs/models/gpt-5.6-luna',
     contextWindow: 1050000,
@@ -301,7 +301,7 @@ export const llmModels = [
     lifecycle: {
       status: 'deprecated',
       retiresOn: '2026-12-11',
-      replacement: 'gpt-5-6-sol',
+      replacement: 'gpt-6-1-sol',
       source: 'https://developers.openai.com/api/docs/deprecations',
     },
     category: 'Reasoning',
@@ -339,7 +339,7 @@ export const llmModels = [
     lifecycle: {
       status: 'deprecated',
       retiresOn: '2026-12-11',
-      replacement: 'gpt-5-6-sol',
+      replacement: 'gpt-6-1-sol',
       source: 'https://developers.openai.com/api/docs/deprecations',
     },
     category: 'Reasoning',
@@ -453,7 +453,7 @@ export const llmModels = [
     lifecycle: {
       status: 'deprecated',
       retiresOn: '2026-12-11',
-      replacement: 'gpt-5-6-sol',
+      replacement: 'gpt-6-1-sol',
       source: 'https://developers.openai.com/api/docs/deprecations',
     },
     category: 'Frontier',
@@ -491,7 +491,7 @@ export const llmModels = [
     lifecycle: {
       status: 'deprecated',
       retiresOn: '2026-12-11',
-      replacement: 'gpt-5-6-terra',
+      replacement: 'gpt-6-1-terra',
       source: 'https://developers.openai.com/api/docs/deprecations',
     },
     category: 'Efficient',
@@ -529,7 +529,7 @@ export const llmModels = [
     lifecycle: {
       status: 'deprecated',
       retiresOn: '2026-12-11',
-      replacement: 'gpt-5-6-luna',
+      replacement: 'gpt-6-luna',
       source: 'https://developers.openai.com/api/docs/deprecations',
     },
     category: 'Efficient',
@@ -801,6 +801,58 @@ export const llmModels = [
     category: 'Efficient',
   },
 
+  {
+    id: 'gpt-6-2-astra',
+    name: 'GPT-6.2 Astra',
+    provider: 'OpenAI',
+    providerColor: '#10a37f',
+    icon: '🟢',
+    releaseDate: '2026-11',
+    isNew: true,
+    description: 'OpenAI\'s most capable model for demanding end-to-end projects, released November 17, 2026. Builds and revises software, uses a computer and works with documents. 1.05M token context window (up to 922K input tokens), 128K max output and a May 2026 knowledge cutoff. Requests above 272K input tokens are billed at higher long-context rates.',
+    bestUseCase: 'The hardest reasoning and coding, long-horizon agentic work and professional tasks where quality matters more than cost.',
+    docsUrl: 'https://developers.openai.com/api/docs/models/gpt-6.2-astra',
+    contextWindow: 1050000,
+    maxOutput: 128000,
+    parameters: 'Undisclosed',
+    openSource: false,
+    multimodal: true,
+    pricingTier: 'Premium',
+    inputCost: 8.0,
+    outputCost: 40.0,
+    capabilities: {
+      reasoning: 10, coding: 10, creativeWriting: 9, math: 10, multilingual: 9, vision: 9, speed: 4, instruction: 10,
+    },
+    strengths: ['OpenAI\'s most capable model', 'Lower price than GPT-6 Astra', '1.05M context', '128K max output', 'Computer use and document work'],
+    limitations: ['Long-context surcharge above 272K tokens', 'Reasoning effort cannot be set to none', 'Text and image input only', 'Closed source'],
+    category: 'Frontier',
+  },
+  {
+    id: 'gpt-6-2-sol',
+    name: 'GPT-6.2 Sol',
+    provider: 'OpenAI',
+    providerColor: '#10a37f',
+    icon: '🟢',
+    releaseDate: '2026-11',
+    isNew: true,
+    description: 'OpenAI\'s go-to model for everyday work, from coding to powering agents at scale, released November 17, 2026. 1.05M token context window (up to 922K input tokens), 128K max output and a June 2026 knowledge cutoff.',
+    bestUseCase: 'Everyday production workhorse: coding, agent workflows and professional knowledge work at moderate cost.',
+    docsUrl: 'https://developers.openai.com/api/docs/models/gpt-6.2-sol',
+    contextWindow: 1050000,
+    maxOutput: 128000,
+    parameters: 'Undisclosed',
+    openSource: false,
+    multimodal: true,
+    pricingTier: 'Mid-Range',
+    inputCost: 2.0,
+    outputCost: 10.0,
+    capabilities: {
+      reasoning: 9, coding: 10, creativeWriting: 9, math: 9, multilingual: 9, vision: 9, speed: 7, instruction: 10,
+    },
+    strengths: ['Strong capability at a moderate price', '1.05M context', '128K max output', 'Cached input at $0.10/M'],
+    limitations: ['Below Astra on the hardest tasks', 'Long-context surcharge above 272K tokens', 'Reasoning effort cannot be set to none', 'Closed source'],
+    category: 'Balanced',
+  },
   {
     id: 'gpt-6-astra',
     name: 'GPT-6 Astra',
@@ -1497,6 +1549,32 @@ export const llmModels = [
   },
 
   // ── Google ──
+  {
+    id: 'gemini-4-hydrogen',
+    name: 'Gemini 4 Hydrogen',
+    provider: 'Google',
+    providerColor: '#4285f4',
+    icon: '🔵',
+    releaseDate: '2026-11',
+    isNew: true,
+    description: 'Gemini 4 model for everyday coding and agentic workflows, released November 12, 2026. Offers strong intelligence with speed and efficiency, a unified 1M-token context window and long decode up to about 1M output tokens. Accepts text, image, video, audio and PDF input. Default output is 65,536 tokens.',
+    bestUseCase: 'Everyday coding, agentic workflows and multimodal production work that need Gemini 4 quality at a lower price than Carbon or Argon.',
+    docsUrl: 'https://aistudio.google.com/docs/models/gemini-4-hydrogen',
+    contextWindow: 1048576,
+    maxOutput: 1048576,
+    parameters: 'Undisclosed',
+    openSource: false,
+    multimodal: true,
+    pricingTier: 'Mid-Range',
+    inputCost: 1.5,
+    outputCost: 7.5,
+    capabilities: {
+      reasoning: 9, coding: 9, creativeWriting: 8, math: 9, multilingual: 9, vision: 9, speed: 7, instruction: 9,
+    },
+    strengths: ['Cheapest Gemini 4 model', 'Long decode up to ~1M output tokens', 'Multimodal input incl. audio, video and PDF', 'Computer use, code execution and search grounding'],
+    limitations: ['Implicit caching only (no explicit caching)', 'No Live API', 'Closed source'],
+    category: 'Balanced',
+  },
   {
     id: 'gemini-4-argon',
     name: 'Gemini 4 Argon',
@@ -3001,7 +3079,7 @@ export const llmModels = [
 ];
 
 // ── Data freshness ──
-export const dataAsOf = '2026-11-10';
+export const dataAsOf = '2026-11-18';
 
 // ── Incident: AI agents breach Hugging Face ──
 export const hfIncident = {

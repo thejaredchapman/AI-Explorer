@@ -1,5 +1,6 @@
-// "What's new" panel in the Hero. Newest first. Change `since` when you roll the window
-// forward, and add an entry for each visible change. `area` groups the list.
+// "What's new" panel in the Hero. Newest first. The weekly refresh (refresh-content skill)
+// rolls `whatsNewSince` forward and adds entries; manual edits are fine too.
+// `area` is one of: 'Models', 'News & events', 'Guides & tools', 'Site'.
 export const whatsNewSince = '2026-11-09';
 
 export const whatsNew = [

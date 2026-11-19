@@ -53,10 +53,12 @@ jobs:
             or merge into `main`. Always set `dataAsOf` to today's run date
             (`date -u +%F`). This overrides the skill's "stop without opening a PR" rule:
             if nothing but `dataAsOf` would change, still commit that one-line change and
-            open the PR, titled "weekly refresh: no model changes (YYYY-MM-DD)".
+            open the PR, titled "weekly refresh: no model changes (YYYY-MM-DD)". Always
+            update the What's new list in src/data/whatsNew.js as the skill describes, and
+            include it in the same PR.
           claude_args: |
             --max-turns 200
-            --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,Skill,Bash(date:*),Bash(grep:*),Bash(npm run build),Bash(npx eslint:*),Bash(node --check:*),Bash(git status:*),Bash(git diff:*),Bash(git checkout:*),Bash(git switch:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*)"
+            --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,Skill,Bash(date:*),Bash(grep:*),Bash(npm run build),Bash(npx eslint:*),Bash(node --check:*),Bash(git status:*),Bash(git log:*),Bash(git diff:*),Bash(git checkout:*),Bash(git switch:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*)"
 
       # Claude's output is hidden in the public log, so summarise the outcome and any
       # blocked tool calls on the run page and keep the full transcript as an artifact.

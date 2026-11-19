@@ -46,8 +46,13 @@ lifecycle: {
 3. Add missing current models, copying the shape of a neighbouring entry. `category` and `pricingTier` must reuse existing values. `capabilities` are editorial 0-10 estimates.
 4. Update `lifecycle` for every model from the lifecycle pages, following the rules above. Check every `replacement` with Grep for `id: '<replacement>'` in `src/data/llmData.js`.
 5. Set `dataAsOf` to today (`date -u +%F`).
-6. Run `npm run build` and `npx eslint src/data/llmData.js`. Both must pass.
-7. Commit on a branch named `content-refresh-YYYY-MM-DD` and open a PR to `main` listing every change with its source URL, plus anything unverified. Put lifecycle changes in their own section of the PR body. Never push to `main` or merge.
+6. Update the "What's new" list in `src/data/whatsNew.js`:
+   - Set `whatsNewSince` to 7 days ago (`date -u -d '7 days ago' +%F`) and delete entries dated before it.
+   - Add one entry per visible change this run made to model data (`area: 'Models'`), dated today. Say what a reader would notice ("GPT-6 Sol pricing cut to $X / $Y per 1M tokens", "Gemini 3 Pro marked deprecated, replaced by …"). Combine small edits to the same model into one entry.
+   - Read `git log --no-merges --since=<whatsNewSince> --format='%ad %s' --date=short origin/main` and add an entry for each visible site change not already listed, using its commit date. Use `area` `'Models'`, `'News & events'`, `'Guides & tools'` or `'Site'` only. Collapse the daily `update AI news and community events` commits into one `'News & events'` entry ("Headlines and community events refreshed every day."). Skip workflow, CI, lint and refactor commits.
+   - Write for site visitors: one short plain sentence each, no commit hashes. Keep the list newest first and match the existing entry shape.
+7. Run `npm run build` and `npx eslint src/data/llmData.js src/data/whatsNew.js`. Both must pass.
+8. Commit on a branch named `content-refresh-YYYY-MM-DD` and open a PR to `main` listing every change with its source URL, plus anything unverified. Put lifecycle changes in their own section of the PR body. Never push to `main` or merge.
 
 If nothing but `dataAsOf` would change, stop without opening a PR.
 

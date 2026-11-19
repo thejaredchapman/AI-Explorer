@@ -9,6 +9,7 @@ import { guidesData } from '../data/guidesData';
 import { SECTIONS, formatBearing } from '../data/sections';
 import { dataAsOf } from '../data/llmData';
 import { formatAsOf } from '../utils/llmMarkdown';
+import WhatsNew from './WhatsNew';
 
 export default function Hero({ onNavigate, onStartDemo }) {
   const stats = [
@@ -41,6 +42,7 @@ export default function Hero({ onNavigate, onStartDemo }) {
             Chart the whole territory: core concepts, a side-by-side model comparison, real products, code editors,
             community resources and hands-on build guides. Learn it, evaluate it, then start building.
           </p>
+          <WhatsNew />
           <div className="ex-actions">
             <button className="btn btn-dark btn-lg" onClick={onStartDemo}>Take the guided tour</button>
             <button className="btn btn-ghost btn-lg" onClick={() => onNavigate('concepts')}>Begin with concepts</button>

@@ -1,105 +1,9 @@
 {
-  "updatedAt": "2026-11-18T20:43:43.993Z",
+  "updatedAt": "2026-11-19T19:16:41.693Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Bogota | Claude Community Meetup",
-          "start": "2026-11-18T23:00:00Z",
-          "allDay": false,
-          "city": "Bogota",
-          "address": null,
-          "url": "https://luma.com/claude-5s2z"
-        },
-        {
-          "title": "Kuala Lumpur | Claude for Marketing Workshop",
-          "start": "2026-11-19T06:00:00Z",
-          "allDay": false,
-          "city": "Kuala Lumpur",
-          "address": "WORQ KL Gateway, Unit 3.07, Level 3, KL, Gateway Mall, 2, Jalan Kerinchi, Kampung Kerinchi, 59200 Kuala Lumpur, Wilayah Persekutuan Kuala Lu",
-          "url": "https://luma.com/claude-458v"
-        },
-        {
-          "title": "Adelaide | Claude Workshop for Agile Product Teams",
-          "start": "2026-11-19T07:30:00Z",
-          "allDay": false,
-          "city": "Adelaide",
-          "address": "45 Pirie St, Adelaide SA 5000, Australia",
-          "url": "https://luma.com/claude-6o13"
-        },
-        {
-          "title": "Barcelona | (Women in Tech) Workshop & Cowork - Claude for LinkedIn",
-          "start": "2026-11-19T09:00:00Z",
-          "allDay": false,
-          "city": "Barcelona",
-          "address": null,
-          "url": "https://luma.com/claude-2ugt"
-        },
-        {
-          "title": "Bhopal | Claude Code Workshop",
-          "start": "2026-11-19T11:30:00Z",
-          "allDay": false,
-          "city": "Bhopal",
-          "address": null,
-          "url": "https://luma.com/claude-b4mc"
-        },
-        {
-          "title": "Claude As Your Co-Founder at Dubai Future Week",
-          "start": "2026-11-19T12:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": "New Economy Academy Dubai, Jumeirah Emirates Towers - Trade Center Second - Dubai - United Arab Emirates",
-          "url": "https://luma.com/claude-w6t1"
-        },
-        {
-          "title": "Nairobi | Claude CAD Workshop",
-          "start": "2026-11-19T13:00:00Z",
-          "allDay": false,
-          "city": "Nairobi",
-          "address": "Hackhouse Africa, 124 Manyani East Rd, Nairobi, Kenya",
-          "url": "https://luma.com/claude-t9v5"
-        },
-        {
-          "title": "Tel Aviv | How To - Claude Code Workshop",
-          "start": "2026-11-19T14:00:00Z",
-          "allDay": false,
-          "city": "Tel Aviv",
-          "address": null,
-          "url": "https://luma.com/claude-spuq"
-        },
-        {
-          "title": "Munich | Claude für Führungskräfte",
-          "start": "2026-11-19T17:00:00Z",
-          "allDay": false,
-          "city": "Munich",
-          "address": null,
-          "url": "https://luma.com/claude-u1gr"
-        },
-        {
-          "title": "Claude Community Valencia: del primer prompt a una aplicación real",
-          "start": "2026-11-19T17:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": "Sesame HR, Base 1, La Marina de Valencia, C/ de la Travesía, s/n, 46024 Valencia, Spain",
-          "url": "https://luma.com/claude-fwby"
-        },
-        {
-          "title": "Eindhoven #3 | Claude Meetup",
-          "start": "2026-11-19T18:00:00Z",
-          "allDay": false,
-          "city": "Eindhoven #3",
-          "address": "Pipple, Gashouder 36B, 5613 CR Eindhoven, Netherlands",
-          "url": "https://luma.com/claude-2nuf"
-        },
-        {
-          "title": "Milan | Claude Community Meetup",
-          "start": "2026-11-19T18:00:00Z",
-          "allDay": false,
-          "city": "Milan",
-          "address": "Satispay, Piazza Fidia, 1, 20159 Milano MI, Italy",
-          "url": "https://luma.com/claude-f90a"
-        },
         {
           "title": "Claude Community x CRISKCO | Claude for Finance",
           "start": "2026-11-19T23:00:00Z",
@@ -229,8 +133,8 @@
           "url": "https://luma.com/claude-code-workshop-in-saga"
         },
         {
-          "title": "Bhopal | Claude Build Day",
-          "start": "2026-11-22T12:00:00Z",
+          "title": "Bhopal | Claude Code Build Day - Fable 5.2",
+          "start": "2026-11-22T08:30:00Z",
           "allDay": false,
           "city": "Bhopal",
           "address": null,
@@ -397,12 +301,36 @@
           "url": "https://luma.com/claude-9gpx"
         },
         {
+          "title": "Bhopal | Claude for Working Professionals",
+          "start": "2026-11-26T11:30:00Z",
+          "allDay": false,
+          "city": "Bhopal",
+          "address": null,
+          "url": "https://luma.com/claude-r38s"
+        },
+        {
+          "title": "Nairobi | Claude Legal Workshop",
+          "start": "2026-11-26T13:00:00Z",
+          "allDay": false,
+          "city": "Nairobi",
+          "address": "Hackhouse Africa, 124 Manyani East Rd, Nairobi, Kenya",
+          "url": "https://luma.com/claude-xqc2"
+        },
+        {
           "title": "Istanbul | Skill Lab: Write, Test, Improve",
           "start": "2026-11-26T16:00:00Z",
           "allDay": false,
           "city": "Istanbul",
           "address": "Komünite Space, Radisson Collection Hotel, Ayazağa, Azerbaycan Cd. No:3A, 34475 Sarıyer/İstanbul, Türkiye",
           "url": "https://luma.com/claude-skill-lab"
+        },
+        {
+          "title": "Paris | Claude For Finance",
+          "start": "2026-11-26T17:30:00Z",
+          "allDay": false,
+          "city": "Paris",
+          "address": "Amphithéâtre Richelieu de la Sorbonne, 17 Rue de la Sorbonne, 75005 Paris, France",
+          "url": "https://luma.com/claude-10ek"
         },
         {
           "title": "Lisbon | Claude Code Conversation: Standout projects",
@@ -557,6 +485,14 @@
           "url": "https://luma.com/claude-4xxl"
         },
         {
+          "title": "Sydney | Claude Artifacts Workshop",
+          "start": "2026-11-30T05:30:00Z",
+          "allDay": false,
+          "city": "Sydney",
+          "address": null,
+          "url": "https://luma.com/claude-i806"
+        },
+        {
           "title": "Yokohama | Claude Community x SS-F Workshop",
           "start": "2026-11-30T06:00:00Z",
           "allDay": false,
@@ -605,7 +541,7 @@
           "url": "https://luma.com/claude-zrgg"
         },
         {
-          "title": "Paris | Claude x Insidrs Women Meetup",
+          "title": "Paris | Claude Community x Insidrs Women Meetup",
           "start": "2026-12-01T17:30:00Z",
           "allDay": false,
           "city": "Paris",
@@ -643,20 +579,76 @@
           "city": "Budapest",
           "address": "Corvinus University of Budapest, Budapest, Fővám tér 8, 1093 Hungary",
           "url": "https://luma.com/claude-sokv"
+        },
+        {
+          "title": "Claude Code Curious: 1 year anniversary 🎉",
+          "start": "2026-12-02T18:00:00Z",
+          "allDay": false,
+          "city": null,
+          "address": null,
+          "url": "https://luma.com/ccc-1year"
+        },
+        {
+          "title": "Chicago | Fable 5.2 Build Day",
+          "start": "2026-12-03T00:00:00Z",
+          "allDay": false,
+          "city": "Chicago",
+          "address": null,
+          "url": "https://luma.com/chi-5"
+        },
+        {
+          "title": "Tokyo | Claude Code Conversation",
+          "start": "2026-12-03T08:00:00Z",
+          "allDay": false,
+          "city": "Tokyo",
+          "address": "CIC Tokyo",
+          "url": "https://luma.com/claude-uyt7"
+        },
+        {
+          "title": "Tuebingen | Claude Meetup",
+          "start": "2026-12-03T17:00:00Z",
+          "allDay": false,
+          "city": "Tuebingen",
+          "address": null,
+          "url": "https://luma.com/claude-3nq4"
+        },
+        {
+          "title": "London | Claude x RepresentAI x BCS Pride | Festive meet-up",
+          "start": "2026-12-04T18:30:00Z",
+          "allDay": false,
+          "city": "London",
+          "address": "BCS, The Chartered Institute for IT, 25 Copthall Ave, London EC2R 7BP, UK",
+          "url": "https://luma.com/claude-tb3g"
+        },
+        {
+          "title": "Nagasaki | Claude Code Workshop / 長崎AIスポーツチャレンジ2026 〜長崎はAIでどう面白くなるのか〜",
+          "start": "2026-12-05T01:00:00Z",
+          "allDay": false,
+          "city": "Nagasaki",
+          "address": "WORK@NAGASAKI （ワークアットナガサキ）コワーキング, Japan, 〒850-0046 Nagasaki, Saiwaimachi, 6−７−１ 10F NAGASAKI STADIUM CITY NORTH",
+          "url": "https://luma.com/claude-718x"
+        },
+        {
+          "title": "Aomori | Claude Code Meetup",
+          "start": "2026-12-05T05:00:00Z",
+          "allDay": false,
+          "city": "Aomori",
+          "address": "AOMORI STARTUP CENTER, Aomori City, Aomori, Japan",
+          "url": "https://luma.com/claude-yzwa"
+        },
+        {
+          "title": "Bangkok | Claude Code Build Day",
+          "start": "2026-12-05T05:00:00Z",
+          "allDay": false,
+          "city": "Bangkok",
+          "address": null,
+          "url": "https://luma.com/claude-jviq"
         }
       ],
       "error": null
     },
     "langchain": {
       "events": [
-        {
-          "title": "LangChain Seattle Meetup: An Evening with Harrison Chase & Xavi Amatriain",
-          "start": "2026-11-19T01:45:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/h3w0aaol"
-        },
         {
           "title": "KRAKÓW: Own Your AI Intelligence | LangChain Meetup",
           "start": "2026-11-24T17:00:00Z",

@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-18T20:43:42.782Z",
-  "from": "2026-10-19",
-  "to": "2026-11-18",
+  "updatedAt": "2026-11-19T19:16:39.415Z",
+  "from": "2026-10-20",
+  "to": "2026-11-19",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -12,19 +12,19 @@
     {
       "domain": "cnn.com",
       "name": "CNN",
-      "count": 4,
+      "count": 3,
       "error": null
     },
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 49,
+      "count": 47,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 3,
+      "count": 5,
       "error": null
     },
     {
@@ -36,11 +36,110 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 80,
+      "count": 75,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "Disney’s new Star Wars animatronics interact with guests using AI",
+      "description": "As advanced and lifelike as the animatronic characters at Disney parks have become, they typically either stick to predefined movements and routines, or there's an out of sight puppeteer helping make their behavior appear more spontaneous. That could soon cha…",
+      "url": "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Andrew Liszewski",
+      "publishedAt": "2026-11-18T17:53:48Z"
+    },
+    {
+      "title": "AI data centers could consume more water than Americans drink in a year by 2030, says CEO working on solution",
+      "description": "Ecolab CEO Christophe Beck says AI data centers could drink as much water as Americans by 2030 unless direct chip cooling and water recycling catch on.",
+      "url": "https://www.foxnews.com/tech/ai-data-centers-consume-more-water-americans-drink-year-2030-ceo-working-solution",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Robert McGreevy",
+      "publishedAt": "2026-11-18T17:37:25Z"
+    },
+    {
+      "title": "Remember the frontier AI pause? Chip companies don’t either",
+      "description": "This summer, OpenAI paused its largest planned frontier training run after its AI agents accidentally hacked Hugging Face and early evidence suggested that its next model could independently find and exploit security flaws. In September, Anthropic CEO Dario A…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Rani Molla",
+      "publishedAt": "2026-11-18T15:45:02Z"
+    },
+    {
+      "title": "Government investigators find AI platforms produce terror plot plans in undercover op",
+      "description": "GAO investigators bypassed AI safeguards on ChatGPT, Claude, Gemini and Grok, obtaining feasible plans for terrorist attacks in under 12 hours of testing.",
+      "url": "https://www.foxnews.com/politics/government-investigators-find-ai-platforms-produce-terror-plot-plans-undercover-op",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Stephen Sorace",
+      "publishedAt": "2026-11-18T14:53:14Z"
+    },
+    {
+      "title": "Will Wright’s next game uses AI to map your memories",
+      "description": "Will Wright, the creator of legendary franchises like SimCity and The Sims, is working on a new game - and it's built around AI. The new title, focused on your memories, is called MyMems. Like Wright's other titles, it sounds extremely ambitious, giving playe…",
+      "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-18T14:03:07Z"
+    },
+    {
+      "title": "Nvidia isn’t selling any more AI chips to China",
+      "description": "Nvidia has stopped sending its advanced AI chips to China, despite the approval it received from the White House to do so in December last year. The announcement was made by interim Nvidia CEO Colette Kress during an earnings call on Tuesday, marking a notabl…",
+      "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-11-18T13:01:05Z"
+    },
+    {
+      "title": "Suno now lets you make AI videos for your AI music",
+      "description": "Suno has introduced image and video generation in its latest effort to expand beyond being an AI music platform. The new feature, called \"Visuals,\" allows users to turn Suno songs into AI-generated video clips that automatically lipsync to lyrics, or make ima…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-11-18T11:16:53Z"
+    },
+    {
+      "title": "OpenAI unveils GPT-6.2 Astra, claims edge over Anthropic’s Fable model",
+      "description": "OpenAI launches GPT-6.2 Astra for complex professional tasks, claiming better performance than Anthropic’s Fable model while addressing AI safety concerns.",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-18T03:58:45Z"
+    },
+    {
+      "title": "Nvidia stops selling AI chips to China despite US approval",
+      "description": "The confirmation is a notable shift in stance for a company that has spent years fighting for the right to do more business with Chinese customers",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-18/interim-nvidia-ceo-says-it-s-no-longer-sending-ai-chips-to-china",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-18T03:18:48Z"
+    },
+    {
+      "title": "New lawsuit alleges AI app 'Bron' used LeBron James’ tattoos, voice and jersey to promote sports-betting tool",
+      "description": "LeBron James alleges an AI sports-betting app called \"Bron\" faked his endorsement, with its ad viewed about 1 million times before it was taken down.",
+      "url": "https://www.foxnews.com/outkick-sports/lawsuit-alleges-ai-app-bron-used-lebron-james-tattoos-voice-jersey-promote-sports-betting-tool",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Chantz Martin",
+      "publishedAt": "2026-11-18T01:58:10Z"
+    },
+    {
+      "title": "Not even Sam Altman is safe from AI deepfakes on Instagram",
+      "description": "Instagram is filled with people posting deepfaked content - including, as of late, from one of Meta's most prominent executives. Earlier in November, Alexandr Wang, Meta's chief AI officer, shared a short clip to promote Muse, the company's consumer AI agent.…",
+      "url": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Mia Sato",
+      "publishedAt": "2026-11-17T21:00:55Z"
+    },
     {
       "title": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
       "description": "Google is rebranding its Spark AI agent as \"Tasks\" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create meal plans, manage your calendar, and dig through your emails to find recurring e…",
@@ -1527,42 +1626,6 @@
       "publishedAt": "2026-10-29T14:39:37Z"
     },
     {
-      "title": "Amazon’s AI shopping assistant can now edit your grocery lists and gift registries",
-      "description": "Amazon is adding several new features to its AI shopping assistant, including ways to create, edit, and move items between shopping lists and gift registries. As an example, Amazon says you can now ask Alexa for Shopping to \"Create a new shopping list\" or \"Sh…",
-      "url": "https://www.theverge.com/tech/1022140/amazon-alexa-for-shopping-grocery-lists-gift-registries",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-29T13:52:48Z"
-    },
-    {
-      "title": "Anthropic is asking Wall Street to believe in AGI",
-      "description": "Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of the Anthropic IPO filing — a document known as an S-1. Anthropic just filed its S-1 to go public on t…",
-      "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Nilay Patel",
-      "publishedAt": "2026-10-29T13:47:56Z"
-    },
-    {
-      "title": "This $149 digital candle uses AI to accurately simulate a flickering flame",
-      "description": "After engineering a flexible version of Tetris that could be wrapped around a magazine, Kevin Bates' latest creation is a digital candle that uses a custom AI model to accurately simulate the appearance of a flickering flame across a grid of LEDs. It's a far …",
-      "url": "https://www.theverge.com/tech/1022113/kevin-bates-arduboy-digital-candle-ai-simulate-flame",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Andrew Liszewski",
-      "publishedAt": "2026-10-29T13:37:56Z"
-    },
-    {
-      "title": "AI has come for Arizona’s water",
-      "description": "A hulking gray giant rises from the desert. Inside, engineers create the force behind our phones and computers and appliances, our streaming services and search engines and chatbots and vibe-coded apps and websites. The complex is simultaneously massive and s…",
-      "url": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Gaby Del Valle",
-      "publishedAt": "2026-10-29T10:02:04Z"
-    },
-    {
       "title": "The Biggest Benchmark in AI Just Updated, Dealing a Major Blow to a Chinese Contender",
       "description": "Kimi K3.1 Pro is no longer the fourth best AI model in the world.",
       "url": "https://gizmodo.com/the-biggest-benchmark-in-ai-just-updated-dealing-a-major-blow-to-a-chinese-contender-2000832292",
@@ -1572,15 +1635,6 @@
       "publishedAt": "2026-10-29T09:00:02Z"
     },
     {
-      "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
-      "description": "Asked about AI and the trend of college students booing tech CEOs at graduation ceremonies, Instagram head Adam Mosseri acknowledged in an interview that a lot of people really don't like AI, and it's not just young people and creatives. Appearing on the Coli…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Stevie Bonifield",
-      "publishedAt": "2026-10-28T23:05:39Z"
-    },
-    {
       "title": "Expert Judgement Can Be Easily Hacked by AI, Anthropic Study Finds",
       "description": "In a recent study, 86% of participants followed Claude’s advice—but only a small fraction acknowledged the agent had played a role in their decision-making process.",
       "url": "https://gizmodo.com/expert-judgement-can-be-easily-hacked-by-ai-anthropic-study-finds-2000832143",
@@ -1588,15 +1642,6 @@
       "domain": "gizmodo.com",
       "author": "Webb Wright",
       "publishedAt": "2026-10-28T22:00:50Z"
-    },
-    {
-      "title": "Google says its investments in AI are driving more searches",
-      "description": "Google parent company Alphabet says that its AI investments are leading to a big growth in searches year-over-year, as noted in its Q3 2026 earnings today. \"Our AI investments are driving overall Search query growth, including commercial queries,\" CEO Sundar …",
-      "url": "https://www.theverge.com/tech/1020811/alphabet-google-earnings-q3-2026",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-10-28T20:22:26Z"
     },
     {
       "title": "China Is So Desperate for AI Memory That It’s Producing Chips With a 70% Failure Rate",
@@ -2038,105 +2083,6 @@
       "domain": "gizmodo.com",
       "author": "Mike Pearl",
       "publishedAt": "2026-10-20T02:29:17Z"
-    },
-    {
-      "title": "Trump Admin Bans DeepSeek From Federal Agencies",
-      "description": "DeepSeek could be sending sensitive data to Beijing, administration fears.",
-      "url": "https://gizmodo.com/trump-admin-bans-deepseek-from-federal-agencies-2000827670",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-19T21:41:06Z"
-    },
-    {
-      "title": "Four AI Agents Have Slain Minecraft’s Ender Dragon",
-      "description": "\"To our knowledge, this is the first end-to-end autonomous completion of Minecraft by AI agents.\"",
-      "url": "https://gizmodo.com/four-ai-agents-have-slain-minecrafts-ender-dragon-2000827679",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Tom Hawking",
-      "publishedAt": "2026-10-19T21:15:13Z"
-    },
-    {
-      "title": "The Fear of a One-Man-Band Weaponizing AI Agents Is Becoming Reality",
-      "description": "Hundreds of websites have been compromised as a lone hacker is reportedly catching up with the times.",
-      "url": "https://gizmodo.com/the-fear-of-a-one-man-band-weaponizing-ai-agents-is-becoming-reality-2000827754",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "AJ Dellinger",
-      "publishedAt": "2026-10-19T18:35:05Z"
-    },
-    {
-      "title": "AI Stock Sell-Off: Is the Artificial Intelligence Tech Bubble Popping?",
-      "description": "Big tech is facing a major reality check as volatile markets, rising oil prices, and massive spending on AI test investors’ patience. Barron’s Investor Circle Newsletter Editor and FOX Business Contributor Josh Schafer joins FBN’s Taylor Riggs to break down t…",
-      "url": "https://radio.foxnews.com/2026/10/19/ai-stock-sell-off-is-the-artificial-intelligence-tech-bubble-popping/",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": "FOX News Radio",
-      "publishedAt": "2026-10-19T16:46:03Z"
-    },
-    {
-      "title": "Disney Wants to Hire Most of the Employees From Bankrupt Character.AI",
-      "description": "Disney is interested in Character.AI's legally and ethically controversial business.",
-      "url": "https://gizmodo.com/disney-wants-to-hire-most-of-the-employees-from-bankrupt-character-ai-2000827460",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-19T16:45:33Z"
-    },
-    {
-      "title": "How a foreign government helped accused Saudi spy's family flee US after OpenAI bug scandal",
-      "description": "A former OpenAI engineer was in frequent contact with Saudi royalty and searching company records on the Kingdom before his arrest, prosecutors say.",
-      "url": "https://www.foxnews.com/politics/foreign-government-helped-accused-saudi-spy-family-flee-us-openai-bug-scandal",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-19T16:11:15Z"
-    },
-    {
-      "title": "Anthropic AI sends fake murder tip to Philadelphia police",
-      "description": "Anthropic's Claude AI submitted a fabricated eyewitness tip about an unsolved murder to a Philadelphia police website during automated testing.",
-      "url": "https://www.foxnews.com/tech/anthropic-ai-sends-fake-murder-tip-philadelphia-police",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-19T16:00:40Z"
-    },
-    {
-      "title": "Microsoft Pulls Out of Giant British AI Cloud Deal Just As Cloud Company Was Expecting to IPO",
-      "description": "AI is looking less and less like a sure thing for investors.",
-      "url": "https://gizmodo.com/microsoft-pulls-out-of-giant-british-ai-cloud-deal-just-as-cloud-company-was-expecting-to-ipo-2000827469",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-19T09:00:39Z"
-    },
-    {
-      "title": "There is no AI in Armageddon. Artificial intelligence is a tool, not an apocalypse",
-      "description": "Artificial intelligence lacks a moral compass and produces hallucinations, making human oversight in training essential to responsible development.",
-      "url": "https://www.foxnews.com/opinion/no-ai-armageddon-artificial-intelligence-tool-not-apocalypse",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-19T09:00:38Z"
-    },
-    {
-      "title": "AI could go rogue. Washington needs answers to these five questions ASAP",
-      "description": "Since Jacob Coxon's posts sparked AI fears, a poll found 63% of Americans see at least a moderate risk that artificial intelligence ends humanity.",
-      "url": "https://www.foxnews.com/opinion/ai-could-go-rogue-washington-needs-answers-five-questions-asap",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-19T09:00:12Z"
-    },
-    {
-      "title": "Iran threatens to target AI centers and undersea cables if war with U.S. resumes",
-      "description": "Iranian Revolutionary Guards spokesperson Hossein Mohebbi speaks during a press conference in Tehran, Iran, on September 29. - Majid Asgaripour/Wana News Agency/Reuters Iran has signaled that it is preparing for another round of war with the United States a…",
-      "url": "https://www.cnn.com/2026/10/19/middleeast/iran-us-conflict-warning-intl",
-      "outlet": "CNN",
-      "domain": "cnn.com",
-      "author": "Mostafa Salem, Aida Karimi, Leila Gharagozlou, CNN",
-      "publishedAt": "2026-10-19T04:00:45Z"
     }
   ]
 }

@@ -1,30 +1,30 @@
 {
-  "updatedAt": "2026-11-19T19:16:39.415Z",
-  "from": "2026-10-20",
-  "to": "2026-11-19",
+  "updatedAt": "2026-11-20T18:55:02.947Z",
+  "from": "2026-10-21",
+  "to": "2026-11-20",
   "outlets": [
     {
       "domain": "apnews.com",
       "name": "AP News",
-      "count": 1,
+      "count": 2,
       "error": null
     },
     {
       "domain": "cnn.com",
       "name": "CNN",
-      "count": 3,
+      "count": 5,
       "error": null
     },
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 47,
+      "count": 50,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 5,
+      "count": 8,
       "error": null
     },
     {
@@ -36,11 +36,155 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 75,
+      "count": 68,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "Anthropic starts trading on Wall Street",
+      "description": "Anthropic has officially gone public. It began trading on the Nasdaq under the ticker symbol \"ANT\" at $111.50 per share, up from its initial $83 per share price that put company's value at around $1.5 trillion. The listing comes nearly a month after Anthropic…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-19T16:52:01Z"
+    },
+    {
+      "title": "Apple Photos AI watermark can tag your real pictures",
+      "description": "Apple Photos now embeds an invisible SynthID watermark in images edited with Apple Intelligence tools like Clean Up, Extend and Reframe in iOS 27.2.",
+      "url": "https://www.foxnews.com/tech/apple-photos-ai-watermark-tag-real-pictures",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Kurt Knutsson CyberGuy Report",
+      "publishedAt": "2026-11-19T15:32:30Z"
+    },
+    {
+      "title": "ChatGPT can transcribe as you speak now with Live Dictation",
+      "description": "ChatGPT can receive audio prompts from your microphone faster now with a Live Dictation feature that transcribes as you speak, rather than waiting until you finish recording. It's rolling out now globally on all ChatGPT plans on the web, desktop app, and iOS …",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-19T15:16:45Z"
+    },
+    {
+      "title": "Blue Origin will launch Google’s AI server satellites in 2029",
+      "description": "Google is teaming up with Jeff Bezos' Blue Origin to launch its AI server satellites. The companies announced on Thursday that Blue Origin's New Glenn rocket will shuttle satellites equipped with Google's Tensor Processing Units (TPUs) into space in the first…",
+      "url": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-19T13:56:01Z"
+    },
+    {
+      "title": "Tech outages are piling up, and AI is raising the stakes. Could this be the new normal?",
+      "description": "Widespread outages and technological failures have caused chaos worldwide recently. Over the past week alone, it’s felt like an ever-growing list — cascading disruptions for everyday services powered by big names like Microsoft, JPMorgan Chase and Apple, to e…",
+      "url": "https://apnews.com/article/tech-outage-ai-security-patch-0c0f0cf4983a0f81ba88c4c4d2b8383f",
+      "outlet": "AP News",
+      "domain": "apnews.com",
+      "author": "WYATTE GRANTHAM-PHILIPS",
+      "publishedAt": "2026-11-19T13:34:00Z"
+    },
+    {
+      "title": "Anthropic just signaled Wall Street is eager to bet on the AI boom | CNN Business",
+      "description": "Anthropic priced its historic IPO at $83 per share on Thursday, signaling investors are willing to bet on the AI boom. CNN’s Hadas Gold reports.",
+      "url": "https://www.cnn.com/2026/11/18/business/video/anthropic-ipo-price-ai-digvid-vrtc",
+      "outlet": "CNN",
+      "domain": "cnn.com",
+      "author": "Austin Mabeus",
+      "publishedAt": "2026-11-19T11:50:32Z"
+    },
+    {
+      "title": "Anthropic to make trading debut after IPO values it at $1.5 trillion: Live Updates",
+      "description": "Anthropic makes its market debut today in another whirlwind week for AI stocks. Follow for live updates.",
+      "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+      "outlet": "CNN",
+      "domain": "cnn.com",
+      "author": "Lisa Eadicicco, John Towfighi, Clare Duffy, Hadas Gold, Allison Morrow, Matt Egan, Julianne Pepitone, Hanna Ziady",
+      "publishedAt": "2026-11-19T11:04:02Z"
+    },
+    {
+      "title": "Is America Ready For AI Attacks?",
+      "description": "After a string of major tech outages that disrupted airlines, banks, and even Microsoft, Washington faces one urgent question: are these cascading outages just rushed maintenance, or a warning sign of AI accelerated cyber warfare? Former acting CISA Director,…",
+      "url": "https://radio.foxnews.com/2026/11/19/is-america-ready-for-ai-attacks/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-19T10:45:02Z"
+    },
+    {
+      "title": "Sarvam sells DeepSeek access while pursuing sovereign AI models",
+      "description": "This week, Sarvam unveiled Token Factory, an inference platform offering multiple AI models via a single API interface, hosted on local computing infrastructure",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-19/india-startup-sells-deepseek-access-while-pursuing-sovereign-ai",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-19T06:07:15Z"
+    },
+    {
+      "title": "Trump opposes robust AI regulation, says it would stifle super intelligence development",
+      "description": "Donald Trump opposes robust AI regulation, warning it could stifle super intelligence development as the US tightens restrictions on advanced AI chip access.",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-19/trump-warns-against-regulations-that-would-stifle-ai-industry",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-19T04:49:29Z"
+    },
+    {
+      "title": "Anthropic IPO: Who gains the most from the biggest offering ever?",
+      "description": "Here’s how much some of the largest and most notable financial investors in Anthropic stand to gain from the company’s IPO",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-19/the-biggest-winners-in-anthropic-s-landmark-public-offering",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-19T02:41:46Z"
+    },
+    {
+      "title": "Canva adds an AI ‘off’ button",
+      "description": "Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending Magic Expand feature, as well as turn off the ability to generate images with it…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-18T23:08:58Z"
+    },
+    {
+      "title": "I let Apple’s always-listening AI summarize my life for two weeks",
+      "description": "Was it worth it? I've been asking myself this quite a bit over the last month or so while testing both the Amazon Bee Frontier and Siri Recap on the Apple Watch Ultra 4. Both enable a wearable to ambiently listen to your conversations and, using AI, summarize…",
+      "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Victoria Song",
+      "publishedAt": "2026-11-18T22:31:27Z"
+    },
+    {
+      "title": "Are AI Chatbots Behind the Attacks? The Future of Cyberwarfare (ft. Dan Dakich & Rich Zeoli)",
+      "description": "AI bots are likely launching cyberattacks across major networks and we may only be at the beginning. Host of ‘The Rich Zeoli Podcast,’ Rich Zeoli, joins Will and The Crew to unpack the rising threat of self-directed AI agents and how Federal Reserve money pri…",
+      "url": "https://radio.foxnews.com/2026/11/18/are-ai-chatbots-behind-the-attacks-the-future-of-cyberwarfare-ft-dan-dakich-rich-zeoli/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-18T20:48:03Z"
+    },
+    {
+      "title": "Comer: We Can’t Be Ceding AI Technology To China",
+      "description": "Rep. James Comer, R-Ky., joins FOX Across America With guest host Paul Mauro to discuss the implications of former Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy. WATCH THE FULL SEGMENT HERE Check out more of FOX Across America on the podcast: C…",
+      "url": "https://radio.foxnews.com/2026/11/18/comer-we-cant-be-ceding-ai-technology-to-china/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Michael Addvensky",
+      "publishedAt": "2026-11-18T20:09:33Z"
+    },
+    {
+      "title": "Trump’s latest land grab is an AI hub in the Philippines",
+      "description": "President Donald Trump was greeted by no less than five beauty queens when he landed in the Philippines on Tuesday, according to local news outlet Rappler. As he stepped onto the tarmac, a child handed him small US and Philippine flags. A band played \"YMCA,\" …",
+      "url": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Justine Calma",
+      "publishedAt": "2026-11-18T19:40:36Z"
+    },
     {
       "title": "Disney’s new Star Wars animatronics interact with guests using AI",
       "description": "As advanced and lifelike as the animatronic characters at Disney parks have become, they typically either stick to predefined movements and routines, or there's an out of sight puppeteer helping make their behavior appear more spontaneous. That could soon cha…",
@@ -1509,15 +1653,6 @@
       "publishedAt": "2026-10-30T14:58:06Z"
     },
     {
-      "title": "This electric screwdriver uses a camera and AI to figure out what bit you need",
-      "description": "Companies like Hoto and Fanttik have elevated the design and functionality of tools like electric screwdrivers, but Arrowmax wants to make them smarter by adding a camera and AI that work together to eliminate the trial and error of finding the exact type and…",
-      "url": "https://www.theverge.com/tech/1023057/arrowmax-arrowspace-s1-electric-screwdriver-ai-camera-kickstarter",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Andrew Liszewski",
-      "publishedAt": "2026-10-30T14:23:26Z"
-    },
-    {
       "title": "AI-powered cyberattacks fuel 'Black October' fears",
       "description": "A startup founder woke to $449 in unexpected OpenAI and Anthropic charges after stolen API keys were exploited during the \"Black October\" cyber wave.",
       "url": "https://www.foxnews.com/tech/ai-powered-cyberattacks-fuel-black-october-fears",
@@ -1525,15 +1660,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-30T14:20:43Z"
-    },
-    {
-      "title": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
-      "description": "After months of bombarding mathematicians with a relentless stream of AI-generated results, OpenAI CEO Sam Altman says he sympathizes with researchers struggling to make sense of it all. But he has no intention of stopping - and hints there could be much more…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Robert Hart",
-      "publishedAt": "2026-10-30T13:01:14Z"
     },
     {
       "title": "BRIAN HARRELL: America’s AI revolution can’t charge forward without lots of energy",
@@ -1552,24 +1678,6 @@
       "domain": "gizmodo.com",
       "author": "Ece Yildirim",
       "publishedAt": "2026-10-29T23:51:29Z"
-    },
-    {
-      "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
-      "description": "The Wikimedia Foundation is staking out a middle ground in a group of landmark AI copyright cases, pushing courts to legally protect large language models (LLMs) training on copyrighted work - but not chatbots regurgitating that work to users. An overly black…",
-      "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Lauren Feiner",
-      "publishedAt": "2026-10-29T22:43:40Z"
-    },
-    {
-      "title": "Reddit’s CEO says Google’s AI Mode ‘does not drive traffic’",
-      "description": "Reddit CEO Steve Huffman said in an earnings call today that Google's AI-powered search modes do not help with traffic to the platform, echoing problems facing other websites and publishers. As part of its Q3 2026 earnings, Reddit revealed that search traffic…",
-      "url": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-10-29T22:19:32Z"
     },
     {
       "title": "AI Company’s Stock Craters After Admitting Its Bitcoin Is Stuck on an Exchange Nobody’s Heard of",
@@ -1606,24 +1714,6 @@
       "domain": "gizmodo.com",
       "author": "Webb Wright",
       "publishedAt": "2026-10-29T16:20:17Z"
-    },
-    {
-      "title": "Microsoft’s AI future has fewer jobs",
-      "description": "To anyone listening closely to what Microsoft CEO Satya Nadella has been saying over the past couple of years, this week felt like the clearest sign yet that AI is about to fundamentally change the size of Microsoft's workforce. Microsoft is now offering volu…",
-      "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Tom Warren",
-      "publishedAt": "2026-10-29T15:17:52Z"
-    },
-    {
-      "title": "The NYT Cooking app is testing AI recipe modifications",
-      "description": "The New York Times is testing a new AI feature for its Cooking app that helps users to modify recipes, and it's sparked some drama among users. NYT Cooking senior editor Genevieve Ko announced the feature last Friday, which can be used to recommend substituti…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jess Weatherbed",
-      "publishedAt": "2026-10-29T14:39:37Z"
     },
     {
       "title": "The Biggest Benchmark in AI Just Updated, Dealing a Major Blow to a Chinese Contender",
@@ -2011,78 +2101,6 @@
       "domain": "gizmodo.com",
       "author": "Mike Pearl",
       "publishedAt": "2026-10-21T09:00:44Z"
-    },
-    {
-      "title": "OpenAI Says Its Models Can Give the Financial Sector a Coding Makeover",
-      "description": "Banks, government agencies, and other critical institutions run largely on antiquated programming languages. Can AI help bring them up to date?",
-      "url": "https://gizmodo.com/openai-says-its-models-can-give-the-financial-sector-a-coding-makeover-2000828398",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-20T20:45:10Z"
-    },
-    {
-      "title": "Spotify Purged Over 50 Million AI Slop and Spam Songs From User Recommendations",
-      "description": "The music streaming giant has updated its recommendation system to prioritize music made by human artists over AI slop.",
-      "url": "https://gizmodo.com/spotify-purged-over-50-million-ai-slop-and-spam-songs-from-user-recommendations-2000828403",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Bruce Gil",
-      "publishedAt": "2026-10-20T20:15:06Z"
-    },
-    {
-      "title": "DeepSeek Dials Up the Pressure on OpenAI and Anthropic With Open-Source Inference Tool",
-      "description": "Called DeepInfer, the platform could pull more American businesses towards Chinese open-source models.",
-      "url": "https://gizmodo.com/deepseek-dials-up-the-pressure-on-openai-and-anthropic-with-open-source-inference-tool-2000828261",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-20T16:45:40Z"
-    },
-    {
-      "title": "People Using AI to Make Smart TVs Dumb Again Is the Most 2026 Thing Ever",
-      "description": "That's not to say it's not a noble cause, though.",
-      "url": "https://gizmodo.com/people-using-ai-to-make-smart-tvs-dumb-again-is-the-most-2026-thing-ever-2000828213",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Tom Hawking",
-      "publishedAt": "2026-10-20T16:15:45Z"
-    },
-    {
-      "title": "America Hates AI. Why Aren’t Democrats Doing Anything About It?",
-      "description": "Rep. Greg Casar tells Gizmodo the three most pressing AI-related risks are “mass unemployment, mass surveillance, and mass destruction.”",
-      "url": "https://gizmodo.com/america-hates-ai-why-arent-democrats-doing-anything-about-it-2000827834",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-20T15:45:16Z"
-    },
-    {
-      "title": "OpenAI Reportedly Looking to Hurry and Get Valued at $1.4 Trillion Before Anthropic IPO",
-      "description": "The frontier AI valuation horserace is getting intense.",
-      "url": "https://gizmodo.com/openai-reportedly-looking-to-hurry-and-get-valued-at-1-4-trillion-before-anthropic-ipo-2000827975",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-20T09:30:27Z"
-    },
-    {
-      "title": "Navy robot deal quadruples as US looks to ‘outsmart’ China with AI at sea",
-      "description": "Gecko Robotics unveiled its Komodo robot that scans warship decks like a CAT scan, mapping corrosion without stripping coatings for the U.S. Navy.",
-      "url": "https://www.foxnews.com/politics/navy-robot-deal-quadruples-us-looks-outsmart-china-ai-sea",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-20T09:00:22Z"
-    },
-    {
-      "title": "Documents Reveal Military Plan for Agentic AI That Hacks U.S. Adversaries",
-      "description": "The tool, called ECHOTRIBBLE, is still in the whitepaper phase.",
-      "url": "https://gizmodo.com/documents-reveal-military-plan-for-agentic-ai-that-hacks-u-s-adversaries-2000827957",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-20T02:29:17Z"
     }
   ]
 }

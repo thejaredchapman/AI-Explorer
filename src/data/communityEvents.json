@@ -1,41 +1,9 @@
 {
-  "updatedAt": "2026-11-19T19:16:41.693Z",
+  "updatedAt": "2026-11-20T18:55:04.288Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Claude Community x CRISKCO | Claude for Finance",
-          "start": "2026-11-19T23:00:00Z",
-          "allDay": false,
-          "city": "Claude Community x CRISKCO",
-          "address": "BBVA Open Space México, Torre BBVA Bancomer, Av. P.º de la Reforma 510-Planta 33, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
-          "url": "https://luma.com/claudeforfinance"
-        },
-        {
-          "title": "Guadalajara | Claude Community x Wizeline: Conversation",
-          "start": "2026-11-20T01:00:00Z",
-          "allDay": false,
-          "city": "Guadalajara",
-          "address": null,
-          "url": "https://luma.com/claude-o94n"
-        },
-        {
-          "title": "Bangkok | Claude Meetup & Workshop",
-          "start": "2026-11-20T10:00:00Z",
-          "allDay": false,
-          "city": "Bangkok",
-          "address": null,
-          "url": "https://luma.com/claude-1sgf"
-        },
-        {
-          "title": "Miyakonojo | Claude Meetup",
-          "start": "2026-11-20T10:00:00Z",
-          "allDay": false,
-          "city": "Miyakonojo",
-          "address": "Miyakonojo Wellness Koryu Plaza, Seminar Room B, 11-25 Kurahara-cho, Miyakonojo, Miyazaki 885-0051, Japan",
-          "url": "https://luma.com/claude-94tj"
-        },
         {
           "title": "Halifax | Hands-on Claude Workshop",
           "start": "2026-11-20T21:30:00Z",
@@ -67,14 +35,6 @@
           "city": "Kagoshima",
           "address": "Mark Maizan, 9-15 Meizanchō, Kagoshima, 892-0821, Japan",
           "url": "https://luma.com/claude-328k"
-        },
-        {
-          "title": "Nairobi | Claude Impact Lab",
-          "start": "2026-11-21T05:30:00Z",
-          "allDay": false,
-          "city": "Nairobi",
-          "address": "Hackhouse Africa, 124 Manyani East Rd, Nairobi",
-          "url": "https://luma.com/claude-ptdd"
         },
         {
           "title": "Sendai | Claude Workshop",
@@ -245,7 +205,7 @@
           "url": "https://luma.com/claude-1ryz"
         },
         {
-          "title": "Miami | Claude Code Workshop",
+          "title": "Miami | Claude Code Hack Night with hello_miami",
           "start": "2026-11-24T23:30:00Z",
           "allDay": false,
           "city": "Miami",
@@ -341,6 +301,14 @@
           "url": "https://luma.com/claude-gyoj"
         },
         {
+          "title": "São Paulo | Claude for Architecture & Construction",
+          "start": "2026-11-26T22:00:00Z",
+          "allDay": false,
+          "city": "São Paulo",
+          "address": "Athié Wohnrath auditorium, São Paulo, Brazil",
+          "url": "https://luma.com/claude-g7hv"
+        },
+        {
           "title": "Byron Bay | Claude Workshop",
           "start": "2026-11-26T23:00:00Z",
           "allDay": false,
@@ -427,6 +395,14 @@
           "city": null,
           "address": "HappyRobot Madrid Office, Madrid, Spain",
           "url": "https://luma.com/claude-82uv"
+        },
+        {
+          "title": "Nairobi | Claude Impact Lab: Health",
+          "start": "2026-11-28T14:00:00Z",
+          "allDay": false,
+          "city": "Nairobi",
+          "address": "Hackhouse Africa, 124 Manyani East Rd, Nairobi",
+          "url": "https://luma.com/claude-ptdd"
         },
         {
           "title": "Mexico City | Claude Build Day At UniconHub Hack",
@@ -541,6 +517,14 @@
           "url": "https://luma.com/claude-zrgg"
         },
         {
+          "title": "Istanbul | Claude Show Your Project Night",
+          "start": "2026-12-01T15:30:00Z",
+          "allDay": false,
+          "city": "Istanbul",
+          "address": "QNBEYOND, Esentepe Mahallesi Eski Büyükdere Caddesi Kristal Kule Binası, Esentepe, B Blok No:215, 34394 Şişli/İstanbul, Türkiye",
+          "url": "https://luma.com/claude-9lkw"
+        },
+        {
           "title": "Paris | Claude Community x Insidrs Women Meetup",
           "start": "2026-12-01T17:30:00Z",
           "allDay": false,
@@ -613,20 +597,20 @@
           "url": "https://luma.com/claude-3nq4"
         },
         {
+          "title": "Valdivia | Claude Meetup",
+          "start": "2026-12-03T20:00:00Z",
+          "allDay": false,
+          "city": "Valdivia",
+          "address": "FACEA Auditorium, Facultad de Ciencias EconÃ³micas y Administrativas, Universidad Austral de Chile, Valdivia, Chile",
+          "url": "https://luma.com/claude-bendita-valdivia"
+        },
+        {
           "title": "London | Claude x RepresentAI x BCS Pride | Festive meet-up",
           "start": "2026-12-04T18:30:00Z",
           "allDay": false,
           "city": "London",
           "address": "BCS, The Chartered Institute for IT, 25 Copthall Ave, London EC2R 7BP, UK",
           "url": "https://luma.com/claude-tb3g"
-        },
-        {
-          "title": "Nagasaki | Claude Code Workshop / 長崎AIスポーツチャレンジ2026 〜長崎はAIでどう面白くなるのか〜",
-          "start": "2026-12-05T01:00:00Z",
-          "allDay": false,
-          "city": "Nagasaki",
-          "address": "WORK@NAGASAKI （ワークアットナガサキ）コワーキング, Japan, 〒850-0046 Nagasaki, Saiwaimachi, 6−７−１ 10F NAGASAKI STADIUM CITY NORTH",
-          "url": "https://luma.com/claude-718x"
         },
         {
           "title": "Aomori | Claude Code Meetup",
@@ -643,6 +627,22 @@
           "city": "Bangkok",
           "address": null,
           "url": "https://luma.com/claude-jviq"
+        },
+        {
+          "title": "Bogota | Claude Code Impact Lab | Human & AI Flourishing Challenge By: Young AI Leaders Bogota",
+          "start": "2026-12-05T14:00:00Z",
+          "allDay": false,
+          "city": "Bogota",
+          "address": null,
+          "url": "https://luma.com/claude-zqrg"
+        },
+        {
+          "title": "San Francisco | Claude Community x Release Before Ready",
+          "start": "2026-12-05T17:00:00Z",
+          "allDay": false,
+          "city": "San Francisco",
+          "address": null,
+          "url": "https://luma.com/clauderbr"
         }
       ],
       "error": null

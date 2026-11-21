@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-20T18:55:02.947Z",
-  "from": "2026-10-21",
-  "to": "2026-11-20",
+  "updatedAt": "2026-11-21T17:49:43.247Z",
+  "from": "2026-10-22",
+  "to": "2026-11-21",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -18,13 +18,13 @@
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 50,
+      "count": 57,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 8,
+      "count": 12,
       "error": null
     },
     {
@@ -36,11 +36,146 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 68,
+      "count": 65,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+      "description": "Anthropic mathematician Levent Alpöge claims he has solved the Riemann hypothesis, one of mathematics' most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best mathematicians for decades. If veri…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Robert Hart, Emma Roth",
+      "publishedAt": "2026-11-20T16:34:13Z"
+    },
+    {
+      "title": "Fox News AI Newsletter: AI platforms generated terror plans, feds find",
+      "description": "The Fox News AI Newsletter covers the latest artificial intelligence technology advancements, including the challenges and opportunities AI presents now and for the future.",
+      "url": "https://www.foxnews.com/tech/ai-newsletter-platforms-generated-terror-plans-feds-find",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Fox News Staff",
+      "publishedAt": "2026-11-20T16:05:07Z"
+    },
+    {
+      "title": "Signal is blocking Gemini and Siri AI from reading your screen",
+      "description": "Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into operating systems that analyze on-screen information to lear…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-11-20T12:30:47Z"
+    },
+    {
+      "title": "Americans don’t have to choose between our AI future and ripping off copyright owners",
+      "description": "The DOJ's embrace of fair use for AI training breaks with the White House's own framework, as OpenAI, Microsoft and news groups battle over copyright.",
+      "url": "https://www.foxnews.com/opinion/americans-dont-choose-between-ai-future-ripping-off-copyright-owners",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Coke Morgan Stewart",
+      "publishedAt": "2026-11-20T10:06:43Z"
+    },
+    {
+      "title": "Former Secret Service investigator sounds alarm over AI scams as Americans grow increasingly anxious",
+      "description": "Former Secret Service cyberfraud investigator Jason Brown warns AI voice cloning scams could trick families into losing thousands of dollars this holiday season.",
+      "url": "https://www.foxnews.com/tech/former-secret-service-investigator-sounds-alarm-ai-scams-americans-grow-increasingly-anxious",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Michael Sinkewicz",
+      "publishedAt": "2026-11-20T07:53:31Z"
+    },
+    {
+      "title": "Anthropic shares fall 5% in after-hours after record $107.3 billion IPO",
+      "description": "Debut pop of 17% pares amid AI selloff; company closes with $1.8 trillion valuation",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-20/anthropic-shares-drop-post-market-on-apple-s-ai-agent-plans",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-20T05:14:24Z"
+    },
+    {
+      "title": "Apple plans its own AI agent to take on OpenAI, Anthropic and Meta",
+      "description": "Job listings offer fresh evidence of Apple’s plans to develop an autonomous assistant as competition intensifies among leading artificial intelligence companies",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-19/apple-is-working-on-ai-agent-for-device-control-apps-browsing-and-coding",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-20T03:56:29Z"
+    },
+    {
+      "title": "Google Gemini can now control Mac computers, raising pressure on Apple’s Siri",
+      "description": "The latest development marks another step in the AI industry’s shift towards assistants that can perform tasks rather than simply answer questions",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-19/google-s-gemini-can-now-control-mac-devices-on-users-behalf",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-20T03:26:52Z"
+    },
+    {
+      "title": "Meta AI glasses are up to 25% off — shop Ray-Ban, Oakley and more",
+      "description": "Shop Meta AI glasses starting $249, with savings up to 25% on select Ray-Ban and Oakley styles for the tech lover on your list.",
+      "url": "https://www.foxnews.com/deals/meta-deals",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Caitlyn Martyn",
+      "publishedAt": "2026-11-19T23:47:05Z"
+    },
+    {
+      "title": "Anthropic shares surge 17% after record $107.3 billion IPO, valuing AI firm at $1.8 trillion",
+      "description": "The Claude chatbot maker’s market debut comes amid growing investor scrutiny of AI infrastructure spending, financing arrangements and profitability prospects",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-19/anthropic-poised-to-surge-after-107-3-billion-ipo-tops-spacex",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-19T23:34:41Z"
+    },
+    {
+      "title": "Human vs. ChatGPT NFL Week 11 betting picks: A struggling human backs ugly underdogs to stop the slide",
+      "description": "A 4-11 skid leaves the human searching for answers, while ChatGPT enters NFL Week 11 with two straight winning cards and a chance to erase a shrinking deficit.",
+      "url": "https://www.foxnews.com/outkick-sports/human-vs-chatgpt-nfl-week-11-betting-picks-struggling-human-backs-ugly-underdogs-stop-slide",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Dan Zaksheske",
+      "publishedAt": "2026-11-19T23:30:00Z"
+    },
+    {
+      "title": "Apple is hiring engineers to build its own AI agent",
+      "description": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a job listing spotted by Bloomberg, which says Apple is looking for an eng…",
+      "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-19T22:31:41Z"
+    },
+    {
+      "title": "Google is putting AI chats right on the homepage",
+      "description": "Google is updating its homepage to include AI searches. In a post on X, Google's vice president of product, Robby Stein, shows how you can now open a sidebar to view and continue your AI chats. Based on the GIF shared by Stein, it looks like you can open the …",
+      "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-19T20:05:06Z"
+    },
+    {
+      "title": "How Will The Workforce Adapt To The Rapidly Changing AI Landscape?",
+      "description": "FOX Business Correspondent Madison Alworth joins Fox Across Ameria With guest host Rich Zeoli to talk about Anthropic launching the largest IPO in American history. WATCH THE FULL SEGMENT HERE Check out more of FOX Across America on the podcast: Alworth Break…",
+      "url": "https://radio.foxnews.com/2026/11/19/how-will-the-workforce-adapt-to-the-rapidly-changing-ai-landscape/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Michael Addvensky",
+      "publishedAt": "2026-11-19T19:57:45Z"
+    },
+    {
+      "title": "AI Apocalypse Looming: A Navy SEAL’s Survival Wake-Up Call",
+      "description": "Is cyber warfare coming for us? Are we prepared for an AI apocalypse let alone a prolonged blackout…? Former Navy SEAL Joel Lambert joins Tomi Lahren with a warning: “Get your house in order.” They discuss the risks of artificial intelligence, power grid vuln…",
+      "url": "https://radio.foxnews.com/2026/11/19/ai-apocalypse-looming-a-navy-seals-survival-wake-up-call/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-19T19:09:03Z"
+    },
     {
       "title": "Anthropic starts trading on Wall Street",
       "description": "Anthropic has officially gone public. It began trading on the Nasdaq under the ticker symbol \"ANT\" at $111.50 per share, up from its initial $83 per share price that put company's value at around $1.5 trillion. The listing comes nearly a month after Anthropic…",
@@ -1581,15 +1716,6 @@
       "publishedAt": "2026-10-30T20:30:34Z"
     },
     {
-      "title": "The biggest names in AI are backing a new way to opt out of scraping",
-      "description": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences acros…",
-      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-30T20:26:10Z"
-    },
-    {
       "title": "Unvetted foreign workers at AI firms raise national security alarms, advocates warn",
       "description": "Tech advocacy groups warn that foreign nationals at AI companies like OpenAI and Google pose a national security threat amid a lack of federal oversight.",
       "url": "https://www.foxnews.com/tech/unvetted-foreign-workers-ai-firms-raise-national-security-alarms-advocates-warn",
@@ -1599,15 +1725,6 @@
       "publishedAt": "2026-10-30T19:04:49Z"
     },
     {
-      "title": "Google’s satellite AI server transmits its first response to Earth",
-      "description": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt …",
-      "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-30T18:21:38Z"
-    },
-    {
       "title": "Fox News AI Newsletter: Don't want AI on your phone? What to do about it",
       "description": "The Fox News AI Newsletter covers the latest artificial intelligence technology advancements, including the challenges and opportunities AI presents now and for the future.",
       "url": "https://www.foxnews.com/tech/fox-news-ai-newsletter-dont-want-ai-phone-what-do-about-it",
@@ -1615,15 +1732,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-30T18:17:54Z"
-    },
-    {
-      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-      "description": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore \"experiences that recognize participating customers as the…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-30T17:38:04Z"
     },
     {
       "title": "Terri Clark refused Auto-Tune and AI to keep her Ryman Auditorium live album raw and real",
@@ -1642,15 +1750,6 @@
       "domain": "gizmodo.com",
       "author": "Webb Wright",
       "publishedAt": "2026-10-30T16:20:48Z"
-    },
-    {
-      "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
-      "description": "Pope Leo XIV says AI systems should be \"disarmed,\" adding that humans \"have the responsibility to guide, change and, when necessary, reject its applications.\" In Friday's Papal Address, Pope Leo encourages United Nations member states to \"take concrete steps …",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-10-30T14:58:06Z"
     },
     {
       "title": "AI-powered cyberattacks fuel 'Black October' fears",
@@ -2074,33 +2173,6 @@
       "domain": "gizmodo.com",
       "author": "Ece Yildirim",
       "publishedAt": "2026-10-22T01:51:03Z"
-    },
-    {
-      "title": "OpenAI Wants to ‘Patch the Planet’ (With Its Own AI)",
-      "description": "Never let a good crisis go to waste.",
-      "url": "https://gizmodo.com/openai-wants-to-patch-the-planet-with-its-own-ai-2000829119",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-21T20:55:39Z"
-    },
-    {
-      "title": "AI Is ‘on Track to Crowd Out Human Decision-Making’ in Warfare, U.N. Official Warns",
-      "description": "Militaries, not just ordinary people, are offloading critical thinking skills onto bots.",
-      "url": "https://gizmodo.com/ai-is-on-track-to-crowd-out-human-decision-making-in-warfare-u-n-official-warns-2000828868",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-21T16:05:27Z"
-    },
-    {
-      "title": "OpenAI Agents Prevented Themselves From Being Monitored. One Also Lied About It",
-      "description": "A creepy new type of model misbehavior, just in time for Halloween.",
-      "url": "https://gizmodo.com/openai-agents-prevented-themselves-from-being-monitored-one-also-lied-about-it-2000828559",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-21T09:00:44Z"
     }
   ]
 }

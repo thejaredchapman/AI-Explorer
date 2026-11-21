@@ -3105,7 +3105,7 @@ export const llmModels = [
 ];
 
 // ── Data freshness ──
-export const dataAsOf = '2026-11-20';
+export const dataAsOf = '2026-11-21';
 
 // ── Incident: AI agents breach Hugging Face ──
 export const hfIncident = {

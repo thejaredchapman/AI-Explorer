@@ -1,81 +1,9 @@
 {
-  "updatedAt": "2026-11-20T18:55:04.288Z",
+  "updatedAt": "2026-11-21T17:49:44.519Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Halifax | Hands-on Claude Workshop",
-          "start": "2026-11-20T21:30:00Z",
-          "allDay": false,
-          "city": "Halifax",
-          "address": "Volta, 1800 Argyle St Unit 801, Halifax, NS B3J 3N8, Canada",
-          "url": "https://luma.com/claude-halifax"
-        },
-        {
-          "title": "Puebla | Claude Build Day",
-          "start": "2026-11-20T23:00:00Z",
-          "allDay": false,
-          "city": "Puebla",
-          "address": "Workbliss HUB - Café, Cowork, Estudio, C. 2 Pte. 301, San Miguel, Centro San Andrés Cholula, 72810 San Andrés Cholula, Pue., Mexico",
-          "url": "https://luma.com/claude-puebla"
-        },
-        {
-          "title": "Mumbai | Claude Impact Lab Mumbai: Civic Budget & Accountability",
-          "start": "2026-11-21T03:30:00Z",
-          "allDay": false,
-          "city": "Mumbai",
-          "address": null,
-          "url": "https://luma.com/claude-ImpactLab"
-        },
-        {
-          "title": "Kagoshima | Claude Workshop",
-          "start": "2026-11-21T04:00:00Z",
-          "allDay": false,
-          "city": "Kagoshima",
-          "address": "Mark Maizan, 9-15 Meizanchō, Kagoshima, 892-0821, Japan",
-          "url": "https://luma.com/claude-328k"
-        },
-        {
-          "title": "Sendai | Claude Workshop",
-          "start": "2026-11-21T08:00:00Z",
-          "allDay": false,
-          "city": "Sendai",
-          "address": "MEDIUM Sendai, 6-5 Rokuchonome Nishimachi, Wakabayashi-ku, Sendai, Miyagi, Japan",
-          "url": "https://luma.com/claude-q6md"
-        },
-        {
-          "title": "Barcelona | Claude & Coffee (Women in Tech)",
-          "start": "2026-11-21T09:00:00Z",
-          "allDay": false,
-          "city": "Barcelona",
-          "address": null,
-          "url": "https://luma.com/claude-k2tk"
-        },
-        {
-          "title": "Istanbul | Game Jam with Claude",
-          "start": "2026-11-21T10:00:00Z",
-          "allDay": false,
-          "city": "Istanbul",
-          "address": "Komünite Space, Radisson Collection Hotel, Ayazağa, Azerbaycan Cd. No:3A, 34475 Sarıyer/İstanbul, Türkiye",
-          "url": "https://luma.com/claude-game-jam"
-        },
-        {
-          "title": "Brussels | Claude Code Workshop",
-          "start": "2026-11-21T13:00:00Z",
-          "allDay": false,
-          "city": "Brussels",
-          "address": "HSBXL, Brussels, Belgium",
-          "url": "https://luma.com/claude-mmu8"
-        },
-        {
-          "title": "NYC | Claude Impact Lab - Digital Health",
-          "start": "2026-11-21T14:00:00Z",
-          "allDay": false,
-          "city": "NYC",
-          "address": null,
-          "url": "https://luma.com/claude-gz81"
-        },
         {
           "title": "Anchorage | Claude Workshop",
           "start": "2026-11-21T21:30:00Z",
@@ -290,7 +218,7 @@
           "allDay": false,
           "city": "Paris",
           "address": "Amphithéâtre Richelieu de la Sorbonne, 17 Rue de la Sorbonne, 75005 Paris, France",
-          "url": "https://luma.com/claude-10ek"
+          "url": "https://luma.com/Sorbonne-Claude"
         },
         {
           "title": "Lisbon | Claude Code Conversation: Standout projects",
@@ -629,12 +557,12 @@
           "url": "https://luma.com/claude-jviq"
         },
         {
-          "title": "Bogota | Claude Code Impact Lab | Human & AI Flourishing Challenge By: Young AI Leaders Bogota",
-          "start": "2026-12-05T14:00:00Z",
+          "title": "Cape Town | Claude & Coffee Meetup",
+          "start": "2026-12-05T07:00:00Z",
           "allDay": false,
-          "city": "Bogota",
-          "address": null,
-          "url": "https://luma.com/claude-zqrg"
+          "city": "Cape Town",
+          "address": "Roamwork Harrington, 50 Harrington St, District Six, Cape Town, 7925, South Africa",
+          "url": "https://luma.com/claude-i36b"
         },
         {
           "title": "San Francisco | Claude Community x Release Before Ready",
@@ -643,6 +571,78 @@
           "city": "San Francisco",
           "address": null,
           "url": "https://luma.com/clauderbr"
+        },
+        {
+          "title": "Torino | Claude Conversation",
+          "start": "2026-12-05T17:30:00Z",
+          "allDay": false,
+          "city": "Torino",
+          "address": null,
+          "url": "https://luma.com/claude-community-torino-conversation"
+        },
+        {
+          "title": "SHIGA | Claude Meetup 滋賀キックオフ",
+          "start": "2026-12-06T04:30:00Z",
+          "allDay": false,
+          "city": "SHIGA",
+          "address": null,
+          "url": "https://luma.com/shiga20261206"
+        },
+        {
+          "title": "Tokyo | Claude Meetup x Healthcare",
+          "start": "2026-12-06T09:00:00Z",
+          "allDay": false,
+          "city": "Tokyo",
+          "address": "高輪ゲートウェイ駅付近 / near Takanawa Gateway Station, Tokyo",
+          "url": "https://luma.com/claude-j4r4"
+        },
+        {
+          "title": "Gift-city Gandhinagar | Claude Code Build Day",
+          "start": "2026-12-06T09:30:00Z",
+          "allDay": false,
+          "city": "Gift-city Gandhinagar",
+          "address": null,
+          "url": "https://luma.com/claude-2oo6"
+        },
+        {
+          "title": "Bhopal | Claude for Chartered Accountants Meetup",
+          "start": "2026-12-06T12:00:00Z",
+          "allDay": false,
+          "city": "Bhopal",
+          "address": null,
+          "url": "https://luma.com/claude-m3ex"
+        },
+        {
+          "title": "Adelaide | Claude for Mining & Energy",
+          "start": "2026-12-08T06:30:00Z",
+          "allDay": false,
+          "city": "Adelaide",
+          "address": "Stone & Chalk Adelaide Startup Hub, Marnirni-apinthi Building, Lot Fourteen, North Terrace, Adelaide SA 5000, Australia",
+          "url": "https://luma.com/claude-0nuh"
+        },
+        {
+          "title": "Munich | Claude and Coffee",
+          "start": "2026-12-08T08:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": null,
+          "url": "https://luma.com/claude-qn3x"
+        },
+        {
+          "title": "Okayama | Claude Workshop for Business",
+          "start": "2026-12-08T09:00:00Z",
+          "allDay": false,
+          "city": "Okayama",
+          "address": "コワーキングスペース Wonderwall, Japan, 〒700-0023 Okayama, Kita Ward, Ekimaechō, 1-chōme−8−１８ ２F",
+          "url": "https://luma.com/claude-b7iu"
+        },
+        {
+          "title": "Claude Community Singapore | Skills Clinic for Sales, GTM & Marketing",
+          "start": "2026-12-08T10:30:00Z",
+          "allDay": false,
+          "city": "Claude Community Singapore",
+          "address": null,
+          "url": "https://luma.com/claude-tjmy"
         }
       ],
       "error": null

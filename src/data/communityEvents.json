@@ -1,33 +1,9 @@
 {
-  "updatedAt": "2026-11-21T17:49:44.519Z",
+  "updatedAt": "2026-11-22T18:09:15.498Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Anchorage | Claude Workshop",
-          "start": "2026-11-21T21:30:00Z",
-          "allDay": false,
-          "city": "Anchorage",
-          "address": "UAA Consortium Library, LIB 307, 3211 Providence Dr, Anchorage, AK",
-          "url": "https://luma.com/claude-83a1"
-        },
-        {
-          "title": "Saga | Claude Code Workshop",
-          "start": "2026-11-22T05:00:00Z",
-          "allDay": false,
-          "city": "Saga",
-          "address": "Microsoft Innovation Center Saga, Japan, 〒840-0801 Saga, Ekimae Chūō, 1-chōme−8−３２ 5F",
-          "url": "https://luma.com/claude-code-workshop-in-saga"
-        },
-        {
-          "title": "Bhopal | Claude Code Build Day - Fable 5.2",
-          "start": "2026-11-22T08:30:00Z",
-          "allDay": false,
-          "city": "Bhopal",
-          "address": null,
-          "url": "https://luma.com/claude-89py"
-        },
         {
           "title": "Aizuwakamatsu | Claude Code Workshop",
           "start": "2026-11-23T04:00:00Z",
@@ -613,6 +589,14 @@
           "url": "https://luma.com/claude-m3ex"
         },
         {
+          "title": "Belgrade | Claude Code Meetup",
+          "start": "2026-12-07T17:30:00Z",
+          "allDay": false,
+          "city": "Belgrade",
+          "address": null,
+          "url": "https://luma.com/claude-tlkx"
+        },
+        {
           "title": "Adelaide | Claude for Mining & Energy",
           "start": "2026-12-08T06:30:00Z",
           "allDay": false,
@@ -643,6 +627,22 @@
           "city": "Claude Community Singapore",
           "address": null,
           "url": "https://luma.com/claude-tjmy"
+        },
+        {
+          "title": "Munich | Build your content machine with Claude Code - Workshop",
+          "start": "2026-12-08T14:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": "KI-Campus Tucherpark",
+          "url": "https://luma.com/claude-ry6s"
+        },
+        {
+          "title": "Munich | Claude Conversation",
+          "start": "2026-12-08T17:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": null,
+          "url": "https://luma.com/claude-5cc7"
         }
       ],
       "error": null

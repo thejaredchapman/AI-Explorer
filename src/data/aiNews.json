@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-21T17:49:43.247Z",
-  "from": "2026-10-22",
-  "to": "2026-11-21",
+  "updatedAt": "2026-11-22T18:09:13.944Z",
+  "from": "2026-10-23",
+  "to": "2026-11-22",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -18,7 +18,7 @@
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 57,
+      "count": 58,
       "error": null
     },
     {
@@ -36,11 +36,65 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 65,
+      "count": 59,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "Anthropic researcher claims to solve Riemann Problem with Claude",
+      "description": "Mathematician Levent Alpöge claimed on his personal site Friday to have a proof of the Riemann hypothesis, sharing Lean code he says supports the claim",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-21/anthropic-researcher-claims-to-solve-riemann-problem-with-claude",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-21T16:08:28Z"
+    },
+    {
+      "title": "AI selloff spurs haven demand for Yen, Franc as Dollar slips",
+      "description": "The yen gained 0.7% against the dollar Friday, while the franc snapped an eight-day losing streak to rise 0.4%",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-20/ai-selloff-boosts-haven-demand-for-yen-franc-as-dollar-slips",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-21T14:37:37Z"
+    },
+    {
+      "title": "Can Anthropic afford to put safety first?",
+      "description": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but …",
+      "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Nilay Patel",
+      "publishedAt": "2026-11-21T13:29:45Z"
+    },
+    {
+      "title": "$500M investment could bring AI robots to your workplace",
+      "description": "Genesis AI raised $500 million to expand its general-purpose robot Eno, which learns physical skills from workers wearing special electronic gloves.",
+      "url": "https://www.foxnews.com/tech/500m-investment-bring-ai-robots-workplace",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Kurt Knutsson CyberGuy Report",
+      "publishedAt": "2026-11-21T11:47:52Z"
+    },
+    {
+      "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+      "description": "President Donald Trump promised to put a \"tremendous tax\" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them. \"We're not going to allow our companies …",
+      "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Lauren Feiner",
+      "publishedAt": "2026-11-20T18:50:19Z"
+    },
+    {
+      "title": "Socialism: Artificial Intelligence, Real Stupidity",
+      "description": "As seen on Gutfeld! Greg talks about the NYC Socialists gathering to sing. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+      "url": "https://radio.foxnews.com/2026/11/20/socialism-artificial-intelligence-real-stupidity/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-20T17:50:03Z"
+    },
     {
       "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
       "description": "Anthropic mathematician Levent Alpöge claims he has solved the Riemann hypothesis, one of mathematics' most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best mathematicians for decades. If veri…",
@@ -1671,15 +1725,6 @@
       "publishedAt": "2026-10-31T17:10:24Z"
     },
     {
-      "title": "I built an AI Tamagotchi before Meta could",
-      "description": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Mus…",
-      "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Sean Hollister",
-      "publishedAt": "2026-10-31T16:09:02Z"
-    },
-    {
       "title": "Christian group touts 'ethical' tech features as concerns over out-of-control AI tools persist",
       "description": "Ligonier Ministries built its \"Grow\" app with an AI assistant that deflects vulnerable users to real humans and the suicide hotline when needed.",
       "url": "https://www.foxnews.com/politics/christian-group-touts-ethical-tech-features-concerns-out-of-control-ai-tools-persist",
@@ -1696,15 +1741,6 @@
       "domain": "gizmodo.com",
       "author": "Webb Wright",
       "publishedAt": "2026-10-30T21:20:44Z"
-    },
-    {
-      "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
-      "description": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky Pint podcast, where he also commented o…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Stevie Bonifield",
-      "publishedAt": "2026-10-30T20:48:43Z"
     },
     {
       "title": "The AI Gold Rush Is Turning Into a Wall Street Bloodbath",
@@ -2092,87 +2128,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-23T13:22:44Z"
-    },
-    {
-      "title": "Spotify Claims It Is ‘Unusually Well-Positioned’ for an Agentic AI Takeover",
-      "description": "Spotify wants to be your favorite AI agent's favorite music platform.",
-      "url": "https://gizmodo.com/spotify-claims-it-is-unusually-well-positioned-for-an-agentic-ai-takeover-2000829441",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-22T21:05:32Z"
-    },
-    {
-      "title": "Microsoft Says Its New AI Is More Than Twice as Good at Diagnosing Diseases as Doctors",
-      "description": "Microsoft plans to start testing the tool in a Boston hospital soon.",
-      "url": "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-22T20:40:46Z"
-    },
-    {
-      "title": "Blindsided by AI Agents, Big Banks Scramble to Beef Up Security",
-      "description": "Believe it or not, some people appear to be granting agents access to their bank accounts.",
-      "url": "https://gizmodo.com/blindsided-by-ai-agents-big-banks-scramble-to-beef-up-security-2000829358",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-22T16:15:01Z"
-    },
-    {
-      "title": "Gizmodo Is Launching a Daily Newsletter About AI",
-      "description": "Made by humans. Envied by bots. Typos are our.s",
-      "url": "https://gizmodo.com/gizmodo-is-launching-a-daily-newsletter-about-ai-2000829171",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Gizmodo Staff",
-      "publishedAt": "2026-10-22T14:52:45Z"
-    },
-    {
-      "title": "Google's new AI shopping cart tracks deals across stores",
-      "description": "Google Universal Cart tracks price drops, surfaces promo codes and uses Google Wallet to match your best credit card rewards before checkout.",
-      "url": "https://www.foxnews.com/tech/google-new-ai-shopping-cart-tracks-deals-across-stores",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-22T14:12:20Z"
-    },
-    {
-      "title": "AI Chatbots Are Building an ‘Algorithmic Self-Portrait’ of You",
-      "description": "Users really trust AI chatbots, some experts say too much.",
-      "url": "https://gizmodo.com/ai-chatbots-are-building-an-algorithmic-self-portrait-of-you-2000775529",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-22T12:00:15Z"
-    },
-    {
-      "title": "Barclays plans 5,000 job cuts as bank steps up AI-led efficiency",
-      "description": "Barclays plans to cut 5,000 jobs, about 5% of its workforce, as AI helps drive efficiency and cost reductions while the bank creates capacity for investment.",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-22/barclays-to-cut-5-000-jobs-as-ai-starts-creating-efficiency",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-22T07:45:01Z"
-    },
-    {
-      "title": "China’s DeepSeek raises $15 billion to challenge top US AI labs",
-      "description": "The firm boosted its financing target at least twice as it talked with investors, from 50 billion yuan to 80 billion yuan before reaching the final tally, according to people familiar with the matter",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
-      "outlet": "Bloomberg",
-      "domain": "bloomberg.com",
-      "author": "Bloomberg",
-      "publishedAt": "2026-10-22T07:32:45Z"
-    },
-    {
-      "title": "Zuckerberg Wants To Build A Giant Online Network Of AI Agents",
-      "description": "Maybe he can call it the \"Museverse.\"",
-      "url": "https://gizmodo.com/zuckerberg-wants-to-build-a-giant-online-network-of-ai-agents-2000829145",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-22T01:51:03Z"
     }
   ]
 }

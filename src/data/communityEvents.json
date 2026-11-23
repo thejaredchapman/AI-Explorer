@@ -1,57 +1,9 @@
 {
-  "updatedAt": "2026-11-22T18:09:15.498Z",
+  "updatedAt": "2026-11-23T22:19:49.953Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Aizuwakamatsu | Claude Code Workshop",
-          "start": "2026-11-23T04:00:00Z",
-          "allDay": false,
-          "city": "Aizuwakamatsu",
-          "address": "Smart City AiCT, Collaboration Stage (交流棟), 1-77 Higashisakae-machi, Aizuwakamatsu, Fukushima",
-          "url": "https://luma.com/claude-nn4i"
-        },
-        {
-          "title": "Fukuoka | Claude Workshop For Beginners",
-          "start": "2026-11-23T07:00:00Z",
-          "allDay": false,
-          "city": "Fukuoka",
-          "address": "Garraway F, Japan, 〒810-0021 Fukuoka, Chuo Ward, Imaizumi, 1-chōme−19−２２ 西鉄天神クラス 3階",
-          "url": "https://luma.com/claude-zu7g"
-        },
-        {
-          "title": "Tel Aviv | Claude Fable 5.2 Build Day",
-          "start": "2026-11-23T15:00:00Z",
-          "allDay": false,
-          "city": "Tel Aviv",
-          "address": "Miconis St 5, Tel Aviv-Yafo, Israel",
-          "url": "https://luma.com/claude-drtn"
-        },
-        {
-          "title": "Claude Community x Secretaría de Economía de Nuevo León | Claude for Commerce, Manufacturing & Industry 4.0",
-          "start": "2026-11-23T15:30:00Z",
-          "allDay": false,
-          "city": null,
-          "address": "EXPEDITION FEMSA, Av. Eugenio Garza Sada Sur, Tecnologico, Distrito Tec, 64700 Monterrey, N.L., Mexico",
-          "url": "https://luma.com/claudemonterrey"
-        },
-        {
-          "title": "Budapest | Claude Meetup For Everyone",
-          "start": "2026-11-23T16:30:00Z",
-          "allDay": false,
-          "city": "Budapest",
-          "address": "CREATE26 Coworking, Budapest, Király u. 26, 1061 Hungary",
-          "url": "https://luma.com/claude-nk9s"
-        },
-        {
-          "title": "Adelaide | Claude in Motion",
-          "start": "2026-11-24T07:30:00Z",
-          "allDay": false,
-          "city": "Adelaide",
-          "address": null,
-          "url": "https://luma.com/claude-htfi"
-        },
         {
           "title": "Kaohsiung | Claude Meetup",
           "start": "2026-11-24T10:30:00Z",
@@ -141,7 +93,7 @@
           "url": "https://luma.com/claude-fsce"
         },
         {
-          "title": "Barcelona | Claude Conversation (Women in Tech)",
+          "title": "Barcelona | Conversation (Women in Tech) The Future We Build: Women & AI in 2027",
           "start": "2026-11-25T18:00:00Z",
           "allDay": false,
           "city": "Barcelona",
@@ -307,6 +259,14 @@
           "city": "Nairobi",
           "address": "Hackhouse Africa, 124 Manyani East Rd, Nairobi",
           "url": "https://luma.com/claude-ptdd"
+        },
+        {
+          "title": "Bogota | Claude Workshop | Claude for Robotics",
+          "start": "2026-11-28T14:00:00Z",
+          "allDay": false,
+          "city": "Bogota",
+          "address": null,
+          "url": "https://luma.com/claude-4sxc"
         },
         {
           "title": "Mexico City | Claude Build Day At UniconHub Hack",
@@ -501,12 +461,36 @@
           "url": "https://luma.com/claude-3nq4"
         },
         {
+          "title": "London | Claude x Okta Workshop: Build Enterprise-Ready MCP for AI Agents",
+          "start": "2026-12-03T17:00:00Z",
+          "allDay": false,
+          "city": "London",
+          "address": null,
+          "url": "https://luma.com/claude-d7ud"
+        },
+        {
           "title": "Valdivia | Claude Meetup",
           "start": "2026-12-03T20:00:00Z",
           "allDay": false,
           "city": "Valdivia",
           "address": "FACEA Auditorium, Facultad de Ciencias EconÃ³micas y Administrativas, Universidad Austral de Chile, Valdivia, Chile",
           "url": "https://luma.com/claude-bendita-valdivia"
+        },
+        {
+          "title": "Miami | Claude Culture ArtBasel Edition",
+          "start": "2026-12-04T15:00:00Z",
+          "allDay": false,
+          "city": "Miami",
+          "address": null,
+          "url": "https://luma.com/claude-artbasel"
+        },
+        {
+          "title": "Claude Community x The Delta | Berlin Claude Workshop: Make a Product Better, Together",
+          "start": "2026-12-04T17:00:00Z",
+          "allDay": false,
+          "city": "Claude Community x The Delta",
+          "address": "The Delta, Donaustraße 44, 12043 Berlin, Germany",
+          "url": "https://luma.com/claude-berlin-ws"
         },
         {
           "title": "London | Claude x RepresentAI x BCS Pride | Festive meet-up",
@@ -621,12 +605,28 @@
           "url": "https://luma.com/claude-b7iu"
         },
         {
+          "title": "Munich | Claude Conversation: Building again: starting from scratch in the AI-native era",
+          "start": "2026-12-08T10:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": "KI-Campus Tucherpark, Sederanger 5, 80538 München, Germany",
+          "url": "https://luma.com/claude-13j5"
+        },
+        {
           "title": "Claude Community Singapore | Skills Clinic for Sales, GTM & Marketing",
           "start": "2026-12-08T10:30:00Z",
           "allDay": false,
           "city": "Claude Community Singapore",
           "address": null,
           "url": "https://luma.com/claude-tjmy"
+        },
+        {
+          "title": "Munich | Build Your First App with Claude Code - Non Coders",
+          "start": "2026-12-08T13:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": null,
+          "url": "https://luma.com/claude-p24i"
         },
         {
           "title": "Munich | Build your content machine with Claude Code - Workshop",

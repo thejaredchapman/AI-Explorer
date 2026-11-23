@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-22T18:09:13.944Z",
-  "from": "2026-10-23",
-  "to": "2026-11-22",
+  "updatedAt": "2026-11-23T22:19:48.526Z",
+  "from": "2026-10-24",
+  "to": "2026-11-23",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -18,7 +18,7 @@
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 58,
+      "count": 55,
       "error": null
     },
     {
@@ -36,11 +36,29 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 59,
+      "count": 57,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "Binding of Isaac developer removes AI music from Repentance Plus",
+      "description": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs used during a Grand Theft Auto-themed s…",
+      "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Terrence O’Brien",
+      "publishedAt": "2026-11-22T17:25:20Z"
+    },
+    {
+      "title": "“We’re All Going to Die”!? Neil deGrasse Tyson on Space Mysteries, Aliens & AI",
+      "description": "Some strange things are happening out in space and down here on Earth. Earlier this week, astrophysicist Neil deGrasse Tyson joined Aishah Hasnie to unpack a fast-moving object known as 1998 KY26 orbiting the Sun, UAP discussions, and the physics behind what …",
+      "url": "https://radio.foxnews.com/2026/11/21/were-all-going-to-die-neil-degrasse-tyson-on-space-mysteries-aliens-ai/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-21T23:51:03Z"
+    },
     {
       "title": "Anthropic researcher claims to solve Riemann Problem with Claude",
       "description": "Mathematician Levent Alpöge claimed on his personal site Friday to have a proof of the Riemann hypothesis, sharing Lean code he says supports the claim",
@@ -1644,15 +1662,6 @@
       "publishedAt": "2026-11-02T18:01:30Z"
     },
     {
-      "title": "The New York Times and other publications sue Brave web browser for AI scraping and bypassing paywalls",
-      "description": "The New York Times and a group of other publications have filed lawsuits against the company that makes the Brave web browser over alleged unlawful scraping to train AI and also letting users bypass their paywalls, as reported by Reuters. According to a compl…",
-      "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-11-02T17:51:19Z"
-    },
-    {
       "title": "Elon Musk Needs to Save Money on Grok, Days After Saying AI Makes Saving Money Pointless",
       "description": "The billionaire told a disgruntled customer that Grok Bot costs have become unsustainable.",
       "url": "https://gizmodo.com/elon-musk-needs-to-save-money-on-grok-days-after-saying-ai-makes-saving-money-pointless-2000833812",
@@ -2074,60 +2083,6 @@
       "domain": "foxnews.com",
       "author": "FOX News Radio",
       "publishedAt": "2026-10-24T02:00:00Z"
-    },
-    {
-      "title": "Why America Making More Chips is a Big Deal for the AI Boom",
-      "description": "The AI boom is fueling a skyrocketing demand for semiconductors. From autonomous vehicles and smart appliances to advanced medical equipment and satellites, today’s need for microchips is unprecedented. GlobalFoundries CEO Tim Breen sits down with FOX Busines…",
-      "url": "https://radio.foxnews.com/2026/10/23/why-america-making-more-chips-is-a-big-deal-for-the-ai-boom/",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": "FOX News Radio",
-      "publishedAt": "2026-10-23T22:49:03Z"
-    },
-    {
-      "title": "Abliteration Launches Cheaper Version of Its ‘Unrestricted AI‘ at the Worst Possible Time",
-      "description": "Unless you’re a hacker, of course.",
-      "url": "https://gizmodo.com/abliteration-launches-cheaper-version-of-its-unrestricted-ai-at-the-worst-possible-time-2000830045",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-23T20:15:01Z"
-    },
-    {
-      "title": "Sam Altman: ‘I No Longer Think We’re Gonna Be Able to Just Patch All the Bugs’",
-      "description": "We're all trying to find the guy who did this.",
-      "url": "https://gizmodo.com/sam-altman-i-no-longer-think-were-gonna-be-able-to-just-patch-all-the-bugs-2000829947",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "AJ Dellinger",
-      "publishedAt": "2026-10-23T18:40:48Z"
-    },
-    {
-      "title": "Did Texas use artificial intelligence to call fourth-down play against Florida? Longhorns AD clarifies report",
-      "description": "Texas fans panicked after a report suggested Steve Sarkisian used the new Bevo Lab AI platform to call a critical fourth-down play against Florida.",
-      "url": "https://www.foxnews.com/outkick-sports/did-texas-use-artificial-intelligence-call-fourth-down-play-against-florida-longhorns-ad-clarifies-report",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-23T18:16:23Z"
-    },
-    {
-      "title": "Fox News AI Newsletter: What we saw inside a massive Texas data center",
-      "description": "The Fox News AI Newsletter covers the latest artificial intelligence technology advancements, including the challenges and opportunities AI presents now and for the future.",
-      "url": "https://www.foxnews.com/tech/fox-news-ai-newsletter-what-we-saw-inside-massive-texas-data-center",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-23T14:08:41Z"
-    },
-    {
-      "title": "Why some people are falling for Meta's Muse AI",
-      "description": "Meta's Muse AI was built to manage tasks, but users are developing romantic AI relationships and even calling the AI companion their girlfriend.",
-      "url": "https://www.foxnews.com/tech/why-people-falling-metas-muse-ai",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-23T13:22:44Z"
     }
   ]
 }

@@ -1,57 +1,9 @@
 {
-  "updatedAt": "2026-11-23T22:19:49.953Z",
+  "updatedAt": "2026-11-24T20:56:36.990Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Kaohsiung | Claude Meetup",
-          "start": "2026-11-24T10:30:00Z",
-          "allDay": false,
-          "city": "Kaohsiung",
-          "address": null,
-          "url": "https://luma.com/claude-kaohsiung-1"
-        },
-        {
-          "title": "Claude Community: Hands-On Marketing Workshop",
-          "start": "2026-11-24T15:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/claude-dtez"
-        },
-        {
-          "title": "Copenhagen | Practices of Trustworthy AI",
-          "start": "2026-11-24T15:30:00Z",
-          "allDay": false,
-          "city": "Copenhagen",
-          "address": null,
-          "url": "https://luma.com/claude-bdg0"
-        },
-        {
-          "title": "Istanbul | Claude Code for University Students Workshop",
-          "start": "2026-11-24T15:30:00Z",
-          "allDay": false,
-          "city": "Istanbul",
-          "address": "Marmara University Faculty of Engineering, Aydınevler, 34854 Maltepe/İstanbul, Türkiye",
-          "url": "https://luma.com/claude-sd55"
-        },
-        {
-          "title": "Bregenz | Claude Code Meetup",
-          "start": "2026-11-24T17:00:00Z",
-          "allDay": false,
-          "city": "Bregenz",
-          "address": "Schloss Hofen, Wolf-Dietrich-Saal, Hofer Straße 26, 6911 Lochau, Austria",
-          "url": "https://luma.com/claude-4x9f"
-        },
-        {
-          "title": "Belgrade | Claude Community Kick Off",
-          "start": "2026-11-24T17:30:00Z",
-          "allDay": false,
-          "city": "Belgrade",
-          "address": null,
-          "url": "https://luma.com/claude-axb8"
-        },
         {
           "title": "La Ceja | Claude Workshop",
           "start": "2026-11-24T23:00:00Z",
@@ -99,6 +51,14 @@
           "city": "Barcelona",
           "address": "Miiro Borneta, Passeig de Picasso, 26, 30, Ciutat Vella, 08003 Barcelona, Spain",
           "url": "https://luma.com/claude-5igh"
+        },
+        {
+          "title": "London | Claude Workshop x The Hearth",
+          "start": "2026-11-25T19:00:00Z",
+          "allDay": false,
+          "city": "London",
+          "address": "The Hearth, North London, United Kingdom — https://www.thehearth.me/",
+          "url": "https://luma.com/claude-ldy9"
         },
         {
           "title": "Tokyo | Claude Meetup for HR",
@@ -398,7 +358,7 @@
         },
         {
           "title": "Claude Code Build Day",
-          "start": "2026-12-02T08:00:00Z",
+          "start": "2026-12-02T06:00:00Z",
           "allDay": false,
           "city": null,
           "address": null,
@@ -461,12 +421,20 @@
           "url": "https://luma.com/claude-3nq4"
         },
         {
-          "title": "London | Claude x Okta Workshop: Build Enterprise-Ready MCP for AI Agents",
+          "title": "London | Claude x Okta Developer: Build Enterprise-Ready MCP for AI Agents",
           "start": "2026-12-03T17:00:00Z",
           "allDay": false,
           "city": "London",
           "address": null,
           "url": "https://luma.com/claude-d7ud"
+        },
+        {
+          "title": "Miami | Claude Mix Lab",
+          "start": "2026-12-03T17:00:00Z",
+          "allDay": false,
+          "city": "Miami",
+          "address": "The LAB Miami, 2750 NW 3rd Ave #24, Miami, FL 33127, USA",
+          "url": "https://luma.com/claude-4vj1"
         },
         {
           "title": "Valdivia | Claude Meetup",
@@ -485,10 +453,10 @@
           "url": "https://luma.com/claude-artbasel"
         },
         {
-          "title": "Claude Community x The Delta | Berlin Claude Workshop: Make a Product Better, Together",
+          "title": "Berlin | Claude Workshop: Make a Product Better, Together",
           "start": "2026-12-04T17:00:00Z",
           "allDay": false,
-          "city": "Claude Community x The Delta",
+          "city": "Berlin",
           "address": "The Delta, Donaustraße 44, 12043 Berlin, Germany",
           "url": "https://luma.com/claude-berlin-ws"
         },
@@ -643,6 +611,38 @@
           "city": "Munich",
           "address": null,
           "url": "https://luma.com/claude-5cc7"
+        },
+        {
+          "title": "New York | Claude Build Day with AI2030",
+          "start": "2026-12-08T22:00:00Z",
+          "allDay": false,
+          "city": "New York",
+          "address": null,
+          "url": "https://luma.com/claude-vls7"
+        },
+        {
+          "title": "Austin | Claude for Revenue & GTM | December 8",
+          "start": "2026-12-09T00:00:00Z",
+          "allDay": false,
+          "city": "Austin",
+          "address": "Voltron room, STATION Austin, 701 Brazos St, Austin, TX",
+          "url": "https://luma.com/claude-7yzp"
+        },
+        {
+          "title": "Claude Community x Apify | Claude Holiday Build Day",
+          "start": "2026-12-09T01:00:00Z",
+          "allDay": false,
+          "city": "Claude Community x Apify",
+          "address": null,
+          "url": "https://luma.com/claudesf"
+        },
+        {
+          "title": "Munich | Claude Code Build Day",
+          "start": "2026-12-09T08:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": null,
+          "url": "https://luma.com/claude-sl4m"
         }
       ],
       "error": null

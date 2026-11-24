@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-23T22:19:48.526Z",
-  "from": "2026-10-24",
-  "to": "2026-11-23",
+  "updatedAt": "2026-11-24T20:56:35.007Z",
+  "from": "2026-10-25",
+  "to": "2026-11-24",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -18,13 +18,13 @@
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 55,
+      "count": 58,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 12,
+      "count": 13,
       "error": null
     },
     {
@@ -36,11 +36,110 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 57,
+      "count": 55,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "The Man Building Our AI Future Just Said Something Terrifying (ft. David Marcus & Kennedy)",
+      "description": "Tech execs at Meta and Anthropic are warning that humanity could soon lose control of self-improving AI–and Will believes we’re willingly sleepwalking into The Matrix. FOX News Digital Columnist David Marcus and ‘Kennedy Saves the World’ host Kennedy join Wil…",
+      "url": "https://radio.foxnews.com/2026/11/23/the-man-building-our-ai-future-just-said-something-terrifying-ft-david-marcus-kennedy/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-23T20:53:03Z"
+    },
+    {
+      "title": "Jensen Huang's Nvidia return sends China a clear message: The AI race is on",
+      "description": "Nvidia CEO Jensen Huang's return signals a renewed fight to win the AI race with China, as H200 sales end and Blackwell and Rubin chips lead the world.",
+      "url": "https://www.foxnews.com/opinion/jensen-huang-nvidia-return-sends-china-clear-message-ai-race",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Rebecca Grant",
+      "publishedAt": "2026-11-23T19:43:52Z"
+    },
+    {
+      "title": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+      "description": "Nothing's new AI device is the Ear Note, a set of earbuds and their microphone-equipped charging case that can record and transcribe conversations, with a connected app to manage the recordings, transcriptions and AI-generated summaries, similar to Apple's ne…",
+      "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-23T19:04:52Z"
+    },
+    {
+      "title": "Nothing’s Mysterious AI Device Is a Pair of Note-Taking Wireless Earbuds",
+      "description": "In a preview, Nothing shared its first AI gadget, the Ear Note wireless earbuds, capable of using AI to record and transcribe conversation.",
+      "url": "https://gizmodo.com/nothings-mysterious-ai-device-is-a-pair-of-note-taking-wireless-earbuds-2000844014",
+      "outlet": "Gizmodo",
+      "domain": "gizmodo.com",
+      "author": "James Pero",
+      "publishedAt": "2026-11-23T18:30:00Z"
+    },
+    {
+      "title": "Huang Is Back: NVIDIA Reinstates CEO in Major AI Shakeup",
+      "description": "Wall Street is seeing a sea of green after the bombshell announcement that NVIDIA’s board of directors has reinstated CEO Jensen Huang. SlateStone Wealth Chief Market Strategist Kenny Polcari joins FBN’s Taylor Riggs to break down what Huang’s return means fo…",
+      "url": "https://radio.foxnews.com/2026/11/23/huang-is-back-nvidia-reinstates-ceo-in-major-ai-shakeup/",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": null,
+      "publishedAt": "2026-11-23T18:27:09Z"
+    },
+    {
+      "title": "Claude AI can review pull requests and ship fixes on its own now",
+      "description": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of C…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Jay Peters",
+      "publishedAt": "2026-11-23T17:10:02Z"
+    },
+    {
+      "title": "Amodei reportedly suggested games could pacify masses after AI took their jobs",
+      "description": "A profile of Dario and Daniela Amodei, published in the Wall Street Journal following Anthropic’s record-breaking IPO, includes an anecdote in which Dario seems to acknowledge the world-destabilizing potential of AI, then suggests a particularly dystopian sol…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1039745/dario-amodei-video-games-ai-joblessness",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Terrence O'Brien",
+      "publishedAt": "2026-11-23T12:41:14Z"
+    },
+    {
+      "title": "Google AI smartwatch could flag high blood pressure",
+      "description": "Google's AI used smartwatch sensors to spot hypertension without a blood pressure cuff, but the Nature study found it missed about 1 in 3 cases.",
+      "url": "https://www.foxnews.com/tech/google-ai-smartwatch-could-flag-high-blood-pressure",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Kurt Knutsson CyberGuy Report",
+      "publishedAt": "2026-11-23T12:37:32Z"
+    },
+    {
+      "title": "FBI warns AI hackers can breach systems in under 3 hours",
+      "description": "The FBI warns the ARTEX AI hacking tool can give criminals privileged access in under three hours, targeting Microsoft 365 and financial firms.",
+      "url": "https://www.foxnews.com/tech/fbi-warns-ai-hackers-breach-systems-under-3-hours",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Kurt Knutsson CyberGuy Report",
+      "publishedAt": "2026-11-23T11:25:17Z"
+    },
+    {
+      "title": "NOOSHEEN HASHEMI: America's AI leadership needs more than one man",
+      "description": "Nvidia's board says it won't reinstate Jensen Huang as CEO, leaving founders and co-investors waiting to learn which AI funding rounds it will still lead.",
+      "url": "https://www.foxnews.com/opinion/noosheen-hashemi-americas-ai-leadership-needs-more-than-one-man",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Noosheen Hashemi",
+      "publishedAt": "2026-11-23T10:00:57Z"
+    },
+    {
+      "title": "Copper falls below $12,000 as doubts over AI spending deepen selloff",
+      "description": "The metal’s latest decline reflects growing investor caution over data centre investments, Chinese consumption and the outlook for global copper supplies.",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-23/copper-rises-after-falling-more-than-9-last-week-on-ai-gloom",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-23T03:42:13Z"
+    },
     {
       "title": "Binding of Isaac developer removes AI music from Repentance Plus",
       "description": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs used during a Grand Theft Auto-themed s…",
@@ -1581,15 +1680,6 @@
       "publishedAt": "2026-11-03T13:45:35Z"
     },
     {
-      "title": "Apple is restricting dating apps and romanceable chatbots to over 18s",
-      "description": "Apple will soon start asking developers to provide more details about their apps to enforce new App Store age rating requirements for dating and location-sharing features. The upcoming content descriptors announced on Monday will require developers to declare…",
-      "url": "https://www.theverge.com/tech/1025185/apple-app-store-age-rating-dating-apps-ai-companion",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jess Weatherbed",
-      "publishedAt": "2026-11-03T13:22:38Z"
-    },
-    {
       "title": "Anthropic Claims to Be Closing in on Recursive Self-Improvement",
       "description": "In the latest filing related to Anthropic's IPO, the company says RSI could be arriving \"imminently,\" which would mean self-improving AI.",
       "url": "https://gizmodo.com/anthropic-claims-to-be-closing-in-on-recursive-self-improvement-2000834175",
@@ -1642,24 +1732,6 @@
       "domain": "gizmodo.com",
       "author": "Tom Hawking",
       "publishedAt": "2026-11-02T19:25:12Z"
-    },
-    {
-      "title": "Anthropic clamps down on Claude’s AI video game clones",
-      "description": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from being used to recreate existing video games, as reported by Tom's Hardware. Retro gaming is currently being overrun with AI-made decompilations, recompilations, and ports, but while…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-11-02T18:56:02Z"
-    },
-    {
-      "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
-      "description": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to p…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-11-02T18:01:30Z"
     },
     {
       "title": "Elon Musk Needs to Save Money on Grok, Days After Saying AI Makes Saving Money Pointless",
@@ -2029,60 +2101,6 @@
       "domain": "gizmodo.com",
       "author": "Mike Pearl",
       "publishedAt": "2026-10-25T09:00:54Z"
-    },
-    {
-      "title": "OpenAI Built a Giant Fake Internet for Its Agents to Use and Abuse Safely",
-      "description": "It's like the Truman Show for AI.",
-      "url": "https://gizmodo.com/openai-built-a-giant-fake-internet-for-its-agents-to-use-and-abuse-safely-2000830274",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-24T17:30:05Z"
-    },
-    {
-      "title": "Anthropic’s AI Hid a Secret Message in the Stars. OpenAI’s Bot Found It.",
-      "description": "Morse code is back, baby.",
-      "url": "https://gizmodo.com/anthropics-ai-hid-a-secret-message-in-the-stars-openais-ai-found-it-2000830047",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "AJ Dellinger",
-      "publishedAt": "2026-10-24T13:31:26Z"
-    },
-    {
-      "title": "AI hasn’t replaced humans. Employers are still betting on college degrees",
-      "description": "A Gallup poll finds 80% of employers prefer college degree holders, and nearly half say degrees will matter more as artificial intelligence grows.",
-      "url": "https://www.foxnews.com/opinion/ai-replaced-humans-employers-college-degrees",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-24T12:00:52Z"
-    },
-    {
-      "title": "Jon Bon Jovi impersonator uses AI videos to scam woman out of $10K, nearly costing her home",
-      "description": "Leslie Pickett lost over $10,000 to a deepfake scam after a fake Jon Bon Jovi account on Instagram used AI videos to build trust over months.",
-      "url": "https://www.foxnews.com/us/jon-bon-jovi-impersonator-uses-ai-videos-scam-woman-10k-nearly-costing-her-home",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-24T11:00:45Z"
-    },
-    {
-      "title": "Check Out the Many Uncanny, Human-ish Voices From Block’s New AI Model",
-      "description": "The model goes by Dessa. Presumably because, once you hear it talk, you'll say \"'Dessa' pretty convincing human voice.\"",
-      "url": "https://gizmodo.com/check-out-the-many-uncanny-human-ish-voices-from-blocks-new-ai-model-2000830237",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Justin Caffier",
-      "publishedAt": "2026-10-24T10:24:40Z"
-    },
-    {
-      "title": "Unlocking Houdini: How AI Is Shedding Light on His Life, Death, and Secrets",
-      "description": "“Houdini: Back from the Dead”, now available on Fox Nation, is a first-of-its-kind, three-part documentary series that resurrects Houdini’s story in the only way fitting: big, bold, impossible. On the 100th anniversary of his mysterious death – Halloween 2026…",
-      "url": "https://radio.foxnews.com/2026/10/23/unlocking-houdini-how-ai-is-shedding-light-on-his-life-death-and-secrets/",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": "FOX News Radio",
-      "publishedAt": "2026-10-24T02:00:00Z"
     }
   ]
 }

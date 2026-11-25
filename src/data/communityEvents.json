@@ -1,65 +1,9 @@
 {
-  "updatedAt": "2026-11-24T20:56:36.990Z",
+  "updatedAt": "2026-11-25T20:18:56.209Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "La Ceja | Claude Workshop",
-          "start": "2026-11-24T23:00:00Z",
-          "allDay": false,
-          "city": "La Ceja",
-          "address": null,
-          "url": "https://luma.com/claude-1ryz"
-        },
-        {
-          "title": "Miami | Claude Code Hack Night with hello_miami",
-          "start": "2026-11-24T23:30:00Z",
-          "allDay": false,
-          "city": "Miami",
-          "address": "The DOCK, 400 NW 26th St, Miami, FL 33127, USA",
-          "url": "https://luma.com/claude-44fh"
-        },
-        {
-          "title": "Brisbane | Fable 5.2 Build Day",
-          "start": "2026-11-25T07:30:00Z",
-          "allDay": false,
-          "city": "Brisbane",
-          "address": null,
-          "url": "https://luma.com/BrisbaneBuildDay"
-        },
-        {
-          "title": "Tokyo | Claude Meetup for Life Science Industry Data Scientists",
-          "start": "2026-11-25T09:30:00Z",
-          "allDay": false,
-          "city": "Tokyo",
-          "address": null,
-          "url": "https://luma.com/claude-n4go"
-        },
-        {
-          "title": "Tel Aviv | Claude for Agentic Builders",
-          "start": "2026-11-25T16:00:00Z",
-          "allDay": false,
-          "city": "Tel Aviv",
-          "address": "BIG FASHION ביג פאשן גלילות, כביש החוף, Ramat HaSharon, Israel",
-          "url": "https://luma.com/claude-fsce"
-        },
-        {
-          "title": "Barcelona | Conversation (Women in Tech) The Future We Build: Women & AI in 2027",
-          "start": "2026-11-25T18:00:00Z",
-          "allDay": false,
-          "city": "Barcelona",
-          "address": "Miiro Borneta, Passeig de Picasso, 26, 30, Ciutat Vella, 08003 Barcelona, Spain",
-          "url": "https://luma.com/claude-5igh"
-        },
-        {
-          "title": "London | Claude Workshop x The Hearth",
-          "start": "2026-11-25T19:00:00Z",
-          "allDay": false,
-          "city": "London",
-          "address": "The Hearth, North London, United Kingdom — https://www.thehearth.me/",
-          "url": "https://luma.com/claude-ldy9"
-        },
         {
           "title": "Tokyo | Claude Meetup for HR",
           "start": "2026-11-26T10:00:00Z",
@@ -99,14 +43,6 @@
           "city": "Istanbul",
           "address": "Komünite Space, Radisson Collection Hotel, Ayazağa, Azerbaycan Cd. No:3A, 34475 Sarıyer/İstanbul, Türkiye",
           "url": "https://luma.com/claude-skill-lab"
-        },
-        {
-          "title": "Paris | Claude For Finance",
-          "start": "2026-11-26T17:30:00Z",
-          "allDay": false,
-          "city": "Paris",
-          "address": "Amphithéâtre Richelieu de la Sorbonne, 17 Rue de la Sorbonne, 75005 Paris, France",
-          "url": "https://luma.com/Sorbonne-Claude"
         },
         {
           "title": "Lisbon | Claude Code Conversation: Standout projects",
@@ -509,6 +445,14 @@
           "url": "https://luma.com/claude-community-torino-conversation"
         },
         {
+          "title": "San Francisco Claude Meetup | Physical AI for Science Demo Night",
+          "start": "2026-12-06T00:30:00Z",
+          "allDay": false,
+          "city": "San Francisco Claude Meetup",
+          "address": null,
+          "url": "https://luma.com/claude-9us2"
+        },
+        {
           "title": "SHIGA | Claude Meetup 滋賀キックオフ",
           "start": "2026-12-06T04:30:00Z",
           "allDay": false,
@@ -643,28 +587,68 @@
           "city": "Munich",
           "address": null,
           "url": "https://luma.com/claude-sl4m"
+        },
+        {
+          "title": "Munich | Claude for Business Owners and CEOs",
+          "start": "2026-12-09T08:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": "KI-Campus Tucherpark, Munich (Corner room)",
+          "url": "https://luma.com/claude-iwyo"
+        },
+        {
+          "title": "Munich | Claude for Sales Teams, with Anthropic’s GTM Specialists",
+          "start": "2026-12-09T09:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": "KI-Campus Tucherpark, Munich, Germany",
+          "url": "https://luma.com/claude-rel9"
+        },
+        {
+          "title": "Matsue | Claude Fable 5.2 Build Day",
+          "start": "2026-12-09T10:00:00Z",
+          "allDay": false,
+          "city": "Matsue",
+          "address": "Matsue Open Source Lab, Japan, 〒690-0003 Shimane, Matsue, Asahimachi, 478番地18 2階 別館",
+          "url": "https://luma.com/claude-h7w9"
+        },
+        {
+          "title": "Munich | Claude Workshop",
+          "start": "2026-12-09T13:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": null,
+          "url": "https://luma.com/claude-740g"
+        },
+        {
+          "title": "Amsterdam | Claude Community \"Year in Review\"",
+          "start": "2026-12-09T18:00:00Z",
+          "allDay": false,
+          "city": "Amsterdam",
+          "address": null,
+          "url": "https://luma.com/claude-x37l"
+        },
+        {
+          "title": "San Francisco | Claude for Investors",
+          "start": "2026-12-10T01:00:00Z",
+          "allDay": false,
+          "city": "San Francisco",
+          "address": null,
+          "url": "https://luma.com/claudeforinvestors"
+        },
+        {
+          "title": "Munich | Claude Impact Lab",
+          "start": "2026-12-10T08:00:00Z",
+          "allDay": false,
+          "city": "Munich",
+          "address": null,
+          "url": "https://luma.com/claude-yioz"
         }
       ],
       "error": null
     },
     "langchain": {
       "events": [
-        {
-          "title": "KRAKÓW: Own Your AI Intelligence | LangChain Meetup",
-          "start": "2026-11-24T17:00:00Z",
-          "allDay": false,
-          "city": "KRAKÓW: Own Your AI Intelligence",
-          "address": "HEVRE | Bar & Restaurant, Beera Meiselsa 18, 31-058 Kraków, Poland",
-          "url": "https://luma.com/3cajjgml"
-        },
-        {
-          "title": "Sydney LangChain Meetup",
-          "start": "2026-11-25T06:00:00Z",
-          "allDay": false,
-          "city": null,
-          "address": null,
-          "url": "https://luma.com/jfvvcvtk"
-        },
         {
           "title": "LangChain Meetup - Day in the life of a token in the European cloud: AI on sovereign infrastructure",
           "start": "2026-11-25T16:30:00Z",

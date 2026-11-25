@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-24T20:56:35.007Z",
-  "from": "2026-10-25",
-  "to": "2026-11-24",
+  "updatedAt": "2026-11-25T20:18:54.945Z",
+  "from": "2026-10-26",
+  "to": "2026-11-25",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -18,7 +18,7 @@
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 58,
+      "count": 59,
       "error": null
     },
     {
@@ -30,17 +30,80 @@
     {
       "domain": "theverge.com",
       "name": "The Verge",
-      "count": 96,
+      "count": 97,
       "error": null
     },
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 55,
+      "count": 53,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "What United Airlines banning AI agents from booking flights means for your travel plans",
+      "description": "United Airlines is blocking unauthorized AI travel agents from its booking systems, warning that automated purchases could put MileagePlus miles at risk.",
+      "url": "https://www.foxnews.com/tech/united-airlines-banning-ai-agents-booking-flights-means-travel-plans",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Kurt Knutsson CyberGuy Report",
+      "publishedAt": "2026-11-24T19:23:40Z"
+    },
+    {
+      "title": "David Fincher is being dragged for suspected use of AI in his latest film",
+      "description": "Though David Fincher's fans had been eagerly anticipating The Further Mis-Adventures of Cliff Booth, early screenings of the Once Upon a Time in Hollywood sequel starring Brad Pitt have raised questions about whether generative AI was used in the film. People…",
+      "url": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Charles Pulliam-Moore",
+      "publishedAt": "2026-11-24T18:12:33Z"
+    },
+    {
+      "title": "Tidal will start banning AI-generated music next month",
+      "description": "Tidal is officially banning AI-generated music on December 9th. As a result of this change, Tidal will delete around 29 million AI-generated songs and reject an estimated 80,000 to 85,000 tracks per day, according to Tidal music lead Robert Andersen. The move…",
+      "url": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-24T17:17:09Z"
+    },
+    {
+      "title": "Apple tightens Mac security as AI agents seek your files",
+      "description": "Apple's macOS 27.3 beta 2 adds new Mac security controls for AI agents, letting you pick specific protected folders instead of granting Full Disk Access.",
+      "url": "https://www.foxnews.com/tech/apple-tightens-mac-security-ai-agents-seek-your-files",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Kurt Knutsson CyberGuy Report",
+      "publishedAt": "2026-11-24T16:21:50Z"
+    },
+    {
+      "title": "Jensen Huang deepfakes are the hot new AI slop",
+      "description": "Jensen Huang is partying it up in Ibiza. In a video with nearly 6 million views on Instagram, the former CEO of Nvidia is dancing in a crowded club, champagne glass in hand, still wearing his signature black leather jacket. Suddenly, from behind him, Alice Hu…",
+      "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Kat Tenbarge",
+      "publishedAt": "2026-11-24T16:18:12Z"
+    },
+    {
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "description": "The New York Times is asking freelance photographers not to use the newest version of Adobe Photoshop because features in the 2027 update use AI \"in ways that may not be apparent to users.\" In an email seen by The Verge and posted on Threads, two of the Times…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-24T16:09:23Z"
+    },
+    {
+      "title": "AI data centers throw another wrench into chaotic UN climate talks",
+      "description": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that…",
+      "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Justine Calma",
+      "publishedAt": "2026-11-23T21:09:37Z"
+    },
     {
       "title": "The Man Building Our AI Future Just Said Something Terrifying (ft. David Marcus & Kennedy)",
       "description": "Tech execs at Meta and Anthropic are warning that humanity could soon lose control of self-improving AI–and Will believes we’re willingly sleepwalking into The Matrix. FOX News Digital Columnist David Marcus and ‘Kennedy Saves the World’ host Kennedy join Wil…",
@@ -1635,42 +1698,6 @@
       "publishedAt": "2026-11-03T17:45:06Z"
     },
     {
-      "title": "Netflix will show you themed recommendations through a new ‘AI Discover’ tab",
-      "description": "Netflix's TV app is getting a new \"AI Discover\" tab where the company will show experimental, AI-powered features to help you find new shows and movies to watch. The first of these experiments surfaces content based around themes, like \"Something Light,\" \"Fam…",
-      "url": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Jay Peters",
-      "publishedAt": "2026-11-03T17:28:14Z"
-    },
-    {
-      "title": "Google is entirely disabling Search in schools that don’t want AI",
-      "description": "Google is completely turning off Search in schools that reject its AI features, the company told The New York Times. The decision was also shared in a broader education-related update from Google on Tuesday, saying that access to Gemini, Gemini Notebook, Gemi…",
-      "url": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-11-03T17:01:26Z"
-    },
-    {
-      "title": "Apple is all in on AI — its own and everyone else’s",
-      "description": "Apple's latest earnings show how it's continuing to capitalize on the AI boom without busting its budget on the infrastructure spending consuming its competitors. Overall, Apple posted its best-ever fiscal year for revenue and earnings per share. iPhone and M…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Rani Molla",
-      "publishedAt": "2026-11-03T15:27:58Z"
-    },
-    {
-      "title": "OpenAI is quietly renaming data centers ‘compute campuses’",
-      "description": "People hate data centers. They're loud, resource-hungry eyesores that are so profoundly unpopular they have managed to achieve the near-impossible in today's polarized political landscape: genuine bipartisan opposition. But what about \"compute campuses\"? Thos…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Robert Hart",
-      "publishedAt": "2026-11-03T15:00:44Z"
-    },
-    {
       "title": "AI Users Are Working Up to 90 Minutes Longer Every Day, Study Finds",
       "description": "A new analysis found that people who use AI at work have longer workdays than those who don't.",
       "url": "https://gizmodo.com/ai-users-are-working-up-to-90-minutes-longer-every-day-study-finds-2000833982",
@@ -2074,33 +2101,6 @@
       "domain": "bloomberg.com",
       "author": "Bloomberg",
       "publishedAt": "2026-10-26T06:31:46Z"
-    },
-    {
-      "title": "‘Tokens Are Cheap’: Open Source Subreddit Bans AI",
-      "description": "“AI, as it exists today, is incongruent to this Open Source community.”",
-      "url": "https://gizmodo.com/tokens-are-cheap-open-source-subreddit-bans-ai-2000830386",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-25T17:00:59Z"
-    },
-    {
-      "title": "Human vs. ChatGPT NFL Week 7 betting picks: Human clings to profit as AI claims third straight win",
-      "description": "Human analyst is still profitable by just 0.09 units as he takes on ChatGPT with five more NFL bets, including a Titans upset and a shared Bengals pick.",
-      "url": "https://www.foxnews.com/outkick-sports/human-vs-chatgpt-nfl-week-7-betting-picks-human-clings-profit-ai-claims-third-straight-win",
-      "outlet": "Fox News",
-      "domain": "foxnews.com",
-      "author": null,
-      "publishedAt": "2026-10-25T11:50:08Z"
-    },
-    {
-      "title": "The AI-Centric Private School Chain Reportedly Isn’t Meeting Its Own Academic Goals",
-      "description": "A New York Times report suggests Alpha School needs to rethink its core promise.",
-      "url": "https://gizmodo.com/the-ai-centric-private-school-chain-reportedly-isnt-meeting-its-own-academic-goals-2000830291",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-25T09:00:54Z"
     }
   ]
 }

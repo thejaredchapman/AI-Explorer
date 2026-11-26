@@ -1,57 +1,9 @@
 {
-  "updatedAt": "2026-11-25T20:18:56.209Z",
+  "updatedAt": "2026-11-26T19:55:28.775Z",
   "daysAhead": 120,
   "calendars": {
     "claude": {
       "events": [
-        {
-          "title": "Tokyo | Claude Meetup for HR",
-          "start": "2026-11-26T10:00:00Z",
-          "allDay": false,
-          "city": "Tokyo",
-          "address": null,
-          "url": "https://luma.com/Claude_PEAK_HR1"
-        },
-        {
-          "title": "Taipei | Claude Code Workshop",
-          "start": "2026-11-26T10:30:00Z",
-          "allDay": false,
-          "city": "Taipei",
-          "address": null,
-          "url": "https://luma.com/claude-9gpx"
-        },
-        {
-          "title": "Bhopal | Claude for Working Professionals",
-          "start": "2026-11-26T11:30:00Z",
-          "allDay": false,
-          "city": "Bhopal",
-          "address": null,
-          "url": "https://luma.com/claude-r38s"
-        },
-        {
-          "title": "Nairobi | Claude Legal Workshop",
-          "start": "2026-11-26T13:00:00Z",
-          "allDay": false,
-          "city": "Nairobi",
-          "address": "Hackhouse Africa, 124 Manyani East Rd, Nairobi, Kenya",
-          "url": "https://luma.com/claude-xqc2"
-        },
-        {
-          "title": "Istanbul | Skill Lab: Write, Test, Improve",
-          "start": "2026-11-26T16:00:00Z",
-          "allDay": false,
-          "city": "Istanbul",
-          "address": "Komünite Space, Radisson Collection Hotel, Ayazağa, Azerbaycan Cd. No:3A, 34475 Sarıyer/İstanbul, Türkiye",
-          "url": "https://luma.com/claude-skill-lab"
-        },
-        {
-          "title": "Lisbon | Claude Code Conversation: Standout projects",
-          "start": "2026-11-26T18:30:00Z",
-          "allDay": false,
-          "city": "Lisbon",
-          "address": "Heden Workspaces - Rossio, Largo do Duque de Cadaval 17 Fracção I, 1200-160 Lisboa, Portugal",
-          "url": "https://luma.com/claude-gyoj"
-        },
         {
           "title": "São Paulo | Claude for Architecture & Construction",
           "start": "2026-11-26T22:00:00Z",
@@ -333,6 +285,14 @@
           "url": "https://luma.com/ccc-1year"
         },
         {
+          "title": "Medellín | Claude Code Build Day",
+          "start": "2026-12-02T23:00:00Z",
+          "allDay": false,
+          "city": "Medellín",
+          "address": null,
+          "url": "https://luma.com/claude-80am"
+        },
+        {
           "title": "Chicago | Fable 5.2 Build Day",
           "start": "2026-12-03T00:00:00Z",
           "allDay": false,
@@ -485,7 +445,7 @@
           "url": "https://luma.com/claude-m3ex"
         },
         {
-          "title": "Belgrade | Claude Code Meetup",
+          "title": "Belgrade | Claude for Product and Engineering",
           "start": "2026-12-07T17:30:00Z",
           "allDay": false,
           "city": "Belgrade",
@@ -643,6 +603,46 @@
           "city": "Munich",
           "address": null,
           "url": "https://luma.com/claude-yioz"
+        },
+        {
+          "title": "Fukuoka | Claude for Business",
+          "start": "2026-12-10T09:00:00Z",
+          "allDay": false,
+          "city": "Fukuoka",
+          "address": "ONE FUKUOKA BLDG.(ワンビル), 1-chōme-11-1 Tenjin, Chuo Ward, Fukuoka, 810-0001, Japan",
+          "url": "https://luma.com/claude-o5r4"
+        },
+        {
+          "title": "Santiago | FOUNDER & DEVPS Claude Meetup",
+          "start": "2026-12-10T20:30:00Z",
+          "allDay": false,
+          "city": "Santiago",
+          "address": "Callao 2911, 7550285 Las Condes, Región Metropolitana, Chile",
+          "url": "https://luma.com/claude-BenditaIA"
+        },
+        {
+          "title": "Bogota | Fable 5.2 Build Day | Microsoft + BeeOne",
+          "start": "2026-12-10T21:30:00Z",
+          "allDay": false,
+          "city": "Bogota",
+          "address": null,
+          "url": "https://luma.com/claude-e7xa"
+        },
+        {
+          "title": "Mexico City | Supabase x Claude Community Build Day",
+          "start": "2026-12-11T00:00:00Z",
+          "allDay": false,
+          "city": "Mexico City",
+          "address": "Utel Hub, Barranca del Muerto 261, San José Insurgentes, Benito Juárez, 03900 Ciudad de México, CDMX, Mexico",
+          "url": "https://luma.com/claude-supabase-mx"
+        },
+        {
+          "title": "Claude Community × Nova Hackathon — Reinventing Networking",
+          "start": "2026-12-11T00:00:00Z",
+          "allDay": true,
+          "city": null,
+          "address": "Nova Talent Madrid Office, Madrid, Spain",
+          "url": "https://luma.com/claude-xmxw"
         }
       ],
       "error": null
@@ -650,20 +650,20 @@
     "langchain": {
       "events": [
         {
-          "title": "LangChain Meetup - Day in the life of a token in the European cloud: AI on sovereign infrastructure",
-          "start": "2026-11-25T16:30:00Z",
-          "allDay": false,
-          "city": null,
-          "address": "evroc, Katarinavägen 9, 116 45 Stockholm, Sweden",
-          "url": "https://luma.com/9dni7s4o"
-        },
-        {
           "title": "LangChain x hackers&wizards Hackathon: Building with Agent Harnesses (Hamburg)",
           "start": "2026-12-04T16:00:00Z",
           "allDay": false,
           "city": null,
           "address": null,
           "url": "https://luma.com/s77skh49"
+        },
+        {
+          "title": "LangChain Presents: Engineering Persistent Agents",
+          "start": "2026-12-09T02:00:00Z",
+          "allDay": false,
+          "city": null,
+          "address": "Exploratorium, Pier 15 Embarcadero at, Green St, San Francisco, CA 94111, USA",
+          "url": "https://luma.com/213ppkvj"
         },
         {
           "title": "Own Your Intelligence Exploratorium",

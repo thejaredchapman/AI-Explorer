@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-26T19:55:26.631Z",
-  "from": "2026-10-27",
-  "to": "2026-11-26",
+  "updatedAt": "2026-11-27T19:44:05.573Z",
+  "from": "2026-10-28",
+  "to": "2026-11-27",
   "outlets": [
     {
       "domain": "apnews.com",
@@ -12,19 +12,19 @@
     {
       "domain": "cnn.com",
       "name": "CNN",
-      "count": 6,
+      "count": 7,
       "error": null
     },
     {
       "domain": "foxnews.com",
       "name": "Fox News",
-      "count": 59,
+      "count": 61,
       "error": null
     },
     {
       "domain": "bloomberg.com",
       "name": "Bloomberg",
-      "count": 13,
+      "count": 14,
       "error": null
     },
     {
@@ -36,11 +36,83 @@
     {
       "domain": "gizmodo.com",
       "name": "Gizmodo",
-      "count": 50,
+      "count": 44,
       "error": null
     }
   ],
   "articles": [
+    {
+      "title": "Housefishing could fool you with AI real estate photos",
+      "description": "Housefishing scams use AI real estate photos to fool buyers. Google Lens reverse image search and live video walkthroughs can help expose the fakes.",
+      "url": "https://www.foxnews.com/tech/housefishing-could-fool-you-ai-real-estate-photos",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Kurt Knutsson CyberGuy Report",
+      "publishedAt": "2026-11-26T18:07:54Z"
+    },
+    {
+      "title": "Human vs ChatGPT NFL Week 12 betting picks: Thanksgiving Day picks to fade from the internet’s worst bettor",
+      "description": "After a 5-15 skid and another ChatGPT shutout, the Thanksgiving NFL betting showdown returns with five picks apiece and plenty of reasons to consider the other side.",
+      "url": "https://www.foxnews.com/outkick-sports/human-vs-chatgpt-nfl-week-12-betting-picks-thanksgiving-day-picks-fade-internets-worst-bettor",
+      "outlet": "Fox News",
+      "domain": "foxnews.com",
+      "author": "Dan Zaksheske",
+      "publishedAt": "2026-11-26T15:03:13Z"
+    },
+    {
+      "title": "Florida man imprisoned for using AI to impersonate a streamer in a crypto scam.",
+      "description": "That’s gotta complete someone’s bingo card. David Anthony Sanchez used fake accounts and an AI voice recording to impersonate streamer N3on and steal $260,000 in crypto through endorsement of a memecoin. As Aftermath points out, N3on was a fitting target — he…",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1043107/florida-man-imprisoned-for-using-ai-to-impersonate-a-streamer-in-a-crypto-scam",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Dominic Preston",
+      "publishedAt": "2026-11-26T13:02:39Z"
+    },
+    {
+      "title": "US authorizes SpaceX to deploy 1 million satellites for AI data centers in space | CNN Business",
+      "description": "The technology is central to SpaceX’s growth ambitions, though the company warned earlier this year that it relied on “unproven” technologies.",
+      "url": "https://www.cnn.com/2026/11/26/business/spacex-satellites-space-data-centers-intl",
+      "outlet": "CNN",
+      "domain": "cnn.com",
+      "author": "Hanna Ziady",
+      "publishedAt": "2026-11-26T12:20:55Z"
+    },
+    {
+      "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+      "description": "A coalition of 42 state attorneys general is trying to prevent Character.AI from selling off user data as it navigates Chapter 11 bankruptcy proceedings. In a deluge of nearly identical press releases, the various AGs accuse the company of planning to auction…",
+      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Terrence O’Brien",
+      "publishedAt": "2026-11-26T09:54:40Z"
+    },
+    {
+      "title": "Cracks in AI stocks weaken Wall Street’s once-reliable carry trade",
+      "description": "Rising market volatility, shifting interest-rate expectations and political shocks are prompting global money managers to reassess currency investment strategies",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-25/stocks-meltdown-spills-into-unlikely-market-sinking-carry-trade",
+      "outlet": "Bloomberg",
+      "domain": "bloomberg.com",
+      "author": "Bloomberg",
+      "publishedAt": "2026-11-26T09:46:34Z"
+    },
+    {
+      "title": "Now Google’s Familiar Faces AI feature works on Walmart’s $35 smart home camera too",
+      "description": "A couple of Walmart's budget-friendly smart home cameras will be able to recognize people around your house now using Google's familiar face detection feature. A new Google Home update brings Familiar Faces support to the $35 Onn Outdoor Camera Plug-In and $7…",
+      "url": "https://www.theverge.com/tech/1042938/google-home-familiar-faces-onn-cameras",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-26T00:04:34Z"
+    },
+    {
+      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "description": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users. The patent has been rejected, but unfortun…",
+      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "outlet": "The Verge",
+      "domain": "theverge.com",
+      "author": "Charles Pulliam-Moore",
+      "publishedAt": "2026-11-25T21:51:26Z"
+    },
     {
       "title": "Autonomous AI agents are giving everyday hackers ‘nation-state’ firepower, cyber expert reveals",
       "description": "Cybersecurity expert John Walsh of IGEL says AI gives individuals the power to disrupt critical infrastructure once held only by nation-states.",
@@ -1644,42 +1716,6 @@
       "publishedAt": "2026-11-04T00:12:34Z"
     },
     {
-      "title": "Please stop asking me when the AI bubble will pop",
-      "description": "People, including on this staff, keep asking me with varying degrees of excitement or trepidation when the AI bubble will burst. I'll tell you what I tell them: If I knew that, I would make a life-changing bet on the market, levered up as far as I could, and …",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Elizabeth Lopatto",
-      "publishedAt": "2026-11-03T23:37:45Z"
-    },
-    {
-      "title": "Google hasn’t figured out how to make AI pay like its search engine",
-      "description": "Search queries are growing at their fastest rate in five years, Google parent Alphabet said in its earnings report last week. However, Google's Search revenue growth slowed to 12 percent year over year in the third quarter, down from roughly 17 percent in the…",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Rani Molla",
-      "publishedAt": "2026-11-03T22:41:23Z"
-    },
-    {
-      "title": "Sonos adds new Presets and prepares for the 27voice AI beta",
-      "description": "Sonos is rolling out a big app update that includes new Presets and early access to its AI voice assistant. You can create a preset to play music at a specific volume in a certain room, which will appear directly on the homescreen so you can quickly start pla…",
-      "url": "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Emma Roth",
-      "publishedAt": "2026-11-03T22:20:50Z"
-    },
-    {
-      "title": "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist",
-      "description": "The largest crypto theft to date was pulled off by combining some well-known hacking techniques over the course of a few months, according to Binance. A postmortem from the company says the process that started with one developer downloading a tampered instal…",
-      "url": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained",
-      "outlet": "The Verge",
-      "domain": "theverge.com",
-      "author": "Richard Lawler",
-      "publishedAt": "2026-11-03T22:05:10Z"
-    },
-    {
       "title": "Website Selling ‘AI Slop Audiobooks’ Shuts Down Following Fierce Backlash From Authors",
       "description": "As one Redditor put it: “i will never understand what part of this seemed like a good idea.”",
       "url": "https://gizmodo.com/website-selling-ai-slop-audiobooks-shuts-down-following-fierce-backlash-from-authors-2000834607",
@@ -2029,60 +2065,6 @@
       "domain": "foxnews.com",
       "author": null,
       "publishedAt": "2026-10-28T13:12:06Z"
-    },
-    {
-      "title": "Google’s New AI World Model Can Generate Human Voices, Not Just Video",
-      "description": "“Understanding and simulating the world is a crucial aspect of building AGI,” the company wrote in its launch post.",
-      "url": "https://gizmodo.com/googles-new-ai-world-model-can-generate-human-voices-not-just-video-2000831335",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Webb Wright",
-      "publishedAt": "2026-10-27T20:45:14Z"
-    },
-    {
-      "title": "Online Shopping Platforms Turn Against Third-Party AI Agents",
-      "description": "Secondhand luxury platform TheRealReal is reportedly the latest to make it tougher for AI shopping agents.",
-      "url": "https://gizmodo.com/online-shopping-platforms-turn-against-third-party-ai-agents-2000831298",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Ece Yildirim",
-      "publishedAt": "2026-10-27T19:45:31Z"
-    },
-    {
-      "title": "Police Are Using AI to Pull Over Drivers for ‘Suspicious’ Behavior",
-      "description": "The ACLU warns that police are using license plate data to track drivers and pull them over based on supposedly suspicious travel patterns.",
-      "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Bruce Gil",
-      "publishedAt": "2026-10-27T16:20:46Z"
-    },
-    {
-      "title": "ChatGPT’s Election-Related Anti-Deepfake Measures Are Intriguing, but Incomplete",
-      "description": "OpenAI has called it a \"layer of friction.\" It's not a very thick layer.",
-      "url": "https://gizmodo.com/chatgpts-election-related-anti-deepfake-measures-are-intriguing-but-incomplete-2000831002",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-27T09:00:38Z"
-    },
-    {
-      "title": "Anthropic’s Latest Claude Security Disclosure Will Make You Sympathize With Claude",
-      "description": "Oh so you've never sidestepped a paywall?",
-      "url": "https://gizmodo.com/anthropics-latest-claude-security-disclosure-will-make-you-sympathize-with-claude-2000830986",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-27T02:03:25Z"
-    },
-    {
-      "title": "OpenAI Trumpet’s 3 More Math and Science Results, Along With a New Plan for Publishing Them",
-      "description": "The company has already handed this work over to expert \"shepherds\" for completion.",
-      "url": "https://gizmodo.com/openai-trumpets-3-more-math-and-science-results-along-with-a-new-plan-for-publishing-them-2000830956",
-      "outlet": "Gizmodo",
-      "domain": "gizmodo.com",
-      "author": "Mike Pearl",
-      "publishedAt": "2026-10-27T00:13:11Z"
     }
   ]
 }

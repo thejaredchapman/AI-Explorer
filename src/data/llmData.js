@@ -1359,9 +1359,10 @@ export const llmModels = [
     strengths: ['Strong reasoning', 'Extended thinking', '64K max output', 'Multimodal', 'Same pricing as 4.6'],
     limitations: ['200K context (vs 1M on newer Opus models)'],
     lifecycle: {
-      status: 'legacy',
+      status: 'deprecated',
+      retiresOn: '2027-01-22',
       replacement: 'claude-opus-5-5',
-      source: 'https://platform.claude.com/docs/en/models/opus-4-5/overview',
+      source: 'https://platform.claude.com/docs/en/about-claude/model-deprecations',
     },
     category: 'Frontier',
   },
@@ -2343,6 +2344,7 @@ export const llmModels = [
     lifecycle: {
       status: 'retired',
       retiresOn: '2026-05-31',
+      replacement: 'mistral-small',
       source: 'https://docs.mistral.ai/getting-started/models/models_overview/',
     },
     category: 'Specialized',
@@ -3105,7 +3107,7 @@ export const llmModels = [
 ];
 
 // ── Data freshness ──
-export const dataAsOf = '2026-11-26';
+export const dataAsOf = '2026-11-27';
 
 // ── Incident: AI agents breach Hugging Face ──
 export const hfIncident = {
